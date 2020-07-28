@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var firstNumber = prompt("Enter first number");
+		firstNumber = parseInt(firstNumber);
+		var secondNumber = prompt("Enter second number");
+		secondNumber = parseInt(secondNumber);
+		
+		var i=0;
+		var sum = 0;
+		if(firstNumber > secondNumber){
+             console.log("firstNumber should be lesser than secondNumber");
+		}
+		else if(firstNumber%2 === 0){
+			firstNumber = firstNumber;
+		}
+		else{
+			firstNumber = firstNumber + 1;
+			for(i = firstNumber; i <= secondNumber; i=i+2){
+	
+			sum = sum + i;
+		}
+		console.log("Sum of even numbers :"+sum);
+		}
+		
+		
+	</script>
+</body>
+</html>
