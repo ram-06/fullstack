@@ -1,0 +1,104 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function raedContactDetails (){
+                var contactdetails ={
+                    "profile_picture" : prompt("enter the link:"),
+                    
+                    "name" : {
+                                 "first_name" : prompt("enter the first name:"),
+                                 "last_name"  : prompt("enter the last name:")
+                             },
+                    
+                    "phone_number" : {
+                                        "office_number" : prompt("enter the office number:"),
+                                        "personal_number" : []
+                                     },
+                                      
+                    "emergency_contact" : [],
+
+                    "address" : {
+                                    "personal_address": {
+                                                            "doorno" : prompt("enter the door nnumber:"),
+                                                            "city"   : prompt("enter the city name:"),
+                                                            "country" : prompt("enter the country name:")
+                                                        },
+
+                                    "office_address" : {
+                                                            "country" : prompt("enter the country of the office:"),
+                                                            "building": prompt("enter the office building number:"),
+                                                            "pincode" : prompt("enter the pincode:")
+
+                                                       }
+                                },
+
+                    "email" : {
+                                    "personal_email" : [],
+                                    "office_email" : prompt("enter the office email id:")
+                              },
+
+                    "socialMediaId" : {
+                                         "twitter" : prompt("enter twitter id:"),
+                                         "facebook" : prompt("enter facebook id:")
+                                      },
+
+                    "bloodgroup"    : prompt("enter the blood group")
+
+                }
+
+                    var range = prompt("enter the number of  personal phone no to be entered:" );
+                    range = parseInt(range)
+                    for(var i = 0; i < range; i++){
+                        
+                        contactdetails.phone_number.personal_number[i] = prompt("enter the personal number:" + (i +1));
+                        contactdetails.phone_number.personal_number[i] = parseInt(contactdetails.phone_number.personal_number);
+                    }
+
+                    var range1 = prompt("enter the number of emergency no to be entered:" );
+
+                    for(var j = 0; j < range1; j++){
+                        contactdetails.emergency_contact[j] = prompt("enter emergency contact numbers:" + (j+1));
+                        contactdetails.emergency_contact[j] = parseInt(contactdetails.emergency_contact);
+
+                    }
+
+                    var range2= prompt("enter the number of  personal emails to be entered:" );
+                    for(var k = 0; k < range2; k++){
+                        contactdetails.email.personal_email[k] = prompt("enter personal email id:" + (k + 1));
+                    }
+
+                    
+                    dispayContactDetails(contactdetails);
+
+                    
+
+            }
+
+            function dispayContactDetails(contactdetails){
+
+                for(var key in contactdetails){
+                
+                    console.log(contactdetails[key]);
+                    console.log(typeof(contactdetails[key]));
+
+                    if(typeof(contactdetails[key]) == 'object'){
+                        for(var details in contactdetails[key]){
+                            console.log(contactdetails[key] + contactdetails[key][details]);
+                        }
+                    }
+
+                    else if(typeof(contactdetails[key]) == 'object' && contactdetails[key].length){
+                        for(var i = 0; i < contactdetails[key].length; i++){
+                            console.log(contactdetails[key][i]);
+                        }
+
+                    }
+                }
+
+            }
+
+            raedContactDetails();
+        </script>
+    </body>
+</html>
