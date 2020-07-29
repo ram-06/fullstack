@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>
+			JAVASCRIPT STRING METHODS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function contact() {
+				var contactDetails = {
+					"Name" : {
+						"firstName" : "Nakul",
+						"lastName" : "Mand"
+					},
+					"phoneNo" : {
+						"home" : [123238, 767578],
+						"office" : "897889",
+						"emergency" : "875679"
+					},
+					"Address" : {
+						"office" : {
+									"doorNo" : "989"
+									"building" : "Graffiti"
+									"streetName" : "Mundhawa"
+								},
+								"home" : {
+									"doorNo" : "79"
+									"building" : "BellCastle",
+									"streetName" : "Highsteet Baner"
+								}
+
+							 },
+							 "Location" : "Pune"
+							 "emailid" : {
+							 	"personal" : "hfuuhb@gmail.com",
+							 	"office" : "fgjub.ac.in"
+							 },
+
+							"SocialMediaID" : {
+								"facebook" : "gctvi@facebook.com",
+								"twitter" :  "gjugb__45",
+								"instagram" : "ggugudd344",
+							},
+                           
+                           "Nationality" : "indian",
+                           "bloodGroup" : " B+ve",
+                       }
+                       
+                       displayDetails(contactDetails);
+                   }
+                       function
+                       displayDetails(contactDetails)
+                       {
+                       	console.log("Name" + contactDetails.name.firstName);
+                       	console.log("Name" + contactDetails.name.lastName);
+
+
+                       	console.log("phone	No + home1" +
+                       		contactDetails.phoneNo.home[(0)];
+                       	console.log("phone	No + home2" +
+                       		contactDetails.phoneNo.home[(1)];
+                       	console.log("phone	No office" +
+                       		contactDetails.phoneNo.office);
+                       	console.log("phone	No + emergency"  +
+                       		contactDetails.phoneNo.emergency);
+
+
+                         console.log("Address office door No - " +
+                         	contactDetails.Address.office.doorNo);
+                         console.log("Address office Building"  +
+                         	contactDetails.Address.office.building);
+                         console.log.("Address office street	Name " +
+                         	contactDetails.Address.office.streetName);
+
+                         console.log("Address home door No - " +
+                         	contactDetails.Address.home.doorNo);
+                         console.log("Address home Building" +
+                         	contactDetails.Address.home.building;
+                         console.log("Address home street	Name" +
+                         	contactDetails.Address.home.streetName);
+
+                         console.log("Location" +
+                         	contactDetails.Location);
+
+                         console.log("email	id personal" +
+                         	contactDetails.emailid.personal);
+                          console.log("email id office " +
+                          	contactDetails.emailid.office);
+
+                         console.log(" facebook	ID " +
+                         	contactDetails.SocialMediaID.facebook);
+                       console.log("twitter ID" +
+                         	contactDetails.SocialMediaID.twitter);
+                       console.log("instagram ID" +
+                       	contactDetails.SocialMediaID.instagram);
+
+                  		 console.log("Nationality" +
+                       	contactDetails.Nationality);
+
+                       console.log("blood	Group" +
+                       	contactDetails.bloodGroup);
+                  }
+
+                  contact();
+
+			
+		</script>
+		<h2>JSON OBJECT</h2>
+
+	</body>
+	</html>
