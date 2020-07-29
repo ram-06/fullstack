@@ -1,0 +1,45 @@
+<!-- !! WAP to read values dynamically given in an array and find second largest value in it. !! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Second 	largest value
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var large, second;
+			var num = [];
+			var n = prompt("enter number of elements in array");
+			n = parseInt(n);
+
+			for (var i = 0; i < n; i++) {
+				num[i] = prompt("array elements" ,(i+1) ,":");
+				num[i] = parseInt(num[i]);
+				console.log(num[i]);
+			}
+			if (num[0] < num[1]) {
+				large = num[1];
+				second = num[0];
+			}
+			else {
+				large = num[0];
+				second = num[1];
+			}
+			for (var i = 2; i < n; i++) {
+				if (num[i] > large) {
+					second = large;
+					large = num[i];
+					}
+				else if (num[i] > second && num[i]!= large) {
+					second = num[i];
+				}
+			}
+			console.log("second largest no " ,second);
+
+			
+				
+
+	</script>
+</body>
+</html>

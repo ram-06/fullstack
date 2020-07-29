@@ -1,0 +1,30 @@
+<!-- !!! WAP to read dyanmic values to an array and find the largest value in...!!!!  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Largest Number
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i, n;
+		var a = [];
+		var n = prompt("Enter number");
+		n = parseInt(n);
+
+		for (var i = 0; i < n; i++) {
+			a[i] = prompt("enter no");
+			a[i] = parseInt(a[i]);
+			console.log(a[i]);
+		}
+		for (var i = 0; i < n; i++) {
+			if (a[0] < a[i]) a[0] = a[i];
+			}
+			console.log("largest no" ,a[0]);
+
+		
+	</script>
+
+</body>
+</html>
