@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>
+					name: <input type="text" id="uname">
+				</li>
+				<li>
+					Languages: 
+					<input type="checkbox" name="language" value="english"> English <br/>
+					<input type="checkbox" name="language" value="telugu"> Telugu <br/>
+					<input type="checkbox" name="language" value="urdu"> Urdu <br/>
+					<input type="checkbox" name="language" value="marati"> Marati <br/>
+				</li>
+				<li>
+					<input type="button" value="Do Job" onclick="dojob()">
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function dojob(){
+				var data = {};
+				data.name = document.querySelector("#uname").value;
+
+				data.languages = [];
+				var checkBoxElements = document.querySelectorAll("input[name=language]");
+				for (var i = 0 ; i < checkBoxElements.length; i++) {
+					console.log(checkBoxElements[i].checked + ' ' + checkBoxElements[i].value);
+					if (checkBoxElements[i].checked) {
+						data.languages.push(checkBoxElements[i].value);
+					}
+				}
+				console.log(data);
+			}
+
+		</script>
+	</body>	
+</html>
