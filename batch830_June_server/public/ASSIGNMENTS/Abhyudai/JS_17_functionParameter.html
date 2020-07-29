@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function empDetails() {
+			var numOfEmp = prompt("Enter number of Employees whose details has to be updated");
+			for(var i = 1; i <= numOfEmp; i++){
+				var empName = prompt("Name of the employee");
+				var empAge = prompt("Age");
+				var empGendr = prompt("Gender");
+				var empSalary = prompt("Salary");
+				var empSalary = parseInt(empSalary);
+				var tax = taxCalculation(empSalary);
+				var takeHomeSalary = empSalary - tax;
+				display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary);
+			}
+		}	
+		function taxCalculation(empSalary){
+			var tax;
+			if(empSalary >= 20000){
+				tax = empSalary * 0.15;
+			}else{
+				tax = empSalary * 0.10;
+			}
+			return tax;
+		}
+		function display(empName, empAge, empGendr, empSalary, tax, takeHomeSalary){
+			console.log("Name : "+empName);
+			console.log("Age : "+empAge);
+			console.log("Gender : "+empGendr);
+			console.log("Salary : "+empSalary);
+			console.log("Tax amount : "+tax);
+			console.log("Gross salary : "+takeHomeSalary);
+		}
+		empDetails();
+		</script>
+	</body>
+</html>
