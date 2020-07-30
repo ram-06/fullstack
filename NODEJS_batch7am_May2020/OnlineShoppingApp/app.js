@@ -12,6 +12,8 @@ var samplerouter = require('./routes/sample');
 var loginRouter = require("./routes/loginValidation");
 var loadProductDataRouter = require("./routes/loadPoductData");
 
+var newSignupRouter = require("./routes/newSignup");
+
 var app = express();
 
 // view engine setup
@@ -30,6 +32,8 @@ app.use('/users', usersRouter);
 app.use('/sample/data/xyz',  samplerouter );
 app.use("/application/loginValidation", loginRouter);
 app.use("/data/productDetails"  , loadProductDataRouter);
+
+app.use("/user/newSignup", newSignupRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

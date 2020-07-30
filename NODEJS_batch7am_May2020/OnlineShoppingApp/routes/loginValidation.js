@@ -10,13 +10,19 @@
  	var data = {
  		msg: ""
  	};
-
  	mongoClient.connect(url, function(err, client){
  		var db = client.db("ShoppingApp");
- 		var collection = db.collection("userAccountDetailsList");
- 		collection.find({}).toArray(function(err, result){
- 			console.log(result);
-				client.close();
+ 		var collection = db.collection("UserAccountDetailsList");
+ 		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
+ 			if (result.length) {
+ 				data.msg = "valid";
+				
+ 			} else {
+ 				data.msg = "Invalid";
+ 			}
+ 			data = JSON.stringify(data);
+ 			res.send(data);
+ 			client.close();
 		});
  	});
 
@@ -30,8 +36,6 @@
 
 
 
- 	data = JSON.stringify(data);
- 	res.send(data);
  });
 
 module.exports = router;

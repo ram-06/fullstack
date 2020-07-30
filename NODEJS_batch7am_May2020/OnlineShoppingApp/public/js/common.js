@@ -16,7 +16,25 @@ function loadTemplate(type) {
 
 function registerDetails() {
 	// code to read data, and send to server
-	$(".gotoLogin").show();
+	var userData = {};
+	userData.accountId = $("#uid").val();
+	userData.password = $("#password").val();
+	userData.mailid = $("#mailId").val();
+
+	$.ajax({
+		url: "http://localhost:8081/user/newSignup",
+		data: userData,
+		method: 'POST',
+		dataType: 'JSON',
+		success: function(res) {
+			console.log("success");
+			console.log(res);
+			$(".gotoLogin").show();
+		}
+	})
+
+	console.log(userData);
+	
 }
 
 $(document).ready(function(){

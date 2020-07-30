@@ -17,8 +17,9 @@ function readLoginDetails() {
     		$("#errMsg").text("Login Details are invalid")
     	} else {
     		$("#errMsg").text("Valid");
-            loadTemplate('pDetails');
-            getProductData();
+            window.open("sample.html");
+            //loadTemplate('pDetails');
+            //getProductData();
     	}
     });
    // loginReq.fail()...
