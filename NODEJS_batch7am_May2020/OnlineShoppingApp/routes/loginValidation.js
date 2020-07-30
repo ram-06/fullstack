@@ -15,8 +15,7 @@
  		var collection = db.collection("UserAccountDetailsList");
  		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
  			if (result.length) {
- 				data.msg = "valid";
-				
+ 				data.msg = "valid";				
  			} else {
  				data.msg = "Invalid";
  			}
