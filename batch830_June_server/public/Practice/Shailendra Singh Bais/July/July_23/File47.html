@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Arguments Keyword
+		</title>
+	</head>
+	<body>
+		<h3>Demonstrating Arguments Keyword</h3>
+		<script type="text/javascript">
+			function sample() {
+				console.log(arguments);
+			}
+
+			function addvalues() {
+				console.log(arguments);
+				var result = 0;
+				for (var i = 0; i < arguments.length; i++) {
+					result += arguments[i];
+				}
+			}
+
+			var sum = addvalues(26, 53);
+			console.log("The SUM is:" +sum)
+			sample();
+
+		</script>
+	</body>
+</html>

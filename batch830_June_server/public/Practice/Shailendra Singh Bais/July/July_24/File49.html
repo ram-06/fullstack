@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstrating JSON Object</title>
+	</head>
+	<body>
+		<h3>Demonstrating JSON Objects</h3>
+		<script type="text/javascript">
+			var empname = 'Prasad';
+			var sal = 9000;
+
+			// var stdData = [10, 'male', [34, 56, 89], 0, 0, "Raj"];
+
+			var stdData = {
+				name: 'RAJ',
+				'Gender': 'Male',
+				marks: [34, 56, 89],
+				'age': 10,
+				total: 0,
+				avg: 0,
+			}
+
+			for (var i = 0; i < stdData.marks.length; i++) {
+				// total = total + marks[i];
+
+				stdData.total += stdData.marks[i];
+			}
+
+			stdData.avg = stdData.total / stdData.marks.length;
+
+			console.log("Name is: " + stdData['name']);
+			console.log("Gender is: " + stdData.Gender);
+			console.log("Total is: " + stdData.total);
+			console.log("Average is: " , stdData.avg);
+
+		</script>
+	</body>
+</html>

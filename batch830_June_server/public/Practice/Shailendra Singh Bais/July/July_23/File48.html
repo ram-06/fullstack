@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Timeout & Interval Methods
+		</title>
+	</head>
+	<body>
+		<h3>Demonstrating Timeout & Interval Methods</h3>
+		<script type="text/javascript">
+			
+			var a = 90;
+			var b = 78;
+			var result;
+
+			console.log("PAGE STARTED");
+
+			function displayWelcomeMsg () {
+				console.log("Thanks for using out our Webpage");
+				console.log("Please Re-visit");
+			}
+
+			displayWelcomeMsg ();
+
+			setTimeout (displayWelcomeMsg, 5000); /* 5000 is in Milliseconds, that means function is executed after 5 seconds*/
+
+			setTimeout (function (){
+				var result = addvalues (a,b)
+				console.log("Thanks for using our Webpage");
+				console.log("Plz do Re-visit");
+
+			}, 4000);
+
+			var count = 0;
+
+			var myintervl = setInterval(function () {
+				count++;
+				console.log("Thanks for using our Webpage: " + count);
+				console.log("Please do Re-visit");
+				if (count == 4) {
+					clearInterval(myintervl)}
+			}, 5000); /* Here Counter is Set & function is stopped after 4000 Milliseconds or 4 Seconds */
+
+		</script>
+	</body>
+</html>
