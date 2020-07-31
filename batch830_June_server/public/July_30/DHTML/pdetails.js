@@ -65,7 +65,6 @@ function showData(productData) {
 	document.querySelector("#container").append(ulTag);
 }
 
-
 var loadData = function() {
 	for (var i = 0; i < pDetails.length; i++) {
 		showData(pDetails[i]);

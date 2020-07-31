@@ -11,7 +11,7 @@ router.post('/', function(req, res) {
 		if (err){
 			data.msg = "Error while connecting to db";
 		} else {
-			var db = client.db("ShoppingApp");
+			var db = client.db("ShoopingApp");
 			var collection = db.collection("UserAccountDetailsList");
 			collection.insert(req.body, function(){
 				console.log("data go insertd ");

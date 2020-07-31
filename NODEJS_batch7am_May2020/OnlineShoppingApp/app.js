@@ -12,6 +12,8 @@ var samplerouter = require('./routes/sample');
 var loginRouter = require("./routes/loginValidation");
 var loadProductDataRouter = require("./routes/loadPoductData");
 
+var addProduct = require('./routes/addNewProduct');
+
 var newSignupRouter = require("./routes/newSignup");
 
 var app = express();
@@ -32,6 +34,7 @@ app.use('/users', usersRouter);
 app.use('/sample/data/xyz',  samplerouter );
 app.use("/application/loginValidation", loginRouter);
 app.use("/data/productDetails"  , loadProductDataRouter);
+app.use("/data/addNewProduct"  , addProduct);
 
 app.use("/user/newSignup", newSignupRouter);
 

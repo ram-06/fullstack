@@ -11,6 +11,10 @@ function loadTemplate(type) {
 		case 'pDetails':
 			$(".pageContainer").html('');
 			break;
+		case 'addProduct':
+			var addproductTmplt = $("#addProductTmplt").html();
+			$(".pageContainer").html(addproductTmplt);
+			break;
 	}
 }
 

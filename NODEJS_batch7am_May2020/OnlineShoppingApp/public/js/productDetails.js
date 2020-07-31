@@ -15,10 +15,30 @@ function getProductData() {
 }
 
 function loadProductDetailsToPage(data) {
-	console.log("loading")
+	var divTag = $("<div class='link' onclick='loadTemplate(\"addProduct\")'>Add Product</div>");
 	var templateSpec = Handlebars.compile($("#pDetailsTmplt").html());
+	$(".pageContainer").append(divTag);
 	for (var i = 0 ; i < data.length; i++) {
-		console.log(i);
 		$('.pageContainer').append(templateSpec(data[i]));
 	}
+}
+
+function addNewProduct() {
+	var data = {};
+	data.name = $("#pname").val();
+	data.price = $("#pprice").val();
+	data.manu = $("#pmanu").val();
+	data.discount = $("#pdiscount").val();
+	data.image =$("#pimage").val();
+
+	var newProductReq = $.ajax({
+		url: 'http://localhost:8081/data/addNewProduct',
+		data: data,
+		dataType: 'JSON',
+		method: 'GET'
+	});
+
+	newProductReq.done(function(res){
+		$(".statusupdate").html(res.msg);
+	});
 }

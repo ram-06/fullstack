@@ -11,18 +11,24 @@
  		msg: ""
  	};
  	mongoClient.connect(url, function(err, client){
- 		var db = client.db("ShoppingApp");
- 		var collection = db.collection("UserAccountDetailsList");
- 		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
- 			if (result.length) {
- 				data.msg = "valid";				
- 			} else {
- 				data.msg = "Invalid";
- 			}
+ 		if (err) {
+ 			data.msg = "Error while connecting to the server";
  			data = JSON.stringify(data);
- 			res.send(data);
- 			client.close();
-		});
+	 		res.send(data);
+ 		} else {
+	 		var db = client.db("ShoopingApp");
+	 		var collection = db.collection("UserAccountDetailsList");
+	 		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
+	 			if (result.length) {
+	 				data.msg = "valid";				
+	 			} else {
+	 				data.msg = "Invalid";
+	 			}
+	 			data = JSON.stringify(data);
+	 			res.send(data);
+	 			client.close();
+			});
+	 	}
  	});
 
  	/*if (req.body.id == 'admin' && req.body.password == 'india123') {

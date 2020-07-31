@@ -13,13 +13,14 @@ function readLoginDetails() {
     });
     loginReq.done(function(res){
     	console.log(res);
-    	if (res.msg == 'Invalid') {
-    		$("#errMsg").text("Login Details are invalid")
+    	if (res.msg == 'valid') {
+            $("#errMsg").text("Valid");
+            //window.open("sample.html");
+            loadTemplate('pDetails');
+            getProductData();
+    		
     	} else {
-    		$("#errMsg").text("Valid");
-            window.open("sample.html");
-            //loadTemplate('pDetails');
-            //getProductData();
+    		$("#errMsg").text(res.msg);
     	}
     });
    // loginReq.fail()...
