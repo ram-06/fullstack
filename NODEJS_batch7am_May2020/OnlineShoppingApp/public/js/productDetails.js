@@ -16,8 +16,11 @@ function getProductData() {
 
 function loadProductDetailsToPage(data) {
 	var divTag = $("<div class='link' onclick='loadTemplate(\"addProduct\")'>Add Product</div>");
+	var logoutDiv = $("<div class='link' onclick='logoutUser()'>Logout</div>");
+
 	var templateSpec = Handlebars.compile($("#pDetailsTmplt").html());
 	$(".pageContainer").append(divTag);
+	$(".pageContainer").append(logoutDiv);
 	for (var i = 0 ; i < data.length; i++) {
 		$('.pageContainer').append(templateSpec(data[i]));
 	}

@@ -5,6 +5,7 @@
  var url = "mongodb://localhost:27017";
 
  router.post('/', function(req, res){
+
  	// console.log(req.query);
  	console.log(req.body);
  	var data = {
@@ -20,9 +21,11 @@
 	 		var collection = db.collection("UserAccountDetailsList");
 	 		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
 	 			if (result.length) {
-	 				data.msg = "valid";				
+	 				data.msg = "valid";		
+	 				req.session.userLoggedIn = true;		
 	 			} else {
 	 				data.msg = "Invalid";
+	 				req.session.userLoggedIn = false;
 	 			}
 	 			data = JSON.stringify(data);
 	 			res.send(data);

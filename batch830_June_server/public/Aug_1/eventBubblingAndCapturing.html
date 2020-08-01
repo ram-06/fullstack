@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.parentContainer {
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+				width: 200px;
+				height: 200px;
+				background: green;
+			}
+			.childContainers {
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+				width: 100px;
+				height: 100px;
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parentContainer">
+			Parent Content
+			<div class="childContainers">
+				Child content
+			</div>
+		</div>
+		<script type="text/javascript">
+			document.querySelector(".parentContainer").addEventListener("click", function(){
+				console.log("parent got fired");
+			}, true );
+
+			document.querySelector(".childContainers").addEventListener("click", function(){
+				console.log("Child got fired");
+			}, true);
+		</script>
+	</body>
+</html>

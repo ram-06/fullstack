@@ -17,7 +17,7 @@ function readLoginDetails() {
             $("#errMsg").text("Valid");
             //window.open("sample.html");
             loadTemplate('pDetails');
-            getProductData();
+            
     		
     	} else {
     		$("#errMsg").text(res.msg);

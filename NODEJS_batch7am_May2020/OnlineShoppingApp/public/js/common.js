@@ -10,6 +10,7 @@ function loadTemplate(type) {
 			break;
 		case 'pDetails':
 			$(".pageContainer").html('');
+			getProductData();
 			break;
 		case 'addProduct':
 			var addproductTmplt = $("#addProductTmplt").html();
@@ -41,8 +42,36 @@ function registerDetails() {
 	
 }
 
+function logoutUser() {
+	var doLogout = $.ajax({
+		url: 'http://localhost:8081/user/loginstatus',
+		method: 'GET',
+		dataType: 'JSON',
+		data: {
+			killSession: true
+		}
+	});
+	doLogout.done(function(res){
+		console.log(res);
+		loadTemplate('login');
+	})
+}
+
 $(document).ready(function(){
-	loadTemplate('login');
+	var sessionCheck = $.ajax({
+		url: 'http://localhost:8081/user/loginstatus',
+		method: 'GET',
+		dataType: 'JSON'
+	});
+
+	sessionCheck.done(function(res){
+		console.log(res);
+		if (res.status == true) {
+			loadTemplate('pDetails')
+		} else {
+			loadTemplate('login');
+		}
+	});
 });
 
 
