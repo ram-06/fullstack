@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment 17: Employee Details as Json Object 
+		</title>
+		<link rel="stylesheet" type="text/css" href="EmployeeDetailsUsingJSon_Assignment_17.css">
+		<script type="text/javascript" src="EmployeeDetailsUsingJSon_Assignment_17.js"></script>
+	</head>
+	<body>
+		<div>
+			Employee Details(Without using console) i.e.., showing on UI.
+		</div>
+		<div class = "inputEmployeeDetails">
+			<ul>
+				<li>
+					Enter Employee Name : <input type="text" id="e_name">
+				</li>
+				<li>
+					Enter Employee Age : <input type="text" id="e_age">
+				</li>
+				<li>
+					Enter Employee Gender : <input type="radio"  name="gender" value="male">M
+											<input type="radio"  name="gender" value="female">F
+				</li>
+				<li>
+					Employee Department : 
+					<select id="e_dept">
+						<option>it</option>
+						<option>electrical</option>
+						<option>mechanical</option>
+						<option>logistics</option>
+						<option>maintanence</option>
+					</select>
+				</li>
+				<li>
+					Employee Basic Salary : <input type="text" id="e_basicSalary">
+				</li>
+				<li>
+					<input type="button"  value="submit" onclick="readEmpData()">
+				</li>
+			</ul>
+		</div>
+		<div class = "displayEmpPaySlip">
+			<ul>
+				<li>
+					Employee Name : <span id="eName"></span>
+				</li>
+				<li>
+					Employee Age : <span id="eAge"></span>
+				</li>
+				<li>
+					Employee Gender : <span id="eGender"></span>
+				</li>
+				<li>
+					Employee Department : <span id="eDept"></span>
+				</li>
+				<li>
+					Employee Basic Salary : <span id="eBasicSalary"></span>
+				</li>
+				<li>
+					P F : <span id="epf"></span>
+				</li>
+				<li>
+					hra : <span id="ehra"></span>
+				</li>
+				<li>
+					tax : <span id="etax"></span>
+				</li>
+				<li>
+					Employee Total Salary : <span id="eTotalSalary"></span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
