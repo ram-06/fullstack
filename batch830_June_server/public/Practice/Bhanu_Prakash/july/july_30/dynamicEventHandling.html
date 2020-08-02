@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Dynamic Event Handling.
+		</title>
+	</head>
+	<body>
+		<a id="container" href="sample.html">
+			Click me
+		</a>
+		<script type="text/javascript">
+			document.querySelector("#container").addEventListener("focus",function(event){
+				console.log("hello every one");
+			});
+		</script>
+	</body>
+</html>

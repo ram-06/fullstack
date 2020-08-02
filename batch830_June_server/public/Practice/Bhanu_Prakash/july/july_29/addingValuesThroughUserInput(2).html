@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Adding Validations to User Input
+		</title>
+		<style type="text/css">
+			ul {
+				border : 2px solid;
+				width: 500px;
+				margin: 10px auto;
+				padding: 10px;
+				background: #ccc;
+			}
+			li {
+				list-style: none;
+				border : 1px solid;
+				background: #fff;
+				margin: 5px;
+				padding: 5px; 
+			}
+			.rblock{
+				display: none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Enter first Value : <input type="text" id="fvalue" onkeypress="validateData(event)">
+			</li>
+			<li>
+				Enter Second Value : <input type="text" id="svalue">
+			</li>
+			<li>
+				<input type="button" value="Do Addition" onclick="doAddition(event)" id="abc">
+			</li>
+			<li class="rblock">
+				The Sum of Two values : <span></span>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			function doAddition(){	//this is other event i.e e2
+				console.log(event); 
+				var fvalue = document.querySelector("#fvalue").value;
+				var svalue = document.querySelector("#svalue").value;
+				fvalue = parseInt(fvalue);
+				svalue = parseInt(svalue);
+				var result = fvalue + svalue;
+				document.querySelector("span").innerText = result;
+				document.querySelector(".rblock").style.display= "block";
+			}
+			function validateData(){	//this is one event i.e e1
+				console.log(event);
+				console.log("key pressed");
+			}
+		</script>
+	</body>
+</html>
