@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> FORM VALIDATION</title>
+	
+        
+
+        <script type="text/javascript">
+		function validate() {
+			var name = document.Student_Details.name;
+			var mobile = document.Student_Details.mobile;
+			var email = document.Student_Details.email;
+			var age = document.Student_Details.age;
+			var gender = document.Student_Details.gender;
+			var Country = document.Student_Details.Country;
+			var State = document.Student_Details.State;
+			var City =  document.Student_Details.City;
+			
+
+			if(name.value.length <= 0) {
+				alert("Name is required");
+				name.focus();
+				return false;
+			}
+
+
+			if(mobile.value.length <= 0) {
+				alert("Mobile no is required");
+				mobile.focus();
+				return false;
+			}
+
+
+
+			if(email.value.length <= 0) {
+				alert("Email id is required");
+				email.focus();
+				return false;
+			}
+
+
+			if(gender.value.length <= 0) {
+				alert("Gender is required");
+				Gender.focus();
+				return false;
+			}
+
+			if(Country.value.length <= 0) {
+				alert("Country is required");
+				Country.focus();
+				return false;
+
+			if(State.value.length <= 0) {
+				alert("State is required");
+				State.focus();
+				return false;	
+			}
+              
+              if(City.value.length <= 0) {
+				alert("City is required");
+				City.focus();
+				return false;
+
+
+			return false;
+		}
+
+		function validateString(id){
+			var element = document.getElementById(id);
+			//regExp = /^[]$/
+         var regexp = /^[a-zA-Z]+$/;
+         if (!regexp.test(element.value)) {
+         	alert("Enter string value.")
+         	element.style.border = " 2px solid red";
+         	//element.focus();
+         	 return false;
+         }	
+          element.style.border = "2px solid green";
+     }
+
+
+
+
+
+</script>
+<style type="text/css">
+
+
+		form{
+			background-color: lightgrey;
+			border-radius: 10px;
+		}
+        h2{
+        	text-align: center;
+        }
+
+
+         input[type="text"] {
+         	width: 300px;
+         } 
+
+         input[type="Submit"] , input[type="reset"] {
+         	width: 80px;
+         	border-radius: 10px;
+         }
+
+
+
+		form{
+			border: 2px solid black;
+			width: 450px;
+			margin: 20px auto;
+		}
+
+		td{
+			padding: 10px;
+		}
+
+		td:first-child {
+			text-align: right;
+			font-weight: bold;
+
+		}
+	</style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<center>
+		<h1> Form Validation</h1>
+	</center>
+	<hr>
+	<form method="" action="" name="Student_Details" onsubmit=" return validate()">
+	<h2> Student Form</h2>
+	<table>
+	
+		<tr>
+			<td><label>Name </label></td>
+		    <td> 
+		    	<input type="text" name="name" id="name" onblur="validateString(this.id)">
+		    </td>
+		</tr>
+
+		<tr>
+			<td><label>Mobile </label></td>
+		    <td> 
+		    	<input type="num" name="mobile">
+		    </td>
+		</tr>
+
+		<tr>
+			<td><label> Email id</label></td>
+		    <td>
+		    	<input type="text" name="email">
+		    </td>
+		</tr>
+		
+		<tr>
+			<td><label>Age</label></td>
+		    <td>
+		    	<input type="number" name="age">
+		    </td>
+		</tr>
+		
+		<tr>
+			<td><label>Gender :</label></td>
+		    <td>
+		    	<input type="radio" name="gender" value="Male"> Male
+		    	<input type="radio" name="gender" value="Female"> Female
+		    </td>
+		</tr>
+		
+		<tr>
+			<td><label>Country</label></td>
+		    <td>
+		    	<select name="Country">
+		    		<option value="India">India</option>
+		    		<option value="Canada">Canada</option>
+		    		<option value="Florida">Florida</option>
+		    		<option value="Japan">Japan </option>
+		    		<option value="Georgia">Georgia</option>
+		    	</select>
+		    </td>
+		</tr>
+		
+		<tr>
+			<td><label>State</label></td>
+		    <td>
+		    	<select name="State">
+		    		<option value="Maharashtra">Maharashtra</option>
+		    		<option value="Toronto">Toronto</option>
+		    		<option value="Florida-city">Florida-city</option>
+		    		<option value="Tokyo">Tokyo</option>
+		    		<option value="Atlanta">Atlanta</option>
+		    		
+		    	</select>
+		    	
+		    </td>
+		</tr>
+		
+		<tr>
+			<td><label>City</label></td>
+		    <td>
+		    	<select name="City">
+		    		<option value="Pune">Pune</option>
+		    		<option value="Ontario">Ontario</option>
+		    		<option value="MIAMI">MIAMI</option>
+		    		<option value="Tokyo-city">Tokyo-city</option>
+		    		<option value="Auston">Auston</option>
+		    	</select>
+		    </td>
+		</tr>
+		
+		<tr>
+			
+		    <td colspan="2">
+		    	<input type="Submit" name="Submit" value="Submit">
+		    	<input type="Reset" name="Reset" value="Reset">
+		    </td>
+		</tr>
+		
+		
+	</table>
+</form>
+
+</body>
+</html>
