@@ -147,14 +147,16 @@
 
 	function add_row()
 	{
-	 var name_row1 = document.getElementById("name_row1").value;
-	 var age_row1 = document.getElementById("age_row1").value;
-	 var gender_row1 = document.getElementById("gender_row1").value;
-	 var country_row1 = document.getElementById("country_row1").value;
-	
-	 var table=document.getElementById("data_table");
-	 var table_len=(table.rows.length)-1;
-	 var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len +"'><td id = 'name_row1" + table_len + "'>" + name_row1 +"</td><td id = 'age_row1" + table_len +"'>" +age_row1 +"</td><td id='gender_row1" + table_len +"'>" + gender_row1 +"</td><td id='country_row1" + table_len +"'>" + country_row1 +"</td><td><input type='button' id='edit_button" + table_len +"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button" + table_len +"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
+	 	var name_row1 = document.getElementById("name_row1").value;
+	 	var age_row1 = document.getElementById("age_row1").value;
+	 	var gender_row1 = document.getElementById("gender_row1").name;
+		var country_row1 = document.getElementById("country_row1");
+	  	var e = document.getElementById("country_row1");
+	 	var country_row1 = e.options[e.selectedIndex].text;
+
+	 	var table=document.getElementById("data_table");
+	 	var table_len=(table.rows.length)-1;
+	 	var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len +"'><td id = 'name_row1" + table_len + "'>" + name_row1 +"</td><td id = 'age_row1" + table_len +"'>" +age_row1 +"</td><td id='gender_row1" + table_len +"'>" + gender_row1 +"</td><td id='country_row1" + table_len +"'>" + country_row1 +"</td><td><input type='button' id='edit_button" + table_len +"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button" + table_len +"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
 
 	 document.getElementById("name_row1").value="";
 	 document.getElementById("age_row1").value="";
