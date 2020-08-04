@@ -162,7 +162,7 @@ function selectCity(){
 		for(var temp in citiesOfBritishColumbia){
 			var opt = document.createElement("option");
 			document.querySelector("#inputOfCity").append(opt);
-			opt.innerText = citiesOfBritishColumbias[temp];	
+			opt.innerText = citiesOfBritishColumbia[temp];	
 		}	
 	}
 	if(state == "Ontario"){
