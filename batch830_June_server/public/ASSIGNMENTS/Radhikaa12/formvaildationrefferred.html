@@ -3,87 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title> FORM VALIDATION</title>
-	
-        
-
-        <script type="text/javascript">
-		function validate() {
-			var name = document.Student_Details.name;
-			var mobile = document.Student_Details.mobile;
-			var email = document.Student_Details.email;
-			var age = document.Student_Details.age;
-			var gender = document.Student_Details.gender;
-			var Country = document.Student_Details.Country;
-			var State = document.Student_Details.State;
-			var City =  document.Student_Details.City;
-			
-
-			if(name.value.length <= 0) {
-				alert("Name is required");
-				name.focus();
-				return false;
-			}
+    
 
 
-			if(mobile.value.length <= 0) {
-				alert("Mobile no is required");
-				mobile.focus();
-				return false;
-			}
-
-
-
-			if(email.value.length <= 0) {
-				alert("Email id is required");
-				email.focus();
-				return false;
-			}
-
-
-			if(gender.value.length <= 0) {
-				alert("Gender is required");
-				Gender.focus();
-				return false;
-			}
-
-			if(Country.value.length <= 0) {
-				alert("Country is required");
-				Country.focus();
-				return false;
-
-			if(State.value.length <= 0) {
-				alert("State is required");
-				State.focus();
-				return false;	
-			}
-              
-              if(City.value.length <= 0) {
-				alert("City is required");
-				City.focus();
-				return false;
-
-
-			return false;
-		}
-
-		function validateString(id){
-			var element = document.getElementById(id);
-			//regExp = /^[]$/
-         var regexp = /^[a-zA-Z]+$/;
-         if (!regexp.test(element.value)) {
-         	alert("Enter string value.")
-         	element.style.border = " 2px solid red";
-         	//element.focus();
-         	 return false;
-         }	
-          element.style.border = "2px solid green";
-     }
-
-
-
-
-
-</script>
 <style type="text/css">
 
 
@@ -233,6 +155,70 @@
 		
 	</table>
 </form>
+
+
+<script type="text/javascript">
+		function validate() {
+			var name = document.Student_Details.name;
+			var mobile = document.Student_Details.mobile;
+			var email = document.Student_Details.email;
+			var age = document.Student_Details.age;
+			var gender = document.Student_Details.gender;
+			var Country = document.Student_Details.Country;
+			var State = document.Student_Details.State;
+			var City =  document.Student_Details.City;			
+
+			if(name.value.length <= 0) {
+				alert("Name is required");
+				name.focus();
+				return false;
+			}
+			if(mobile.value.length <= 0) {
+				alert("Mobile no is required");
+				mobile.focus();
+				return false;
+			}
+
+
+
+			if(email.value.length <= 0) {
+				alert("Email id is required");
+				email.focus();
+				return false;
+			}
+
+
+			if(gender.value.length <= 0) {
+				alert("Gender is required");
+				Gender.focus();
+				return false;
+			}
+
+			if(Country.value.length <= 0) {
+				alert("Country is required");
+				Country.focus();
+				return false;
+			}
+
+			if(State.value.length <= 0) {
+				alert("State is required");
+				State.focus();
+				return false;	
+			}
+              
+            if(City.value.length <= 0) {
+				alert("City is required");
+				City.focus();
+				return false;
+
+
+			return false;
+		}
+
+
+		
+
+</script>
 
 </body>
 </html>

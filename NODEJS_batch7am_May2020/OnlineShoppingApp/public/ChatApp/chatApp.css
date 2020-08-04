@@ -1,0 +1,59 @@
+
+input {
+	height: 40px;
+}
+
+input[type=text] {
+	width: 250px;
+	font-size: 18px;
+}
+input[type=button] {
+	width: 80px;
+	height: 48px;
+}
+
+.chatBox {
+	border: 2px solid;
+	height: 400px;
+	width: 350px;
+	position: absolute;
+	right: 5px;
+	bottom: 2px;
+}
+.title {
+	border: 1px solid;
+	background: #ccc;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px;
+	background: #ccc;
+}
+
+.chatContent {
+	background: grey;
+	position: absolute;
+	top: 30px;
+	bottom: 50px;
+	right: 0;
+	left: 0;
+	border: 2px solid;
+	overflow: auto;
+}
+
+.btnCntainer {
+	position: absolute;
+	bottom: 1px;
+}
+.msgRow {
+	margin-left: 5px;
+	padding: 3px;
+}
+
+.rightAlign {
+	color: green;
+	text-align: right;
+}
+
+.leftAlign {
+	color: blue;
+}
