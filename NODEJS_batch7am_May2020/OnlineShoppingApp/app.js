@@ -10,12 +10,15 @@ var samplerouter = require('./routes/sample');
 var loginRouter = require("./routes/loginValidation");
 var loadProductDataRouter = require("./routes/loadPoductData");
 var userloggedin = require("./routes/isUserLoggedIn");
+var sendMailRouter = require("./routes/sendMail");
 
 var addProduct = require('./routes/addNewProduct');
 
 var newSignupRouter = require("./routes/newSignup");
 
 var app = express();
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,6 +45,21 @@ app.use("/data/productDetails"  , loadProductDataRouter);
 app.use("/data/addNewProduct"  , addProduct);
 app.use("/user/loginstatus"  , userloggedin);
 app.use("/user/newSignup", newSignupRouter);
+
+app.use('/sendmail', sendMailRouter);
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  socket.on("usermsg", function(data){
+    console.log("data received");
+    console.log(data);
+    socket.broadcast.emit("receivedata", data);
+  });
+});
+
+server.listen(8081, function(){
+  console.log("server is listing at 8081");
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
