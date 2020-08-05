@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Inheritance btwn dynamic objects.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function UnivDetails() {
+				this.unvName = "Hyderbad Univ";
+				this.unvRating = '9/10';
+			}
+
+			function SchoolData(obj) {
+				this.sname = obj.sname;
+				this.location = obj.location;
+			}
+
+			SchoolData.prototype = new UnivDetails();
+
+			function StudentData(obj) {
+				this.name = obj.name;
+				this.age = obj.age;
+				this.gender = obj.gender;
+				this.displayData = function() {
+					console.log("School name is "+ this.sname);
+					console.log("School Location is "+ this.location);
+					console.log("Student name is "+ this.name);
+					console.log("Student Age is "+ this.age);
+					console.log("Student Gender is "+ this.gender);
+				}
+			}
+
+			StudentData.prototype = new SchoolData({sname: "Abc shool", 'location': 'Hyderabad'});
+
+			var s1 = new StudentData({name: "Raj", age: 10, gender: "Male"});
+			s1.displayData();
+
+
+			StudentData.prototype = new SchoolData({sname: "PQR shool", 'location': 'Pune'});
+
+			var s2 = new StudentData({name: "Teena", age: 10, gender: "Female"});
+			s2.displayData();
+
+
+
+		</script>
+	</body>
+</html>

@@ -1,4 +1,11 @@
+function emptyStatesAndDistricts() {
+	document.querySelector("#inputOfState").innerHTML = "<option>Select..</option>"
+	document.querySelector("#inputOfCity").innerHTML = "<option>Select..</option>"
+}
+
 function selectState(){
+	// empty the states and districs
+	emptyStatesAndDistricts()
 	var country = document.querySelector("#inputOfCountry").value;
 	var stateInIndia = {
 			sI_01 : "Andhra Pradesh",

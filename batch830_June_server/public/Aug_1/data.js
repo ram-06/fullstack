@@ -13,6 +13,13 @@ var countryList = [
 	...
 ];
 
+<select>
+	<option id="c_01">India</option>
+	<option id="c_02">Japan</option>
+	<option id="c_04">Japan</option>
+</select>
+
+
 var stateList: {
 	'c_01': [
 		{
