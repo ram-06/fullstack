@@ -12,6 +12,8 @@ var loadProductDataRouter = require("./routes/loadPoductData");
 var userloggedin = require("./routes/isUserLoggedIn");
 var sendMailRouter = require("./routes/sendMail");
 
+
+var empRouter = require("./routes/employeeDetails");
 var addProduct = require('./routes/addNewProduct');
 
 var newSignupRouter = require("./routes/newSignup");
@@ -45,7 +47,7 @@ app.use("/data/productDetails"  , loadProductDataRouter);
 app.use("/data/addNewProduct"  , addProduct);
 app.use("/user/loginstatus"  , userloggedin);
 app.use("/user/newSignup", newSignupRouter);
-
+app.use("/get/empdetails", empRouter);
 app.use('/sendmail', sendMailRouter);
 
 io.on('connection', (socket) => {
