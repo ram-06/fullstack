@@ -81,7 +81,7 @@
 
 	<div id="wrapper">
 		<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1 width = 100%>
-			<tr id = "heading">
+			<tr id = "heading">																			
 				<th>User Name</th>
 				<th>Age</th>
 				<th>Gender</th>
@@ -89,12 +89,15 @@
 			</tr>
 
 			<tr id="row1">
-		
-				<td><input type="text" id="new_name" style = "border: none;"></td>
-				<td><input type="text" id="new_country" style = "border: none;"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<!-- <td><input type="text" id="new_name" style = "border: none;"></td>
 				<td><input type="text" id="new_age" style = "border: none;"></td>
-				
-				
+				<td><input type="radio" id="new_gender" style = "border: none;"></td>
+				<td><input type="text" id="new_country" style = "border: none;"></td> -->
+			
 				<td>
 					<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
 					<input type="button" value="Delete" class="delete" id = "delete" onclick="delete_row('1')">
@@ -129,12 +132,14 @@
 	function save_row(no)
 	{
 	 var name_val=document.getElementById("name_text"+no).value;
-	 var country_val=document.getElementById("country_text"+no).value;
 	 var age_val=document.getElementById("age_text"+no).value;
+	 var gender_val=document.getElementById("gender_text"+no).value;
+	 var country_val=document.getElementById("country_text"+no).value;
 
 	 document.getElementById("name_row"+no).innerHTML=name_val;
-	 document.getElementById("country_row"+no).innerHTML=country_val;
 	 document.getElementById("age_row"+no).innerHTML=age_val;
+	 document.getElementById("gender_row"+no).innerHTML=gender_val;
+	 document.getElementById("country_row"+no).innerHTML=country_val;
 
 	 document.getElementById("edit_button"+no).style.display="block";
 	 document.getElementById("save_button"+no).style.display="none";
@@ -149,7 +154,10 @@
 	{
 	 	var name_row1 = document.getElementById("name_row1").value;
 	 	var age_row1 = document.getElementById("age_row1").value;
-	 	var gender_row1 = document.getElementById("gender_row1").name;
+	 	var gender_row1 = document.getElementById("gender_row1").value;
+	 	// var gender_row1 = document.getElementById("input[name=gender]:checked").value;
+	 	// a = document.getElementById("gender_row1");
+	 	// var gender_row1 = a.input[name=gender]:checked.value;
 		var country_row1 = document.getElementById("country_row1");
 	  	var e = document.getElementById("country_row1");
 	 	var country_row1 = e.options[e.selectedIndex].text;
