@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Student Details 
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<script type="text/javascript" src="js/registerDetails.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Student Name: <input type="text" id="sName">
+			</li>
+			<li>
+				Age: <input type="text" id="uage">
+			</li>
+			<li>
+				Gender: <input type="radio" value="male" name="gender" checked="true"> M
+						<input type="radio" value="female" name="gender"> F
+			</li>
+			<li>
+				Country: 
+				<select id="ucountry">
+					<option></option>
+					<option id="ind">India</option>
+					<option id="usa">USA</option>
+					<option id="jpa">Japan</option>
+				</select>
+			</li>
+			<li>
+				<input type="button" value="Register" onclick="registerDetails()">
+			</li>
+
+		</ul>
+
+		<table cellpadding="5" cellspacing="5">
+			<thead>
+				<tr>
+					<th>Sno</th>
+					<th>Name</th>
+					<th>AGe</th>
+					<th>Gender</th>
+					<th>Location</th>
+					<th>Do Operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+	</body>
+</html>

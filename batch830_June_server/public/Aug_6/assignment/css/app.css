@@ -1,0 +1,19 @@
+ul	 {
+	border: 2px solid;
+	background: #ccc;
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+
+li {
+	list-style: none;
+	border: 1px solid;
+	background: #fff;
+	margin: 5px;
+	padding: 5px;
+}
+table, th, tr, td {
+	border: 1px solid;
+}
