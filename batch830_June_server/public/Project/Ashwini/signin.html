@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/signin.css">
+		<script type="text/javascript" src = "signin.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "nameLabel">User Name</div>
+			<div class = "nameValue">
+				<input type = "text" id = "uName">
+			</div>
+
+			<div class = "passwordLabel">Password</div>
+			<div class = "passwordValue"><input type = "text" id = "uPassword"></div>
+
+			<div class = "confrimPasswordLabel">Confrim Password</div>
+			<div class = "confrimPasswordValue">
+				<input type = "text" id = "uCPassword" onchange = "validatePassword()">
+				<span class = "userDisplayMess">re-enter the password</span>
+			</div>
+			
+
+			<div class = "ageLabel">Age</div>
+			<div class = "ageValue"><input type = "number" id = "uAge"></div>
+
+			<div class = "mobileNumberLabel">Mobile No</div>
+			<div class = "mobileNumberValue"><input type = "text" id = "mNumber"></div>
+
+			<div class = "uEmailLabel">Email ID</div>
+			<div class = "uEmailValue"><input type = "text" id = "uEmail"></div>
+
+			<div class = "submitDetails"><a href = "login.html"><button onclick = "saveData()">Submit</button></div>
+		</div>
+	</body>
+</html>
