@@ -13,10 +13,18 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+span{
+	text-decoration-color: red;
+	display: none;
+	background-color: red;	
+	font-size: 13px;
+}
 button{
 	background-color: green;
 	height: 30px;
 	width: 100px;
+	box-shadow: 5px 5px pink; 
+	/*padding: 10px 10px;*/
 }
 .emailIdLabel{
 	position: absolute;

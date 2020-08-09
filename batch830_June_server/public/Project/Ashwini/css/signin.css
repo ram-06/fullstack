@@ -3,7 +3,8 @@
 	width: 450px;
 	border: solid 2px;
 	border-radius: 0px 50px 0px 50px;
-	box-shadow: 20px 20px #EDA6C4;
+	box-shadow: 20px 20px #FFD0A6;
+	/*#EDA6C4;*/
 	background-color: #FFC0CB;
 	position: absolute;
 	top: 150px;
@@ -83,24 +84,44 @@ body{
 }
 .submitDetails{
 	position: absolute;
-	top: 350px;
+	top: 370px;
 	left: 180px;
 }
 button{
-	height: 20px;
+	height: 25px;
 	width: 100px;
-	background-color: skyblue;
+	background-color: green;
 }
 h1{
 	position: absolute;
-	top: 30px;
-	left: 490px;
+	top: 10px;
+	left: 300px;
 	font-size: 60px;
-	font-style: italic;
-	text-shadow: 4px 4px red;
+	color: #FFD0A6;
+	/*font-style: italic;*/
+	text-shadow: 4px 4px black;
 }
 .userDisplayMess{
 	text-decoration-color: red;
 	display: none;
 	background-color: red;
+	font-size: 13px;
+}
+.errorDisplay{
+	text-decoration-color: red;
+	display: none;
+	background-color: red;	
+	font-size: 13px;
+}
+footer{
+	font-weight: bold;
+	margin-top:630px;
+	font-size: 20px;
+
+}
+.empty, .empty1, .empty0, .empty2, .empty3 {
+	text-decoration-color: red;
+	display: none;
+	background-color: red;
+	font-size: 13px;	
 }

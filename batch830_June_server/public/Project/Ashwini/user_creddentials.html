@@ -3,13 +3,17 @@
 	<head>
 		<title>Recover Password</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/user_creddentials.css">
+		<script type="text/javascript" src = "js/user_creddentials.js"></script>
 	</head>
 	<body>
 		<div class = "container">
 			<div class = "emailIdLabel">Email ID</div>
-			<div class = "emailIdValue"><input type = "text" id = "uemailId"></div>
+			<div class = "emailIdValue">
+				<input type = "text" id = "uemailId">
+				<span class = "errorMessage">Mandatory Feild!</span>
+			</div>
 
-			<div class = "submitDetails"><a href = "login.html"><button>Done</button></a></div>
+			<div class = "submitDetails"><a id = "loginPage"><button onclick = "validateInput()">Done</button></a></div>
 		</div>
 	</body>
 </html>
