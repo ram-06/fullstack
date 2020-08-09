@@ -1,0 +1,106 @@
+.container{
+	height: 450px;
+	width: 450px;
+	border: solid 2px;
+	border-radius: 0px 50px 0px 50px;
+	box-shadow: 20px 20px #EDA6C4;
+	background-color: #FFC0CB;
+	position: absolute;
+	top: 150px;
+	left: 450px;
+	/*#c4723b*/
+}
+/*h2{
+	text-align: center;
+}*/
+input{
+	background-color: skyblue;
+}
+.nameLabel{
+	position: absolute;
+	top: 50px;
+	left: 90px;
+}
+.nameValue{
+	position: absolute;
+	top: 50px;
+	left: 200px;
+}
+.passwordLabel{
+	position: absolute;
+	top: 100px;
+	left: 90px;
+}
+.passwordValue{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+.confrimPasswordLabel{
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
+.confrimPasswordValue{
+	position: absolute;
+	top: 150px;
+	left: 200px;
+}
+.ageLabel{
+	position: absolute;
+	top: 200px;
+	left: 90px;
+}
+.ageValue{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+.mobileNumberLabel{
+	position: absolute;
+	top: 250px;
+	left: 90px;
+}
+.mobileNumberValue{
+	position: absolute;
+	top: 250px;
+	left: 200px;
+}
+.uEmailLabel{
+	position: absolute;
+	top: 300px;
+	left: 90px;
+}
+.uEmailValue{
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+body{
+	background-image: url("https://i.pinimg.com/originals/69/7e/d3/697ed377df85fbc63ed7ac69c8d796d4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.submitDetails{
+	position: absolute;
+	top: 350px;
+	left: 180px;
+}
+button{
+	height: 20px;
+	width: 100px;
+	background-color: skyblue;
+}
+h1{
+	position: absolute;
+	top: 30px;
+	left: 490px;
+	font-size: 60px;
+	font-style: italic;
+	text-shadow: 4px 4px red;
+}
+.userDisplayMess{
+	text-decoration-color: red;
+	display: none;
+	background-color: red;
+}
