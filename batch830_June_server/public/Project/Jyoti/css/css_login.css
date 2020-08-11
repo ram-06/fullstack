@@ -1,0 +1,85 @@
+body
+{
+	margin: 1;
+	padding: 1;
+    background-color: #ffcce6;
+	font-size: 22px;
+    font-family: Arial;
+}
+
+h1
+{
+	padding: 20px;
+	text-align: center;
+	color: #339999;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+.container
+{
+	width: 460px;  
+    padding: 60px;
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20px 2px 2px 410px;     
+    background: #339999;  
+    border-radius: 20px ; 
+}
+
+label
+{
+    font-size: 15px;
+    color: #f2f2f2;
+}
+
+#usname
+{
+    height: 30px;  
+    width: 300px;  
+    border: none;  
+    border-radius: 4px;  
+    padding-left: 9px; 
+}
+
+#pass
+{
+    height: 30px;  
+    width: 300px;  
+    border: none;  
+    border-radius: 4px;  
+    padding-left: 9px; 
+}
+
+#log
+{
+    height: 30px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    padding-top: 6px;
+}
+
+#signup a
+{
+    text-decoration: none;
+    float: right;  
+    color: #0040ff;  
+    float: left;
+    font-size: 16px;  
+}
+
+#forgotPassword a
+{
+    text-decoration: none;
+    float: right;  
+    color: #0040ff;
+    font-size: 16px; 
+}
+
+span
+{  
+    color: #f2f2f2;  
+    font-size: 15px;  
+} 
+

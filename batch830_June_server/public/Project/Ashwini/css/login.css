@@ -2,13 +2,16 @@
 	height: 450px;
 	width: 450px;
 	border: solid 2px;
-	border-radius: 0px 50px 0px 50px;
-	box-shadow: 20px 20px #FF4500;
-	background-color: #c4723b;
+	border-radius: 0px 100px 0px 100px;
+	box-shadow: 20px 20px green;
+	background-color: #FFD0A6;
 	position: absolute;
 	top: 200px;
 	left: 450px;
 	/*#c4723b*/
+}
+button{
+	background-color: green;
 }
 h2{
 	text-align: center;
@@ -43,9 +46,11 @@ h2{
 	width: 120px;
 }
 body{
-	background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-1.2.1&w=1000&q=80");
+	background-image: url("https://wallpaperaccess.com/full/1496345.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	/*https://i.pinimg.com/originals/90/c1/83/90c18300d9e187629336070e1b3bbda1.jpg*/
+	/*https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-1.2.1&w=1000&q=80*/
 }
 .rememberMe{
 	position: absolute;
@@ -69,9 +74,9 @@ body{
 }
 h1{
 	position: absolute;
-	top: 30px;
-	left: 490px;
+	top: 5px;
+	left: 320px;
 	font-size: 60px;
-	font-style: italic;
+	/*font-style: italic;*/
 	text-shadow: 2px 2px red;
 }
