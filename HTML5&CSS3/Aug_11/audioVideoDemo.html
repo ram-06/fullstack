@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Audio and Video tag.
+		</title>
+	</head>
+	<body>
+		<video id="userVideo" controls autoplay poster="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/summer-party-video-ad-template-design-024d0ddcdf0746f9fa1e87773c385103.jpg?ts=1567082239">
+			 <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+
+		</video>
+
+		<audio controls>
+			<source src="http://www.kodyaz.com/html5/html5-audio-example-mp3.mp3" type="audio/mp3">
+		</audio>
+		<script type="text/javascript">
+			document.querySelector("#userVideo").addEventListener("volumechange", function(){
+				console.log("volumechanged");
+
+			});
+
+			document.querySelector("#userVideo").addEventListener("ended", function(){
+				console.log("video got ended");
+				console.log(document.querySelector("#userVideo"))
+				document.querySelector("#userVideo").currentTime = 0;
+			})
+
+		</script>
+	</body>
+</html>

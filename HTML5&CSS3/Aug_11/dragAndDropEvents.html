@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Drag and Drop feature
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				width: 500px;
+				height: 400px;
+				margin: 10px auto;
+			}
+			img {
+				width: 110px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div pqr="sample"  abc="test" class="container" ondrop="productOnDrop(event)" ondragover="dragFinished(event)"> </div>
+		<img src="https://www.bgr.in/wp-content/uploads/2019/05/Oppo-A3.jpg" id="product_img_1" ondragstart="elementDragStarted(event)"/>
+		<img src="https://static.toiimg.com/photo/54238682/Samsung-Series-3-NP305E5Z-S01IN-Laptop.jpg" id="product_img_2" ondragstart="elementDragStarted(event)">
+
+		<script type="text/javascript">
+			var productId = '';
+			function elementDragStarted(event) {
+				productId = event.target.getAttribute("id"); //#product_img_2
+			}
+
+			function productOnDrop(event) {
+				productId = "#" + productId;
+				var imgElement = document.querySelector(productId);
+				var newImgTag = document.createElement("img");
+				newImgTag.setAttribute("src", imgElement.getAttribute('src'));
+				event.target.append(newImgTag);
+				
+				//event.target.append(imgElement);
+				//event.preventDefault();
+
+				/*setTimeout(function(){
+					console.log("about to remove")
+					document.querySelector(productId).remove();
+				}, 3000);*/
+			}
+
+			function dragFinished(event) {
+				event.preventDefault();
+			}
+
+		</script>
+	</body>
+</html>
