@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.mainContainer {
+				border: 2px solid;
+				width: 500px;
+				height: 400px;
+				margin: 20px auto;
+				padding: 20px;
+				overflow: auto;
+			}
+			div {
+				border: 1px solid;
+				margin: 3px;
+				padding: 3px;
+			}
+			#dateContainer {
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dateContainer">
+			
+		</div>
+		<div class="mainContainer"></div>
+		<script type="text/javascript">
+
+			var myworker = new Worker("workers/myworker.js");
+
+
+			myworker.onmessage= function(event) {
+				updateDateTime(event.data)
+			}
+
+			var count = 0;
+			function addElement() {
+				count++;
+				var div = document.createElement("div");
+				div.innerHTML = "Hello ever one " + count;
+				document.querySelector(".mainContainer").append(div);
+			}
+			setInterval(function(){
+				addElement();
+			}, 1000)
+			
+
+			function updateDateTime(date) {
+				document.querySelector("#dateContainer").innerHTML = date;
+			}
+			
+		</script>
+	</body>
+</html>
