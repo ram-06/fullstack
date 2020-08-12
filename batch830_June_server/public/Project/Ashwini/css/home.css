@@ -1,0 +1,131 @@
+summary{
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px;
+	text-underline-position: none;
+	text-decoration: red;
+	background-color: #ffecb3;
+}
+a{
+	text-decoration-line: none;
+	color: black;
+}
+.sideMenu{
+	position: absolute;
+	left: 10px;
+	top: 50px;
+	height: content;
+	width: 250px;
+	border: solid 2px;
+}
+.content{
+	position: absolute;
+	top: 50px;
+	left: 290px;
+	border: solid 2px;
+	height: 670px;
+	width: 1030px;
+}
+body{
+	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#w_iframe{
+	height: 665px;
+	width: 1029px
+}
+#menContainer{
+	height: 400px;
+	width: 410px;
+	border: solid 1px;
+	position: absolute;
+	top: 300px;
+	left: 350px;
+}
+#womenContainer{
+	height: 400px;
+	width: 400px;
+	border: solid 1px;
+	position: absolute;
+	top: 300px;
+	left: 850px;
+}
+#offerPercentage{
+	position: absolute;
+	top: 190px;
+	left: 890px;
+}
+#offerPercentage{
+	font-size: 70px;
+	text-shadow: 2px 2px red;
+}
+#offerRange{
+	font-size: 20px;
+	position: absolute;
+	left: 830px;
+	top: 200px;
+	text-shadow: 1px 1px red;
+}
+#get{
+	font-size: 40px;
+	position: absolute;
+	left: 750px;
+	top: 180px;
+	text-shadow: 1px 1px red;
+}
+#sale{
+	font-size: 100px;
+	position: absolute;
+	top: 90px;
+	left: 370px;
+	text-shadow: 3px 3px red;
+}
+.tittle{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	font-size: 35px;
+	text-shadow: 2px 2px red;
+	/*border: solid 2px;  */
+	background-color: #ffebcc; 
+}
+#sale1{
+	font-size: 60px;
+	position: absolute;
+	top: 160px;
+	left: 590px;
+	text-shadow: 2px 2px red;
+}
+#off{
+	position: absolute;
+	top: 220px;
+	left: 1050px;
+	font-size: 50px;
+	text-shadow: 1px 1px red;
+}
+.search{
+	position: absolute;
+	top: 10px;
+	left: 500px;
+}
+input{
+	height: 20px;
+	width: 250px;
+	background-color: #ffebcc;
+}
+#searchText{
+	position: absolute;
+	top: 4px;
+	left: 300px;
+	font-size: 20px;
+}
+img{
+	height: 150px;
+	width: 200px;
+}
+#men_shirts{
+	position: absolute;
+	top: 350px;
+	left: 150px;
+}
