@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS3 Background image
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				width: 700px;
+				height: 600px;
+				margin: 10px auto;
+				
+				/*background-image: radial-gradient(circle, red , yellow, green);*/
+
+				/* closest-side, farthest-side, closest-corner, farthest-corner */
+				/*background-image: radial-gradient(farthest-side at 60% 55%, red, green); */
+
+				background-image: repeating-radial-gradient(circle, red, blue 5%, green 10%);
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			HEllo every one
+		</div>
+	</body>
+</html>
