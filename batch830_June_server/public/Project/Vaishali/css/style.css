@@ -25,6 +25,8 @@ h2
     padding: 20px; 
     font-weight: 700;
     font-size: 30px;
+    /*text-shadow: 3px 3px 8px #13232F;*/
+    text-shadow: 2px 2px 4px #000000;
 } 
 
 label
@@ -69,7 +71,7 @@ span
 
 #signup a
 {
-    text-decoration: none;
+    /*text-decoration: none;*/
     float: right;  
     color: #08ffd1;  
     float: left;
@@ -78,7 +80,7 @@ span
 
 #forgotPassword a
 {
-    text-decoration: none;
+    /*text-decoration: none;*/
     float: right;  
     color: #08ffd1;
     font-size: 19px; 
