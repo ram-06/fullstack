@@ -3,25 +3,20 @@
 	<head>
 		<title>Home</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/home.css">
+		<script type="text/javascript" src = "js/home.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class = "tittle">A.R Online Shopping Center</div>
 			<div class = "search"><input type = "text"><span id = "searchText"><b>Search</b></span></div>
 		</header>
-		<div id = "offer">
-			<span id = "sale">Sale</span>
-			<span id = "sale1">Sale</span>
-			<span id = "offerPercentage">50%</span>
-			<span id = "offerRange">upto</span>
-			<span id = "get">get</span>
-			<span id = "off">Off</span>
-		</div>
+		<div id = "cart"><a href=""><img src="https://previews.123rf.com/images/val2014/val20141603/val2014160300005/54302312-shopping-cart-icon.jpg" id = "cartImg"></a></div>
+		<div id = "login"><a href="login.html"><button id="loginButton">Login</button></a></div>
 		<div class = "sideMenu">
 			<details open>
 				<summary>Men's Fashion</summary>
-				<summary id = "menShirts" class = "men"><a href = "menShirts.html" onclick = "menShirts()" id = "m_cate_1" target= "myFrame">Men's Shirts</a></summary>
-				<summary id = "menWallets" class = "men"><a href = "menWallets.html">Men's Wallets</a></summary>
+				<summary id = "menShirts" class = "men"><button id = "m_cate_1" onclick = "menShirts()">Men's Shirts</button></summary>
+				<summary id = "menWallets" class = "men"><button id = "m_cate_2" onclick = "menWallets()">Men's Wallets</button></summary>
 				<summary id = "menSunglasses" class = "men"><a href = "menSunglasses.html">Men's Sunglasses</a></summary>
 				<summary id = "menUnderwear" class = "men"><a href = "menUnderwear.html">Men's Underwear</a></summary>
 				<summary id = "menActivewear" class = "men"><a href = "menActivewear.html">Men's Activewear</a></summary>
@@ -30,7 +25,7 @@
 			</details>
 			<details open>
 				<summary>Women's Fashion</summary>
-				<summary id = "womenKurthas" class = "women"><a href = "womenKurthas.html" onclick = "womenKurthas()" id = "w_cate_1" target= "myFrame">Women's Kurthas & Kurthies</a></summary>
+				<summary id = "womenKurthas" class = "women"><a href = "womenKurthas.html" onclick = "womenKurthas()" id = "w_cate_1">Women's Kurthas & Kurthies</a></summary>
 				<summary id = "womenEthnicGowns" class = "women"><a href = "womenEthnicGowns.html">Women's Ethnic Gowns</a></summary>
 				<summary id = "womenDresses" class = "women"><a href = "womenDresses.html">Women's Dresses</a></summary>
 				<summary id = "womenSarees" class = "women"><a href = "womenSarees.html">Women's Sarees</a></summary>
@@ -41,17 +36,114 @@
 				<summary id = "beauty" class = "women"><a href = "beauty.html">Beauty</a></summary>
 			</details>
 		</div>
-		<div class = "content">
-			<iframe  id = "w_iframe" name = "myFrame"></iframe>
+		<div id = "body">
+			<div id = "content">
+				<h1 class = "heading">Men's Shirts</h1>
+				<div id = "innerContent">
+					<div id = "m_cate_1_style_item_1" class = "itemContainer">
+						<a href="m_cate1_item1_page.html" id = "m_cate_1_item_1">
+							<img src = "https://rukminim1.flixcart.com/image/800/960/k65d18w0/shirt/p/4/t/48-bfrybluesht02ab-being-fab-original-imaecvnxndp3zbdn.jpeg?q=50" id = "m_cate_1_item_1_img1" />
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item2_page.html" id = "m_cate_1_item_2">
+							<img src = "https://rukminim1.flixcart.com/image/800/960/jt8yxe80/shirt/t/t/n/m-arhf-gr-base-41-original-imafen82rhxmpsg8.jpeg?q=50" id = "m_cate_1_item_2_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item3_page.html" id = "m_cate_1_item_3">
+							<img src = "https://rukminim1.flixcart.com/image/495/594/jrdt8cw0/shirt/t/h/d/40-skcsh-1106-mao-fubar-original-imafd6vmgygzhvbp.jpeg?q=50" id = "m_cate_1_item_3_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item4_page.html" id = "m_cate_1_item_4">
+							<img src = "https://rukminim1.flixcart.com/image/495/594/jnqcpzk0/shirt/b/b/h/xxl-sshh-chi-6-jai-textiles-original-imafa9g9cr7axpps.jpeg?q=50" id = "m_cate_1_item_4_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item5_page.html" id = "m_cate_1_item_5">
+							<img src = "https://rukminim1.flixcart.com/image/495/594/k0o69ow0/shirt/a/n/3/xl-cm-st101-cobio-man-original-imafkbyrrczdrcgm.jpeg?q=50" id = "m_cate_1_item_5_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item6_page.html" id = "m_cate_1_item_6">
+							<img src = "https://rukminim1.flixcart.com/image/495/594/k7usyvk0/shirt/t/h/w/xxl-hs-15-jai-textiles-original-imafqy2aznkzmdy3.jpeg?q=50" id = "m_cate_1_item_6_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item7_page.html" id = "m_cate_1_item_7">
+							<img src = "https://rukminim1.flixcart.com/image/800/960/jxjahe80/shirt/v/r/j/42-zbsh506-yellow-38-zombom-original-imafhz9dnt3zkpza.jpeg?q=50" id = "m_cate_1_item_7_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item8_page.html" id = "m_cate_1_item_8">
+							<img src = "https://rukminim1.flixcart.com/image/800/960/jmdrr0w0/shirt/q/q/r/xxl-tblwtshirtful-sh4-tripr-original-imaf9ajwb3mfbhmh.jpeg?q=50" id = "m_cate_1_item_8_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate1_item9_page.html" id = "m_cate_1_item_9">
+							<img src = "https://rukminim1.flixcart.com/image/800/960/k5fn3ww0/shirt/t/g/g/s-striped-shirts-mr-kameej-original-imafz4ga7c7bmrr8.jpeg?q=50" id = "m_cate_1_item_9_img1"/>
+						</a>
+					</div>
+					<div class = "itemLinkContainer">
+						<a href="menShirts.html">View All</a>
+					</div>
+				</div>
+			</div>
+			<div id = "men_cate2_content">
+				<h1 class = "heading">Men's Wallets</h1>
+				<div id = "men_cate2_innerContent">
+					<div id = "m_cate_2_style_item_1" class = "itemContainer">
+						<a href="m_cate2_item1_page.html" id = "m_cate_2_item_1">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_1_img1" />
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item2_page.html" id = "m_cate_2_item_2">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_2_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item3_page.html" id = "m_cate_2_item_3">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_3_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item4_page.html" id = "m_cate_2_item_4">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_4_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item5_page.html" id = "m_cate_2_item_5">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_5_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item6_page.html" id = "m_cate_2_item_6">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_6_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item7_page.html" id = "m_cate_2_item_7">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_7_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item8_page.html" id = "m_cate_2_item_8">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_8_img1"/>
+						</a>
+					</div>
+					<div class = "itemContainer">
+						<a href="m_cate2_item9_page.html" id = "m_cate_2_item_9">
+							<img src = "https://i.pinimg.com/originals/83/09/95/8309958e128e8fb65dc52315dcf697f4.jpg" id = "m_cate_2_item_9_img1"/>
+						</a>
+					</div>
+					<div class = "itemLinkContainer">
+						<a href="menWallets.html">View All</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id = "menContainer">
-			<img src = "https://ae01.alicdn.com/kf/HTB1fp89vUR1BeNjy0Fmq6z0wVXa2/Solid-Mens-Shirts-Cusual-Business-Shirt-Turn-down-Collar-Office-Wear.jpg_640x640.jpg">
-			<img src = "https://www.pngjoy.com/pngm/253/4890902_shirts-for-men-shirts-for-men-png-hd.png">
-			<img src = "https://lh3.googleusercontent.com/proxy/-0wSSePS0_4fIjRP5_56iiupVGq2YWtE4oFVRRzBOgT4nW7zAZpZi-CvxYZsz2WSjPxOUEbch2FQTwRHb--JMMOYn9Brc9GrZika">
-			<img src = "https://i.pinimg.com/originals/22/d0/9a/22d09abfeb37778b3ee1d989bd111015.jpg">
-			<a href = "menShirts.html" id = "men_shirts"><u>View All</u></a>
-		</div>
-		<div id = "womenContainer"></div>
 		<footer>
 			
 		</footer>

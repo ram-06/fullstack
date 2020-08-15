@@ -1,10 +1,12 @@
-function womenKurthas(){
-	var link = document.querySelector("#w_cate_1").href;
-	document.querySelector("#w_iframe").setAttribute("src", "link");
-	console.log("hi");
-}
 function menShirts(){
-	var link = document.querySelector("#m_cate_1").href;
-	document.querySelector("#w_iframe").setAttribute("src", "link");
-	console.log("hi");
+	if(document.querySelector("#men_cate2_content").style.display = 'block'){
+		document.querySelector("#men_cate2_content").style.display = 'none';
+	}
+	document.querySelector("#content").style.display = 'block';
+}
+function menWallets(){
+	if(document.querySelector("#content").style.display = 'block'){
+		document.querySelector("#content").style.display = 'none';
+	}
+	document.querySelector("#men_cate2_content").style.display = 'block';
 }

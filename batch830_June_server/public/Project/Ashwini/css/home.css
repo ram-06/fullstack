@@ -10,6 +10,15 @@ a{
 	text-decoration-line: none;
 	color: black;
 }
+button{
+	background-color: #ffecb3;
+	height: 20px;
+	width: 150px; 
+	border: none;
+	font-size: 18px;
+	text-align: left;
+	font-family: "Times New Roman";
+}
 .sideMenu{
 	position: absolute;
 	left: 10px;
@@ -18,40 +27,80 @@ a{
 	width: 250px;
 	border: solid 2px;
 }
-.content{
+#content{
 	position: absolute;
 	top: 50px;
 	left: 290px;
 	border: solid 2px;
 	height: 670px;
 	width: 1030px;
+	display: none;
+	/*flex-wrap: nowrap;*/
+}
+#innerContent{
+	display: flex;
+	flex-wrap: wrap;
+}
+#men_cate2_content{
+	position: absolute;
+	top: 50px;
+	left: 290px;
+	border: solid 2px;
+	height: 670px;
+	width: 1030px;
+	display: none;
+}
+#men_cate2_innerContent{
+	display: flex;
+	flex-wrap: wrap;
 }
 body{
 	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#w_iframe{
+#m_cate_1{
+	text-decoration: none;
+}
+img{
+	height: 190px;
+	width: 180px;
+}
+.itemLinkContainer{
+	position: absolute;
+	bottom: 200px;
+	right: 120px;
+}
+/*#w_iframe{
 	height: 665px;
 	width: 1029px
 }
 #menContainer{
-	height: 400px;
-	width: 410px;
+	height: 665px;
+	width: 1029px;
 	border: solid 1px;
 	position: absolute;
-	top: 300px;
+	top: 50px;
 	left: 350px;
-}
-#womenContainer{
+}*/
+/*#womenContainer{
 	height: 400px;
 	width: 400px;
 	border: solid 1px;
 	position: absolute;
 	top: 300px;
 	left: 850px;
+}*/
+.tittle{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	font-size: 35px;
+	text-shadow: 2px 2px red;
+	/*border: solid 2px;  */
+	background-color: #ffebcc; 
 }
-#offerPercentage{
+/*#offerPercentage{
 	position: absolute;
 	top: 190px;
 	left: 890px;
@@ -81,15 +130,6 @@ body{
 	left: 370px;
 	text-shadow: 3px 3px red;
 }
-.tittle{
-	position: absolute;
-	top: 5px;
-	left: 10px;
-	font-size: 35px;
-	text-shadow: 2px 2px red;
-	/*border: solid 2px;  */
-	background-color: #ffebcc; 
-}
 #sale1{
 	font-size: 60px;
 	position: absolute;
@@ -104,6 +144,15 @@ body{
 	font-size: 50px;
 	text-shadow: 1px 1px red;
 }
+<div id = "offer">
+			<span id = "sale">Sale</span>
+			<span id = "sale1">Sale</span>
+			<span id = "offerPercentage">50%</span>
+			<span id = "offerRange">upto</span>
+			<span id = "get">get</span>
+			<span id = "off">Off</span>
+		</div>
+		*/
 .search{
 	position: absolute;
 	top: 10px;
@@ -120,12 +169,40 @@ input{
 	left: 300px;
 	font-size: 20px;
 }
-img{
-	height: 150px;
-	width: 200px;
-}
 #men_shirts{
 	position: absolute;
 	top: 350px;
 	left: 150px;
+}
+.itemContainer{
+	/*border: solid 1px;*/
+	margin: 8px;
+	padding: 2px;
+}
+.heading{
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 60px;
+	text-shadow: 1px 1px red;	
+}
+#cartImg{
+	width: 50px;
+	height: 40px;
+}
+#cart{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+#login{
+	position: absolute;
+	top: 10px;
+	right: 70px;
+}
+#loginButton{
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	/*background-color: ;*/
+	border-radius: 1px 1px 1px 1px;
 }
