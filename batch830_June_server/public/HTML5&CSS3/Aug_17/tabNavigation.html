@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.tab {
+				
+				margin: 1px;
+				padding: 10px;
+				background: #ccc;
+			}
+			.tab:hover {
+				background: #fff;
+				color: green;
+				cursor: pointer;
+			}
+			.container {
+				display: flex;
+				flex-direction: row;
+
+			}
+			img {
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				display: none;
+			}
+			@media screen and (max-width: 300px) {
+				.container {
+					flex-direction: column;
+					display: none;
+				}
+				img  {
+					display: block;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="menuicon" onclick="toggleMenu()">
+			<img src="https://img.icons8.com/cotton/2x/menu.png">
+		</div>
+		<div class="container">
+			<div class="tab">Home</div>
+			<div class="tab">Careers</div>
+			<div class="tab">History of org</div>
+			<div class="tab">Contact us</div>
+		</div>
+		<script type="text/javascript">
+			function toggleMenu() {
+				
+				document.querySelector(".container").style.display = 'block';
+			}
+		</script>
+	</body>
+</html>
