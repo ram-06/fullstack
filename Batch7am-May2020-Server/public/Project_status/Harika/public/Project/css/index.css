@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(pic1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Header{
+	height: 100px;
+	background: black;
+}
+
+.title{
+	color: #fb2525;
+	font-size: 35px;
+	position: absolute;
+	margin-left: 32%;
+	margin-top: 2%; 
+	font-weight: bold;
+	text-align: center;
+}
+
+img{
+	width: 120px;
+	height: 90px;
+	border: 1px solid red;
+	border-radius: 5px;
+	float: left;
+	margin: 5px; 
+}
+
+.text{
+	font-size: 20px;
+	font-weight: bold;
+	color: yellow;
+	margin-bottom: 10px;
+}
+
+.Footer{
+	height: 20px;
+	background: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+	text-align: center;
+	color: #fb2525;
+	margin-top: 517px;
+	padding: 10px;
+}

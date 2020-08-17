@@ -1,11 +1,11 @@
 function readLoginData () {
 	var uData = {};
-	uData.name = $("#uname").val();
-	if (!uData.name) {
-		$(".unameError").show();
+	uData.id = $("#uid").val();
+	if (!uData.id) {
+		$(".uidError").show();
 		return;
 	} else {
-		$(".unameError").hide();
+		$(".uidError").hide();
 	}
 
 	uData.pwd = $("#upwd").val();
@@ -15,8 +15,38 @@ function readLoginData () {
 	} else {
 		$(".upwdError").hide();
 	}
+	
+	var loginReq = $.ajax({
+		url : 'http://localhost:8082/get/login/details',
+		method : 'GET',
+		data : uData,
+		dataType : 'JSON',
+	});
 
-	console.log(uData);
+	loginReq.done(function(res){
+		console.log(res);
+		if (res.msg == 'invalid') {
+			$(".mask").show();
+			$(".popup").show();
+		} else {
+			loadtemplate('prodDetails');
+			getProductDetails();
+
+
+		}
+
+	});
+
+	loginReq.fail(function(err){
+		console.log("error")
+	})
+
+
+}
+
+function closepopup() {
+	$(".popup").hide();
+	$(".mask").hide();
 }
 
 //------Pwd Visibility-----//
@@ -36,7 +66,7 @@ function toggle(){
 
 //------UserName Validation-----//
 
-function validateUname(event) {
+function validateUid(event) {
 	console.log(event.charCode);
 	console.log("user typed a key");
 	var isLengthValid = false;
@@ -101,3 +131,4 @@ function validatePwd(event) {
 		return false;
 	}
 }
+

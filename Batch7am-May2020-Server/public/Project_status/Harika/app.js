@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/productDetails');
+var loginRouter = require('./routes/loginValidation');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/get/all/product/details', productRouter);
+app.use('/get/login/details', loginRouter);
 
 app.listen(8082, function () {
 	console.log("server listening at 8082");

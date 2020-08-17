@@ -3,8 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	 	var data = {
-		"ProductDetails": [
+	 	var data = [
 				{
 			    "name": "Laptop",
 				"price": "$350",
@@ -101,16 +100,16 @@ router.get('/', function(req, res, next) {
 				"sDetails": "Gen Electronics",
 				"imgUrl": "images/12.jpg"
 			}
-		]
-	}
+		];
+	
 
  	data = JSON.stringify(data);
 
  	//data = "parseProdData(" + data + ")";
 
- 	setTimeout(function(){
- 		res.send(data);
- 	},5000)
+ 	
+ 	res.send(data);
+ 	
  	
 });
 

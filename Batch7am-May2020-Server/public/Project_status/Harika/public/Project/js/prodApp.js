@@ -1,37 +1,27 @@
-var details = [];
-
-function ShowProductDetails(ProductDetails) {
-	
-	$(".container").loadTemplate( $("#ProdInfoTmplt"), ProductDetails, {append:true});
-}
-
 function getProductDetails(){
-	$(".loadingBlock").show();
-	$.ajax({
+	var productDataReq = $.ajax({
 		url: "http://localhost:8082/get/all/product/details",
 		method: "GET",
 		dataType: "JSON",
 		//corssDomain: true,
-		jsonpCallback: 'parseProdData',
-		success: function(res){
-			$(".loadingBlock").hide();
-			LoadProductdetails(res.ProductDetails);
-		},
-		error: function(err){
-			$(".loadingBlock").hide();
-			$(".errBlock").show();
-		}
-	})
+		//jsonpCallback: 'parseProdData',
+	});
+
+	productDataReq.done(function(res){
+		console.log("done");
+		LoadProductdetails(res);
+	});
+
+	productDataReq.fail(function(){
+
+	});
 }
 
-function LoadProductdetails(details) {
-	for (var i = 0; i < details.length; i++){
-		ShowProductDetails(details[i]);
+
+function LoadProductdetails(data) {
+	var template = Handlebars.compile($("#ProdDataTmplt").html());
+	for (var i = 0; i < data.length; i++){
+		console.log(i);
+		$('.pageContainer').append(template(data[i]));
 	}
 }
-
-$(document).ready(function (){
-	$("#btn").on('click', () => {
-		getProductDetails();
-	});
-})

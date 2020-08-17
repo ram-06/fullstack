@@ -42,8 +42,8 @@ function readSignUpData () {
 
 //------Email Validation----//
 
-	if (uData.pwd.length < 10) {
-		$("#pwdvalid").html("**Password length must be 10 char");
+	if (uData.pwd.length < 8) {
+		$("#pwdvalid").html("**Password length must be 8 char");
 		$("#pwdvalid").css({"color":"red", "margin-top":"-15px", "font-size":"15px"});
 	} else if (uData.pwd.search(/[0-9]/) == -1) {
 		$("#pwdvalid").html("**Atleast 1 numeric value must enter");
@@ -91,6 +91,7 @@ function readSignUpData () {
 	}
 
 	console.log(uData);
+	$(".gotoLogin").show();
 }
 
 //------Pwd Visibility-----//

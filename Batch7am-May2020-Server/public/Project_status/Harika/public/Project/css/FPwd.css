@@ -77,6 +77,16 @@ img{
 	cursor: pointer;
 }
 
+.error{
+	color: red;
+	font-size: 15px;
+	margin-top: -15px;
+}
+
+.mailIdError{
+	display: none;
+}
+
 .Footer{
 	height: 32px;
 	background: black;
@@ -89,46 +99,3 @@ img{
 	padding: 25px;
 }
 
-.popupContainer {
-	border: 1px solid;
-	width: 400px;
-	height: 180px;
-	border-radius: 25px;
-	position: absolute;
-	top: -20%;
-	background: linear-gradient(45deg,blue,pink,blue);
-	display: none;
-}
-
-.pHeader {
-	background: pink;
-	color: #000;
-	padding: 10px;
-	font-weight: bolder;
-	border-radius:  25px 25px 0 0;
-}
-
-.DialogContainer {
-	padding: 40px;
-	text-align: center;
-	color: red;
-	font-weight: bold;
-}
-
-.CloseBtn {
-	color: #000;
-	cursor: pointer;
-	float: right;
-
-}
-
-.maskBlock {
-	background: #223bc5;
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	bottom: 5px;
-	right: 5px;
-	display: none;
-	opacity: 0.5
-}

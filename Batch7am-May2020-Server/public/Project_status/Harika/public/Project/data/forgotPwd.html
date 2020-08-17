@@ -6,7 +6,7 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/Fpwd.css">
 		<script type="text/javascript" src="lib/jquery.js"></script>
-		<script type="text/javascript" src="js/popupemail.js"></script>
+		<script type="text/javascript" src="js/fpwdData.js"></script>
 	</head>
 	<body>
 		<div class="Header">
@@ -18,23 +18,14 @@
 				</marquee>
 			</div>
 		</div>
-		<div class="maskBlock"></div>
 		<div class="FpwdBox">
-			<div class="maskBlock"></div>
-			<div class="popupContainer">
-				<div class="pHeader">
-					Attention!
-					<span class="CloseBtn" onclick="closeDialog()">
-						X
-					</span>
-				</div>
-				<div class="DialogContainer">
-					Enter your Email-id
-				</div>
-			</div>
 			<div>
-				Email ID:<input type="text" id="eMailId"  value="">
-				<div class="error" id="mailerror"></div>
+				Email ID:<input type="text" id="mailId"  value="">
+				<div id="emailcheck"></div>
+
+				<div class="mailIdError error">
+					*Email is mandatory
+				</div>
 
 				<input type="submit"value="Done" onclick="readFpwdData()">
 			</div>

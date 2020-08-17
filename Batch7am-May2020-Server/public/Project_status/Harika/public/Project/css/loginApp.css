@@ -1,70 +1,31 @@
-body{
-	margin: 0;
-	padding: 0;
-	background: url(pic1.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.Header{
-	height: 100px;
-	background: black;
-}
-
-.title{
-	color: #fb2525;
-	font-size: 35px;
-	position: absolute;
-	margin-left: 32%;
-	margin-top: 2%; 
-	font-weight: bold;
-	text-align: center;
-}
-
-img{
-	width: 120px;
-	height: 90px;
-	border: 1px solid red;
-	border-radius: 5px;
-	float: left;
-	margin: 5px; 
-}
-
-.text{
-	font-size: 20px;
-	font-weight: bold;
-	color: yellow;
-	margin-bottom: 10px;
-}
-
 .loginBox{
 	width: 320px;
 	height: 400px;
 	color: #000;
-	top: 24%;
+	top: 23%;
 	left: 38%;
 	background: black;
 	position: absolute;
-	padding: 70px 30px;
+	padding: 60px 30px;
 	box-sizing: border-box;
 }
 
-.avatar{
+.loginBox .avatar {
 	width: 80px;
 	height: 80px;
-	margin-left: 25%;
+	margin-left: 27%;
 	position: absolute;
 	border: none;
 	border-radius: 50px;
 	top: -50px;
 }
 
-h2{
+.loginBox h2{
 	color: #fb2525;
 	margin: 0;
-	padding: 0 0 20px;
+	padding: 0 0 40px;
 	text-align: center;
-	margin-top: -15px;
+	margin-top: -10px;
 	font-size: 22px;
 }
 
@@ -108,32 +69,19 @@ h2{
 	cursor: pointer;
 }
 
-.loginBox a{
-	text-decoration: none;
+.loginBox .link {
 	font-size: 14px;
 	line-height: 25px;
-	color: #ccc;
+	color: #51c0f3;
+	cursor: pointer;
 	text-align: center;
-	margin-left: 80px;
 }
 
-.loginBox a:hover{
-
-}
-
-.Footer{
-	height: 32px;
-	background: black;
-	font-weight: bold;
-	font-size: 20px;
+.loginBox .link:hover{
 	text-decoration: underline;
-	text-align: center;
-	color: #fb2525;
-	margin-top: 475px;
-	padding: 25px;
 }
 
-.unameError, .upwdError{
+.uidError, .upwdError{
 	display: none;
 }
 
@@ -144,22 +92,49 @@ h2{
 
 }
 
-/*.show, .hide{
-	position: absolute;
-	right: 30px;
-	top:51.8%;
-	font-size: 20px;
-	color: yellow; 
-}
-
-.hide{
-	display: none;
-}*/
-
-.fa{
+.loginBox .fa{
 	font-size: 20px;
 	color: #ccc;
 	position: absolute;
 	left: 83%;
-	bottom: 43%; 
+	bottom: 41.5%; 
+}
+
+.mask{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0,0,0,0.7);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	left: 38.5%;
+	top: 40%; 
+	background-color: #fff;
+	color: #5f5858;
+	font-family: verdana;
+	font-size: 15px;
+	width: 300px;
+	text-align: center;
+	height: 130px;
+	margin: 5px;
+	display: none;
+}
+
+.popup input[type = "button"] {
+	margin-left: 60%;
+	margin-top: 10%;
+	color: #fff;
+	background: #59b5de;
+	width: 40px;
+	border: none; 
+	height: 25px;
+}
+
+.popup input[type = "button"]:hover {
+	cursor: pointer;
+	background: #08b0fb;
 }
