@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Dynaic Accordian
+		</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="accordion" id="accordionExample"></div>
+		<script type="text/javascript">
+
+			var details = [
+				{
+					name: 'Section 1',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				},
+				{
+					name: 'Section 2',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				},
+				{
+					name: 'Section 3',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				},
+				{
+					name: 'Section 4',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				},
+				{
+					name: 'Section 3',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				},
+				{
+					name: 'Section 4',
+					content: 'lakjdfhalksjfhaslkfjahslfkjashf laskjdfh ladfjla hfkjashf lkasd'
+				}
+			];
+
+			
+			function addCard(details, index) {
+				var cardDiv = document.createElement("div");
+				cardDiv.setAttribute("class", "card");
+				var id = "heading_" + index;
+				var targetId = "collapse_" + index
+				var cardHeader = document.createElement("div");
+				cardHeader.setAttribute("id", id);
+				cardHeader.setAttribute("class", 'card-header');
+
+				var h2 = document.createElement("h2");
+				h2.setAttribute("class", "mb-0");
+				var btn = document.createElement("button");
+				btn.setAttribute("class", "btn btn-link btn-block text-left collapsed");
+				
+				btn.setAttribute("type", "button");
+				btn.setAttribute("data-toggle", "collapse");
+				btn.setAttribute("data-target", "#" + targetId)
+				btn.setAttribute("aria-expanded", false);
+				btn.setAttribute("aria-controls", targetId);
+				btn.innerHTML = details.name;
+
+				h2.append(btn);
+				cardHeader.append(h2);
+				cardDiv.append(cardHeader);
+
+				var contentDiv = document.createElement("div");
+				contentDiv.setAttribute("id", targetId)
+				contentDiv.setAttribute("class", "collapse")
+				contentDiv.setAttribute("aria-labelledby", id);
+				contentDiv.setAttribute("data-parent", "#accordionExample");
+
+				var cardBodyDiv = document.createElement("div");
+				cardBodyDiv.setAttribute("class", "card-body");
+				cardBodyDiv.innerHTML = details.content;
+
+				contentDiv.append(cardBodyDiv);
+				cardDiv.append(contentDiv);
+				console.log(cardDiv);
+
+				document.querySelector("#accordionExample").append(cardDiv)
+				// aria-expanded="false" aria-controls="collapseTwo"
+			}
+
+			for (var i = 0 ; i < details.length; i++) {
+				addCard(details[i], i)
+			}
+		</script>
+	</body>
+</html>
