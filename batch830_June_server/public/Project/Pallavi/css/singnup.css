@@ -8,8 +8,8 @@ h2 {
 	text-align: center;
 }
 .container{
-	height: 500px;
-	width: 450px;
+	height: 530px;
+	width: 520px;
 	border:1px solid;
 	position: absolute;
 	margin: 20px;
@@ -18,7 +18,7 @@ h2 {
 	left: 430px;
 	top: 30px;
 	border-radius: 20px;
-	background-color: rgb(250, 200, 250);
+	background-color: rgb(190, 175, 0);
 	border: none;
 }
 #uname {
@@ -74,7 +74,12 @@ input[type=button] {
 	width: 220px;
 	border-radius: 10px;
 	border:none;
-	margin-left: 110px;
+	margin-left: 150px;
 	margin-top: 40px;
 	background-color: #ccc;
+}
+#login {
+	position: absolute;
+	bottom: 30px;
+	left: 80px;
 }
