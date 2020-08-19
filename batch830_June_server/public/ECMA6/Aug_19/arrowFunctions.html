@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Arrow functions
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			/*var displayData = function() {
+				...
+			}
+
+
+			function displayData() {
+				...
+			} */
+
+			var displayData = (a, b) => {
+				console.log("am from displaydata " + a);
+			}
+
+			//displayData(20, 49);
+			var count = 0;
+			/*setInterval(function(){
+				count++;
+				console.log("Hello " + count)
+			}, 2000); */
+
+			setInterval(() => {
+				count++;
+				console.log("Hello " + count)
+			}, 2000);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function StudentData() {
+				this.name = "raj";
+				this.displayData = function() {
+					console.log("Name is " + this.name);
+					setInterval(() => {
+						console.log("Name is " + this.name);
+					}, 1000);					
+				}
+			}
+			var s1 = new StudentData();
+			s1.displayData();
+		</script>
+	</body>
+</html>

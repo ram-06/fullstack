@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Functions with default params
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var addValues = (a = 10, b = 20, c = 30) => {
+				var sum  = 0 ; 
+				sum = a + b + c;
+				console.log("the sum is " + sum);
+			}
+
+			addValues(20, 30, 10); */
+
+			function addValues(a, b, ...temp) {
+				console.log(temp)
+				var sum = 0;
+				sum = a + b;
+				for (let i = 0; i < temp.length; i++) {
+					sum += temp[i];
+				}
+				console.log("the sum is " + sum);
+			}
+
+			addValues(20, 30,6,7,7,7,8,8,8,8,8,8);
+
+
+			
+		</script>
+	</body>
+</html>
