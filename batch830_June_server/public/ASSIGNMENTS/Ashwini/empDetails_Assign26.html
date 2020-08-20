@@ -9,13 +9,13 @@
 		function processEmployeeDetails() {
 			numOfEmp = prompt("Enter number of Employees whose details has to be updated");
 			for(var i = 1; i <= numOfEmp; i++){
-				var emDetails = {
+				var empDetails = {
 					empName : prompt("Name of the employee"),
 					empAge : prompt("Age"),
 					empGendr : prompt("Gender"),
 					empSalary : prompt("Salary"),
 				}
-				empSalary = parseInt(empDetails.empSalary)
+				empDetails.empSalary = parseInt(empDetails.empSalary)
 				empDetails.tax = taxCalculation(empDetails.empSalary);
 				empDetails.takeHomeSalary = empDetails.empSalary - empDetails.tax;
 				display(empDetails);	
