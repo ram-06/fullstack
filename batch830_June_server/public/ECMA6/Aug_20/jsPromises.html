@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var userAccountBalance = 200;
+			var  myaccountCheck = new Promise(function(acceptable, rejectble) {
+				if (userAccountBalance > 0) {
+					return acceptable("User is valid Customer");
+				} else {
+					return rejectble("User is in negative balance");
+				}
+			});
+
+			myaccountCheck.then(function(res){
+				console.log("success response");
+				console.log(res);
+			}, function(err){
+				console.log("Error");
+			});
+
+		</script>
+	</body>
+</html>

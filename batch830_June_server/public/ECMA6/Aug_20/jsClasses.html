@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function stduentDetails(obj) {
+				this.name = obj.name;
+				this.age = 20;
+				this.gender = "Male";
+				this.displayData = function() {
+					console.log("name is " + this.name)
+					console.log("Age is " + this.age)
+					console.log("gender is " + this.gender)
+				}
+			}
+
+			var s1 = new stduentDetails(data);
+			s1.displayData(); */
+
+			// student.prototype = new SchoolDetails()
+
+			class SchoolDetails {
+				constructor(sName) {
+					console.log("cons of parent")
+					this.schoolName = sName;
+					this.schoolLoc = "Hyderabad";
+				}
+			}
+
+			class stduentDetails extends SchoolDetails {
+				constructor(obj) {
+					console.log("const of child")
+					super(obj.schoolName);
+
+					this.name = obj.name;
+					this.age = obj.age;
+					this.gender = obj.gender;
+				}
+				displayData() {
+					console.log("name is " + this.name)
+					console.log("Age is " + this.age)
+					console.log("gender is " + this.gender);
+					console.log('School name ' + this.schoolName);
+					console.log("schhol loc " +this.schoolLoc)
+
+				}
+			}
+			var data = {name: "raj", age: 20, gender:"Male", schoolName: 'TEst school'};
+
+			var s1 = new stduentDetails(data);
+			s1.displayData();
+
+			var data2 = {name: "Neha", age: 10, gender:"Female", schoolName:"ABC school"};
+
+			var s2 = new stduentDetails(data2);
+			s2.displayData();
+		</script>
+	</body>
+</html>
