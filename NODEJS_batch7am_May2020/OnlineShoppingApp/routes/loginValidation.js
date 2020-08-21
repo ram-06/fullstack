@@ -1,6 +1,8 @@
  var express = require("express");
  var mongoClient = require("mongodb").MongoClient;
  var router = express.Router();
+ var Cryptr = require("cryptr");
+var cryptr = new Cryptr("Itsourprivatekey");
 
  var url = "mongodb://localhost:27017";
 
@@ -19,8 +21,18 @@
  		} else {
 	 		var db = client.db("ShoopingApp");
 	 		var collection = db.collection("UserAccountDetailsList");
-	 		collection.find({accountId: req.body.id, password: req.body.password}).toArray(function(err, result){
-	 			if (result.length) {
+	 		var isValidUser = false;
+	 		collection.find({}).toArray(function(err, result){
+	 			for (var i = 0; i < result.length; i++) {
+	 				// accountId: req.body.id, password: req.body.password
+	 				if (result[i].accountId == req.body.id) {
+	 					var pwd = cryptr.decrypt(result[i].password)
+	 					if (pwd == req.body.password) {
+	 						isValidUser = true;
+	 					}
+	 				}
+	 			}
+	 			if (isValidUser) {
 	 				data.msg = "valid";		
 	 				req.session.userLoggedIn = true;		
 	 			} else {

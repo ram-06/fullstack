@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Closures
+		</title>
+		
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				width: 500px;
+				margin: 30px auto;
+				padding: 50px;
+			}
+			li {
+				list-style: none;border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+		<script type="text/javascript" src="lib/mathUtilOperations.js"></script>
+	</head>
+	<body>
+		<div class="containers">
+			<ul>
+				<li>
+					Enter first number: <input type="number" id="fval">
+				</li>
+				<li>
+					Enter Second number: <input type="number" id="sval">
+				</li>
+				<li>
+					<input type="button" value="Add" onclick="doOperation('sum')">
+					<input type="button" value="Sub" onclick="doOperation('sub')">
+					<input type="button" value="Multiplicatio " onclick="doOperation('mul')">
+					<input type="button" value="Division" onclick="doOperation('div')">
+				</li>
+				<li>
+					The <span id="oblock"></span> is <span id="rblock"></span>
+
+				</li>
+				<li>
+					Count <span id="counter"></span>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var mathUtil = 90;
+			var count = 0;
+			function doOperation(type) {
+				count++;
+				var fval = document.querySelector("#fval").value;
+				var sval = document.querySelector("#sval").value;
+				fval = parseInt(fval);
+				sval = parseInt(sval);
+				var result = 0;
+
+				switch(type) {
+					case 'sum':
+
+						result  = mathUtil.doAddition(fval, sval);
+						break;
+					case 'div':
+						result  = doDivision(fval, sval);	
+						break;
+					case 'mul':
+						result  = doMultiplication(fval, sval);
+						break;
+					case 'sub':
+						result  = mathUtil.doTheSubstraction(fval, sval);
+						break;
+				}
+				document.querySelector("#oblock").innerText = type;
+				document.querySelector("#rblock").innerText = result;
+				document.querySelector("#counter").innerHTML = count;
+				sample();
+
+			}
+			function sample() {
+				console.log("bye for today");
+			}
+		</script>
+		
+	</body>
+</html>
