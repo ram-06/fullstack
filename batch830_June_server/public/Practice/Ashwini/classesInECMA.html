@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Classes in ECMA6</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			class collegeDetails {
+				constructor(collegeNam){
+					this.collegeName = collegeNam;
+					this.location = "Hyderabad";
+				}
+			}
+			class studentDetails extends collegeDetails{
+				constructor(obj){
+					super(obj.collegeName);
+					this.name = obj.name;
+					this.age = obj.age;
+				}
+				display(){
+					console.log("Name : " + this.name);
+					console.log("Age : " + this.age);
+					console.log("College : " + this.collegeName);
+					console.log("Location : " + this.location);
+				} 
+			}
+			var data = {
+				name : "Raj",
+				age : 22,
+				collegeName : "Scient Institute Of Technology"
+			}
+			var std1 = new studentDetails(data);
+			std1.display();
+
+			var data1 = {
+				name : "Mena",
+				age : 23,
+				collegeName : "CBIT"
+			}
+			var std2 = new studentDetails(data1);
+			std2.display();
+		</script>
+	</body>
+</html>
