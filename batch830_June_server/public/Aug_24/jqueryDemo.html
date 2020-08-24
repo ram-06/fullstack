@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JQuery
+		</title>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				text-align: center;
+				margin: 5px;
+				padding: 5px;
+			}
+			.highlight {
+				font-size: 30px;
+				font-weight: bold;
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container" id="block">
+			Hello Eevery one, welcome to jquery class
+		</div>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<script type="text/javascript">
+
+			function applyChanges() {
+				/*var element = document.querySelector("#block");
+				var className = element.getAttribute("class");
+				className = className + ' highlight';
+				element.setAttribute("class", className);*/
+
+				$("#block").addClass("highlight");
+
+			}
+
+			function addClass() {
+
+			}
+		</script>
+	</body>
+</html>

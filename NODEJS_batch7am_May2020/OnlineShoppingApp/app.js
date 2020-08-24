@@ -11,6 +11,9 @@ var loginRouter = require("./routes/loginValidation");
 var loadProductDataRouter = require("./routes/loadPoductData");
 var userloggedin = require("./routes/isUserLoggedIn");
 var sendMailRouter = require("./routes/sendMail");
+var uploadDataRouter = require("./routes/uploadRegisterDetails");
+var uploadUserPic = require("./routes/uploadUserPic");
+var multer = require("multer");
 
 
 var empRouter = require("./routes/employeeDetails");
@@ -22,6 +25,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
+app.use(multer({dest:'./public/'}).single('photo'));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -39,6 +43,8 @@ app.use(session({
   saveUninitialized: true
 }));
 
+
+
 app.use('/test', indexRouter);
 app.use('/users', usersRouter);
 app.use('/sample/data/xyz',  samplerouter );
@@ -49,6 +55,8 @@ app.use("/user/loginstatus"  , userloggedin);
 app.use("/user/newSignup", newSignupRouter);
 app.use("/get/empdetails", empRouter);
 app.use('/sendmail', sendMailRouter);
+app.use('/uploadData', uploadDataRouter);
+app.use('/uploadUserPic', uploadUserPic);
 
 io.on('connection', (socket) => {
   console.log('a user connected');

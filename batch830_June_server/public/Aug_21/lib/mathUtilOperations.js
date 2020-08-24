@@ -6,8 +6,6 @@ var mathUtil = (function(){
 
 	var count = 10;
 	
-
-
 	function doSubstraction(firstVal, secondVal) {
 		count++;
 		var result = 0;
