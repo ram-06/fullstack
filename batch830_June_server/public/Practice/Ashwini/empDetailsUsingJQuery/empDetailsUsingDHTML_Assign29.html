@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src = "employeeDetails.js"></script>
+		<link rel="stylesheet" type="text/css" href="employeeDetails.css">
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+	</head>
+	<body>
+		<div class = "inputBlock">
+			<ul>
+				<li style="text-align: center;"><b>Employee Details</b></li>
+				<li>Name : <input type = "text" name = "emName" id = "empName"></li>
+				<li>Age : <input type = "text" name ="eAge" id = "empAge"></li>
+				<li>Salary : <input type = "text" name = "eSalary" id = "empSalary"></li>
+				<li>Department :
+					<select id = "dep">
+						<option>Develpment</option>
+						<option>Testing</option>
+						<option>Designing</option>
+						<option>Human Resourse</option>
+						<option>Finance</option>
+					</select>
+					
+				</li>
+				
+				<li style="text-align: center;"><input type = "button" value = "generate pay slip" onclick = "inputElements()"></li>
+			</ul>
+		</div>
+		<div></div>
+		<div class = "displayBlock">
+			<ul>
+				<li style="text-align: center;"><b>Employee pay slip</b></li>
+				<li> Employee: <span id = "empNameD"></span></li>
+				<li>Age: <span id = "empAgeD"></span></li>
+				<li>Salary: <span id = "empSalaryD"></span></li>
+				<li>Department: <span id = "empDepD"></span></li>
+				<li>Tax: <span id = "Tax"></span></li>
+				<li>Take home salary: <span id = "takeHomeSalary"></span></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+li{
+	height: 30px;
+	/*width: 100px;*/
+	list-style: none;
+	/*border: solid 2px;*/
+	padding: 5px;
+	margin: 5px;
+}
+.inputBlock, .displayBlock{
+	background-color: #f4c2c2;
+	border: solid 2px;
+}
