@@ -13,8 +13,6 @@ var userloggedin = require("./routes/isUserLoggedIn");
 var sendMailRouter = require("./routes/sendMail");
 var uploadDataRouter = require("./routes/uploadRegisterDetails");
 var uploadUserPic = require("./routes/uploadUserPic");
-var multer = require("multer");
-
 
 var empRouter = require("./routes/employeeDetails");
 var addProduct = require('./routes/addNewProduct');
@@ -25,7 +23,35 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
-app.use(multer({dest:'./public/'}).single('photo'));
+var multer = require("multer");
+
+var storage =   multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, './public/uploads');
+  },
+  filename: function (req, file, callback) {
+     filename = file.fieldname + '-' + Date.now() + '.jpg';
+    callback(null, file.fieldname + '-' + Date.now() + '.jpg');
+  }
+});
+
+var upload = multer({ storage : storage}).single('prodImage');
+
+app.post('/uploadProfilePicture',function(req,res){
+    upload(req, res, function(err) {
+        if(err) {
+          console.log(err);
+            return res.end("Error uploading file.");
+        }
+        var data = {
+          msg: "success",
+          imageUrl: '/uploads/' + filename
+        }
+        res.send(JSON.stringify(data));
+    });
+});
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
