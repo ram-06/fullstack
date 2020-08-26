@@ -9,3 +9,10 @@ $(document).ready(() => {
 		console.log("click happend");
 	});
 });
+
+<img src="abc.png" id="test"/>
+
+
+$("#test").load(function(){
+	
+})
