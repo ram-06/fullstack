@@ -17,7 +17,7 @@
 					dataType : 'JSON',
 					success: function(response){
 						console.log(response);
-						renderData(response.data);
+						renderData(response.data);//why we have to specify .data here?(Do server holda any thing other than data?)
 					},
 					error: function(){
 						console.log("Error");
