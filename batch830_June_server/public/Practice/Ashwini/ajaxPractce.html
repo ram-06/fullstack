@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ajax</title>
+		<script type="text/javascript" src="lib/jQuery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="display data" onclick="loadEmpData()">
+		<div id = "firstContainer"></div>
+		<script type="text/javascript">
+			var loadEmpData = () => {
+				var dataURL = "http://localhost:8081/DHTML/data/proddata.json";
+				var empData = {};
+				$.ajax({//it takes object, success and error functions as parameters
+					url : dataURL,
+					method : 'GET',
+					dataType : 'JSON',
+					success: function(response){
+						console.log(response);
+						renderData(response);
+					},
+					error: function(){
+						console.log("Error");
+					}
+				});
+			}
+			var renderData = (res) => {
+				$("#firstContainer").html("");
+				console.log("I am from renderData : " + res);
+				var mDiv = $("<div></div>");
+				for(var temp in res){
+					label = "Employee" + temp;
+					var subDiv = $("<div></div>").html(label + ":" + res[temp]);
+					subDiv.appendTo("#mDiv");
+				}
+				mDiv.appendTo("#firstContainer");
+			}
+		</script>
+	</body>
+</html>
