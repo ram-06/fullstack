@@ -9,7 +9,7 @@
 		<div id = "firstContainer"></div>
 		<script type="text/javascript">
 			var loadEmpData = () => {
-				var dataURL = "http://localhost:8081/DHTML/data/proddata.json";
+				var dataURL = "http://localhost:8081/Practice/Ashwini/DHTML/data/proddata.json";
 				var empData = {};
 				$.ajax({//it takes object, success and error functions as parameters
 					url : dataURL,
@@ -17,7 +17,7 @@
 					dataType : 'JSON',
 					success: function(response){
 						console.log(response);
-						renderData(response);
+						renderData(response.data);
 					},
 					error: function(){
 						console.log("Error");
@@ -29,11 +29,11 @@
 				console.log("I am from renderData : " + res);
 				var mDiv = $("<div></div>");
 				for(var temp in res){
-					label = "Employee" + temp;
+					label = "Employee " + temp;
 					var subDiv = $("<div></div>").html(label + ":" + res[temp]);
-					subDiv.appendTo("#mDiv");
+					mDiv.append(subDiv);
 				}
-				mDiv.appendTo("#firstContainer");
+				$("#firstContainer").append(mDiv);
 			}
 		</script>
 	</body>
