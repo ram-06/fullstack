@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating inheritance between classes
+		</title>
+	</head>
+	<body>
+		<h2>
+			Demonstrating inheritance between classes i.e by "prototype".
+		</h2>
+
+		<script type="text/javascript">
+
+			function SchoolData(objInput) {			//as class names can start with capital letters(mandatory)
+				this.sname = objInput.schoolName;			//here data is catched by "objInput.schoolName" so while getting we must give "schoolName" not "sname" and sname is taken while getting information from this class
+				this.slocation = objInput.schoolLocation;
+			}
+
+			function StudentData(obj_input) {
+				this.name = obj_input.name;
+				this.age = obj_input.age;
+				this.gender = obj_input.gender;
+				this.displayData = function() {
+					console.log("School name is : " + this.sname);	//sname is taken while getting information from the "SchoolData" class
+					console.log("School Location is : " + this.slocation);
+					console.log("Student name is : " + this.name);
+					console.log("Student age is : " + this.age);
+					console.log("Student gender is : " + this.gender);
+				}
+			} 
+
+			StudentData.prototype = new SchoolData({schoolName : "Abc School", "schoolLocation" : "Tirupathi" });	//inheritance with data initializtion
+			var s1 = new StudentData({name : "Bhanu" , "age" : 21 , "gender" : "female"});
+			s1.displayData();
+
+			StudentData.prototype = new SchoolData({schoolName : "Pqr School", "schoolLocation" : "Rajamundry" });
+			var s2 = new StudentData({name : "Prakash" , "age" : 21 , "gender" : "male"});
+			s2.displayData();
+
+		</script>
+	</body>
+</html>

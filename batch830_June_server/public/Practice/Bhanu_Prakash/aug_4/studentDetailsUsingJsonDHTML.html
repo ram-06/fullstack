@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Student Details with JSON and DHTML.
+		</title>
+		<style type="text/css">
+			li {
+				border: 1px solid;
+				list-style: none;
+				margin: 5px;
+				padding: 5px;
+			}
+			.progressCardBlock {
+				border: 1px solid;
+				margin: 10px;
+				padding: 10px;
+			}
+			.userDetails {
+				border: 2px solid;
+				background: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="userDetails">
+			<ul>
+				<li>
+					Enter Student Name : <input type="text" id="s_name">
+				</li>
+				<li>
+					Enter Student Age : <input type="text" id="s_age">
+				</li>
+				<li>
+					Languages Known : 
+					<input type="checkbox" name="english"> English
+					<input type="checkbox" name="telugu"> Telugu
+					<input type="checkbox" name="kannada"> Kannada
+					<input type="checkbox" name="malayalam"> Malayalam
+				</li>
+				<li>
+					Gender : <input type="radio" name="gender" value="male"> M
+							 <input type="radio" name="gender" value="female"> F
+				</li>
+				<li>
+					Class : 
+					<select id="s_class">
+						<option>Class 1</option>
+						<option>Class 2</option>
+						<option>Class 3</option>
+						<option>Class 4</option>
+						<option>Class 5</option>
+					</select>
+				</li>
+				<li>
+					Enter Marks : 
+					<input type="text" id="m1">
+					<input type="text" id="m2">
+					<input type="text" id="m3">
+					<input type="text" id="m4">
+					<input type="text" id="m5">
+				</li>
+				<li>
+					<input type="button" value="generateProgressCard" onclick="readStudentData()">
+				</li>
+			</ul>
+		</div>
+		<div class="progressCardBlock">
+										
+		</div>
+
+
+
+		<script type="text/javascript">
+			var readStudentData = function() {
+				var data = {};
+				data.name = document.querySelector("#s_name").value;
+				data.age = document.querySelector("#s_age").value;
+				data.class = document.querySelector("#s_class").value;
+				data.gender = document.querySelector("input[name = gender]:checked").value;
+				data.marks = [];
+				for(var i = 0 ; i < 5 ; i++){
+					id = "#m" + (i+1);
+					data.marks[i] = document.querySelector(id).value;
+					data.marks[i] = parseInt(data.marks[i]);
+				}
+				var s1 = new studentData(data);
+				s1.generateProgressCard();
+			}
+
+			function studentData(inputObj){
+				this.name = inputObj.name;
+				this.age = inputObj.age;
+				this.class = inputObj.class;
+				this.gender = inputObj.gender;
+				this.marks = inputObj.marks;
+				this.getTotalAndAvg = function()  {
+					this.total = 0;
+					this.avg = 0;
+					for(var i = 0 ; i < this.marks.length ; i++) {
+						this.total += this.marks[i];
+					}
+					this.avg = this.total / this.marks.length; 
+				}
+				this.getGrade = function() {
+					this.grade = '';
+					if(this.avg >= 40) {
+						if(this.avg >= 60) {
+							this.grade = "1st Class";
+						} else {
+							this.grade = "2nd Class";
+						}
+					} else {
+						this.grade = "surprise";
+					}
+				}
+				this.generateProgressCard = function() {
+					this.getTotalAndAvg();
+					this.getGrade();
+					var ulTag = document.createElement("ul");
+					for(var temp in this) {
+						if(typeof(this[temp]) != "function") {
+							var liTag = document.createElement("li");
+							liTag.innerHTML = temp + " : " + this[temp]; 				//prints(output given) for every key
+							ulTag.append(liTag);
+						}
+					}
+					document.querySelector(".progressCardBlock").append(ulTag);
+				}
+			}
+
+		</script>
+	</body>
+</html>

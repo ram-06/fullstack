@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Methods in Objects
+		</title>
+	</head>
+	<body>
+		<h2>Json Object Holding Methods</h2>
+		<script type="text/javascript">
+			var empData = {
+				name : "Bhanu",
+				displayData : function() {
+					this.name;
+				}
+			}
+
+			var sDetails = {
+				name : "Prakash",
+				age : 25,
+				marks : [48, 69, 71],
+				getTotalAvg : function(){
+					sDetails.total = 0;
+					this.avg = 0;
+					for(var i = 0; i < this.marks.length ; i++){
+						sDetails.total += this.marks[i]; 
+					}
+					this.avg = this.total / sDetails.marks.length;
+				},
+				getGrade : function(){
+					sDetails.grade = '';
+					if (this.avg >= 40) {
+						this.grade = "Passed";
+					} else {
+						sDetails.grade = "You have a Surprise";
+					}
+				},
+			}
+
+			sDetails.displayData = function() {	//object handling method "displayData"
+				sDetails.getTotalAvg();
+				this.getGrade();
+				console.log("Student Details");
+				console.log("Name : " + sDetails.name);
+				console.log("Age : " + this.age);
+				console.log("Avg : " + sDetails.avg);
+				console.log("Grade : " + this.grade);
+			}
+			sDetails.displayData();
+
+			for(var temp in sDetails) {
+				console.log(temp);
+			}
+		</script>
+	</body>
+</html>
