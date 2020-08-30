@@ -1,0 +1,45 @@
+#container {
+	border: 1px solid;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: #ccc;
+	overflow: auto;
+}
+.errorBlock,
+.loadingBlock {
+	z-index: 100;
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	display: none;
+
+}
+
+.errorBlock {
+	border: 1px solid;
+	padding: 20px;
+	color: red;
+}
+.block {
+	border: 1px solid;
+	width: 250px;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+
+img {
+	width: 120px;
+	height: 120px;
+}
+li {
+	list-style: none;
+	border: 1px solid;
+	margin: 3px;
+	padding: 3px;
+	background: #fff;
+
+}

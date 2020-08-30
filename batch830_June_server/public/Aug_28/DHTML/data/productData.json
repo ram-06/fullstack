@@ -1,0 +1,32 @@
+{
+	"productData": [
+		{
+			"name": "Mobile",
+			"price": "3000",
+			"manu": "HTC",
+			"sellerName": "Indian Electronics",
+			"image": "https://m.media-amazon.com/images/I/4124CgaKYPL._SR500,500_.jpg"
+		},
+		{
+			"name": "Mobile",
+			"price": "5000",
+			"manu": "HTC",
+			"sellerName": "Indian Electronics",
+			"image": "https://m.media-amazon.com/images/I/4124CgaKYPL._SR500,500_.jpg"
+		},
+		{
+			"name": "Mobile",
+			"price": "200",
+			"manu": "HTC",
+			"sellerName": "Indian Electronics",
+			"image": "https://m.media-amazon.com/images/I/4124CgaKYPL._SR500,500_.jpg"
+		},
+		{
+			"name": "Mobile",
+			"price": "200",
+			"manu": "HTC",
+			"sellerName": "Indian Electronics",
+			"image": "https://m.media-amazon.com/images/I/4124CgaKYPL._SR500,500_.jpg"
+		}
+	]
+}
