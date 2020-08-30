@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sorting Array
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function input()
+			{
+				var num = [];
+				var range = prompt("Enter the range");
+				range = parseInt(range);
+				for(var i = 0; i < range; i++){
+					num[i] = prompt("Enter the number");
+					num[i] = parseInt(num[i]);
+				}
+				sortingArray(num, range);
+			}
+
+			function sortingArray(n, r)
+				{
+					for(var i = 0; i < r-1; i++)
+						for( var j = 0; j < r-i-1; j++)
+							if (n[j] > n[j+1])   //for descending change sign
+							{
+								var temp = n[j];
+								n[j] = n[j+1];
+								n[j+1] = temp;	
+							}
+							
+				console.log("Ascending Array" +n);
+				console.log("Largest no in Array" +n[r-1]);
+				console.log("Second Largest no is" +n[r-2]);
+			}
+			input();
+		</script>
+	</body>
+</html>

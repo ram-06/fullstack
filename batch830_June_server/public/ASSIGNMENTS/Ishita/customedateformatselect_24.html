@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Custome Date Select from Given Option
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Selectformat(){
+			var date = new Date;
+			var month = [01,02,03,04,05,06,07,08,09,10,11,12];
+            var months = ["jan","feb","mar","apr","may","june","jul","aug","sept","oct","nov","dec"];
+            var days = ["Sun", "Mon", "Tue", "WEd", "Thur", "Fri", "Sat"];
+            var m = date.getMonth();
+            var y = date.getYear();    
+			var n = prompt("1.dd/mm/yy 2.mmmm/dd/yy 3.mmmm/dd/yyyy 4.day/mmmm/dd/yyyy 5.mm-dd-yy 6.mm/dd/yy hh:mm 7.mmmm/dd/yy hh:mm:ss 8.day mmmm/dd/yy hh:mm:ss");
+			console.log(n);
+			 Display(date,month,months,m,y,n,days);
+		}
+		function Display(date,mnth,mnths,mn,yr,no,days){
+			switch(no){
+			case '1':console.log(date.getDate() + "/" + mnth[mn] + "/" + date.getFullYear());
+				break;
+			case '2':console.log(mnths[mn] + "," + date.getDate() + ", " + date.getYear());
+				break;
+			case '3':console.log(mnths[mn] + " " + date.getDate() + " " + date.getFullYear());
+				break;
+			case '4':console.log(days[date.getDay()] + "/" +  mnths[mn] + " " + date.getDate() + " " + date.getFullYear());
+				break;
+			case '5':console.log(mnth[mn] + "-" + date.getDate() + "-" + date.getFullYear());
+				break;
+			case'6': console.log(mnth[mn] + "/" + date.getDate() + "/" + date.getFullYear() + " " + date.getHours() + " " + date.getMinutes());
+                    break;
+            case'7':console.log(mnths[mn] + "," + date.getDate() + " " + date.getFullYear() + "/ " + date.getHours() + ":" + date.getMinutes() + ":" + date.getUTCMilliseconds());
+                    break;
+                default:prompt("invalid choice ");
+        	}
+    	}
+    	Selectformat();
+	</script>
+</body>
+</html>

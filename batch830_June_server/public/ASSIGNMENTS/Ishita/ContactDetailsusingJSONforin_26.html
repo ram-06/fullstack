@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			Contact Detail Using JSON for in looping
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function inputcontact(){
+				var contactdetails = {
+                    "profile_picture" : prompt("enter the link:"),
+                    
+                    "name" : {
+                                 "first_name" : prompt("enter the first name:"),
+                                 "last_name"  : prompt("enter the last name:")
+                             },
+                    
+                    "phone_number" : {
+                                        "office_number" : prompt("enter the office number:"),
+                                        "personal_number" : [],
+                                        "emer_contact" : prompt("Enter Emercency contact no")
+                                     },
+
+                    "address" : {
+                                    "personal_address": {
+                                                            "doorno" : prompt("enter the door nnumber:"),
+                                                            "city"   : prompt("enter the city name:"),
+                                                            "country" : prompt("enter the country name:")
+                                                        },
+
+                                    "office_address" : {
+                                                            "country" : prompt("enter the country of the office:"),
+                                                            "building": prompt("enter the office building number:"),
+                                                            "pincode" : prompt("enter the pincode:")
+
+                                                       }
+                                },
+
+                    "email" : {
+                                    "personal_email" : [],
+                                    "office_email" : prompt("enter the office email id:")
+                              },
+
+                    "socialMediaId" : {
+                                         "twitter" : prompt("enter twitter id:"),
+                                         "facebook" : prompt("enter facebook id:")
+                                      },
+
+                    "bloodgroup"    : prompt("enter the blood group")
+
+                }
+                var range1 = prompt("Enter no of personal no");
+                range = parseInt(range);
+                for(var i = 0; i<range1; i++){
+                	contactdetails.phone_number.personal_number[i] = prompt("enter the personal number:" + (i +1));
+                }
+                var range2 = prompt("enter the number of  personal emails to be entered:" );
+                    for(var k = 0; k < range2; k++){
+                        contactdetails.email.personal_email[k] = prompt("enter personal email id:" + (k + 1));
+                    }
+                    Displaycontactdetails(contactdetails);
+			}
+				function Displaycontactdetails(contactdetails){
+					for(var temp in contactdetails){
+						console.log(contactdetails.temp);
+						console.log(contactdetails[temp]);
+
+						if(typeof(contactdetails[temp]) == 'object' && contactdetails[temp].length){
+							for(var i=0,i< contactdetails[temp].length;i++){
+								console.log(contactdetails[temp][i]);
+							}
+					if(typeof(contactdetails[temp]) == 'object'){
+						for(var Detail in contactdetails[temp]){
+                            console.log(contactdetails[temp] + contactdetails[temp][Detail]);
+                        }
+					}					
+					}
+				}
+		</script>
+	</body>
+</html>

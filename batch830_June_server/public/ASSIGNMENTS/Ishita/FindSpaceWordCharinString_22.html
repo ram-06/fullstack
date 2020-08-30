@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Counting Space, Words & charecters in a String
+		</title>
+	</head>
+	<body>
+		<h3>Counting Space, Words & charecters in a String</h3>
+		<script type="text/javascript">
+			function inputstring(){
+			var sentnc = prompt("Enter a String");
+			Display(sentnc);
+			}
+
+			function Display(sen)
+			{	var s=0,ch=0;
+				for(var i = 0; sen[i]; i++)
+				{
+				if(sen[i]==" ")
+					s++;
+				if(sen[i]!=" ")
+					ch++
+
+				}
+					console.log("No of Space" +s);
+					console.log("No of Charaters in a string" +ch);
+					console.log("no of words" +(s+1));
+
+			}
+			inputstring(); 
+
+			//No error but not able to execute
+
+		</script>
+	</body>
+</html>

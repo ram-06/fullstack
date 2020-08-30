@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			Lucky no
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = prompt("Enter a number")
+			num = parseInt(num)
+			var rem=0,sum=0;
+			while(num>0){
+				rem = num % 10;
+				sum = sum + rem;
+				num = num / 10;
+				num = parseInt(num);
+				if(sum>10){
+				num = sum;
+				sum = 0;
+			}
+			else{
+				console.log("Lucky no is"+sum)
+				break;
+			}
+			}
+			/*var no=sum,r=0,l;
+			while(no>0)
+			{
+				r = no % 10;
+				l =  l + r;
+
+			}*/
+			//console.log("Lucky no is"+sum)
+		</script>
+	</body>
+</html>

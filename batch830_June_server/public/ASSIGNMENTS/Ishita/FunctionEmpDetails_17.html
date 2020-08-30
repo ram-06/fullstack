@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>
+			Employe Salary Details
+		</title>
+		<body>
+			<script type="text/javascript">
+				var emp_nm,emp_age,emp_dept,emp_gender,basicsal,pf,hra,TS;
+				function inputemp()
+				{
+				var emp_nm= prompt("Enter employee name");
+				emp_age= prompt("Enter his age");
+				emp_dept= prompt("Enter the Department");
+				emp_gender= prompt("Enter the gender");
+				 basicsal= prompt("Enterv his basic Pay");
+				basicsal=parseInt(basicsal);
+			}
+				function cal()
+				{
+				//basicsal=parseInt(basicsal);
+				 pf=(basicsal*12)/100;
+				 hra=(basicsal*25)/100;
+				 TS=basicsal+pf+hra;
+				}
+
+				function displayemp() {
+				
+					console.log("employee details ");
+		            console.log("employee name " + emp_nm);
+		            console.log("employee age " +emp_age);
+		            console.log("employee dept " +emp_dept);
+		            console.log("gender " + emp_gender);
+		            console.log("employee basic salary "+basicsal);
+		        }
+		        function displaysal(){
+		            console.log("pf " + pf);
+		            console.log("hra " + hra);
+		            console.log("total salary " + TS);
+		        }
+		        inputemp();
+		        cal();
+		        displayemp();
+		        displaysal();
+
+			</script>
+		</body>
+	</head>
+</html>

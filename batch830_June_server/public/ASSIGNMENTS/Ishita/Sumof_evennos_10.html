@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sum of Even Nos between given 2 nos
+		</title>
+	</head>
+	<body>
+			<script type="text/javascript">
+
+				var stnum = prompt("Enter starting value");
+				stnum = parseInt(stnum);
+				var endnum = prompt("Enter ending value");
+				endnum = parseInt(endnum);
+				var sumeven=0;
+
+				if(stnum<endnum)
+				{
+					for(var i=stnum;i<=endnum;i++)
+					{
+						if(i%2==0)
+							sumeven+=i;
+					}
+				}
+					else 
+						for(var i=stnum;i>endnum;i--)
+					{
+						if (i%2==0) {
+							sumeven+=i;
+						}
+				}
+					console.log("summ of even nos "+sumeven);
+
+			</script>
+	</body>
+</html>

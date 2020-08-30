@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sum of Digits of given no
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var no = prompt("Enter a number");
+			no = parseInt(no);
+			var rem=0,sum=0;
+			while(no>0){
+				rem = no % 10;
+				sum = sum + rem;
+				no = no / 10;
+				no = parseInt(no);
+
+			}
+				console.log("Sum of given number is-"+sum);
+		</script>
+	</body>
+</html>
