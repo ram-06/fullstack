@@ -1,0 +1,97 @@
+summary{
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px;
+	text-underline-position: none;
+	text-decoration: red;
+	background-color: #ffecb3;
+}
+a{
+	text-decoration-line: none;
+	color: black;
+}
+button{
+	background-color: #ffecb3;
+	height: 20px;
+	width: 150px; 
+	border: none;
+	font-size: 18px;
+	text-align: left;
+	font-family: "Times New Roman";
+}
+.sideMenu{
+	position: absolute;
+	left: 10px;
+	top: 50px;
+	height: content;
+	width: 250px;
+	border: solid 2px;
+}
+#item1_image{
+	position: absolute;
+	top: 50px;
+	left: 270px;
+}
+#searchText{
+	position: absolute;
+	top: 4px;
+	left: 300px;
+	font-size: 20px;
+}
+.heading{
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 60px;
+	text-shadow: 1px 1px red;	
+}
+#cartImg{
+	width: 50px;
+	height: 30px;
+}
+#cart{
+	position: absolute;
+	top: 1px;
+	right: 3px;
+}
+#login{
+	position: absolute;
+	top: 12px;
+	right: 70px;
+}
+#loginButton{
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	/*background-color: ;*/
+	border-radius: 1px 1px 1px 1px;
+}
+.search{
+	position: absolute;
+	top: 10px;
+	left: 500px;
+}
+input{
+	height: 20px;
+	width: 250px;
+	background-color: #ffebcc;
+}
+.tittle{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	font-size: 35px;
+	text-shadow: 2px 2px red;
+	/*border: solid 2px;  */
+	background-color: #ffebcc; 
+}
+img{
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	padding: 5px;
+}
+#item1_image{
+	height: 670px;
+	width: 1050px;
+	border: solid 2px;
+}
