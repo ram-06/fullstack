@@ -1,0 +1,8 @@
+.newSignup {
+	border: 2px solid;
+	border-radius: 10px;
+	background: #ccc;
+	width: 400px;
+	padding: 10px;
+	margin: 15px auto;
+}

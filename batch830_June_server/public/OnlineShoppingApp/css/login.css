@@ -1,0 +1,8 @@
+.loginBlock {
+	border: 2px solid;
+	border-radius: 10px;
+	background: #ccc;
+	width: 400px;
+	height: 400px;
+	margin: 15px auto;
+}
