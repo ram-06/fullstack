@@ -1,4 +1,7 @@
-.container{
+.homeContainer{
+	display: none;
+}
+.loginPageContainer{
 	height: 450px;
 	width: 450px;
 	border: solid 2px;
@@ -11,7 +14,7 @@
 	/*#c4723b*/
 }
 button{
-	background-color: green;
+	
 }
 h2{
 	text-align: center;
@@ -44,11 +47,13 @@ h2{
 #uLogin{
 	height: 30px;
 	width: 120px;
+	background-color: green;
 }
 body{
-	background-image: url("https://wallpaperaccess.com/full/1496345.jpg");
+	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	/*https://wallpaperaccess.com/full/1496345.jpg
 	/*https://i.pinimg.com/originals/90/c1/83/90c18300d9e187629336070e1b3bbda1.jpg*/
 	/*https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-1.2.1&w=1000&q=80*/
 }
@@ -72,7 +77,7 @@ body{
 	top: 360px;
 	left: 180px;
 }
-h1{
+#loginHeading{
 	position: absolute;
 	top: 5px;
 	left: 320px;

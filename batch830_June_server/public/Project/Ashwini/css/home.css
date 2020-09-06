@@ -6,11 +6,8 @@ summary{
 	text-decoration: red;
 	background-color: #ffecb3;
 }
-a{
-	text-decoration-line: none;
-	color: black;
-}
-button{
+
+#loginButton, #m_cate_1, #m_cate_2{
 	background-color: #ffecb3;
 	height: 20px;
 	width: 150px; 
@@ -54,7 +51,7 @@ button{
 	display: flex;
 	flex-wrap: wrap;
 }
-body{
+.homeContainer{
 	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -158,7 +155,7 @@ img{
 	top: 10px;
 	left: 500px;
 }
-input{
+#searchInput{
 	height: 20px;
 	width: 250px;
 	background-color: #ffebcc;

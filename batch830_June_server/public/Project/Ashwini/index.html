@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/login.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/home.css">
+		<link rel="stylesheet" type="text/css" href = "css/user_creddentials.css">
+		<script type="text/javascript" src = "js/home.js"></script>
+		<script type="text/javascript" src = "js/common.js"></script>
+		<script type="text/javascript" src = "lib/jquery.js"></script>
+		<script type="text/javascript" src = "lib/jquery.loadTemplate.js"></script>
+		<script type="text/javascript" src = "js/user_creddentials.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "loginOuterContainer">
+				<div><h1 id = "loginHeading">A.R Online Shopping Center</h1></div>
+				<div class = "loginPageContainer">
+					<h2>Login Form</h2>
+					<div class = "nameLabel">User Name</div>
+					<div class = "nameValue"><input type = "text" id = "uName"></div>
+
+					<div class = "passwordLabel">Password</div>
+					<div class = "passwordValue"><input type = "text" id = "uPassword"></div>
+
+					<div class = "loginButton"><button id = "uLogin" onclick = "loadPage('home')">Login</button></div>
+					<div class = "fogotPassword"><button id = "uFgtPswd" onclick = "loadPage('frtPswd')">Forgot Password?</button></div>
+					
+					<div class = "signUp">First time users pleas register here</div>
+					<div class = "signUpLink" ><a href = "signin.html">SignUp</a></div>
+					
+					<div class = "rememberMe">
+						<input type = "checkbox">Remember Me
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "homeContainer">
+			<header>
+				<div class = "tittle">A.R Online Shopping Center</div>
+				<div class = "search"><input type = "text" id = "searchInput"><span id = "searchText"><b>Search</b></span></div>
+			</header>
+			<div id = "cart"><a href=""><img src="https://previews.123rf.com/images/val2014/val20141603/val2014160300005/54302312-shopping-cart-icon.jpg" id = "cartImg"></a></div>
+			<div id = "login"><a href="login.html"><button id="loginButton">Login</button></a></div>
+			<div class = "sideMenu">
+				<details open>
+					<summary>Men's Fashion</summary>
+					<summary id = "menShirts" class = "men"><button id = "m_cate_1" onclick = "menShirts()">Men's Shirts</button></summary>
+					<summary id = "menWallets" class = "men"><button id = "m_cate_2" onclick = "menWallets()">Men's Wallets</button></summary>
+					<summary id = "menSunglasses" class = "men"><a href = "menSunglasses.html">Men's Sunglasses</a></summary>
+					<summary id = "menUnderwear" class = "men"><a href = "menUnderwear.html">Men's Underwear</a></summary>
+					<summary id = "menActivewear" class = "men"><a href = "menActivewear.html">Men's Activewear</a></summary>
+					<summary id = "menHatsAndCaps" class = "men"><a href = "menHatsAndCaps.html">Men's Hats & Caps</a></summary>
+					<summary id = "menPants" class = "men"><a href = "menPants.html">Men's Pants</a></summary>
+				</details>
+				<details open>
+					<summary>Women's Fashion</summary>
+					<summary id = "womenKurthas" class = "women"><a href = "womenKurthas.html" onclick = "womenKurthas()" id = "w_cate_1">Women's Kurthas & Kurthies</a></summary>
+					<summary id = "womenEthnicGowns" class = "women"><a href = "womenEthnicGowns.html">Women's Ethnic Gowns</a></summary>
+					<summary id = "womenDresses" class = "women"><a href = "womenDresses.html">Women's Dresses</a></summary>
+					<summary id = "womenSarees" class = "women"><a href = "womenSarees.html">Women's Sarees</a></summary>
+					<summary id = "womenTops" class = "women"><a href = "womenTops.html">Women's Tops</a></summary>
+					<summary id = "womenWatches" class = "women"><a href = "womenWatches.html">Women's Watches</a></summary>
+					<summary id = "womenHandBags" class = "women"><a href = "womenHandBags.html">Women's Hand Bags</a></summary>
+					<summary id = "jewellery" class = "women"><a href = "jewellery.html">Jewellary</a></summary>
+					<summary id = "beauty" class = "women"><a href = "beauty.html">Beauty</a></summary>
+				</details>
+			</div>
+			<div id = "body">
+				<div id = "content">
+					<h1 class = "heading">Men's Shirts</h1>
+					<div id = "innerContent">
+						<div id = "m_cate_1_style_item_1" class = "itemContainer">
+							<a href="m_cate1_item1_page.html" id = "m_cate_1_item_1">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k65d18w0/shirt/p/4/t/48-bfrybluesht02ab-being-fab-original-imaecvnxndp3zbdn.jpeg?q=50" id = "m_cate_1_item_1_img1" />
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item2_page.html" id = "m_cate_1_item_2">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jt8yxe80/shirt/t/t/n/m-arhf-gr-base-41-original-imafen82rhxmpsg8.jpeg?q=50" id = "m_cate_1_item_2_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item3_page.html" id = "m_cate_1_item_3">
+								<img src = "https://rukminim1.flixcart.com/image/495/594/jrdt8cw0/shirt/t/h/d/40-skcsh-1106-mao-fubar-original-imafd6vmgygzhvbp.jpeg?q=50" id = "m_cate_1_item_3_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item4_page.html" id = "m_cate_1_item_4">
+								<img src = "https://rukminim1.flixcart.com/image/495/594/jnqcpzk0/shirt/b/b/h/xxl-sshh-chi-6-jai-textiles-original-imafa9g9cr7axpps.jpeg?q=50" id = "m_cate_1_item_4_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item5_page.html" id = "m_cate_1_item_5">
+								<img src = "https://rukminim1.flixcart.com/image/495/594/k0o69ow0/shirt/a/n/3/xl-cm-st101-cobio-man-original-imafkbyrrczdrcgm.jpeg?q=50" id = "m_cate_1_item_5_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item6_page.html" id = "m_cate_1_item_6">
+								<img src = "https://rukminim1.flixcart.com/image/495/594/k7usyvk0/shirt/t/h/w/xxl-hs-15-jai-textiles-original-imafqy2aznkzmdy3.jpeg?q=50" id = "m_cate_1_item_6_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item7_page.html" id = "m_cate_1_item_7">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jxjahe80/shirt/v/r/j/42-zbsh506-yellow-38-zombom-original-imafhz9dnt3zkpza.jpeg?q=50" id = "m_cate_1_item_7_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item8_page.html" id = "m_cate_1_item_8">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jmdrr0w0/shirt/q/q/r/xxl-tblwtshirtful-sh4-tripr-original-imaf9ajwb3mfbhmh.jpeg?q=50" id = "m_cate_1_item_8_img1"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate1_item9_page.html" id = "m_cate_1_item_9">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k5fn3ww0/shirt/t/g/g/s-striped-shirts-mr-kameej-original-imafz4ga7c7bmrr8.jpeg?q=50" id = "m_cate_1_item_9_img1"/>
+							</a>
+						</div>
+						<div class = "itemLinkContainer">
+							<a href="menShirts.html">View All</a>
+						</div>
+					</div>
+				</div>
+				<div id = "men_cate2_content">
+					<h1 class = "heading">Men's Wallets</h1>
+					<div id = "men_cate2_innerContent">
+						<div id = "m_cate_2_style_item_1" class = "itemContainer">
+							<a href="m_cate2_item1_page.html" id = "m_cate_2_item_1">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jqfinww0/wallet-card-wallet/x/b/v/wlwt501-wt01-wallet-woodland-original-imafbmhsz3neadeg.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item2_page.html" id = "m_cate_2_item_2">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jrtj2q80/wallet-card-wallet/y/b/g/beige-slider-casuel-wallet-samtroh-original-imafdg9ymwdzfwea.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item3_page.html" id = "m_cate_2_item_3">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jzn0tjk0/wallet-card-wallet/u/h/h/brown-gh1700-wallet-go-hide-original-imafjhbrffucpegq.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item4_page.html" id = "m_cate_2_item_4">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k4lmv0w0/wallet-card-wallet/z/h/z/wl04-lr-wl04-wallet-jay-ramdev-creation-original-imafhcnbfjch75rg.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item5_page.html" id = "m_cate_2_item_5">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k1zbssw0/wallet-card-wallet/x/q/z/dc-branded-classic-hidelink01-quality-genuine-leather-wallet-original-imafhfmczpw5tg7p.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item6_page.html" id = "m_cate_2_item_6">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jmqmpow0-1/wallet-card-wallet/r/d/z/simple-simple-black-wallet-puma-original-imaf9h6ewke3e98t.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item7_page.html" id = "m_cate_2_item_7">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/jdyuefk0/wallet-card-wallet/y/z/3/new-high-quality-genuine-men-s-leather-wallet-and-pen-combo-original-imaeuhhhhfgvma8j.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item8_page.html" id = "m_cate_2_item_8">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k5o7r0w0/wallet-card-wallet/g/t/z/gvn-blu2lin01-gvn-blu2lin01-wallet-giovanny-original-imafzb997eak9dz2.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemContainer">
+							<a href="m_cate2_item9_page.html" id = "m_cate_2_item_9">
+								<img src = "https://rukminim1.flixcart.com/image/800/960/k5y7tzk0/wallet-card-wallet/z/z/t/montana-ubf102blu1008-wallet-urban-forest-original-imafzg4xggnaafwc.jpeg?q=50"/>
+							</a>
+						</div>
+						<div class = "itemLinkContainer">
+							<a href="menWallets.html">View All</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "fgtContainer">
+				<div class = "emailIdLabel">Email ID</div>
+				<div class = "emailIdValue">
+					<input type = "text" id = "uemailId">
+					<span class = "errorMessage">Mandatory Feild!</span>
+				</div>
+				<div class = "submitDetails"><a id = "loginPage"><button onclick = "validateInput()">Done</button></a></div>
+			</div>
+		</div>
+	</body>
+</html>
