@@ -9,12 +9,17 @@
 	box-shadow: 20px 20px green;
 	background-color: #FFD0A6;
 	position: absolute;
-	top: 200px;
+	top: 150px;
 	left: 450px;
 	/*#c4723b*/
 }
 button{
 	
+}
+footer{
+	font-weight: bold;
+	margin-top:630px;
+	font-size: 20px;
 }
 h2{
 	text-align: center;
@@ -84,4 +89,9 @@ body{
 	font-size: 60px;
 	/*font-style: italic;*/
 	text-shadow: 2px 2px red;
+}
+#uSignUp{
+	border: none;
+	background-color: #FFD0A6;
+	text-decoration-color: blue;
 }

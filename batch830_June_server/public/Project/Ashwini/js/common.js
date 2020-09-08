@@ -1,20 +1,41 @@
 function loadPage(type){
 	var url;
+	var fileName;
+	var cssFileName;
 	switch (type){
 		case 'login':
-			var loginTemp = $(".loginOuterContainer").html();
-			$(".container").html(loginTemp);
+			fileName = "templets/login.htm";
+			//var loginTemp = $(".loginOuterContainer").html();
+			//$(".container").html(loginTemp);
 			break;
 		case 'frtPswd':
-			var fgtPswdTemp = $(".fgtContainer").html();
-			$(".container").html(fgtPswdTemp);
+			fileName = "templets/fgtPswd.htm";
+			//var fgtPswdTemp = $(".fgtContainer").html();
+			//$(".container").html(fgtPswdTemp);
 			break;
 		case 'home':
-			var homeTemp = $(".homeContainer").html();
-			$(".container").html(homeTemp);
+			fileName = "templets/home.htm";
+			//var homeTemp = $(".homeContainer").html();
+			//$(".container").html(homeTemp);
 			break;
+		case 'signUp':
+			fileName = "templets/signin.htm"
 	}
+	getFileTemplete(fileName);
 }
-$(document).ready(function(){
-	loadPage('login'); // onload by default loat login page..
-});
+//$(document).ready(function(){
+//	loadPage('login'); // onload by default loat login page..
+//});
+function getFileTemplete(fileName){
+	var container = "";
+	$.ajax({
+		url: fileName,
+		method: 'GET',
+		success: function(res){
+			$(".container").html(res);
+		},
+		error: function(err){
+			console.log("error :" + err);
+		}
+	})
+}
