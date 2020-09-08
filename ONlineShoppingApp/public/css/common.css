@@ -1,0 +1,70 @@
+header, footer, mainContainer {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	border: 1px solid #ccc;
+}
+
+footer, header {
+	text-align: center;
+	padding: 5px;
+	background: #fff;
+}
+
+header {
+	top: 5px;
+}
+footer {
+	bottom: 10px;
+}
+
+body {
+	background: #000 !important;
+}
+
+mainContainer {
+	overflow: auto;
+	top: 44px;
+	bottom: 50px;
+	background: #fff;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+}
+
+.logoContainer {
+	position: absolute;
+	left: 5px;
+	top: -1px;
+}
+
+
+
+li {
+	list-style: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+.link {
+	color: blue;
+	cursor: pointer;
+}
+.link:hover {
+	text-decoration: underline;
+}
+
+.subtitle {
+	color: green;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.btnContainer {
+	text-align: right;
+}
+
