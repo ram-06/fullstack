@@ -12,6 +12,8 @@ function loadPage(type) {
 		case 'newsignup':
 			filename = "templates/newsignup.htm"
 			break;
+		case 'proddetails':
+			filename = 'templates/productDetails.htm'
 	}
 	getTemplateContentFromFile(filename);
 }

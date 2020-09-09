@@ -6,3 +6,10 @@
 	height: 400px;
 	margin: 15px auto;
 }
+
+.invalidErr {
+	color: red;
+	font-size: 13px;
+	text-align: center;
+	display: none;
+}
