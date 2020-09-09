@@ -5,6 +5,7 @@ function loadPage(type){
 	switch (type){
 		case 'login':
 			fileName = "templets/login.htm";
+			cssFileName = "homeContainer"
 			//var loginTemp = $(".loginOuterContainer").html();
 			//$(".container").html(loginTemp);
 			break;
@@ -33,9 +34,13 @@ function getFileTemplete(fileName){
 		method: 'GET',
 		success: function(res){
 			$(".container").html(res);
+			//ss$(".homeContainer").show();
+			$("footer").hide();
+			$("#loginHeading").hide();
 		},
 		error: function(err){
 			console.log("error :" + err);
+			console.log(res);
 		}
 	})
 }

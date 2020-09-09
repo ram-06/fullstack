@@ -1,5 +1,5 @@
 .homeContainer{
-	display: none;
+	/*display: none;*/
 }
 .loginPageContainer{
 	height: 450px;
@@ -13,9 +13,6 @@
 	left: 450px;
 	/*#c4723b*/
 }
-button{
-	
-}
 footer{
 	font-weight: bold;
 	margin-top:630px;
@@ -24,22 +21,22 @@ footer{
 h2{
 	text-align: center;
 }
-.nameLabel{
+.loginNameLabel{
 	position: absolute;
 	top: 100px;
 	left: 90px;
 }
-.nameValue{
+.loginNameValue{
 	position: absolute;
 	top: 100px;
 	left: 200px;
 }
-.passwordLabel{
+.loginPasswordLabel{
 	position: absolute;
 	top: 150px;
 	left: 90px;
 }
-.passwordValue{
+.loginPasswordValue{
 	position: absolute;
 	top: 150px;
 	left: 200px;
@@ -53,14 +50,6 @@ h2{
 	height: 30px;
 	width: 120px;
 	background-color: green;
-}
-body{
-	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*https://wallpaperaccess.com/full/1496345.jpg
-	/*https://i.pinimg.com/originals/90/c1/83/90c18300d9e187629336070e1b3bbda1.jpg*/
-	/*https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-1.2.1&w=1000&q=80*/
 }
 .rememberMe{
 	position: absolute;
