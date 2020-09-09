@@ -3,11 +3,19 @@ function loadPage(type){
 	switch (type) {
 		
 		case 'login':
-		var loginTemplt = $("#loginTemplt").html();
-		$("#container").html(loginTemplt)
+		console.log("hello");
+		var loginTemp = $("#loginTemplt").html();
+		$("#container").html(loginTemp);
+		
 		break;
 	}
+	//var loginTemp = $(".loginOuterContainer").html();
+			//$(".container").html(loginTemp);
+			
 }
-  $(document.ready(function(){
-  	loadPage('login');
-  })
+ // $(document.ready(function(){
+ // 	loadPage('login');
+ // });
+$(document).ready(function(){
+	loadPage('login'); // onload by default load login page..
+});
