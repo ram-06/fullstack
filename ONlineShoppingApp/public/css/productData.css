@@ -1,0 +1,19 @@
+.pDetails {
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+	width: 350px;
+	float: left;
+}
+
+.pDetails li {
+	list-style: none;
+	border: 1px solid;
+	margin: 3px;
+	padding: 3px;
+}
+
+.pDetails img {
+	width: 120px;
+	height: 120px;
+}

@@ -8,10 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<link rel="stylesheet" type="text/css" href="css/frgtpwd.css">
 		<link rel="stylesheet" type="text/css" href="css/newSignup.css">
+		<link rel="stylesheet" type="text/css" href="css/productData.css">
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<script type="text/javascript" src="javascripts/loginValidations.js"></script>
 		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/jquery.loadTemplate.js"></script>
 		<script type="text/javascript" src="javascripts/common.js"></script>
+		<script type="text/javascript" src="javascripts/productDetails.js"></script>
 	</head>
 	<body>
 		<header>
@@ -26,5 +29,16 @@
 		<footer>
 			@copyrights 2020frgtPwdTmplt
 		</footer>
+
+		<script id="productTmplt">
+			<ul class="pDetails">
+				<li>Product Name <span data-content="name"></span></li>
+				<li>Product Price <span data-content="price"></span></li>
+				<li>Product Manufacturer <span data-content="manu"></span></li>
+				<li>Product discount <span data-content="discount"></span></li>
+				<img data-src="image" />
+			</ul>
+		</script>
+		
 	</body>
 </html>

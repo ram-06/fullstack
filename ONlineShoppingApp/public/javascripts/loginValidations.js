@@ -14,6 +14,7 @@ var validateDetails = () => {
 			console.log(res);
 			if (res.msg == 'Valid') {
 				loadPage('proddetails');
+				getProductData();
 			} else {
 				$(".invalidErr").show();
 			}
