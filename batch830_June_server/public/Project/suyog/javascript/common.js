@@ -17,5 +17,6 @@ function loadPage(type){
  // 	loadPage('login');
  // });
 $(document).ready(function(){
+	console.log("hi");
 	loadPage('login'); // onload by default load login page..
 });
