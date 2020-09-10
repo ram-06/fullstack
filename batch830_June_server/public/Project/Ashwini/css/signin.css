@@ -91,6 +91,9 @@
 	height: 25px;
 	width: 100px;
 	background-color: green;
+	position: absolute;
+	top: 280px;
+	left: 80px;
 }
 /*h1{
 	position: absolute;
@@ -107,13 +110,7 @@
 	background-color: red;
 	font-size: 13px;
 }
-.errorDisplay{
-	text-decoration-color: red;
-	display: none;
-	background-color: red;	
-	font-size: 13px;
-}
-.empty, .empty1, .empty0, .empty2, .empty3 {
+.empty{
 	text-decoration-color: red;
 	display: none;
 	background-color: red;

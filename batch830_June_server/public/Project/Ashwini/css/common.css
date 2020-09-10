@@ -1,0 +1,14 @@
+img{
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	padding: 5px;
+}
+body{
+	background-image: url("https://i.ytimg.com/vi/TyauNrbnmVo/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	
+}
