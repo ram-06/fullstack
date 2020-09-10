@@ -50,7 +50,7 @@
       }
 
 
-      .container {
+      .signup {
         padding: 16px;
         width:400px;
         position:absolute;
@@ -69,10 +69,7 @@
           width: 100%;
         }
       }
-          body{
-            background-image: url("file:///C:/UI-classes/UIClasses/UI_server/public/project/picture/great-online-shopping-sites-1068x713.jpg");
-            background-size: 100%;
-         }
+         
           .or{
           	position:absolute;
           	left:234px;
@@ -84,12 +81,5 @@
           	position:absolute;
           	left:10px;
           	top:550px;
-          }
-          img{
-           width:220px;
-           height:120px;
-           position:absolute;
-           padding:10px;
-           border-radius: 15px 50px;
-          }
+         }
  
