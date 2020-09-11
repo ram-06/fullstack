@@ -9,6 +9,8 @@
       <script type="text/javascript" scr="javascript/common.js"></script>
       <link rel="stylesheet" href="css\common.css">
        <link rel="stylesheet" href="css\login.css">
+       <link rel="stylesheet" href="css\signup.css">
+
        
   </head>
   
@@ -19,7 +21,7 @@
           </div>
         </div>
      <div id="container">
-      <span>Hello</span>
+      
      </div>         
 
      <div id="loginTemplt">
@@ -35,15 +37,54 @@
 
           <button type="submit">Login</button>
           
-   
-
-        
           <span id="psw">Forgot<a href="#">password?</a></span>
           <div class="sign">
             <a href="file:///C:/UI-classes/UIClasses/UI_server/public/project/Signup.html">SignUp</a>
           <div>
         </div>
-      </div>          
-                       
+      </div> 
+
+      <div id="signupTemplt">
+          
+           <div class="signup">
+             
+              <h1>Sign Up</h1>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="email"><b>Contact</b></label>
+              <input type="text" placeholder="Mob number" name="email" required>
+
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+              <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <div class="or">OR</div>
+                <div class"login"><a href="file:///C:/UI-classes/UIClasses/UI_server/public/project/loginpage.html#"><button type="button" class="loginbtn">Login</button></a></div>       
+             
+              </div>
+         </div>  
+   </div>  
+  
+       <div id="fgtpwdTemplt"> 
+
+            <div id="fgtpwd">
+                <h1>Reset password</h1>
+        
+            <label for="uname"><b>Enter registered emali id</b></label>
+            <input type="text" placeholder="email id" name="uname" required>
+     
+            <button id="subBtn" type="submit">submit</button>
+           </div>
+
+      </div>   
+                           
      </body>
 </html>
