@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/validate/user/details', validationRouter);
-app.use("/get/data/productDetails", productDetailsRouter)
+app.use("/get/data/productDetails", productDetailsRouter);
 
 app.listen(8081, function(){
 	console.log("server is listing at 8081");
