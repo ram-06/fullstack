@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment
+		</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="assignment.js"></script>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				background: #ccc;
+				margin: 10px auto;
+				padding: 10px;
+				width: 500px;
+			}
+
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				background: #fff;
+			}
+			.btnDelete {
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="container">
+			<li>
+				User Name: <input type="text" id="uname">
+			</li>
+			<li>
+				User age: <input type="number" id="uage">
+			</li>
+			<li>
+				Location: 
+				<select id="uloc">
+					<option value=""></option>
+					<option value="ind">India</option>
+					<option value="us">USA</option>
+					<option value="jp">JAPAN</option>
+					<option value="pak">Pakisthan</option>
+				</select>
+			</li>
+			<li>
+				<input type="button" value="Register" onclick="registerDetails()">
+				<input type="button" value="Update" onclick="registerDetails()">
+			</li>
+		</ul>
+
+		<table class="table table-bordered">
+			<thead class="thead-dark">
+				<tr>
+					<th>Sno</th>
+					<th>Sname</th>
+					<th>AGe</th>
+					<th>Location</th>
+					<th>operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</body>
+</html>
