@@ -1,0 +1,73 @@
+* {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+h1 {
+      text-align: center;
+}
+
+h1:hover {
+      text-decoration: underline;
+}
+
+h1::before {
+      background: url(https://source.unsplash.com/user/erondu/2600x1600)no-repeat center center/cover;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 520%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+}
+
+label {
+      color: rgb(243, 82, 82)
+}
+
+span {
+      color: rgb(79, 79, 252);
+}
+
+.main_cointainer {
+      border: 2px solid black;
+      font-size: 1.5em;
+      margin: 20px
+}
+
+.cointainer {
+      border: 2px solid black;
+      margin: 40px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+}
+
+img {
+      width: 13%;
+      margin: 20px;
+      transition: all 1s;
+      border: 10px solid rgb(85, 85, 85);
+      border-radius: 5%;
+
+}
+
+img:hover {
+      transform: scale(1.3);
+      box-shadow: 10px 10px 20px rgb(85, 85, 85);
+      border-radius: 35%;
+}
+
+button {
+      position: relative;
+      left: 45%;
+}
