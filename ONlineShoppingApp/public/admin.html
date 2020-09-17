@@ -26,7 +26,11 @@
                 Product Discount: <input type="text" id="pdiscount">
             </li>
             <li>
-                Product image: <input type="text" id="pimage">
+                <!-- Product image: <input type="text" id="pimage"> -->
+                <form enctype="multipart/form-data" >
+                    <input type="file" name="prodImage"> 
+                    <input type="button" value="Upload Image" id="filesubmit" onclick="uploadImage()">
+                </form>
             </li>
             <li>
                 Product manufacturer: <input type="text" id="pmanu">
