@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ansu Fitness GYM</title>
+    <style>
+      body {
+        /* rest css */
+        font-family: "Baloo Bhai 2", cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("img/gym.jpg");
+        background-size: cover;
+        height: 2000px;
+        color: white;
+      }
+
+      .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        display: inline-block;
+        left: 34px;
+        top: 12px;
+      }
+      .left img {
+        width: 74px;
+        padding: 9px;
+        margin: 5px 10px;
+      }
+      .left img:hover {
+        transition: linear;
+        transition-duration: 0.5s;
+        transform: scale(1.5);
+      }
+      .left div {
+        text-align: center;
+        line-height: 0px;
+        padding-bottom: 10px;
+      }
+
+      .medium {
+        /* border: 2px solid yellow; */
+        width: 535px;
+        margin: 12px auto;
+        display: block;
+      }
+      .navbar {
+        display: inline-block;
+      }
+
+      .navbar .list {
+        display: inline-block;
+      }
+      .navbar .list .link {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 25px;
+      }
+      .navbar .list .link:hover,
+      .navbar .list .link.active {
+        text-decoration: underline;
+        color: gray;
+      }
+      .list:hover {
+        transition: linear;
+        transition-duration: 0.5s;
+        transform: scale(1.2);
+      }
+
+      .right {
+        /* border: 2px solid green; */
+        position: absolute;
+        display: inline-block;
+        right: 34px;
+        top: 12px;
+      }
+      .btn {
+        font-family: "Baloo Bhai 2", cursive;
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .btn:hover {
+        background-color: rgb(102, 101, 101);
+        color: skyblue;
+      }
+
+      .container {
+        border: 2px solid white;
+        margin: 218px 90px;
+        width: 35%;
+        padding: 75px 75px;
+        border-radius: 18px;
+        box-sizing: border-box;
+      }
+      .container h1 {
+        text-align: center;
+        color: rgb(54, 129, 129);
+      }
+      .container h1:hover {
+        text-decoration: underline;
+        transition: linear;
+        transition-duration: 0.5s;
+        transform: scale(1.2);
+      }
+      .form-group input {
+        font-family: "Baloo Bhai 2", cursive;
+        text-align: center;
+        margin: 3px auto;
+        width: 93%;
+        border-radius: 6px;
+        padding: 5px;
+      }
+      input:focus {
+        background-color: rgb(223, 248, 223);
+      }
+      .container .btn {
+        font-family: "Baloo Bhai 2", cursive;
+        margin: 18px auto;
+        padding: 4px;
+        width: 95%;
+        font-size: larger;
+        cursor: pointer;
+      }
+      .container .btn:hover {
+        transition: linear;
+        transition-duration: 0.5s;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <!-- logo -->
+        <img src="img/gymlogo.png" alt="logo photo" />
+        <div>Ansu fitness GYM</div>
+      </div>
+
+      <div class="medium">
+        <!-- navigation -->
+        <ol class="navbar">
+          <li class="list"><a href="#" class="link active">Home</a></li>
+          <li class="list"><a href="#" class="link">Services</a></li>
+          <li class="list"><a href="#" class="link">Fitness</a></li>
+          <li class="list"><a href="#" class="link">Contact us</a></li>
+        </ol>
+      </div>
+      <div class="right">
+        <!-- contact us -->
+        <button class="btn active">call us now</button>
+        <button class="btn active">email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join my GYM</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your phone no" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your email" />
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
