@@ -11,6 +11,9 @@ var addProduct = require('./routes/addProduct');
 var productDetailsRouter = require("./routes/productDetails");
 var studentData = require("./routes/studentDetails");
 var addImage = require("./routes/uploadProductImage");
+var userLogedin = require("./routes/isUserLogedin");
+var logoutSession = require("./routes/logoutSession");
+var session = require("express-session");
 
 var app = express();
 
@@ -28,6 +31,11 @@ console.log(__dirname)
 
 // C:\UI-Classes\UIClasses\ONlineShoppingApp\StaticResources
 
+app.use(session({
+  secret: 'hello every one',
+  resave: false,
+  saveUninitialized: true
+}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -39,6 +47,8 @@ app.use("/add/product", addProduct);
 app.use("/upload/productimage", addImage);
 
 app.use('/data/student', studentData);
+app.use('/user/loginstatus', userLogedin);
+app.use('/user/logout', logoutSession);
 app.listen(8081, function(){
 	console.log("server is listing at 8081");
 })

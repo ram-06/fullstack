@@ -38,6 +38,53 @@ function getTemplateContentFromFile(filename) {
 	
 }
 
-$(document).ready(function(){
-	loadPage('login'); // onload by default loat login page..
+var logoutUser = () => {
+	$.ajax({
+		url: '/user/logout',
+		method: 'GET',
+		success: function(res) {
+			loadPage('login');
+			$(".logout").hide();
+		},
+
+	})
+}
+
+$(document).ready(function() {
+
+	$.ajax({
+		url: '/user/loginstatus',
+		method: 'GET',
+		data: 'JSON',
+		success: function(res) {
+			console.log(res);
+			res = JSON.parse(res);console.log(res);
+			if (res.status == true) {
+				loadPage('proddetails');
+				getProductData();
+				$(".logout").show();
+			} else {
+				loadPage('login');
+			}
+		}
+	})
+
+	 // onload by default loat login page..
 });
+
+var maxTime = 5000;
+var userIntrvl;
+
+$(window).on("click", function(){
+	clearInterval(userIntrvl);
+
+	userIntrvl = setInterval(function(){
+		console.log("user not using the web page for 5 sec,,lets make him logout");
+		loadPage('login');
+		$(".logout").hide();
+	}, maxTime)
+
+})
+/*$(window).on("mouseover", function(){
+	console.log("hello2")
+}) */

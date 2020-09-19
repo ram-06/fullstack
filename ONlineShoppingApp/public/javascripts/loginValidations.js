@@ -10,11 +10,10 @@ var validateDetails = () => {
 		dataType: 'JSON',
 		data: data,
 		success: function(res) {
-			console.log("response");
-			console.log(res);
 			if (res.msg == 'Valid') {
 				loadPage('proddetails');
 				getProductData();
+				$(".logout").show();
 			} else {
 				$(".invalidErr").show();
 			}
