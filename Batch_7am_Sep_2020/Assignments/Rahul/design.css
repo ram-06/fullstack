@@ -1,8 +1,7 @@
 .super-box {
     border: 2px solid black;
-    width: 1024;
-    height: 3000;
-    padding: 20px;
+    width: auto;
+    height: 1200px;
 }
 
 .main-box {
