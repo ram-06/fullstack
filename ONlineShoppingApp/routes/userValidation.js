@@ -22,8 +22,10 @@ router.post('/', function(request, response) {
 			collection.find({uid: request.body.id, password:request.body.pwd}).toArray(function(err, result){
 				if (result.length == 1) {
 					data.msg = "Valid";
+					request.session.isUserValid = true;
 			 	} else {
 					 data.msg = "Invalid";
+					 request.session.isUserValid = false;
 				 }
 				 data = JSON.stringify(data);
 				 response.send(data);

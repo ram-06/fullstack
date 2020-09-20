@@ -68,3 +68,6 @@ li {
 	text-align: right;
 }
 
+.logout {
+	display: none;
+}
