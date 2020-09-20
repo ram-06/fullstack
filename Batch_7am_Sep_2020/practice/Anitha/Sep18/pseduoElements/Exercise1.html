@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+		PseudoElement Exercise
+		</title>
+	</head>
+	<style type="text/css">
+
+		.highlight::first-line
+		{
+          color: red;
+          font-size:20px;
+		}
+		.highlight::first-letter
+		{
+          color: green;
+          font-size:20px;
+		}
+		.highlight::before
+		{
+			content:"Justsmile";
+		}
+		.highlight::after
+		{
+			content:"Justsmile";
+		}
+
+	</style>
+	<body>
+	<!-- Set text color to red, for the first line of the <p> element.
+		Set text color to "green", and the text size to "xx-large", for the first letter of the <p> element.
+		Insert the image "smiley.gif" before, and after <p> elements, using the ::before and ::after pseudo-elements.. -->
+		<p class="highlight">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+	</body>
+</html>

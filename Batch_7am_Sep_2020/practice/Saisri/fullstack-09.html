@@ -1,0 +1,92 @@
+<html>
+    <head>
+
+       
+
+
+        <title>
+            pesudo classes& elements
+        </title>
+        <style>
+            input[name="FirstName"]:focus{
+                color:red;
+                background-color: green;
+            }
+            input[name="MiddleName"]:focus{
+                background: yellow;
+            }
+            input[name="LastName"]:focus{
+                background: violet;
+            }
+            input[type="email"]:focus{
+                color: green;
+                background: yellow;
+            }
+            input[type="email"]:invalid{
+                color: red;
+                border: 2px solid red;
+            }
+            input[type="number"]:in-range{
+                border: 10px solid red;
+                width: 100px;
+            }
+            input[type="button"]:hover{
+                color: blue;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            input[name="state"]:disabled{
+                color: red;
+            }
+            input[name="FirstName"]:invalid, input[name="LastName"]:invalid{
+                border: 10px solid red;
+            }
+            input[type="checkbox"]:checked{
+                height: 20px;
+                width: 30px;
+            }
+            input[type="checkbox"]:not(checked){
+                height: 10px;
+                width: 20px;
+            }
+            p:empty{
+                border: 5px solid green;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <input type="text" name="FirstName" placeholder="FirstName" required/>
+        <input type="text" name="MiddleName" placeholder="MiddleName"/>
+        <input type="text" name="LastName" placeholder="LastName" required/>
+        <br/>
+        <input type="email" name="email" placeholder="please enter your emailid"/>
+        <br/>
+        <input type="number" id="pn" name="mobileno" max="10" value="7702654030"/>
+        <br/>
+        <input type="button" name="login" value="LOGIN"/>
+        <br/>
+        <input type="text" name="state" value="AP" disabled="disabled"/>
+        <br/>
+        <input type="text" name="date" value="19/09/2020" readonly="false"/>
+        <br/>
+SandQuality:<input type="checkbox" name="high" value="high" checked/>
+        <input type="checkbox" name="middium" value="middium"/>
+        <input type="checkbox" name="poor" value="poor"/>
+        <p></p>
+
+
+    </body>
+
+    <script>
+
+        console.log(document);
+
+console.log('hai raju');
+
+console.log(document.getElementById("pn").value)
+
+    </script>
+
+
+</html>
