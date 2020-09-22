@@ -13,6 +13,7 @@ var studentData = require("./routes/studentDetails");
 var addImage = require("./routes/uploadProductImage");
 var userLogedin = require("./routes/isUserLogedin");
 var logoutSession = require("./routes/logoutSession");
+var addRecord = require("./routes/addRecords");
 var session = require("express-session");
 
 var app = express();
@@ -45,6 +46,7 @@ app.use('/validate/user/details', validationRouter);
 app.use("/get/data/productDetails", productDetailsRouter);
 app.use("/add/product", addProduct);
 app.use("/upload/productimage", addImage);
+app.use("/add/record", addRecord);
 
 app.use('/data/student', studentData);
 app.use('/user/loginstatus', userLogedin);
