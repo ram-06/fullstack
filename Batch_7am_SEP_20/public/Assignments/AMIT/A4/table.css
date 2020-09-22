@@ -1,0 +1,25 @@
+
+.b{
+	border: 2px solid black;
+	color:Red;
+	background:url(https://cdn4.vectorstock.com/i/1000x1000/51/38/wood-table-top-on-golden-bokeh-abstract-background-vector-11645138.jpg);
+}
+.block{
+	border: 2px solid black;
+	background: silver;
+	text-align: center;
+	margin: 30px;
+	padding: 2px;
+	}
+
+ table,th, td {
+  border: 1px solid black;
+  text-align: center;
+  margin: 29px;
+  height: 90px;
+  
+} 
+th,td{
+ 	width: 500px;
+ 	color: black;
+ }
