@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			CSS Margin & Padding 
+		</title>
+		<style type="text/css">
+			.container {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+			}
+			.block {
+				border: 10px solid red;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				text-decoration: underline;
+				font-weight: bold;
+
+			}
+			.block1 {
+				background: yellow;
+				padding: 10px;
+				position: fixed;
+				left: 50%;
+				right: 50%;
+				margin: 5px 12px 13px 11px;
+
+			}
+			.block2 {
+				background: blue;
+				padding: 5px  12px 13px 11px;
+				position: relative;
+				left: 30%;
+				right: 30%;
+				margin: 5px 2px 3px 11px;
+			}
+			
+			.block3 {
+				position: absolute;
+				background-color: orange;
+				top: 45%;
+				left: 45%;
+				padding-top: 12px; 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="block block1">hello</div>
+			<div class="block block2">good morning</div>
+			<div class="block block3">how are you</div>
+			
+		</div>
+	</body>
+</html>
