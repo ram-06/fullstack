@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			css z-index property
+		</title>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				width: 130px;
+				height: 130px;
+
+			}
+			.container1 {
+				background: green;
+				z-index: 10;
+			}
+			.container2 {
+				background: yellow;
+				position: relative;
+				left: 20px;
+				z-index: 3;
+			}
+			.container3 {
+				background: pink;
+				position: absolute;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block container1"></div>
+		<div class="block container2"></div>
+		<div class="block container3"></div>
+	</body>
+</html>
