@@ -1,0 +1,81 @@
+.header {
+	text-align: center;
+	border: 1px solid;
+	padding: 5px;
+	margin: 2px;
+}
+.mainContainer {
+	border: 1px solid;
+	background: #ccc;
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	bottom: 50px;
+	top: 40px;
+}
+.footer {
+	border: 1px solid;
+	text-align: center;
+	height: 30px;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	right: 5px;
+	padding: 5px;
+}
+
+.leftContainer,
+.rightContainer {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid;
+	float: left;
+	height: 580px;
+	overflow: auto;
+}
+
+.leftContainer {
+	width: 300px;
+}
+.rightContainer {
+	width: 1100px;
+}
+
+.leftContainer li {
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.leftContainer li:hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+.details {
+	border: 1px solid;
+	height: 200px;
+	list-style: none;
+	margin: 5px;
+	list-style: none;
+}
+
+.imgContainer,
+.detailsContainer {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+.imgContainer {
+	width: 150px;
+	height: 150px;
+}
+.imgContainer img {
+	width: 140px;
+	height: 140px;
+}
+.details:target {
+	background: blue;
+}
