@@ -1,0 +1,65 @@
+.title{
+    border: 2px solid gray;
+    background-color: honeydew;
+    color: indigo;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 4px;
+    padding: 2px;
+}
+.block1{
+    border: 1px solid gray;
+    margin: 30px;
+    padding: 2px;
+    height: 190px;
+    
+}
+.block2{
+    border: 1px solid gray;
+    background-color: khaki;
+    color: #546289;
+    font-size: 20px;
+    text-align: center;
+    width: 180px;
+    height: 30px;
+    padding: 4px;
+    margin: 5px;
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}
+ul li{
+    color: grey;
+    margin: 2px;
+    padding: 2px;
+    list-style: none;
+}
+.body{
+    margin: 10px;
+}
+.location{
+    position: relative;
+    bottom: 100px;
+    right: 140px;
+    float: right;
+}
+.password{
+    position: relative;
+    bottom: 70px;
+    left: 110px;
+    float: right;
+}
+.repassword{
+    position: relative;
+    left: 385px;
+    bottom: 40px;
+    float: right;
+}
+.address{
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    float: right;
+}
