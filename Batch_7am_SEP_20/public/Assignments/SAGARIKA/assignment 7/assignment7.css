@@ -1,0 +1,65 @@
+
+.head{
+  border: 2px solid;
+  text-align: center;
+  font-weight: bold;
+  background: yellow;
+  margin: 5px;
+  padding: 2px;
+
+}
+.block1{
+	border: 2px solid;
+	height: 150px;
+	margin-top: 25px;
+
+}
+.block2{
+  border: 1px solid grey;
+    background-color:grey;
+    font-size: 20px;
+    text-align: center;
+    width: 180px;
+    height: 30px;
+    padding: 4px;
+    margin: 5px;
+    position: relative;
+    left:3%;
+    bottom:20%;
+}
+.contain{
+	margin: 10px;
+}
+.locate{
+	float: right;
+	position: relative;
+	bottom:100px;
+	right:140px;
+}
+.pass{
+	position: relative;
+		float: right;
+	left: 50px;
+	bottom: 78px;
+}
+	.repass{
+		position: relative;
+		float: right;
+		left: 370px;
+		bottom: 40px;
+	}
+	.address{
+    position: relative;
+    bottom:130px;
+    right: 50px;
+    float: right;
+}
+.aboutyou{
+ position: absolute;
+ float: left;
+ margin: 5px;
+}
+.submit{
+	float: right;
+	margin: 2px;
+}
