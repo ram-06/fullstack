@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML Input elements
+		</title>
+		<style type="text/css">
+			li {
+				list-style: none;
+				padding: 10px;
+				border: 1px solid;
+				padding: 5px;
+				margin: 5px;
+				background: #fff;
+			}
+			ul {
+				width: 600px;
+				margin: 10px auto;
+				border: 2px solid;
+				background: #ccc;
+				padding: 10px;
+			}
+			h3 {
+				text-align: center;
+			}
+			.mystyle {
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>User Registration Page</h3>
+		<form action="http://www.xyzpqr.com/data/ample" method="POST">
+			<ul>
+				<li>
+					Enter User Name: <input type="text" name="userName">
+				</li>
+				<li>
+					Enter account Pwd: 
+					<input type="password" name="actPwd" required>
+				</li>
+				<li>
+					Enter user age: <input type="text" name="userAge">
+				</li>
+				<li>
+					Gender: 
+						<input type="radio" name="gender" value="female"> Female
+						<input type="radio" name="gender" value="male"> Male
+				</li>
+				<li>
+					Languages: 
+						<input type="checkbox" name="lng_eng" class="mystyle"> English
+						<br/>
+						<input type="checkbox" name="lng_tel"> Telugu
+						<input type="checkbox" name="lng_urd"> Urdu
+						<input type="checkbox" name="lng_hin"> Hindi
+				</li>
+				<li>
+					Country: 
+					<select name="country">
+						<option></option>
+						<option>India</option>
+						<option>Japan</option>
+						<option selected>USA</option>
+						<option>Russia</option>
+					</select>
+				</li>
+				<li>
+					About urself:
+					<textarea min="" max="" maxlength="100" name="userInfo"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Save Details">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
