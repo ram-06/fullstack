@@ -1,89 +1,104 @@
-.header, .footer{
-	border: 1px solid;
-	font-size: 35px;
-	font-style: italic;
+.header{
+	border: 1px solid blue;
 	text-align: center;
+	width: 100%;
+	height: 43px;
+    position: fixed;
+    font-size: 25px;
 }
-.total{
-	border: 1px solid black;
-	background-color: #f4f0ec;
+.header1{
+	border: 1px solid blue;
+	text-align: center;
+	width: 100%;
+	height: 43px;
+    font-size: 25px;
 }
-body {
-	background-image: url(https://cdn.techjuice.pk/wp-content/uploads/2019/07/online-shopping-1280x720.jpg);
-	background-repeat: no-repeat;
+.child2{
+	width: 25%;
+    position: fixed;
+    left: 78%;
+    top: 35%;
 }
-.detailsLogin{
-	margin-bottom: 10px;
-    text-align: center;
+.child3{
+	width: 19%;
+    position: fixed;
+    left: 79%;
+    top: 44%;
 }
-.details{
-	margin: 50px;
-	font-weight: 700px;
-	font-size: 25px;
-	display: inline-block;
+.maincontainer{
+	background-image: url(https://image.freepik.com/free-vector/purple-powder-pastel-with-hand-drawn-flowers-background_23-2148588630.jpg);
 }
-.box{
-	margin-top: 10px;
-    margin-bottom: 10px;
+.lgnbtn{
+	position: absolute;
+	top: 59%;
+    left: 88%;
+    height: 5%;
+    cursor: pointer;
+    font-size: 18px;
 }
-.total {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-  margin-top: 150px;
-  margin-bottom: 162px;
-}
-.total1{
-	margin: auto;
- 	width: 50%;
-  	border: 3px solid blue;
-  	padding: 10px;
-  	margin-top: 232px;
-    margin-bottom: 193px;
-    background: 	#FFDAB9
-}
-.btn, .sgnbtn{
-	margin-left: 40%;
-	width: 120px;
-	cursor: pointer;
-}
-.btn:hover{
+.lgnbtn,.sgnbtn:hover{
 	background: pink;
 }
-.sgnbtn:hover{
-	background: green;
-}
-.sgnup , .frgtpwd{
-	cursor: pointer;
-	text-align: center;
-	margin-top: 10px;
-}
-.sngpage{
-	background: white;
-}
-.sngdetails{
-	text-align: center;
-}
-.sngnew{
-	margin-right: 45px;
+.sgnup{
+	position: absolute;
+	top: 66%;
+	left: 88%;
 	font-size: 20px;
-	font-weight: 400px;
-}.box1{
-	margin-top: 10px;
+	font-style: italic;
+	cursor: pointer;
+}
+.frgtpwd{
+	position: absolute;
+	top: 71%;
+	left: 85%;
+	font-size: 20px;
+	cursor: pointer;
+	font-style: italic;
+}
+.child4{
+	position: fixed;
+	top: 54%;
+	left: 84%;
+}
+.child41{
+	position: absolute;
+    right: 107%;
+}
+.child5{
+	position: fixed;
+	top: 65%;
+	left: 84%;
+}
+.child42{
+	position: absolute;
+	right: 110%;
+}
+.child6{
+	position: fixed;
+	top: 77%;
+	left: 79%;
 }
 .sgnbtn{
-	margin-top: 10px;
+	position: fixed;
+	top: 87%;
+    left: 88%;
+    height: 5%;
+    cursor: pointer;
+    font-size: 18px;
 }
-a{
-	text-decoration: none;
+.child8{
+	position: fixed;
+	top: 42%;
+	left: 79%;
 }
-.respswd{
-	font-size: 25px;
-	font-weight: 600px;
-	text-align: center;
-}
-.prd{
+.rstpswd{
+	position: fixed;
+	top: 52%;
+    left: 88%;
+    height: 5%;
+    cursor: pointer;
+    font-size: 18px;
+}.prd{
 	background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-light-color-romantic-peach-festival-spring-stepping-flower-background-image_189129.jpg);
 	background-repeat: repeat;
 }
@@ -153,7 +168,7 @@ a{
 	top: 122%;
     left: 88%;
 }
-img{
+.prddetails{
 	width: 130px;
 	height: 130px;
 }
