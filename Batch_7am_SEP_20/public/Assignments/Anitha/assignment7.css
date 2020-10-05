@@ -35,8 +35,12 @@ input[type=text],select {
 	width:150px;
 }
 
-input[type=text],select:hover{
+input[type=text]:hover{
 	background: #e0d5b1;
+}
+
+select:hover{
+  background: #e0d5b1;
 }
 
 .section1 {
