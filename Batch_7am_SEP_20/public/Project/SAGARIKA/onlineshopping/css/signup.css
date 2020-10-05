@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	background-image: url(../images/flip.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+.header{
+	overflow: hidden;
+	text-align:center;
+	background-color:#8A2BEF;
+	font-size: 20px;
+	font-family:cursive;
+	height: 40px;
+	overflow: hidden;
+}
+.logoimg{
+	width:40px;
+	height:35px;
+	float: left;
+	margin: 2px;
+	background-size:75px;
+	background-image: url(../images/f.jpg);
+	background-position: -19px -14px;
+}
+h1{
+	text-align: center;
+	background: yellow;
+}
+ul{
+	position:relative;
+	top:180px;
+	width:1000px;
+	margin:10px auto;
+	border: 2px solid;
+	background-color: none;
+	padding: 10px;
+	list-style: none;
+}
+#data{
+	height: 40px;
+	width: 260px;
+	border-radius: 20px;
+	border:none;
+}
+li{
+	text-align: center;
+	background:yellow;
+	border: 2px solid;
+	margin: 2px;
+}
+#li{
+ margin-right:60px;
+}
+#submit {
+	height: 40px;
+	width: 260px;
+	border-radius:10px;
+	border:none;
+    margin:10px auto;
+    margin-top: 30px;
+    position:relative;
+    left:39%;
+    cursor:pointer;
+    text-align: center;
+    background:green;
+}
+#body{
+	height:625px;
+
+
