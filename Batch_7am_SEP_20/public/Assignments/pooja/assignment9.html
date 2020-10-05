@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EMPLOYEE DETAILS</title>
+		<style type="text/css">
+		.header{
+			height: 150px;
+			font-weight: bold;
+			background:pink;
+			border: 5px;
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="header">EMPLOYEE DETAILS / ASSIGNMENT-9</div>
+		<script type="text/javascript">
+			
+			var name,g,department,basicSalary,pf,hra,total;
+			name='pooja';
+			g="female";
+			department="Web Design";
+			basicSalary=40539;
+
+			pf=(basicSalary/12)*100;
+			hra=(basicSalary/24)*100;
+			total = basicSalary+pf+hra;
+
+			alert('look for employee details in the console window');
+
+			console.log('Name of the employee '+name);
+			console.log('Gender of the employee is'+g);
+			console.log('basic salary is '+basicSalary);
+			console.log('house rent allowance is '+hra);
+			console.log('Provident fund is '+pf);
+			console.log('Total salary earned '+total);
+
+		</script>
+
+	</body>
+</html>
