@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Sticky position
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				background: #ccc;
+				overflow: auto;
+				width: 500px;
+				height: 450px;
+			}
+			.block {
+				border: 2px solid;
+				width: 120px;
+				padding: 10px;
+				height: 120px;
+				text-align: center;
+				margin: 10px;
+			}
+			.block1 {
+				background: green;
+			}
+			.block2 {
+				background: blue;
+				position: sticky;
+				left: 100px;
+				top: 20px;
+				bottom: 50px;
+			}
+			.block3 {
+				background: yellow;
+			}
+			.block4 {
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="block block3"></div>
+			<div class="block block1"></div>
+			<div class="block block2"></div>
+			<div class="block block3"></div>
+			<div class="block block4"></div>
+			<div class="block block1"></div>
+			<div class="block block3"></div>
+		</div>
+	</body>
+</html>

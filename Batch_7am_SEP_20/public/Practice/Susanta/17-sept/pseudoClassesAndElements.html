@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Demonstrating Peudo classes
+	</title>
+	<style type="text/css">
+		.block{
+			border: 2px solid;
+			width: 200px;
+			height: 100px;
+			background: yellow;
+			color: red;
+
+		}
+
+		.block:hover{
+			background: black;
+			text-decoration: underline;
+
+		}
+		a{
+			color: red;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		a:focus{
+			background: yellow;
+			color: lightblue;
+		}
+		a:active{
+			background: red;
+		}
+
+		.divel:first-child{
+			background: red;
+			font-weight: bold;
+		}
+
+		.divel:last-child{
+			background: green;
+			font-weight: bold;
+		}
+
+		span:first-child{
+			background: red;
+			font-weight: bold;
+		}
+
+		span:last-child{
+			background: yellow;
+			font-weight: bold;
+		}
+
+		span:nth-child(2){
+			background: green;
+			font-weight: bold;
+		}
+
+		span:nth-last-child(2){
+			background: blue;
+			font-weight: bold;
+		}
+
+		h3::first-letter{
+			color: red;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		p::first-letter{
+			color: green;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		p::selection{
+			background: yellow;
+			color: red;
+		}
+
+		p::after{
+			content: "continue reading ...";
+			text-decoration: underline;
+			color: green;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<!--
+		Applying Pseudo Classes
+	-->
+	Click Here to Visit <a href="http://www.google.com">Google</a>
+	Click Here to Visit <a href="http://www.Amazon.com">Amazon</a>
+	Click Here to Visit <a href="http://www.Flipkart.com">Flipkart</a>
+	Click Here to Visit <a href="http://www.Youtube.com">Youtube</a>
+	<br><br>
+	<div class="block">
+		Hello Guest !! Good Morning
+	</div>
+	<br>
+	<div> 
+		 <div class="divel"> Krishna</div>
+		 <div class="divel"> Rama</div>
+		 <div class="divel"> Jagannath</div>
+		 <div class="divel"> Badrinath</div>
+	</div>
+	<br>
+	<div> 
+		 <span> Krishna</span>
+		 <span> Rama</span>
+		 <span> Jagannath</span>
+		 <span> Badrinath</span>
+	</div>
+	
+
+	<!--
+		Applying Pseudo Elements
+	-->
+
+	<h1>
+ 		Today's News ....
+ 	</h1>
+ 	<h3> NewsItem : 1 </h3>
+ 		<p>
+ 			Barsha alleged in the complaint that two persons, who work in actor-turned-politician AnubhavMohanty’s residence at Nandi Sahi in Cuttack, entered her bedroom yesterday evening while she was having food and clicked photographs and shot videos. Barsha is presently staying at her in-laws house.Barsha further claimed that her life is in threat and sought police protection. She is also likely to hold a press meet in connection with the domestic violence case filed by her against husband Anubhav.
+ 		</p>
+
+ 	<h3> NewsItem : 2 </h3>
+ 		<p>
+ 			Barsha alleged in the complaint that two persons, who work in actor-turned-politician AnubhavMohanty’s residence at Nandi Sahi in Cuttack, entered her bedroom yesterday evening while she was having food and clicked photographs and shot videos. Barsha is presently staying at her in-laws house.Barsha further claimed that her life is in threat and sought police protection. She is also likely to hold a press meet in connection with the domestic violence case filed by her against husband Anubhav.
+ 		</p>
+
+
+</body>
+</html>

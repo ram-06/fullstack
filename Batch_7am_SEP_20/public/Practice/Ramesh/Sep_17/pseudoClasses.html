@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo Classes
+		</title>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				width: 120px;
+				height: 120px;
+				
+				text-align: center;				
+			}
+
+			#container:hover {
+				background: green;
+				color: yellow;
+				text-decoration: underline;
+			}
+			a{
+				color: blue;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			a:focus {
+				background: yellow;
+				border: 1px solid yellow;
+			}
+			a:active {
+				background: red;
+			}
+			span:nth-last-child(2) {
+				background: yellow;
+			}
+			a:visited {
+				color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Click" disabled="true">
+		<a href="http://www.google.com">
+			click to visit google
+		</a> 
+		<a href="http://www.amazon.com">
+			click to visit Amazon
+		</a>
+		<a href="http://www.flipkart.com">
+			click to visit flipkart
+		</a>
+		<a href="http://www.gmail.com">
+			click to visit gmail
+		</a><br/><br/><br/>
+		<DIV class="block" id="container">
+			Hello
+		</DIV>
+
+		<div>
+			
+			<span>2. KRish</span>
+			<span>1. Raj</span>
+			<span>3. Teena</span>
+			<span>4. Neha</span>
+		</div>
+		<p>
+			<span>Seperate</span>
+		</p>
+
+	</body>
+</html>

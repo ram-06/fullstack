@@ -1,0 +1,179 @@
+.blockgame {
+    border: 4px solid black;
+    background-color: blue;
+    color: red;
+    float: left;
+    width: 1250px;
+    height: 20px;
+    margin: 9px;
+    padding: 8px;
+    text-align: center;
+    font-size: 2vmax;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.block {
+    border: 3px solid black;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    top: 90px;
+}
+
+.block1 {
+    background: green;
+    width: 100px;
+    height: 100px;
+}
+
+.block2 {
+    position: absolute;
+    height: 80px;
+    margin: 80px;
+    bottom: 4px;
+    background: purple;
+}
+
+.block3 {
+    position: absolute;
+    bottom: 90px;
+    height: 80px;
+    margin: 60px;
+    right: 60px;
+    background: yellow;
+}
+
+.block4 {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    margin: 75px;
+    left: 80%;
+    top: 1%;
+    background: violet;
+}
+
+
+/* Center Block*/
+
+.block5 {
+    height: 120px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    background: red;
+}
+
+.block6 {
+    position: absolute;
+    height: 120px;
+    width: 80px;
+    height: 60px;
+    left: 45%;
+    top: 45%;
+    margin: 100px;
+    bottom: 10px;
+    background: greenyellow;
+}
+
+.block7 {
+    position: absolute;
+    height: 120px;
+    width: 80px;
+    height: 60px;
+    right: 45%;
+    top: 45%;
+    margin: 100px;
+    bottom: 10px;
+    background: gray;
+}
+
+.block8 {
+    position: absolute;
+    width: 60px;
+    height: 75px;
+    margin: 150px;
+    bottom: 35%;
+    right: 30%;
+    background: brown;
+}
+
+.block9 {
+    position: absolute;
+    width: 60px;
+    height: 75px;
+    margin: 150px;
+    bottom: 35%;
+    left: 30%;
+    background: coral;
+}
+
+
+/*center block part done*/
+
+.block10 {
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    margin: 20px;
+    padding: 3px;
+    left: 2%;
+    top: 75%;
+    background: cyan;
+}
+
+.block11 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    padding: 5px;
+    left: 6%;
+    top: 65%;
+    background: darkblue;
+}
+
+.block12 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 40px;
+    padding: 5px;
+    right: 3%;
+    top: 75%;
+    background: darkorange;
+}
+
+.block13 {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    margin: 20px;
+    padding: 5px;
+    right: 2%;
+    top: 70%;
+    background: chartreuse;
+}
+
+
+/*copright block*/
+
+.Endblock {
+    border: 4px solid black;
+    background-color: silver;
+    color: red;
+    float: left;
+    text-align: center;
+    font-size: 2vmax;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    width: 1250px;
+    height: 20px;
+    margin: 15px;
+    padding: 8px;
+    top: 95%;
+}

@@ -4,11 +4,12 @@ var multer = require("multer");
 
 var storage =   multer.diskStorage({
 	destination: function (req, file, callback) {
+
 		callback(null, './public/uploads');
 	},
 	filename: function (req, file, callback) {
-	 	filename = file.fieldname + '-' + Date.now() + '.jpg';
-		callback(null, file.fieldname + '-' + Date.now() + '.jpg');
+	 	filename = file.fieldname + '-' + Date.now() + '.docx';
+		callback(null, file.fieldname + '-' + Date.now() + '.docx');
 	}
 });
 

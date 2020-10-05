@@ -1,0 +1,31 @@
+a{
+	text-decoration:none;
+}
+body{
+	background: linear-gradient(45deg,lightgreen,lightsalmon,lightgreen);
+	font-family:"Comic Sans MS",Sans-serif;
+	text-align: center;
+}
+h1{
+	font-family: "Casteller",Sans-serif;
+	font-size: 40px;
+}
+h3{
+	background:linear-gradient(45deg,red,black,red);
+	color: white;
+	padding: 15px;
+	border-radius:50%;
+	width:800px;
+	margin:auto;
+	box-shadow:0 0 10px black;
+}
+table{
+	width:100%
+}
+img{
+	border-radius:10px;
+	box-shadow:0 0 10px black;
+}
+html{
+	scroll-behavior:smooth;
+}

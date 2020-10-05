@@ -1,0 +1,42 @@
+body{
+    background-color:#00FF7F;
+}
+img{
+    width: 150px;
+    height: 188px;
+}
+h1{
+    border: 5px solid #3AB495;
+    width: auto;
+    text-align: center;
+    background-color:floralwhite;
+    color: red;
+    text-decoration: underline;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+}
+
+.table_containt{
+    border: 5px solid purple;  
+}
+    
+
+.table_1 th, td,tr {
+  border: 5px solid purple;
+}
+.table_1{
+    margin: auto;
+    background-color: white;
+    font-size: 25px;
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+}
+.row_head{
+    background-color:#00BFFF;
+}
+.row1{
+    background-color:#DEDEDE;
+}

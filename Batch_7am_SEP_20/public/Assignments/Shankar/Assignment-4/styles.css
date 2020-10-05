@@ -1,0 +1,38 @@
+.table-1,.table-1 th,.table-1 td{
+	border:2px solid orangered;
+	border-collapse: collapse;
+	margin:10px;
+	padding: 10px;
+}
+.table-1,.table-2{
+	text-align:center;
+	font-family:Arial,sans-serif;
+	box-shadow:0 0 10px black;
+	font-size:20px;
+}
+.table1-header{
+	background-color:lightsalmon;
+	color:white;
+}
+.table2-header{
+	background-color:lightyellow;
+	color:orange;
+}
+.table1-body{
+	background-color:#aaa;
+	color:white;
+}
+.table2-body{
+	background-color:teal;
+	color:white;
+}
+h1{
+	text-align:center;
+	background-color:orangered;
+	border-radius:20px;
+	padding:15px;
+	box-shadow:0 0 20px black;
+}
+body{
+	margin:0px;
+}
