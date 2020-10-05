@@ -1,0 +1,70 @@
+.header{
+	text-align: center;
+	border: 2px solid red;
+	margin: 2px;
+	padding: 7px;
+	font-size: 30px;
+	color: green; 
+}
+.mainContainer{
+	border: 3px solid red;
+	background: #CCC;
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom:40px;
+	top: 65px; 
+	
+}
+.footer{
+	border: 3px solid red;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	left: 10px;
+	right: 10px;
+	padding: 5px;
+	font-size: 20px;
+	background: yellow;
+
+}
+.rightContainer,
+.leftContainer{
+	border: 2px solid red;
+	margin: 2px;
+	padding: 5px;
+	float: left;
+	height: 495px;
+	overflow: auto;
+}
+.rightContainer{
+	width: 1149px;
+}
+.leftContainer li{
+	border: 1px dotted red;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+
+}
+.leftContainer li:hover {
+	background: yellow;
+	cursor: pointer;
+}
+.details {
+	border: 1px solid;
+	height: 160px;
+	list-style: none;
+	margin: 2px;
+	list-style: none;
+}
+.imgContainer img {
+	width: 140px;
+	height: 140px;
+}
+.imgContainer,
+.detailsContainer {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}

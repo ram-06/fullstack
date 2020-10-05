@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML Input elements
+		</title>
+		<style type="text/css">
+			li {
+				list-style: none;
+				padding: 10px;
+				border: 1px solid;
+				padding: 5px;
+				margin: 5px;
+				background: #fff;
+			}
+			ul {
+				width: 600px;
+				margin: 10px auto;
+				border: 2px solid;
+				background: #ccc;
+				padding: 10px;
+			}
+			h3 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>User Registration Page</h3>
+		<form action="http://www.xyzpqr.com/data/ample" method="GET">
+			<ul>
+				<li>
+					Enter User Name: <input type="text">
+				</li>
+				<li>
+					Enter account Pwd: 
+					<input type="password">
+				</li>
+				<li>
+					Enter user age: <input type="text">
+				</li>
+				<li>
+					Gender: 
+						<input type="radio" name="gender" value="female"> Female
+						<input type="radio" name="gender" value="male"> Male
+				</li>
+				<li>
+					Languages: 
+						<input type="checkbox"> English
+						<input type="checkbox"> Telugu
+						<input type="checkbox"> Urdu
+						<input type="checkbox"> Hindi
+				</li>
+				<li>
+					Country: 
+					<select>
+						<option></option>
+						<option>India</option>
+						<option>Japan</option>
+						<option selected>USA</option>
+						<option>Russia</option>
+					</select>
+				</li>
+				<li>
+					About urself:
+					<textarea min="" max="" maxlength="100"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Save Details">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
