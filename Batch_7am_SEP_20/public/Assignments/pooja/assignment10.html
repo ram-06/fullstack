@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASSIGNMENT-10</title>
+	</head>
+	<body>good morning,have a good day.
+		<script type="text/javascript">
+			var name,gender,dept,basicSalary,hra,pf,total;
+
+			name=prompt('enter employee name');
+			console.log('name of the employee '+name);
+
+			gender=prompt('enter gender');
+			console.log('gender of the employee '+gender);
+
+			dept=prompt(' enter department');
+			console.log('department of the employee '+dept);
+
+			basicSalary=prompt('enter your base salary')
+			basicSalary=parseInt(basicSalary);
+
+			hra=(basicSalary*24)/100;
+			console.log('hra is '+hra);
+
+			pf=(basicSalary*12)/100;
+			console.log('pf is '+pf);
+
+			total=basicSalary+hra+pf;
+			console.log('total salary is '+total);
+		</script>
+
+	</body>
+</html>
