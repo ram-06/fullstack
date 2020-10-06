@@ -1,0 +1,84 @@
+body{
+  background-image: url('https://media.istockphoto.com/illustrations/abstract-creative-background-modern-watercolor-illustration-illustration-id945070290');
+}
+h1{
+   border: 1px solid red;
+   text-align: center;
+   background: black;
+   color: red;
+   width: 98%;
+ }
+.maincontainer{
+    border: 6px solid;
+    height: 950px;
+    width: 97%;
+    background: pink;
+} 
+.smallcontainer{
+  border: 2px solid;
+  width: 20%;
+  height: 96%;
+  margin:5px;
+  background:yellow;
+}
+.content1{
+  list-style: none;
+  font-size: 20px;
+  margin-left: 5px;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  position: relative;
+  left: 350px;
+  bottom: 922px;
+  width: 75%;
+  height: 40%;
+}
+.container1{
+  border: 2px solid;
+  height: 75%;
+  width: 35%;
+  float: left;
+}
+.container2{
+  border: 2px solid;
+  float: left;
+  height: 75%;
+  width: 35%;
+  position: relative;
+  left: 120px;
+}
+img{
+  height: 260px;
+  width: 170px;
+}
+ol{
+  list-style: none;
+}
+.content2{
+  float: left;
+  right: 200px;
+}
+.content3{
+  left: 850px;
+  bottom: 260px;
+  width: 150px;
+  height: 160px;
+  }
+.content2,
+.content3{
+  position: relative;
+  font-size: 18px;
+  color: brown;
+}
+.view{
+  position: relative;
+  top: 140px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#00000d;
+  list-style: none;
+  text-decoration: underline;
+}
