@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<title>Css Positions</title>
+		<style>
+			.header{
+				border: 2px solid black;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			.footer{
+				text-align: center;
+				border: 2px solid black;
+			}
+			.content{
+				margin-bottom: 15px;
+			}
+			.block1{
+				height: 183px;
+				position: relative;
+			}
+			.block2{
+				position: relative;
+			}
+			.block3{
+				position: relative;
+				height: 180px;
+			}
+			.box{
+				height: 120px;
+				width: 120px;
+				border: 1px solid black;
+			}
+			
+			.box2{
+				position: absolute;
+			    top: 60px;
+			    left:60px;
+			}
+			.box3{
+				position: absolute;
+				right: 0;
+				top:0;
+
+			}
+			.box4{
+               position: absolute;
+               right: 60px;
+               top: 60px;
+			}
+			.level1{
+			   width: 260px;
+			   position: relative;
+			   left: 50%;
+			   transform: translateX(-185px);
+							}
+			.box5{
+			
+			}
+			.box6{
+				position: absolute;
+				top: 0;
+				right: 0;
+			 
+			}
+			.box7{
+				position: relative;
+               margin-top: 13px;
+			}
+			.box8{
+				 position: absolute;
+				 top: 135px;
+				 right: 0;
+			 
+			}
+			.box9{
+				position: absolute;
+			    top: 50%;
+			    transform: translate(-55px, -55px);
+			    left: 50%;
+
+			}
+			.box10{
+				position: absolute;
+				left: 60px;
+
+			}
+			.box11{
+				position: absolute;
+				right: 60px;
+
+			}
+			.box12{
+				position: absolute;
+				left: 0;
+				top:60px;
+
+			}
+			.box13{
+				position: absolute;
+				right: 0;
+				top: 60px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Block Game</h1>
+		</div>
+		<div class="content">
+			<div class="block1">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
+				<div class="box box3"></div>
+				<div class="box box4"></div>
+			</div>
+			<div class="block2">
+				<div class="level1">
+					<div class="box box5"></div>
+					<div class="box box6"></div>
+					<div class="box box7"></div>
+					<div class="box box8"></div>
+					<div class="box box9"></div>
+				</div>
+			</div>
+			<div class="block3">
+				<div class="box box10"></div>
+				<div class="box box11"></div>
+				<div class="box box12"></div>
+				<div class="box box13"></div>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>@coptrights 2020</h4>
+		</div>
+	</body>
+</html>
