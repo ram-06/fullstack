@@ -1,0 +1,77 @@
+
+body {
+    height:100%;
+    background-image:url("../images/shopping.jpg");
+ 	background-position: 10px 50px;
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 95%;
+}
+ 
+#wrap {
+    min-height:100%;
+    
+}
+
+.header {
+  text-align:center;
+  margin:5px;
+  font-weight: bold;
+  background:#2ad2f7;
+  font-size: 25px;
+
+}
+
+.content {
+	border:2px solid;
+}
+
+ 
+#footer {
+    height:30px;
+    border:2px solid;
+    text-align:center;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+.det1 {
+	width:350px;
+	font-size: 25px;
+	font-weight: bold;
+	float:left;
+	height:40px;
+	
+}
+li {
+	border:2px solid;
+	list-style: none;
+	height: 80px;
+	text-align: center;
+	padding:5px;
+	background:#a87332;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.det2 {
+	float:left;
+	position: relative;
+	top:30px;
+	border:2px solid;
+	width:70%;
+}
+
+
+.block{
+	float:left;
+	border: 1px solid;
+	background: #96846e;
+
+}
+
+.cost {
+   font-weight: bold;
+}

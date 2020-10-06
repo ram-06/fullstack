@@ -1,0 +1,71 @@
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+ body{
+ 	background-image:url("../images/shopping.jpg");
+ 	background-position: 10px 50px;
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 95%;
+ }
+
+.header {
+  text-align:center;
+  margin:5px;
+  font-weight: bold;
+  background:#2ad2f7;
+  font-size: 25px;
+}
+
+.label {
+	width:100px;
+	font-weight: bold;
+	display:inline-block;
+}
+
+.content {
+   background:#69bdd2;
+   position:absolute;
+   left:70%;
+   padding:10px;
+   height:60%;
+   bottom:5px;
+}
+
+tr,td {
+	padding:20px;
+}
+
+.actions {
+	position:relative;
+	left:30%;
+	width:400px;
+	height:450px;
+	margin:25px;
+}
+
+.LoginImg {
+  width:50px;
+  height:45px;
+  position: relative;
+  left:30%;
+}
+
+.signup {
+   background:#69bdd2;
+   position:relative;
+   width:30%;
+   padding:10px;
+   height:80%;
+   left:35%;
+   top:20px;
+}
+
+input[type="button"] {
+	width:70px;
+	height:40px;
+	position: relative;
+	background:green;
+	font-weight: bold;
+}
