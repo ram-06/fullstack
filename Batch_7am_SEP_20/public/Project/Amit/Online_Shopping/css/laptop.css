@@ -1,7 +1,16 @@
 body {
-    background-image: url(../image/mistorebg.jpg);
+    background-image: url(../image/lappyimg.jpg);
     Background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logo img {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 1%;
+    top: -6%;
+    border-radius: 20px;
 }
 
 .dropdown-content {
@@ -55,13 +64,6 @@ body {
     padding-right: 30px;
 }
 
-.logo img {
-    position: absolute;
-    top: -5%;
-    left: 2%;
-    width: 100px;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -94,7 +96,7 @@ nav ul li a {
     padding: 0 15px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(219, 20, 143);
+    background-color: black;
     color: blanchedalmond;
     line-height: 60px;
     border: 0;
@@ -102,7 +104,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: silver;
+    background-color: pink;
     border: 0;
     border-radius: 5px;
 }
@@ -128,7 +130,7 @@ nav ul ul li {
 nav ul ul li a {
     width: 150px;
     background-color: cadetblue;
-    color: red;
+    color: black;
     line-height: 50px;
     border: 1px solid cornsilk;
 }
