@@ -16,28 +16,23 @@
 			if(empGender === 'male'){
 				if(empTotalSalary > 50000){
 					taxper = (empTotalSalary * 15) / 100;
-					console.log("Tax to be paid " + taxper);
 				}
 				else if(empTotalSalary > 30000){
 					taxper = (empTotalSalary * 10) / 100;
-					console.log("Tax to be paid " + taxper);
 				}
 				else{
-					taxper = (empTotalSalary * 0) / 100;
-					console.log("Tax to be paid " + taxper);
+					console.log("Tax to be paid is 0");
 				}
 			} else if(empGender === 'female'){
 				if(empTotalSalary > 50000){
 					taxper = (empTotalSalary * 10) / 100;
-					console.log("Tax to be paid " + taxper);
 				}
 				else if(empTotalSalary > 30000){
 					taxper = (empTotalSalary * 5) / 100;
-					console.log("Tax to be paid " + taxper);
+					
 				}
 				else{
-					taxper = (empTotalSalary * 0) / 100;
-					console.log("Tax to be paid " + taxper);
+					console.log("Tax to be paid is 0");
 				}
 			}
 
@@ -47,6 +42,7 @@
 			console.log("Employee PF:" + empPF);
 			console.log("Employee HRA:" + empHra);
 			console.log("Employee's total salary is:" + empTotalSalary);
+			console.log("Tax to be paid " + taxper);
 		</script>
 	</head>
 	<body>
