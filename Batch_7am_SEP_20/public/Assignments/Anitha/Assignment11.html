@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>
+			Assignment 11
+		</title>
+		<script type="text/javascript">
+           var employeeName=prompt('Enter employee name');
+           var employeeGender=prompt('Enter Gender');
+           var deptName=prompt("Enter Dept name")    
+           var employeeAge=prompt("Enter Age");
+
+            var enteredBasicSalary=prompt('Enter basic salary');
+            var basicSalary=parseInt(enteredBasicSalary);
+			var pf=(12/100)*basicSalary;
+			var hra=(24/100)*basicSalary;
+			var totalSalary=pf+hra+basicSalary;
+
+			console.log("totalSalary "+totalSalary);
+			
+           if (employeeGender==='Male')
+           {
+           	if (totalSalary>50000)
+           		{
+                  console.log("tax percent is 15")
+           		}
+           	else if (totalSalary>30000)
+           	 	{
+           	 		console.log("tax percent is 10")
+           	 	}	
+            else if (totalSalary>20000)
+           	 	{
+           	 		console.log("tax percent is 0")
+           	 	}	
+           }
+
+           if (employeeGender==='Female')
+            {
+           	if (totalSalary>50000)
+           		{
+                  console.log("tax percent is 10")
+           		}
+           	else if (totalSalary>30000)
+           	 	{
+           	 		console.log("tax percent is 5")
+           	 	}	
+            else if (totalSalary>20000)
+           	 	{
+           	 		console.log("tax percent is 0")
+           	 	}	
+           }
+
+		</script>
+	</head>
+</html>
