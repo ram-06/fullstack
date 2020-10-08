@@ -8,9 +8,33 @@
 			var empDepartment = prompt("Enter the Employee Department");
 			var empBasicSalary = prompt("Enter the Employee Basic Salary");
 			var empPF = (empBasicSalary / 12 * 100);
-			var empHra = (empBasicSalary/24*100);
+			var empHra = (empBasicSalary / 24 * 100);
+			var taxper;
 
 			empTotalSalary = empPF + empHra + empBasicSalary ;
+
+			if(empGender === 'male'){
+				if(empTotalSalary > 50000){
+					taxper = (empTotalSalary * 15) / 100;
+				}
+				else if(empTotalSalary > 30000){
+					taxper = (empTotalSalary * 10) / 100;
+				}
+				else{
+					console.log("Tax to be paid is 0");
+				}
+			} else if(empGender === 'female'){
+				if(empTotalSalary > 50000){
+					taxper = (empTotalSalary * 10) / 100;
+				}
+				else if(empTotalSalary > 30000){
+					taxper = (empTotalSalary * 5) / 100;
+					
+				}
+				else{
+					console.log("Tax to be paid is 0");
+				}
+			}
 
 			console.log("Employee name :" + empName);
 			console.log("Employee gender:" + empGender);
@@ -18,6 +42,7 @@
 			console.log("Employee PF:" + empPF);
 			console.log("Employee HRA:" + empHra);
 			console.log("Employee's total salary is:" + empTotalSalary);
+			console.log("Tax to be paid " + taxper);
 		</script>
 	</head>
 	<body>
