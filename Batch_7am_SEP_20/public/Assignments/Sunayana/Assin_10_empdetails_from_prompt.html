@@ -7,7 +7,8 @@
 			var empGender = prompt("Enter the Employee Gender");
 			var empDepartment = prompt("Enter the Employee Department");
 			var empBasicSalary = prompt("Enter the Employee Basic Salary");
-			var empPF = (empBasicSalary / 12 * 100);
+			empBasicSalary = parseInt(empBasicSalary);
+			var empPF = (empBasicSalary/12*100);
 			var empHra = (empBasicSalary/24*100);
 
 			empTotalSalary = empPF + empHra + empBasicSalary ;
