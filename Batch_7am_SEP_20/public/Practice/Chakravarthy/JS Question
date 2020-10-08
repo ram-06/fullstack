@@ -1,0 +1,21 @@
+Write a program to work with employee detail like age , name, gender, dept and basic salary, calculate the total salary where  total = pf + hra + basicsal. show the total tax value to be paid with below conditions
+
+gender male
+totalsal > 50000
+tax percent is 15
+
+totalsal > 30000
+tax perecent is 10
+
+totalsal >20000
+taxpercent s 0
+
+gender female
+totalsal > 50000
+tax percent is 10
+
+totalsal > 30000
+tax perecent is 5
+
+totalsal >20000
+taxpercent s 0
