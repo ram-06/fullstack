@@ -1,0 +1,33 @@
+.block {
+    border: 1px solid;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.block1 {
+    background: green;
+}
+
+.block2 {
+    background: blue;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 50px;
+}
+
+.block3 {
+    background: yellow;
+}
+
+.block4 {
+    background: pink;
+}
+
+.iParent {
+    margin: 10px;
+    border: 2px solid black;
+    background: red;
+    height: 400px;
+    overflow: auto;
+}
