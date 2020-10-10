@@ -1,0 +1,35 @@
+.header{
+	border: 2px solid red;
+	text-align: center;
+	margin: 5px;
+	background: #ccc;
+	font-weight: bold;
+	padding: 5px;
+
+}
+.details2,.details3,.details4,
+.details1{
+	border: 2px solid green;
+
+}
+.loc{
+	position: absolute;
+	right: 30%;
+	top: 12%;
+}
+.pass{
+	position: absolute;
+	right: 30%;
+	top: 16%;
+}
+.repass{
+	position: absolute;
+	right: 30%;
+	top: 20%;
+
+}
+.areacol{
+	position: absolute;
+	right: 30%;
+	top: 35%;
+}
