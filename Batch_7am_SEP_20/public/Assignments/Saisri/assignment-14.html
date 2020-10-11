@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+
+            var out = '';
+            var forwardOutput = '';
+            for(var i=1;i<=20;i++){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                forwardOutput = forwardOutput +out +"<br/>";
+                out = '';
+
+            }
+
+
+
+            var backwardoutput = '';
+            var out = '';
+            for(var i=20;i>=1;i--){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                backwardoutput = backwardoutput + out +"<br/>";
+                out = '';
+
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+       <div>Forward Output</div>
+       <div id="foutput"></div>
+       <div>Backward Output</div>
+       <div id="boutput"></div> 
+    </body>
+    <script>
+        document.getElementById("foutput").innerHTML=forwardOutput;
+        document.getElementById("boutput").innerHTML=backwardoutput;
+
+    </script>
+</html>
