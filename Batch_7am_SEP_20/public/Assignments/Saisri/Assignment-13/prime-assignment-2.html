@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="prime.css">
+        <script>
+            var primeoutput = '';
+            var nonprimeoutput = '';
+            var flag = true;
+            for(var j=2;j<100;j++) {
+                for(var i=2;i<j;i++){
+                    if(j%i === 0){
+                    flag = false;
+                    break;
+                    }
+                }
+
+                if(flag){
+                    
+                    primeoutput = primeoutput + j+" is Prime" +"</br>";
+                } else{
+                    flag = true;
+                    nonprimeoutput = nonprimeoutput +j+" is NOT Prime" +"</br>";
+                }
+            }
+
+           
+
+        </script>
+
+
+    </head>
+    <body>
+        <div class="block">
+            <div class="title">Prime Numbers Between 1-100</div> 
+            <div id="poutput"></div>
+        </div>
+        <div class="block1">
+            <div class="title">Non Prime Numbers Between 1-100</div>
+            <div id="npoutput"></div>
+        </div>
+        
+    </body>
+    <script>
+
+        document.getElementById("poutput").innerHTML=primeoutput;
+        document.getElementById("npoutput").innerHTML=nonprimeoutput;
+    </script>
+</html>

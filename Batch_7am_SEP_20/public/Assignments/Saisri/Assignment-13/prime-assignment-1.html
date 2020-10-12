@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+           var num = prompt("Enter number you want to check ");
+           num = parseInt(num);
+            var flag = true;
+           
+            for(var i=2;i<num;i++){
+                if(num%2 === 0){
+                   flag = false;
+                    break;
+                }
+            }
+
+            if(flag){
+                output = 'Entered Choice is Prime Number : '+num;
+            } else {
+                output = 'Entered Choice is Not a Prime Number : '+num;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+
+    <script>
+        document.getElementById("output").innerHTML=output;
+    </script>
+
+</html>

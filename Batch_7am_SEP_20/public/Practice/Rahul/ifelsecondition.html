@@ -7,41 +7,13 @@
     <h1>if_else condition</h1>
 
     <script>
-        var eName = prompt('enter the name');
-        var egender = prompt('enter the gender');
-        var e_dep = prompt('enter teh department');
-        var basic_salary = prompt('enter the salary');
-        basic_salary = parseFloat(basic_salary);
-        var pf = (basic_salary * 12) / 100;
-        var hra = (basic_salary * 24) / 100;
-        var total_salary = basic_salary + pf + hra
-        total_salary = parseFloat(total_salary);
-        var tax_percent
+        var
+        for (var num = 61; num <= 121; num++) {
+            if (num % 2 == 0)
 
-        console.log('Emp_Name is ' + eName);
-        console.log('total salary is ' + total_salary);
-
-        if (egender = "male") {
-
-            if (total_salary > 50000) {
-                tax_percent = 15;
-            } else if (total_salary > 30000) {
-                tax_percent = 10;
-            } else {
-                tax_percent = 0;
-            }
-        } else {
-            if (total_salary > 50000) {
-                tax_percent = 15;
-            } else if (total_salary > 30000) {
-                tax_percent = 10;
-            } else {
-                tax_percent = 0;
-            }
+                console.log("num is " + num)
 
         }
-        var tax = (total_salary * tax_percent) / 100;
-        console.log('Tax to be paid is ' + tax);
     </script>
 </body>
 
