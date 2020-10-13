@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            assignment-14
+        </title>
+        <script>
+            var out = '';
+            var forwardOutput = '';
+            for(var i=1;i<=5;i++){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                forwardOutput = forwardOutput +out +"<br/>";
+                out = '';
+
+            }
+
+
+
+            var backwardoutput = '';
+            var out = '';
+            for(var i=5;i>=1;i--){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                backwardoutput = backwardoutput + out +"<br/>";
+                out = '';
+
+            }
+
+            var output1='';
+            var out='';
+            for(var i=1;i<=5;i++){
+                for(var j=i;j>=1;j--){
+                    out=out + " "+ j;
+                }
+                output1= output1 + out +"<br/>";
+                out = '';
+            }
+
+            var output2='';
+            var out='';
+            for(var i=5;i>=1;i--){
+                for(var j=i;j>=1;j--){
+                    out=out + " "+ j;
+                }
+                output2= output2 + out +"<br/>";
+                out = '';
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>Forward Output</div>
+        <div id="foutput"></div>
+        <div>Backward Output</div>
+        <div id="boutput"></div> 
+        <div>output1</div>
+        <div id="output1"></div>
+        <div>output2</div>
+        <div id="output2"></div>
+     </body>
+     <script>
+         document.getElementById("foutput").innerHTML=forwardOutput;
+         document.getElementById("boutput").innerHTML=backwardoutput;
+         document.getElementById("output1").innerHTML=output1;
+         document.getElementById("output2").innerHTML=output2;
+     </script>
+</html>
