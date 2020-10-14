@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lucky Number </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num=prompt("Enter a number:");
+			num=parseInt(num);
+            var sum=0,count=0;
+            while(num>0)
+            {
+                var rem=num%10;
+                sum=sum+rem;
+                num=num/10;
+                num=parseInt(num);
+                if(num==0 && sum>9){
+
+                    var a=sum%10;
+                    count=count+a;
+                    sum=sum/10;
+                    sum=parseInt(sum);
+                }
+            }
+            count=count+sum;
+            console.log("The sum of the given number i======>" + count);
+		</script>
+	</body>
+</html>
