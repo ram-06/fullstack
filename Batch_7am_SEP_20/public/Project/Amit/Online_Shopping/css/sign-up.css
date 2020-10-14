@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/account.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+h1 {
+    margin: 26px 520px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(253, 229, 15);
+    height: 10px;
+    width: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: rgb(3, 3, 46);
+    width: 290px;
+    height: 410px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding-top: 31px;
+    padding-left: 42px;
+    padding-right: 16px;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    font-weight: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container input {
+    color: rgb(42, 32, 70);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    margin: 13px 10px;
+    padding: 8px;
+    border: 1px solid black;
+    height: 12px;
+}
+
+.container input[type="submit"] {
+    color: black;
+    border-radius: 10px;
+}
+
+#color {
+    color: red;
+}
+
+#sign {
+    margin: auto;
+}
+
+#sign:hover {
+    background-color: darkkhaki;
+}
+
+.lgn {
+    position: absolute;
+    top: 82%;
+}

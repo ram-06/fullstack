@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>
+			Assignment 9
+		</title>
+		<script type="text/javascript">
+           var employeeName=prompt('Enter employee name');
+           var employeeGender=prompt('Enter Gender');
+           var deptName=prompt("Enter Dept name")    
+           var employeeAge=prompt("Enter Age");
+
+            var enteredBasicSalary=prompt('Enter basic salary');
+            var basicSalary=parseInt(enteredBasicSalary);
+			var pf=(12/100)*basicSalary;
+			var hra=(24/100)*basicSalary;
+			var totalSalary=pf+hra+basicSalary;
+			console.log(employeeName+' '+employeeGender+' '+deptName+' '+parseInt(employeeAge));
+			console.log(pf);
+			console.log(hra);
+			console.log(totalSalary)
+		</script>
+	</head>
+</html>

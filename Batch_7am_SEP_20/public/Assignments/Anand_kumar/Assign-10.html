@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assign-10  </title>
+	</head>
+	<body>
+		<h1>Employee Details </h1>
+		<script type="text/javascript">
+			var e_name=prompt("Employee Name ");
+			var e_age=prompt("Employee Age");
+			e_age=parseInt(e_age);
+			var e_gender=prompt("Employee gender");
+			var e_basicSal=prompt("Employee Basic slary");
+			e_basicSal=parseInt(e_basicSal);
+
+			var totalSal;
+
+			var pf = (e_basicSal * 12) / 100;
+			var hra = (e_basicSal * 24) / 100;
+			totalSal = e_basicSal + pf + hra;
+
+			console.log('Employee name is==> ' + e_name);
+			console.log('Employee Gender is==> ' + e_gender);
+			console.log("BAsic sal is==> " + e_basicSal);
+			console.log("Total sal is ==>" + totalSal);
+
+		</script>
+	</body>
+</html>

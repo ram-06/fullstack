@@ -1,0 +1,290 @@
+.details {
+    border: 4px solid black;
+    background-color: slategray;
+    color: red;
+    float: left;
+    width: 1250px;
+    height: 20px;
+    margin: 9px;
+    padding: 8px;
+    text-align: center;
+    font-size: 2vmax;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border {
+    border: 3px solid black;
+    margin: 15px;
+    height: 730px;
+}
+
+
+/* inside border*/
+
+.block1 {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    width: 300px;
+    height: 300px;
+}
+
+.subblock1 {
+    border: 1px solid black;
+    position: absolute;
+    left: 4.5%;
+    top: 14%;
+    width: 100px;
+    height: 110px;
+    /*image scripte*/
+    background-image: url(../img/products.png);
+}
+
+.list {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 20px;
+    left: 12.2%;
+    top: 11%;
+    color: black;
+}
+
+.list1 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 20px;
+    left: 12.1%;
+    top: 15%;
+    color: black;
+}
+
+.list2 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 20px;
+    left: 12.0%;
+    top: 19%;
+    color: black;
+}
+
+.list3 {
+    position: absolute;
+    font-size: 17px;
+    left: 2%;
+    top: 30%;
+    width: 250px;
+    color: brown;
+}
+
+.block2 {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 13%;
+    right: 7%;
+    width: 300px;
+    height: 300px;
+}
+
+.subblock2 {
+    border: 1px solid black;
+    position: absolute;
+    left: 71%;
+    top: 14%;
+    width: 100px;
+    height: 110px;
+    /*image scripte*/
+    background-image: url(../img/products.png);
+    background-position: -355px -250px;
+}
+
+.unlist {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 10%;
+    top: 11%;
+    color: black;
+}
+
+.unlist1 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 11.6%;
+    top: 15%;
+    color: black;
+}
+
+.unlist2 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 8%;
+    top: 19%;
+    color: black;
+}
+
+.unlist3 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 19px;
+    right: 8%;
+    top: 32%;
+    width: 250px;
+    color: brown;
+    font-style: italic;
+}
+
+.block3 {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 74%;
+    left: 4%;
+    width: 300px;
+    height: 300px;
+}
+
+.subblock3 {
+    border: 1px solid black;
+    position: absolute;
+    left: 4.5%;
+    top: 75%;
+    width: 100px;
+    height: 110px;
+    /*image scripte*/
+    background-image: url(../img/products.png);
+    background-position: 140px 0px;
+}
+
+.inlist {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 19px;
+    left: 12.2%;
+    top: 73%;
+    color: black;
+}
+
+.inlist1 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 19px;
+    left: 12.2%;
+    top: 78%;
+    color: black;
+}
+
+.inlist2 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 19px;
+    left: 12.2%;
+    top: 82%;
+    color: black;
+}
+
+.inlist3 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 17px;
+    left: 4%;
+    top: 92%;
+    width: 250px;
+    color: brown;
+}
+
+.block4 {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 74%;
+    right: 7%;
+    width: 300px;
+    height: 300px;
+}
+
+.subblock4 {
+    border: 1px solid black;
+    position: absolute;
+    left: 71%;
+    top: 75%;
+    width: 100px;
+    height: 110px;
+    /*image sprite*/
+    background-image: url(../img/products.png);
+    background-position: -200px 155px;
+}
+
+.onlist {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 12%;
+    top: 73%;
+    color: black;
+}
+
+.onlist1 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 12%;
+    top: 78%;
+    color: black;
+}
+
+.onlist2 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 18px;
+    right: 7.9%;
+    top: 82%;
+    color: black;
+}
+
+.onlist3 {
+    position: absolute;
+    padding: 10px;
+    margin: 6px;
+    font-size: 17px;
+    right: 9%;
+    top: 92%;
+    width: 250px;
+    color: brown;
+}
+
+
+/* Copyright block*/
+
+.endblock {
+    border: 4px solid black;
+    background-color: slategray;
+    color: rgb(220, 235, 135);
+    float: left;
+    text-align: center;
+    font-size: 2vmax;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    width: 1250px;
+    height: 20px;
+    margin: 15px;
+    padding: 10px;
+    top: 20%;
+    bottom: 85%;
+}

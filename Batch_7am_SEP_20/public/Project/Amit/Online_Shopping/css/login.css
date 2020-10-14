@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/logo1.jpg);
+    background-size: cover;
+}
+
+h1 {
+    margin: 10px 560px;
+    padding: 15px;
+    text-align: left;
+    font-size: 28px;
+    color: rgb(15, 253, 15);
+    height: 10px;
+    width: 15px;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    margin: 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+}
+
+.container {
+    background-color: black;
+    width: 280px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding-top: 16px;
+    padding-left: 25px;
+    padding-right: 16px;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+p {
+    color: rgb(219, 20, 96);
+    font-size: 15px;
+    font-weight: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container input {
+    color: rgb(70, 25, 4);
+}
+
+input[type="text"] input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+}
+
+.container input[type="submit"] {
+    color: black;
+    border-radius: 10px;
+}
+
+.lsp {
+    position: absolute;
+    top: 64%;
+}

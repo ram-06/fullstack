@@ -1,0 +1,61 @@
+body{
+	background: #1a5276;
+	color: #B71C1C;
+}
+h1{
+	border: 2px solid;
+	height: 30px;
+	width: 99%;
+	text-align: center;
+	color: pink;
+	background: brown;
+	margin: 5px;
+	padding: 2px;
+}
+.maincontainer{
+	border: 2px solid;
+	height: 150px;
+	margin-top: 20px;
+}
+.subcontainer{
+	border:2px solid;
+	height: 30px;
+	width: 200px;
+	left: 10px;
+	position: relative;
+	bottom: 20px;
+	background: orange;
+	text-align: center;
+}
+ul{
+	list-style:none;
+}
+.leftside{
+	margin:10px;
+	font-size: 15px;
+}
+.side1,
+.side2,
+.side3{
+	position: absolute;
+	left: 50%;
+	margin: 10px;
+	font-size: 15px;
+}
+.side1{
+	top: 120px;
+}
+.side2{
+	top:155px;
+}
+.side3{
+    top:185px;
+}
+.fulladdress{
+	position: absolute;
+    left: 54%;
+    top: 310px;
+}
+.education{
+	font-size: 15px;
+}

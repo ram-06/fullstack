@@ -1,0 +1,20 @@
+<html>
+	<head>
+	<title>
+		Find Lucky number
+	</title>
+	<script type="text/javascript">
+		var n=prompt ("Enter a number")
+		var rem,sum=0;
+		while (n>0)
+		{
+			rem=n%10;
+			n=n/10;
+			sum=sum+rem;
+			sum=parseInt(sum);
+		}
+        console.log("Lucky no is "+sum);
+
+	</script>
+	</head>
+</html>

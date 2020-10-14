@@ -1,0 +1,196 @@
+    /*body part*/
+    
+    body {
+        background-image: url(../image/img0.jpg);
+        Background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .store {
+        text-align: center;
+    }
+    
+    .store body {
+        background-color: rgb(255, 0, 0)
+    }
+    /*nav bar style*/
+    
+    #navbar {
+        position: relative;
+    }
+    
+    #navbar {
+        display: flex;
+    }
+    
+    #logo {
+        margin: 10px 34px;
+    }
+    
+    #logo img {
+        height: 50px;
+        margin: 3px 6px;
+    }
+    
+    #navbar ul {
+        display: flex;
+    }
+    
+    #navbar::before {
+        content: "";
+        background-color: rgb(18, 41, 24);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.8rem;
+    }
+    
+    #navbar ul li a {
+        color: white;
+        display: block;
+        padding: 5px 22px;
+        border-radius: 20px;
+        text-decoration-line: none;
+        font-size: large;
+    }
+    
+    #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+    }
+    /* section part */
+    
+    section h3 {
+        font-size: 35px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    section h1 {
+        margin: 30px;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+    
+    section p {
+        font-size: 25px;
+        color: rgb(23, 9, 219);
+        white-space: 2px;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    section a {
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: all .5s ease;
+    }
+    
+    section .learn {
+        /*background: #00b894;*/
+        background: rgb(255, 255, 255);
+        color: #000;
+    }
+    
+    .learn:hover {
+        background: #023329;
+        color: rgb(214, 110, 110);
+    }
+    
+    section .signup {
+        background: #00b894;
+        color: rgb(139, 60, 60);
+    }
+    
+    .signup:hover {
+        background: rgb(42, 146, 86);
+        color: #000;
+    }
+    
+    .change_content:after {
+        content: '';
+        animation: changetext 10s infinite linear;
+        color: #00b894;
+    }
+    /* Navbar container */
+    
+    .navbar {
+        overflow: hidden;
+        font-family: Arial;
+    }
+    /* Links inside the navbar */
+    
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /* The dropdown container */
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    /* Dropdown button */
+    
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    /* Add a red background color to navbar links on hover */
+    
+    .navbar a:hover {
+        color: darkslategray;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #14f195;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    /* Links inside the dropdown */
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(5, 252, 46);
+    }
+    /* Show the dropdown menu on hover */
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }

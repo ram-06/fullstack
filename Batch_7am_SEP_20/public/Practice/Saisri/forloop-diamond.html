@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            var out='';
+            var out1='';
+            for(var i=1; i<=5; i++)
+            {
+
+                for(var j=1;j<=i;j++)
+                {
+                    out = out+"*";
+                }
+
+                for(var m=5-i;m>=1;m--){
+                    out = '&nbsp'+out;
+                }
+
+                out1= out1+out+"<br/>";
+                out='';
+            }
+
+            for(var k=4;k>=1;k--)
+            {
+                for(var l=1;l<=k;l++)
+                {
+                    out=out+"*";
+                }
+
+                for(var n = 5-k;n>=1;n--){
+                    out = '&nbsp'+out;
+                }
+
+
+                out1=out1+out+"<br/>";
+                out='';
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        
+        <div id="out1"></div>
+            <script>
+                document.getElementById("out1").innerHTML=out1;
+            </script>
+    </body>
+</html>

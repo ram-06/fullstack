@@ -1,0 +1,110 @@
+.footer,.header{
+	background: silver;
+	border: 2px solid green;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	position: absolute;
+	margin: 5px;
+}
+.footer{
+
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	
+}
+.header{
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	
+}
+.block{
+	border: 2px solid red;
+	width: 100px;
+	height: 100px;
+
+}
+.b1{
+	background: red;
+	position: absolute;
+	margin-top: 40px;
+}
+.b2{
+	background: pink;
+	position: absolute;
+	left: 51px;
+	top: 95px;
+
+}
+.b3{
+	background: yellow;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	
+}
+.b4{
+	background: green;
+	position: absolute;
+	right: 62px;
+	top: 100px;
+}
+.b5{
+	background: orange;
+	position: absolute;
+	bottom: 50px;
+
+}
+.b6{
+	background: hotpink;
+	position: absolute;
+	bottom: 100px;
+	left: 51px;
+}
+.b7{
+	background: #ccc;
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+}
+.b8{
+	background: #abcdef;
+	position: absolute;
+	bottom: 80px;
+	right: 60px;
+}
+.b9{
+	background: #8D50C7;
+	position: absolute;
+	left: 45%;
+	top: 35%;
+	width: 200px !important;
+	height: 150px !important;
+}
+.b10{
+	background: skyblue;
+	position: absolute;
+	left: 43%;
+	top: 30%
+}
+.b11{
+	background: silver;
+	position: absolute;
+	left: 43%;
+	bottom: 35%;
+
+}
+.b12{
+	background: darkcyan;
+	position: absolute;
+	left: 55%;
+	top: 30%;
+}
+.b13{
+	background: beige;
+	position: absolute;
+	right: 37%;
+	bottom: 35%;
+}

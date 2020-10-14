@@ -1,0 +1,31 @@
+body {
+    background-image: url(../image/learn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 100px;
+    margin: 2px 4px;
+    width: 100px;
+}
+
+.about {
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.info {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    color: darkred;
+}

@@ -1,0 +1,32 @@
+.title{
+        border: 2px solid gray;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        color: hotpink;
+        background-color: khaki;
+        margin: 2px;
+        padding: 2px;
+        
+    }
+    .block{
+        border: 2px solid gray;
+        width: 300px;
+        height: 515px;
+        text-align: center;
+        float: left;
+        color: indianred;
+        background-color: lavender;
+    }
+    .block1{
+        border: 2px solid gray;
+        width: 300px;
+        height: 515px;
+        text-align: center;
+        float: right;
+        color: indianred;
+        background-color: lavender;
+        overflow-y: scroll;
+        
+    }

@@ -1,0 +1,44 @@
+body {
+    background-image: url(../image/smartGadget.jpg);
+    Background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Logo*/
+
+.logo {
+    position: absolute;
+}
+
+.logo img {
+    width: 120px;
+    height: 100px;
+}
+
+
+/*vetical list*/
+
+.vertical-menu {
+    width: 200px;
+    position: absolute;
+    left: 1%;
+    top: 25%;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}

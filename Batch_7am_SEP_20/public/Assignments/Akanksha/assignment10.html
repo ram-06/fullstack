@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>assignment 10</title>
+	</head>
+	<body>
+		<div>Employee Details</div>
+		<script type="text/javascript">
+			var ename = prompt("enter employee name");
+			var egender = prompt("enter employee gender");
+			var edept = prompt("enter employee department");
+			var basicsal = prompt("enter employee Basic salary");
+			basicsal = parseInt(basicsal);
+			var pf = (basicsal*12)/100;
+			var hra = (basicsal*24)/100;
+			var totalsal = pf+hra+basicsal;
+			console.log("employee name is=" + ename);
+			console.log("employee gender is="  + egender);
+			console.log("employee department is=" + edept);
+			console.log("employee basic salary is=" + basicsal);
+			console.log("employee pf is=" + pf);
+			console.log("employee hra is=" + hra);
+			console.log("employee total salary is=" + totalsal);
+		</script>
+	</body>
+</html>
