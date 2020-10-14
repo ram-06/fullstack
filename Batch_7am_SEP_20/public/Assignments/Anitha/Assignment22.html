@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<title>
+		Check for Palindrome number for a range
+	</title>
+	<script type="text/javascript">
+		var n=prompt("Enter a range");
+		var rem;
+		var rev=0;
+		var enteredInput=n;
+
+	    for (i=1;i<=enteredInput;i++)
+		{
+			n=i;
+			rem=0;
+			rev=0;
+			while (n>0){
+			rem=n%10;
+			n=n/10;
+			n=parseInt(n);
+			rev=rev*10+rem;
+		}
+		 if (i == rev){
+           console.log("Palindrome number " + i);
+          }
+       }	
+
+	</script>
+	</head>
+</html>
