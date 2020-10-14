@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List of number 1 to given Input </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for(var i=1;i<=100;i++)
+			{
+			var n=i;
+            var reverse=" ";
+            while(n>0)
+            {
+                var rem=n%10;
+                reverse=reverse + ""+rem;
+                n=n/10;
+                n=parseInt(n);
+            
+            }
+           reverse=parseInt(reverse);
+            if(i===reverse)
+            {
+                console.log("Palindron number is " + i);
+            }
+           
+			}
+		</script>
+	</body>
+</html>
