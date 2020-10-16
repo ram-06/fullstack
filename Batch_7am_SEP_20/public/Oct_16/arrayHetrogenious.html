@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var a  = [];
+
+			/*a[0] = prompt("enter value for 1");
+			a[0] = pareseInt(a[0]);
+
+			a[1] = prompt("enter second value");
+			a[1] = pareseInt(a[1]); */
+			for(var i = 0; i < 5; i++) {
+				a[i] = prompt("enter value for position " + i);
+				a[i] = parseInt(a[i]);
+			}
+
+			var sum = 0;
+
+			// sum = a[0] + a[1] + a[2] + a[3] + a[4];
+
+			for (var i = 0; i < a.length; i++) {
+				sum = sum + a[i];
+			}
+
+			console.log("the sum is " + sum);
+
+		</script>
+	</body>
+</html>
