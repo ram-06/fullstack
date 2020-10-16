@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	      <title>
+	      	prime numbers in array
+	      </title>
+	    </head>
+     <body>
+           <script type="text/javascript">
+            var a=[];
+           	for(var i=0;i<10;i++)
+           	{
+           		a[i]=prompt("enter the value for index" + i);
+           		a[i]=parseInt(a[i]);
+           	}
+           		for(var j=0;j<a.length;j++)
+           		{
+           			var num=0;
+           			for(var k=1;k<=a[j];k++)
+           			{
+                      if(a[j]%k===0)	
+                    {
+              	    num=num+1;
+                  }
+                }
+                if(num===2)
+                {
+               console.log(a[j]);
+              }
+           	}
+           </script>
+     </body>
+</html>
