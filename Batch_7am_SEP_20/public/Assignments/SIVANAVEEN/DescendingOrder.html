@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var a = [];
+		for(var i = 0;i<5;i++){
+			a[i] = parseInt(prompt("Enter value for "+ i));
+		};
+		for(var i = 0;i<a.length-1;i++){
+			for(var j = i+1;j<a.length;j++){
+				if(a[i]<a[j]){
+					var temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+		console.log(a);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
