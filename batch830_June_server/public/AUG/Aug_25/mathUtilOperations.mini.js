@@ -1,1 +1,0 @@
-var count=0;function doAddition(n,t){count++;return n+t}function doSubstraction(n,t){count++;return n-t}function doDivision(n,t){count++;return n/t}function doMultiplication(n,t){count++;return n*t}
