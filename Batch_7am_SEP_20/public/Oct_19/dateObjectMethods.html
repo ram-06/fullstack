@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Date <object></object>
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//var mydate = new Date("Oct 20 2018");
+			var mydate = new Date();
+			console.log(mydate);
+
+			var days = ["Sunday", "Monday", "Tuesday", '..'];
+
+			var months = ["Jan", "Feb", "MAr", "Apr", "May", '...'];
+
+			console.log(mydate.getFullYear());
+			console.log(mydate.getMonth());
+			console.log(mydate.getDate());
+			console.log(mydate.getDay());
+
+			var dayIndex = mydate.getDay();
+			console.log(days[dayIndex]);
+		</script>
+	</body>
+</html>
