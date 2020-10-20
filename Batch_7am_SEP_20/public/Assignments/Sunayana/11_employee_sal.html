@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>
+			Assignment 11
+		</title>
+		<script type="text/javascript">
+           function empDetails(){
+           var employeeName = prompt('Enter employee name');
+           var employeeGender = prompt('Enter Gender');
+           var deptName = prompt("Enter Dept name")    
+           var employeeAge = prompt("Enter Age");
+           var enteredBasicSalary = prompt('Enter basic salary');
+           var basicSalary = parseInt(enteredBasicSalary);
+           var sal = calSalary(basicSalary);
+           var humanAge = pfCalculation(employeeGender)
+          }
+          function calSalary(sal){
+      			var pf = (12 / 100) * sal;
+      			var hra = (24 / 100) * sal;
+      			var totalSalary = pf + hra + sal;
+            console.log("totalSalary " + totalSalary);
+            var totaSal = pfCalculation(totalSalary);
+         }
+         function pfCalculation(totaSal, humanAge){
+          var taxPercent
+			
+           if (humanAge ==='Male'){
+          
+           	if (totaSal > 50000)
+           		{
+                 taxPercent = (15/100) * totaSal 
+           		}
+           	else if (totaSal > 30000)
+           	 	{
+           	 	 taxPercent = (10 / 100) * totaSal 
+           	 	}	
+            else if (totaSal > 20000)
+           	 	{
+           	 	  taxPercent = 0
+            	}	
+           }
+
+          else
+            {
+           	if (totaSal > 50000)
+           		{
+                    taxPercent = (10 / 100) * totaSal 
+           		}
+           	else if (totaSal > 30000)
+           	 	{
+           	 		taxPercent = (5 / 100) * totaSal 
+           	 	}	
+            else if (totaSal > 20000)
+           	 	{
+           	 		taxPercent = 0
+           	 	}	
+           }
+
+         console.log("tax Percentage " + taxPercent)
+       }
+       empDetails();
+		</script>
+	</head>
+</html>
