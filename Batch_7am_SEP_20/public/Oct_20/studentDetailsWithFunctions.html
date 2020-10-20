@@ -7,11 +7,12 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var sname, age;
-			var marks = [];
-			var total = 0, avg;
+			
 
 			function readStudentData() {
+				var sname, age;
+				var marks = [];
+				var total = 0, avg;
 				sname = prompt("enter Student name");
 				age = prompt("enter studnet age");
 
@@ -19,27 +20,31 @@
 					marks[i] = prompt("enter sub marks for " + (i+1));
 					marks[i] = parseInt(marks[i]);
 				}	
-				getTotalAndAvg();
-				
+				var res = getTotalAndAvg(marks);
+				total = res[0];
+				avg = res[1];
+				displayData(sname, age, total, avg);
+				displayGrade(avg);
 			}		
 
-			function getTotalAndAvg() {
+			function getTotalAndAvg(marks) {
+				var total = 0;
 				for (var i = 0; i < marks.length; i++) {
 					total += marks[i];
 				}
 				avg = total / marks.length;
-				displayData();
-				displayGrade();
+				return [total, avg];
+				
 			}
 
-			function displayData() {
+			function displayData(sname, age, total, avg) {
 				console.log("Studnet name is " + sname);
 				console.log("Student age " + age);
 				console.log("Total is " + total);
 				console.log("Avg is " + avg);
 			}
 
-			function displayGrade() {
+			function displayGrade(avg) {
 				if (avg < 40) {
 					console.log("Studnet got failed");
 				} else {
@@ -58,6 +63,6 @@
 
 
 
-		</script>
+			</script>
 	</body>
 </html>
