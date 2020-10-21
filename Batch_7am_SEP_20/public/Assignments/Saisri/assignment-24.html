@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Multipule Spaces Removal
+        </title>
+        <script>
+            var v = 'ad    qweqeq    qeqeqe    trtey sads';
+            var count = 0;
+            var result = '';
+            for(var i=0;i<v.length;i++) {
+                if(v.charCodeAt(i) === 32) {
+                    count++;
+                } else {
+                    if(count >= 2) {
+                        result = result+' ';
+                        count=0;
+                    }else if(count == 1) {
+                        result = result+' ';
+                        count=0;
+                    }
+                    result=result+v.charAt(i);
+                }
+                
+            }
+            console.log(result);
+        </script>
+    </head>
+</html>
