@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            String Duplicate Character Removal
+        </title>
+        <script>
+            var v = 'aeioaavbbkd    nsssuuuoe   ubbjjbj   deedded    infd ';
+            var result = [];
+            console.log(result.length);
+            var flag = false;
+            result.push(v.charAt(0));
+            for(var i=1;i<v.length;i++) {
+                if(v.charCodeAt(i) !==32) {
+                    for(var j=0;j<result.length;j++) {
+                        if(v.charAt(i) == result[j]) {
+                            flag = true;
+                            break;
+                        } 
+                    }
+                    if(flag === false) {
+                            result.push(v.charAt(i));
+                            } else {
+                                flag= false;
+                            }
+                   
+                }
+                
+            }
+            console.log(result.toString());
+           
+            </script>
+    </head>
+</html>

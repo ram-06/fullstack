@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Number of characters count and word count.
+        </title>
+        <script>
+            var v = 'abcd efghi jklmno pqrstuv wxyz';
+            var count = 0;
+            console.log(v.substr(5,8));
+            var wordcount = 1;
+            for(var i=0;i<v.length;i++) {
+                if(v.charCodeAt(i) !== 32) {
+                    count++;
+                   // res = res+'';
+                } else {
+                    wordcount++;
+                }
+                
+            }
+            
+            console.log(count);
+            console.log(wordcount);
+        </script>
+    </head>
+</html>
