@@ -14,7 +14,7 @@
          	var basicSalary;
          	var totalSalary = 0;
 
-         	function readempdata(){
+         	function readEmpData(){
                 eName = prompt('Enter employee name');
                 eGender=prompt('Enter employee Gender');
                 basicSalary=prompt('Enter employee BasicSalary');
@@ -25,7 +25,7 @@
             }
 
             function getHra(){
-         	             hra = ( basicSalary * 24)/100;
+         	             hra = ( basicSalary * 24 )/100;
             }
 
             function totalSal(){
@@ -36,7 +36,7 @@
 
             function displayAllTheData(){
                 readEmpData();
-                totalSalary();
+                totalSal();
                 console.log('enter employee name' + eName);
             	console.log('enter employee Gender' + eGender);
              	console.log('basicSalary' + basicSalary);
