@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Outputs Adding 14</title>
+    </head>
+    <body>
+       <div>Forward Output</div>
+       <div id="foutput"></div>
+       <div>Backward Output</div>
+       <div id="boutput"></div> 
+    </body>
+        <script>
+
+            var out = '';
+            var forwardValue = '';
+            for(var i=1;i<=20;i++){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                forwardValue = forwardValue +out +"<br/>";
+                out = '';
+
+            }
+
+
+
+            var backwardoutput = '';
+            var out = '';
+            for(var i=20;i>=1;i--){
+                for(var j=1;j<=i;j++){
+                    
+                    out = out +" "+ j;
+                }
+                backwardoutput = backwardoutput + out +"<br/>";
+                out = '';
+
+            }
+            document.getElementById("foutput").innerHTML=forwardValue;
+            document.getElementById("boutput").innerHTML=backwardoutput;
+        </script>
+        
+
+    
+</html>

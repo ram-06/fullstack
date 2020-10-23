@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            var a = [5,50,4,40,30,20,10];
+            console.log(a);
+            var len = a.length;
+            for(var i=0;i<len;i++){
+                for(var j=0;j<len-1-i;j++) {
+                    if(a[j]>a[j+1]) {
+                        var temp = a[j];
+                        a[j] = a[j+1];
+                        a[j+1] = temp;
+                    }
+                }
+            }
+            console.log("accending order is:" +a);
+        </script>
+    </head>
+</html>

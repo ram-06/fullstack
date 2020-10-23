@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            var num = prompt("enter your choice:");
+            num= parseInt(num);
+            
+
+            while(isNaN(num)){
+            if(isNaN(num)){
+                alert("please enter valid number:");
+                num = prompt("enter number only:");
+            }}
+            
+            var flag = true;
+            
+            for(var k=2;k<num;k++){
+                var j=k/2;
+                j=parseInt(j);
+            
+            for(var i=2;i<=j;i++) {
+                if(k%i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) {
+            console.log("prime number :" +k);
+            } else {
+                console.log("not prime number:" +k);
+                flag = true;
+            }
+        }
+
+        </script>
+    </head>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+	<title>
+		Number reverse
+	</title>
+	<script type="text/javascript">
+		var n=prompt ("Enter a number")
+		var rem;
+		var rev=0;
+		while (n!=0)
+		{
+			rem=n%10;
+			n=n/10;
+			n=parseInt(n);
+			rev=rev*10+rem;
+		}
+        console.log("Reverse of number is "+rev);
+
+	</script>
+	</head>
+</html>

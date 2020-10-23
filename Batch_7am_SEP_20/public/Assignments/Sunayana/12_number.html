@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Numbers</title>
+	</head>
+
+	<body>
+
+	    <div id="output"></div>
+
+	
+		<script>
+			 n = prompt("Please enter how many numbers you want ?");
+			var s = parseInt(n);
+			if(s === NaN){
+			   alert('Please enter only number to proceed');
+			} 
+
+			var output = '';
+
+			for(var i=0;i<=n;i++){
+			    output = output+ 'i = '+i+"<br/>"
+			}
+
+		    document.getElementById("output").innerHTML=output;
+		</script>
+	</body>
+</html>

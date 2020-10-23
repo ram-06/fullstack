@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> prime no list</title>
+	</head>
+	<body>
+		<script type = "text/javascript">
+			for (var cnt = 1; cnt <= 100; cnt++) {
+
+    var notPrime = false;
+    for (var i = 2; i <= cnt; i++) {
+        if (cnt%i===0 && i!==cnt) {
+            notPrime = true;
+        }
+    }
+    if (notPrime === false) {
+                console.log(cnt);
+    }
+}
+		</script>
+	</body>
+</html>

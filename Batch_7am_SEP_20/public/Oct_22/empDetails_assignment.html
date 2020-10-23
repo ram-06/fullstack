@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var displayEmpDetails = function (ename, eTotSal, eTotalTax) {
+				console.log("employee name is " + ename);
+				console.log("total sal is " + eTotSal);
+				console.log("Total tax is " + eTotalTax);
+			}
+			var readEmpData = function() {
+				var ename, eage, ebasicSal;
+				var epf, ehra, eTotSal;
+				ename = prompt("enter employee name");
+				eage = prompt("Enter employee age");
+				egender = prompt("Enter User Gender");
+				ebasicSal = prompt("Enter basic sal");
+				ebasicSal = parseInt(ebasicSal);
+				eTotSal = getTotalSal(ebasicSal);
+				eTotalTax = getTotalTax(eTotSal, egender);
+				displayEmpDetails(ename, eTotSal, eTotalTax);
+			}
+
+			function getTotalSal(bsal) {
+				var epf = getPf(bsal);
+				var ehra = getHra(bsal);
+				var totalSal = epf + ehra + bsal;
+				return totalSal;
+			}
+
+			function getPf(bsal) {
+				var pf = (bsal * 12) / 100;
+				return pf;
+			}
+
+			function getHra(bsal) {
+				var hra = (bsal * 24) / 100;
+				return hra;
+			}
+
+			function getTotalTax(totalSal, gender) {
+				var taxVal, taxPercent;
+				if (gender == 'male') {
+					if (totalSal > 50000) {
+						taxPercent = 15
+					} else {
+						taxPercent = 5
+					}
+				} else { // Female
+					taxPercent = 5;
+				}
+				taxVal = (taxPercent * totalSal) / 100;
+				return taxVal;
+			}
+
+			readEmpData();
+		</script>
+	</body>
+</html>

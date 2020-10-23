@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	      <title>
+		         employeeDetails in functions
+	      </title>
+     </head>
+     <body>
+         <h3>
+         	employeeDetails
+         </h3>
+         <script type="text/javascript">
+         	var eName,eGender,pf,hra;
+         	var basicSalary;
+         	var totalSalary = 0;
+
+         	function readEmpData(){
+                eName = prompt('Enter employee name');
+                eGender=prompt('Enter employee Gender');
+                basicSalary=prompt('Enter employee BasicSalary');
+                basicSalary=parseInt(basicSalary);
+            }
+            function getPf(){
+         	            pf = ( basicSalary * 12 )/100;
+            }
+
+            function getHra(){
+         	             hra = ( basicSalary * 24 )/100;
+            }
+
+            function totalSal(){
+                getPf();
+                getHra();
+         	    totalSalary = pf + hra + basicSalary;
+            }
+
+            function displayAllTheData(){
+                readEmpData();
+                totalSal();
+                console.log('enter employee name' + eName);
+            	console.log('enter employee Gender' + eGender);
+             	console.log('basicSalary' + basicSalary);
+             	console.log('employee' + pf);
+             	console.log('employee hra' + hra);
+            	console.log('employee totalSalary' + totalSalary);
+            }
+            displayAllTheData();
+
+         </script>
+     </body>
+</html>
