@@ -1,0 +1,42 @@
+ContactDetails
+---------------
+firstname
+lastname
+contactno -> 
+	office
+	persnol -> multiple
+adddress
+	office
+		dno
+		state
+		contry
+	personal
+		present
+			dno
+			streetname
+			country	
+		prmnt
+			dno
+			streetname
+			country
+mailid:
+	office
+	personl - multiple
+dob
+	month
+	year
+	day
+profilePic ->
+website
+	office
+	persnl
+socialNetwkringID
+	fbid
+	linkdinid
+	twtrid
+	instaID
+
+
+
+
+
