@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function displayWelcomeMsg() {
+				console.log("Hello welcome to our page");
+			}
+
+			function displayThaxmsg() {
+				console.log("Thanks for visiting our webpae");
+			} 
+
+			function doneJob() {
+				console.log("we are done with this");
+			}
+
+			displayWelcomeMsg();
+			// displayThaxmsg(); // after 5 sec
+			setTimeout(displayThaxmsg, 5000);
+
+			/*setTimeout(function(){ 
+				console.log("Thanks for visiting our webpae");
+
+			}, 5000); */
+			doneJob();
+		</script>
+	</body>
+</html>

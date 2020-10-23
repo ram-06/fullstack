@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function displayWelcomeMsg() {
+				console.log("Hello welcome to our page");
+			}
+
+			function doneJob() {
+				console.log("we are done with this");
+			}
+
+			displayWelcomeMsg();
+			var count = 0;
+			var myintervl = setInterval(function(){ 
+				count++;
+				console.log("Thanks for visiting our webpae " + count);
+				console.log(new Date());
+				if (count == 5) {
+					clearInterval(myintervl);
+				}
+			}, 3000);
+			doneJob();
+		</script>
+	</body>
+</html>
