@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating DHTML, updating dom elements content dynamically through js
+		</title>
+	</head>
+	<body>
+		<div>
+			The sum of two values is: 
+			<span id="resultBlock"></span>
+		</div>
+		<script type="text/javascript">
+			var a = prompt("enter value for a");
+			var b = prompt("Enter value for b");
+
+			a = parseInt(a);
+			b = parseInt(b);
+			var result = a + b;
+			// console.log("The sum is " + result);
+
+			document.querySelector("#resultBlock").innerText = result;
+			
+		</script>
+	</body>
+</html>
