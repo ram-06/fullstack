@@ -1,0 +1,39 @@
+.img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 25%;
+    left: 2%;
+}
+
+.img1 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 74%;
+    left: 2%;
+}
+
+.img2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 54%;
+    left: 43%;
+}
+
+.img3 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 25%;
+    right: 5%;
+}
+
+.img4 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 75%;
+    right: 6%;
+}
