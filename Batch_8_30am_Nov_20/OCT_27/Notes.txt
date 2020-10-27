@@ -1,0 +1,40 @@
+HTML: (Hyper Text Markup Language)
+
+
+TAGS:
+	html - Tag holds the complete content of page
+
+	head - Tag holds the header content of page
+
+	title - To add title to a page
+
+	style - To add group of css classes within thepage
+
+	link - Tag to inject an external css to page
+
+	script - Tag to inject and external/inlien javascript code to page
+
+	div - Block level element
+
+	span - Inline element
+
+	table - To add table type of content to page
+
+	etc.
+
+Basic Structure of a HTML page:
+
+	Following is the basic structure of any html page
+
+
+		<html>
+			<head>
+				<title>
+					Page title
+				</title>
+			</head>
+			<body>
+				.... content of page to be displayed 
+			</body>
+		</html>
+
