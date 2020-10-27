@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		demo
+	</title>
+	<script type="text/javascript">
+		mainContainer = document.createElement('div');
+		mainContainer.setAttribute("id", "container");
+
+		divHtml = document.createElement('div');
+		divHtml.innerHTML = '<b>This is Dynamic Div Added<b>';
+		divHtml.setAttribute("id", "dynaDiv")
+		divHtml.setAttribute("class", "blog")
+		divHtml.style.fontSize = "40px";
+		divHtml.style.color = "red";
+		mainContainer.append(divHtml);
+		mainContainer.append(divHtml);
+		console.log(mainContainer);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
