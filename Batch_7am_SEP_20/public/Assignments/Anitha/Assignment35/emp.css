@@ -1,0 +1,23 @@
+   ul {
+            border:2px solid;
+            width:40%;
+            height:30%;
+            float: left;
+            margin:5px;
+         }
+
+   li {
+         	list-style: none;
+       }
+
+  img {
+         	clear: both;
+         	float: left;
+         	width:200px;
+         	height:175px;
+         	padding-right:15px;
+      }
+
+   b {
+       line-height: 35px;
+    }  
