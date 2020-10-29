@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var temp = {
+				a: 100,
+				name: 'Teena',
+				displayData: function() {
+					// this.name
+				}
+			}
+
+			var sData = {
+				name: 'Raj',
+				age: 20,
+				gender: 'Male',
+				location: 'Hyderabad',
+				marks: [34, 55, 67, 89],
+				total: 0,
+				avg: 0,
+				grade: '',
+				getTotalAndAvg: function() {
+					for (var i = 0 ; i < sData.marks.length; i++) {
+						this.total = sData.total + this.marks[i];
+					}
+					sData.avg = this.total / this.marks.length;
+				},
+				getGrade: function() {
+					if (sData.avg >= 40) {
+						this.grade = "Passed";
+					} else {
+						sData.grade = "You have a surprise";
+					}
+				},
+				displayData: function() {
+					sData.getTotalAndAvg();
+					this.getGrade();
+					console.log("Name " + sData.name);
+					console.log("Age " + this.age);
+					console.log("Total " + sData.total);
+					console.log("Avg " + this.avg);
+					console.log("Grade " + sData.grade);
+				}
+			};
+
+			sData.displayData();
+		</script>
+	</body>
+</html>

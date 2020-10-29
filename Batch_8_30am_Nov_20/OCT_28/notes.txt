@@ -1,0 +1,53 @@
+HTML Attributes:
+	Attributes are extra properties can be injected to any html elements.
+	Attributes can be both predefined and user defined
+
+
+	Following are set of predefined attributes been supported, can be injected to html elements.
+
+
+1. id -> Through which we can add a unique identity to
+         any html element.
+2. class -> Through which we can inject any number of css classes
+            to a single element.
+3. style -> Through which we can inject one or more numbe of css properties
+            to a single element.
+
+4. name - > To add name to an element, same name can be added to a single element.
+
+5. href -> Through which we can specify the link  path.
+
+6. src -> through which we can specify the source of external resource.
+
+etc.
+
+
+note:
+
+	1. For a single element we can inject any number of attributes
+
+	2. Every Attribute should have the corresponding value.
+
+	3. The same attribute cannot be added multiple times for a single element.
+
+	4. Some attributes take single value (id, name etc) and some attributes are capable of considering multiple values (class, style etc).
+
+
+Syntax to inject attribute to elements:
+
+	<tagname attrname1="value" attrname2="..." ... > content </tagname>
+
+Example:
+
+	<div id="sample" name="xyz" class="test xyz">
+		...
+		...
+	</div>
+
+	<h3 class="test" id="new" style="font-size:10px;color:blue;">
+		...
+	</h3>
+
+
+
+	
