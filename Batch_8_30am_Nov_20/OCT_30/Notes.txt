@@ -1,0 +1,29 @@
+Css Classes:
+
+	Set of required css properties been binded as a block, assigned an userdefined name is called css class.
+
+1. In a single page we can define any number of css classes
+
+2. Class name is always a userdefined name
+
+3. Class name should always start with '.' operator
+
+4. Classes has to be defined under the style tag or under and external css file.
+
+5. A single style tag can hold any number of css classes.
+
+6. 'class' is an attribute through which we can inject a class to an element.
+
+7. Using 'class' attribute we can inject any numbe of css classes to an element.
+
+8. The same css class can be injected to any numbe of elements.
+
+9. Under a single css class we can add any numbe of css properties.
+
+Syntax:
+
+	.classname {
+		....
+		...
+		... // set of css properties.
+	}
