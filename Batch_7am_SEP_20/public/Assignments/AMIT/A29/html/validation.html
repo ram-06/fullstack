@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Password_Validation</title>
+    <link href="../css/reset.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="../js/password.js"></script>
+    <div class="validation"> Password_Validation</div>
+    <form>
+        <div class="container">
+            <label for="user">Username</label>
+            <input type="text" name="username" placeholder="UserName" id="user">
+
+            <label for="pass">Password</label>
+            <input type="text" name="password" placeholder="PasswordName" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters">
+            <input type="Submit" value="Submit">
+
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>
