@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var data = (function(){
+
+					console.log("hellow");
+
+					function sample() {
+						console.log("testing");
+					}
+					return {
+						sample: function(){
+							sample();
+						}
+					}
+			})();
+			data.sample();
+		</script>
+	</body>
+</html>
