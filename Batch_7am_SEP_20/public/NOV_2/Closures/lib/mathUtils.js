@@ -1,7 +1,6 @@
 var mathUtilsObj = (function() {
 	var count = 11;
 
-
 	function getMultiplication(a, b) {
 		count++;
 		var result = 0;
