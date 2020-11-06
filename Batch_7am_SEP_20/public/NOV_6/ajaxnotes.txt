@@ -1,0 +1,44 @@
+url - Webservice url to hit
+
+method - To specify what type of communication - GET/POST
+
+dataType - What type of data expected from server JSON/XML/String etc.
+
+async - Whether the communication to be synchronus or asynchronus
+
+crossDomain - Boolean value to specify whether the communication is between same or  cross Domain
+
+success - callback method gets called automatically when there is succesfl response from server
+
+error - Callback method gets invoked automatically when there is a error while communicating with server
+
+etc.
+
+Syntax:
+
+    $.ajax({
+        url: '<webservice url>',
+        method: 'GET/POST',
+        dataType: 'JSON/JSONP/String',
+        success: function(response) {
+            ....
+            ... // code to handle response from server
+        },
+        error: function(err) {
+            // Code to handle error
+        }
+    });
+
+Example:
+
+    $.ajax({
+        url: 'http://www.test.com/sample/data',
+        method: 'GET',
+        dataType: 'JSON',
+        success: function(res) {
+                ...
+        },
+        error: function(err) {
+            ...
+        }
+    });
