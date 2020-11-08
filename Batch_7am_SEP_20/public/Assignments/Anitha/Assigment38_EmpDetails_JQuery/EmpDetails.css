@@ -1,0 +1,16 @@
+ul {
+	border:2px solid;
+	list-style: none;
+	margin:5px;
+	width:40%;
+	height:30%;
+	float:left;
+}
+
+img {
+	width:30%;
+	height:90%;
+	float:right;
+	position:relative;
+	bottom:110px;
+}
