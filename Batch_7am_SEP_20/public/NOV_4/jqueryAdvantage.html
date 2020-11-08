@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery Advantages
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+			}
+
+			.highlight {
+				background: green;
+				margin: 20px auto;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<div class="container" id="content">Hello every one</div>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<script type="text/javascript">
+			function applyChanges() {
+				/*var existingClass = document.querySelector("#content").getAttribute("class");
+				var finalClass = "highlight " + existingClass;
+				document.querySelector("#content").setAttribute("class", finalClass); */
+
+				$("#content").addClass("highlight");
+
+
+				//$(".abc") jQuery(".abc")
+
+
+			}
+		</script>
+	</body>
+</html>

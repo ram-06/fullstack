@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>palindrome no list</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n=prompt("Enter a number");
+			var rem;
+			var rev=0;
+			var temp=n;
+
+	    for (i=1;i<=temp;i++)
+		{
+				n = i;
+				rem = 0;
+				rev = 0;
+			while (n!=0){
+				rem = n % 10;
+				n = n / 10;
+				n = parseInt(n);
+				rev = rev * 10 + rem;
+			}
+		 if (i == rev){
+           console.log("Palindrome number " + i);
+          }
+       }	
+		</script>
+	</body>
+</html>

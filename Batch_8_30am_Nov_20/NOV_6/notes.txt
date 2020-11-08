@@ -1,0 +1,82 @@
+CSS Pseudo Classes and Pseudo Elements
+
+:active -> To identify active elements
+
+:checked -> Selects the checked checkbox
+
+:disabled -> identifies the disabled input elemnts
+
+:empty -> To get elemtns with empty content
+
+:first-child - Any element acting as first children
+
+:focus -> When element gets focus
+
+
+:last-child -> Any element acting as last child
+
+:nth-child(2) -> selects 2nd element
+
+nth-last-child(n) -> select nth element from last
+
+:only-child - selects elements if its the only child
+
+:hover - When elements get hover
+
+etc.
+
+
+Syntax:
+
+	element:<pseudoClass> {
+		...
+		...
+		.. //set of css properties...
+	}
+
+eg:
+
+	a:hover {
+		...
+		... //set of properties gets applied when there is a hover on a tag
+	}
+
+	p:first-child {
+		...
+		... //set of properties will be applied to p tag which is a first child
+	}
+
+Pseudo Elements:
+
+	The specil set of classes through which we can apply css to elements not to complete content but to partial content of elements.
+
+	Following are set of pseudo elements supported
+
+	::after - To add content after a given element
+
+	::before - before
+
+	::first-line - > selects first line of given content
+
+	::first-letter - Selects only first letter
+
+	::selection - GEts css to selected content
+
+Syntax:
+
+	element::pseudoElement {
+		...
+		... //set of properties.
+	}
+
+Eg:
+
+	p::after {
+		font-size: 10px;
+		content: 'hello';
+
+	}
+	h3::first-line {
+		...
+		...
+	}
