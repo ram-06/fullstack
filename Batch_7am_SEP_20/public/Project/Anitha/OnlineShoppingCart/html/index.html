@@ -19,7 +19,12 @@
             </tr>
             <tr>
                <td>
-                  <span class="label">Password: </span> <input type=password name="userPwd" required> 
+                  <span class="label">Password: </span> 
+                  <input id="userPwd" type=password onkeypress=
+                  "setTimeout(
+                    function() {
+                  	 validatePwd() } ,100)" name="userPwd" required> 
+                  <p id="validationMsg"></p>
                </td>
             </tr>
          </table>
@@ -33,4 +38,7 @@
       </div>
       <div id="footer"> @Copyrights NIT 2020 </div>
    </body>
+      <script type="text/javascript" src="../js/index.js">
+
+   </script>
 </html>
