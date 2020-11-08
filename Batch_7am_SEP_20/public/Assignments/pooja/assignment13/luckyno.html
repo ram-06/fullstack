@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo of lucky number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n=prompt('enter your birthday from 1 to 31')
+		n=parseInt(n);
+		var sum=0;
+		while(n>0){
+			var rem=n%10;
+			sum=sum+rem;
+			n=n/10;
+			n=parseInt(n)
+		}console.log('your lucky number is '+sum);
+
+	</script>
+
+</body>
+</html>

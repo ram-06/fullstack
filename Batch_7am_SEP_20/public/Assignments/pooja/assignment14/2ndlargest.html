@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2nd largest</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 var a=[3,541,78,93,909,1,67,15];
+		 console.log(a)
+    
+	    for (var i=0;i<a.length-1;i++)
+	    {
+	    	if (a[i]>a[i+1])
+	    	{
+	    		temp=a[i];
+	    		a[i]=a[i+1];
+	    		a[i+1]=temp;
+
+	    		i=-1;
+	    	}
+	    }
+	 
+	    console.log("Second Largest number",a[a.length-2]);  
+	</script>
+
+</body>
+</html>
