@@ -10,7 +10,7 @@ HTML Attributes:
          any html element.
 2. class -> Through which we can inject any number of css classes
             to a single element.
-3. style -> Through which we can inject one or more numbe of css properties
+3. style -> Through which we can inject one or more number of css properties
             to a single element.
 
 4. name - > To add name to an element, same name can be added to a single element.
