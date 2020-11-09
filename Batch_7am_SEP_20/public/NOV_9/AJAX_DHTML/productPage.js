@@ -52,34 +52,44 @@ function showProductDetails() {
 $(document).ready(function(){
 	console.log("am done frm ready")
 	document.querySelector("#pdeailsBtn").addEventListener("click", function(){
+		document.querySelector(".loadingBlock").style.display = 'block';
+		$("body").css("cursor", "progress");
 		getProductDetails();
 		//showProductDetails();
 	});
 })
 
-function getProductDetails() {
-	console.log("about to put ajax req 1");
+function loadProductData() {
+	// document.querySelector(".loadingBlock").style.display = 'block';
+	
 	$.ajax({
 		url: 'http://localhost:8081/data/product/details',
 		method: "GET",
 		dataType: 'JSON',
-		async: false,
 		success: function(res) {
 			console.log("got response from server 2")
 			console.log("successfl");
 			console.log(res);
+			$(".loadingBlock").hide();
+			$("body").css("cursor", "auto");
 			productDetailsList = res.pData;
 			showProductDetails();
 		},
 		error: function(err) {
 			console.log("error");
+			$(".errorBlock").show();
+			$(".loadingBlock").hide();
 		}
 	});
 	console.log("doen with ajax call 3");
 }
 
 
-
+function getProductDetails() {
+	//$(".loadingBlock").show();
+	
+	loadProductData();
+}
 
 //showProductDetails();
 

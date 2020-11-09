@@ -20,6 +20,9 @@ Syntax:
         url: '<webservice url>',
         method: 'GET/POST',
         dataType: 'JSON/JSONP/String',
+        data: { // data to send to server
+            ...
+        }
         success: function(response) {
             ....
             ... // code to handle response from server
@@ -32,7 +35,7 @@ Syntax:
 Example:
 
     $.ajax({
-        url: 'http://www.test.com/sample/data',
+        url: 'http://www.test.com/sample/data', // webservice url
         method: 'GET',
         dataType: 'JSON',
         success: function(res) {
