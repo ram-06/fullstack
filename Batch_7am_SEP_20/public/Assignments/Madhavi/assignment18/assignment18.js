@@ -53,7 +53,7 @@ function showEmployeDetails() {
      //showemployeDetails();
    }
 $(document).ready(function(){
-  $(#empDetailsBtn).addEventListener("click", function(){
+  document.querySelector("#empDetailsBtn").addEventListener("click", function(){
    getInfo();
   });
 })
