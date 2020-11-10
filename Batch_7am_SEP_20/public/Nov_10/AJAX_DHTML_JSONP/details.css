@@ -1,0 +1,47 @@
+.prodImg {
+	border: 1px solid;
+	width: 150px;
+	height: 150px;
+}
+li {
+	list-style: none;
+	border: 1px solid; background: #ccc;
+	padding: 5px;
+	margin: 10px;
+}
+.details {
+	border: 1px solid;
+	width: 350px;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+}
+.header {
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: underline;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.loadingBlock img {
+	width: 200px;
+}
+.loadingBlock {
+	position: absolute;
+	top: 40%;
+	display: none;
+	left: 40%;
+}
+
+.errorBlock {
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	color: red;
+	font-size: 13px;
+	display: none;
+}

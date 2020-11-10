@@ -1,0 +1,33 @@
+$("#abc") - Returns reference of an element with id abc
+
+$(".abc") - Returns reference of all elements having clasname as abc
+
+$("div") - Returns reference of all div tags within the page
+
+
+$("*") - Returns reference of all elements within page as an array
+
+$("td#abc") - Returns reference of td tag having class id as abc
+
+$("li.pqr") - Returns reference of li tag having class name as pqr
+
+$("ul li:first-child") - Returns reference of a first li tag under ul
+
+$("input[type=text]") - Returns reference of all input elements with type text
+
+$(":button") - Returns reference of all button type elements
+
+$("li:even") - Returns all li tags which all are in even position
+
+
+$("tr:odd") - Returns all tr tag in odd position
+
+$("li:eq(3)) - Returns reference of li tag which is in 2nd position
+
+$("div:has(p)) - reference of div tag which has p tag
+
+$("p:hidden") - Reference of p tag which is in hidden state.
+
+$("[name=sample]") - Returns reference of all elements having name attribute value as sample;
+
+etc..
