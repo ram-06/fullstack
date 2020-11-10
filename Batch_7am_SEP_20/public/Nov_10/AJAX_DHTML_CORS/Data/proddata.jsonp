@@ -1,10 +1,4 @@
-var express = require('express');
-var router = express.Router();
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  console.log("frm webservice");
-  var data = {
+praseData({
     "pData" :[
         {
             "name": "Laptop",
@@ -31,17 +25,4 @@ router.get('/', function(req, res, next) {
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqfzLmC4Rg0UE_nfCHAW3plVHctLmNjKLhtA&usqp=CAU"
         }
     ]
-};
-
-  data = JSON.stringify(data);
-
-  //data = "parseProdData(" + data + ')';
-
-  setTimeout(function(){
-    res.send(data);
-  }, 5000)
-  
-
 });
-
-module.exports = router;
