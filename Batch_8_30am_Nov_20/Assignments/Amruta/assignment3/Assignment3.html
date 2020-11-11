@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+	<style type="text/css">
+		.header{
+			text-align: center;
+			border:3px solid;
+			padding: 10px;
+			margin-bottom:10px;
+			width: 100%;
+			height: 25px;
+			font-size:25px;
+        }
+        .container{
+        	height: 500px;
+        	width: 100%;
+        	margin: 5px;
+        	border:3px solid;
+        	overflow: auto;
+
+        }
+
+        .box1{
+        	border:3px solid;
+        	margin: 5px;
+        	height: 100%;
+        	width: 300px;
+        	float: left;
+        	clear: both;
+        	overflow: auto;
+
+        }
+        .box2{
+        	border:3px solid;
+        	margin: 10px;
+
+        	height: 100%;
+        	width: 960px;
+        	
+        	float: right;
+        	overflow: auto;
+
+        }
+        .one{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .two{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .three{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .four{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .five{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .six{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .seven{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .eight{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .nine{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .ten{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+
+        }
+        .eleven{
+        	border:3px solid;
+        	width: 250px;
+        	height: 30px;
+        	text-align: center;
+        	margin: 5px;
+       		padding: 5px;
+       		margin-bottom: 5px;
+
+        }
+
+        .block1{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img1{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        img{
+        	height: 70px;
+        	width:70px;
+        }
+        .block2{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img2{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block3{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img3{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block4{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img4{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block5{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img5{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block6{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img6{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block7{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img7{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+        .block8{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img8{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }.block9{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img9{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }.block10{
+        	border:3px solid;
+        	width: 900px;
+        	height: 130px;
+        	margin: 5px 10px 5px 10px;
+        	padding-left: 20px;
+        	}
+        .img10{
+        	border:3px solid;
+        	width: 80px;
+        	height: 80px;
+        	float: left;
+        	margin: 5px;
+        	padding: 5px;
+        	
+
+        }
+       
+
+
+        
+        
+        .footer{
+        	text-align: center;
+			border:3px solid;
+			padding: 10px;
+			margin-bottom:10px;
+			width: 100%;
+			height: 25px;
+			font-size:25px;
+
+        }
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<b>STUDENT DETAILS</b>
+		
+	</div>
+	<div class="container">
+		<div class="box1">
+			<div class="one">
+				1. Amruta
+			</div>
+			<div class="two">
+				2. Ram
+			</div>
+			<div class="three">
+				3. Vanaja
+			</div>
+			<div class="four">
+				4. Varun
+			</div>
+			<div class="five">
+				5. Snehitha
+			</div>
+			<div class="six">
+				6. Ashish
+			</div>
+			<div class="seven">
+				7. Swati
+			</div>
+			<div class="eight">
+				8. Prashant
+			</div>
+			<div class="nine">
+				9. Jayshree
+			</div>
+			<div class="ten">
+				10. Shekhar
+			</div>
+			<div class="eleven">
+				11. Mamta
+			</div>
+			
+
+			
+		</div>
+		<div class="box2">
+			<div class="block1">
+				<div class="img1">
+					<img src="img1.jpg">
+				</div>
+				
+				Name: Amruta <br>
+		  		Age : 22<br>
+		   		Gender: Female<br>
+		   		
+		   		
+			</div>
+			<div class="block2">
+				<div class="img2">
+					<img src="img2.jpg">
+				</div>
+				
+				Name: Ram <br>
+		   		Age : 22 <br>
+		   		Gender:Male<br>
+		   		Location:kerala<br>
+
+		   
+		   		
+			</div>
+			<div class="block3">
+				<div class="img3">
+					<img src="img3.jpg">
+				</div>
+				
+				Name: Vanaja <br>
+		  	    Age : 22<br>
+		   		Gender: Female<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block4">
+				<div class="img4">
+					<img src="img4.jpg">
+				</div>
+				
+				Name: Varun <br>
+		  		Age : 22<br>
+		   		Gender:Male<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block5">
+				<div class="img5">
+					<img src="img5.jpg">
+				</div>
+				
+				 Name: Snehitha <br>
+		   		 Age : 22<br>
+		   		Gender: Female<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block6">
+				<div class="img6">
+					<img src="img6.jpg">
+				</div>
+				
+				Name: Ashish <br>
+		   Age : 22<br>
+		   Gender: Male<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block7">
+				<div class="img7">
+					<img src="img7.jpg">
+				</div>
+				
+				Name: Swati <br>
+		   Age : 22<br>
+		   Gender: Female<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block8">
+				<div class="img8">
+					<img src="img8.jpg">
+				</div>
+				
+				Name: Prashant <br>
+		   Age : 22<br>
+		   Gender: Male<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block9">
+				<div class="img9">
+					<img src="img9.jpg">
+				</div>
+				
+				Name: Jayshree <br>
+		   Age : 22<br>
+		   Gender: Female<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			<div class="block10">
+				<div class="img10">
+					<img src="img10.png">
+				</div>
+				
+				Name: Shekhar <br>
+		   Age : 22<br>
+		   Gender: Male<br>
+		   		Location: Hydrabad<br>
+		   		
+			</div>
+			
+		</div>
+
+	</div>
+	<div class="footer">
+		<b>@copy right 2020 NIT</b>
+		
+	</div>
+
+</body>
+</html>
