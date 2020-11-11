@@ -85,3 +85,14 @@ input[type="text"], input[type="password"]{
     font-weight: bold;
     background:#2ad2f7;
   }
+
+#validationMsg {
+	color:red;
+}
+
+#greyTick,#greenTick {
+  height:6%;
+  position: fixed;
+  bottom:280px;
+  left:58%;
+}
