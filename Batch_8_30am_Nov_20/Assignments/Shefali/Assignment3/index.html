@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border & scroll Property</title>
+
+    <style>
+        .header {
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1::first-letter {
+            color: red;
+            font-size: 45px;
+        }
+
+        .content {
+            border: 1px solid black;
+            height: 2040px;
+            width: 100%;
+        }
+
+        .left {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 1%;
+            border: 1px solid black;
+            height: 2000px;
+            width: 30%;
+            float: left;
+            text-align: center;
+        }
+
+        .left-inner {
+            height: 186px;
+            border: 1px solid black;
+            padding: 0px 20px;
+            margin: 10px 20px;
+        }
+
+        .right-inner {
+            height: 186px;
+            border: 1px solid black;
+            margin: 10px 20px;
+            overflow: auto;
+            padding: 0px 20px;
+        }
+
+        .right {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 1%;
+            border: 1px solid black;
+            height: 2000px;
+            float: right;
+            width: 66%;
+        }
+
+        img {
+            float: left;
+            border: 1px solid black;
+            margin: 20px 0px;
+            padding: 10px;
+        }
+
+        .detail {
+            float: left;
+            margin: 10px 30px;
+        }
+        .detail::first-line {
+            color: green;
+            font-size: 20px;
+        }
+
+        .footer {
+            clear: both;
+            margin-top: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Student Details</h1>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="left-inner">
+                <h2>1. Raj</h2>
+            </div>
+            <div class="left-inner">
+                <h2>2. Teena</h2>
+            </div>
+            <div class="left-inner">
+                <h2>3. Krish</h2>
+            </div>
+            <div class="left-inner">
+                <h2>4. Reema</h2>
+            </div>
+            <div class="left-inner">
+                <h2>5. Suresh</h2>
+            </div>
+            <div class="left-inner">
+                <h2>6. Raj</h2>
+            </div>
+            <div class="left-inner">
+                <h2>7. Sheetal</h2>
+            </div>
+            <div class="left-inner">
+                <h2>8. Shyam</h2>
+            </div>
+            <div class="left-inner">
+                <h2>9. Radhe</h2>
+            </div>
+            <div class="left-inner">
+                <h2>10. Sheela</h2>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Raj</h4>
+                    <h4>Age: 20</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Mumbai</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/4.png" alt="">
+                <div class="detail">
+                    <h4>Name: Teena</h4>
+                    <h4>Age: 30</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Pune</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Krish</h4>
+                    <h4>Age: 40</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Hyderabad</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/4.png" alt="">
+                <div class="detail">
+                    <h4>Name: Reema</h4>
+                    <h4>Age: 25</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Kolkata</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Suresh</h4>
+                    <h4>Age: 50</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Bihar</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Raj</h4>
+                    <h4>Age: 60</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Pune</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/4.png" alt="">
+                <div class="detail">
+                    <h4>Name: Sheetal</h4>
+                    <h4>Age: 70</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Hyderabad</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Shyam</h4>
+                    <h4>Age: 80</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Banglore</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/5.png" alt="">
+                <div class="detail">
+                    <h4>Name: Radhe</h4>
+                    <h4>Age: 20</h4>
+                    <h4>Gender: Male</h4>
+                    <h4>Location: Mumbai</h4>
+                </div>
+            </div>
+            <div class="right-inner">
+                <img src="images/4.png" alt="">
+                <div class="detail">
+                    <h4>Name: Sheela</h4>
+                    <h4>Age: 30</h4>
+                    <h4>Gender: Female</h4>
+                    <h4>Location: Hyderabad</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>@copy rights 2020 NIT</h3>
+    </div>
+
+</body>
+
+</html>

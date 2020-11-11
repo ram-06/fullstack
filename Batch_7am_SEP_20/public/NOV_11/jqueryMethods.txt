@@ -1,0 +1,31 @@
+addClass() - To add one or multiple classes to DOM elements
+
+add() - To add an element to an existing element
+
+.after() - Add eelement after an existing element
+
+.before() - Add element before an existing element
+
+.appendTo() - To append element to set of selectors
+
+.attr() - To set or get any attribute to any dom element
+
+
+.empty() - Makes the content of any dom element as empty
+
+
+.css() - To set single or multiple css properties of DOM element
+
+.find("pattern")  - To find set of child elements matching the given pattern
+
+.hasClass("<classname>") - Returns boolean value based on the provided class name is existing
+                           or not
+
+.html() - To set or get te html content of element
+
+.removeAttr() - to remove specified attribute from element
+
+.val() - To get or set value to element
+
+
+etc.
