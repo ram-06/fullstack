@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			td, th {
+				text-align: center;
+			}
+			.tableContainer {
+				border: 1px solid;
+				width: 500px;
+				height: 400px;
+				margin: 5px;
+			}
+			.heading {
+				font-weight: bold;
+			}
+			.cell {
+				float: left;
+				width: 100px;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				text-align: center;
+			}
+			.row {
+				clear: both;
+			}
+			td:nth-of-type(even) {
+				background: green;
+			}
+			td:nth-of-type(odd) {
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Student Details
+		</h3>
+
+		<div class="tableContainer">
+			<div class='row'>
+				<div class="cell heading">Sno</div>
+				<div class="cell heading">Name</div>
+				<div class="cell heading">Location</div>
+				<div class="cell heading">AGe</div>
+			</div>
+			<div class="row">
+				<div class="cell">1</div>
+				<div class="cell">Raj</div>
+				<
+				div class="cell">Hyd</div>
+				<div class="cell">20</div>
+			</div>
+			<div class="row">
+				<div class="cell">1</div>
+				<div class="cell">Raj</div>
+				<div class="cell">Hyd</div>
+				<div class="cell">20</div>
+			</div>
+			<div class="row">
+				<div class="cell">1</div>
+				<div class="cell">Raj</div>
+				<div class="cell">Hyd</div>
+				<div class="cell">20</div>
+			</div>
+			<div class="row">
+				<div class="cell">1</div>
+				<div class="cell">Raj</div>
+				<div class="cell">Hyd</div>
+				<div class="cell">20</div>
+			</div>
+		</div>
+		<table border="1px solid;" cellspacing="10px" cellpadding="10px">
+			<thead>
+				<tr>
+					<th colspan="5">Student  Details</th>
+				</tr>
+				<tr>
+					<th>Sno</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Current Location</th>
+					<th>Perment Location</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>16</td>
+					<td>Hyderabad</td>
+					<td rowspan="2">Pune</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Teena</td>
+					<td>20</td>
+					<td>Mumbai</td>
+					
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Krish</td>
+					<td>20</td>
+					<td colspan="2">Vizag</td>
+					
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Meena</td>
+					<td>30</td>
+					<td>Delhi</td>
+					<td>Orissa</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Madhu</td>
+					<td>10</td>
+					<td>Mumbai</td>
+					<td>Pune</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</body>
+</html>

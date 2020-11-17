@@ -1,0 +1,13 @@
+CACHE MANGEMENT
+    data/app.js
+    book/info/list.*
+    book/details/book.html
+    images/books/*.*
+
+NETWORK
+    page/login.html
+    pages/payment/*.*
+
+FALLBACK
+    backup/pages/custompagenotfound.html
+    
