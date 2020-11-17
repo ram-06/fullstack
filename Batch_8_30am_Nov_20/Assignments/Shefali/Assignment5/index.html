@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: whitesmoke;
+            position: sticky;
+            top: 0px;
+            background: rosybrown;
+            z-index: 2;
+            border: 1px solid black;
+        }
+
+        .main {
+            border: 1px solid black;
+            padding: 80px;
+            height: 120vh;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+
+        .block1 {
+            background: yellow;
+
+        }
+
+        .block2 {
+            background: red;
+        }
+
+        .block3 {
+            background: orange;
+        }
+
+        .block4 {
+            background: green;
+        }
+
+        .left {
+            float: left;
+            position: relative;
+        }
+
+        .block2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .right {
+            float: right;
+            position: relative;
+        }
+
+        .block4 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .maincenter {
+            clear: both;
+            padding-top: 120px;
+            margin: 0 45%;
+            position: relative;
+        }
+
+        .block5 {
+            background: blueviolet;
+            width: 150px;
+            height: 150px;
+        }
+
+        .block6 {
+            background: aliceblue;
+        }
+
+        .block7 {
+            background: cadetblue;
+        }
+
+        .block8 {
+            background: chartreuse;
+        }
+
+        .block9 {
+            background: coral;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 25%;
+            left: -30%;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 25%;
+            right: -80%;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: -20%;
+            left: -30%;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: -20%;
+            right: -80%;
+        }
+
+        .mainbottom {
+            clear: both;
+            padding-top: 100px;
+        }
+
+        .mainbottom .block1 {
+            background: yellowgreen;
+        }
+
+        .mainbottom .block2 {
+            background: pink;
+        }
+
+        .mainbottom .block3 {
+            background: gray;
+        }
+
+        .mainbottom .block4 {
+            background: turquoise;
+        }
+    </style>
+
+    <title>Position</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Block Game</h1>
+    </div>
+    <div class="main">
+        <div class="maintop">
+            <div class="left">
+                <div class=" block block1">1</div>
+                <div class=" block block2">2</div>
+            </div>
+            <div class="right">
+                <div class="block block3">3</div>
+                <div class="block block4">4</div>
+            </div>
+        </div>
+
+        <div class="maincenter">
+            <div class="top-left">
+                <div class="block block6">6</div>
+            </div>
+            <div class="top-right">
+                <div class="block block7">7</div>
+            </div>
+            <div class="center">
+                <div class="block block5">5</div>
+            </div>
+            <div class="bottom-left">
+                <div class="block block8">8</div>
+            </div>
+            <div class="bottom-right">
+                <div class="block block9">9</div>
+            </div>
+        </div>
+
+        <div class="mainbottom">
+            <div class="left">
+                <div class="block block1">10</div>
+                <div class="block block2">11</div>
+            </div>
+            <div class="right">
+                <div class="block block3">12</div>
+                <div class="block block4">13</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
