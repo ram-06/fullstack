@@ -1,0 +1,43 @@
+Animating Elements through Jquery methods
+
+
+Through show/hide methods:
+
+    .show(delay, callback)
+    .hide(delay, callback)
+    toggle(delay, callback);
+
+eg:
+
+    $("#div").show(2000, function(){
+        ....
+        ... // code gets executed only after the animation is done  in 2000 secs
+    });
+
+Through Slide methods:
+
+    .slideUp(delay, callback);
+    .slideDown(delay, callback);
+    .slideToggle(delay, callback);
+
+Through Fade :
+
+    .fadeIn(delay, callback);
+    .fadeOut(delay, callback);
+    .fadeToggle(delay, callback);
+
+Through Animate method:
+
+    Through this method any property of element can be animated.
+
+        .animate({
+            ...
+            ... // set of css properties
+        }, delay);
+    
+    Example:
+        $(".container").animate({
+            width: '200px',
+            left: '30px'
+        }, 5000);
+

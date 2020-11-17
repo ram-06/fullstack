@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Demonstrating HTML 5 Local and Session Storage
+        </title>
+        <script src="../jquery.js"></script>
+        <style>
+            .welcomeBlock {
+                border: 1px solid;
+                width: 500px;
+                position: absolute;
+                top: 60%;
+                left: 30%;
+                background-color: yellow;
+                display: none;
+                padding: 30px;
+            }
+            .themeBlock {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="themeBlock">
+            Choose Theme: 
+            <select onchange="changeTheme(event)" id="themeSelect">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+        <input type="text" id="uname"><input type="button" value="save" onclick="saveDetails()">
+        <div class="welcomeBlock">
+
+        </div>
+        <script>
+            var name;
+            if (sessionStorage.getItem("userName") != null) {
+                showWelcomeBlock(sessionStorage.getItem("userName"));
+            }
+
+            if (sessionStorage.getItem("userTheme")  != null) {
+                applyBackground(sessionStorage.getItem("userTheme"));
+            }
+            function saveDetails() {
+                name = $("#uname").val();
+                sessionStorage.setItem("userName", name);
+                showWelcomeBlock(name);
+
+            }
+            function showWelcomeBlock(name) {
+                var msg = "Welcome to our page Mr " + name;
+                $(".welcomeBlock").html(msg).show(2000);
+            }
+            function changeTheme() {
+                var themeName = $("#themeSelect").val();
+                sessionStorage.setItem("userTheme", themeName);
+                applyBackground(themeName);
+
+            }
+
+            function applyBackground(colorName) {
+                $("body").css("background", colorName);
+            }
+        </script>
+    </body>
+</html>

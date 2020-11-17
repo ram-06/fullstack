@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSS Positions
+	</title>
+	<style type="text/css">
+		.parent1{
+			text-align: center;
+			position:sticky;
+			left: 350px;
+			top: 20px;
+			bottom: 5px;
+			border:2px solid;
+			background-color: yellow;
+			padding:5px;
+		}
+		.parent2{
+			position: relative;	
+			margin-bottom: 15px;
+			margin-top: 15px;
+			height: 1015px;
+			border: 2px solid;
+
+		}
+		.block {
+				border: 2px solid;
+				width: 160px;
+				height: 160px;
+				text-align: center;
+				padding: 5px;
+				margin:5px;
+		}
+		.block1{
+			background-color: blue;
+			float:left;
+		}
+		.block2{
+			background-color: yellow;
+			position: absolute;
+			left:75px;
+			top: 75px;
+			float:left;
+		}
+		.block3{
+			float: right;
+			background-color: yellow;
+			position: relative;
+			right:75px;
+			
+		}
+		.block4{
+			float: right;
+			position: relative;
+			left:175px;
+			top: 75px;
+			background-color: blue;
+		}
+		.block5{
+			position: absolute;
+			left:600px;
+			top: 275px;	
+			background-color: red;
+		}
+		.block6{
+			position: absolute;
+			left:800px;
+			top: 275px;	
+			background-color: green;
+			
+		}
+		.block7{
+			position: absolute;
+			left:700px;
+			top: 390px;	
+			background-color: yellow;
+			z-index: 77;
+		}
+		.block8{
+			position: absolute;
+			left:600px;
+			top: 500px;	
+			background-color: green;
+		}
+		.block9{
+			position: absolute;
+			left:800px;
+			top: 500px;	
+			background-color: red;
+		}
+		.block10{
+			position: absolute;
+			left:0px;
+			top: 750px;	
+			background-color: blue;
+			float: left;
+		}
+		.block11{
+			position: absolute;
+			left:75px;
+			top: 825px;	
+			background-color: yellow;
+			float: left;
+
+		}
+		.block12{
+			
+			background-color: blue;
+			float: right;	
+			position: relative;
+			top:750px;
+			left:300px;	
+		}
+		.block13{
+			
+			background-color: yellow;
+			float: right;	
+			position: relative;
+			top:825px;
+			left:550px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="parent1">
+		BLOCK GAME
+	</div >
+	
+	<div class="parent2">
+		<div class="block block1">
+			CONTENT 1
+		</div>
+		<div class="block block2">
+			CONTENT 2
+		</div>
+		<div class="block block3">
+			CONTENT 3
+		</div>
+		<div class="block block4">
+			CONTENT 4
+		</div>
+		<div class="block block5">
+			CONTENT 5
+		</div>
+		<div class="block block6">
+			CONTENT 6
+		</div>
+		<div class="block block7">
+			CONTENT 7
+		</div>
+		<div class="block block8">
+			CONTENT 8
+		</div>
+		<div class="block block9">
+			CONTENT 9
+		</div>
+		<div class="block block10">
+			CONTENT 10
+		</div>
+		<div class="block block11">
+			CONTENT 11
+		</div>
+		<div class="block block12">
+			CONTENT 12
+		</div>
+		<div class="block block13">
+			CONTENT 13
+		</div>	
+	
+	</div>
+</body>
+</html>
