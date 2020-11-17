@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_4</title>
+</head>
+<style>
+    .header {
+                text-align: center;
+                border: 2px solid;
+                width: 1250px;
+                height: 30px;
+            }
+    .body
+                {
+                    border: 2px solid;
+                    width: 1250px;
+                    height: 1250px;
+                    margin-top: 10px;
+                    position: relative;
+                }
+    .block1,.block2
+                    {
+                        border: 1px solid;
+						margin-top:20px;
+						width: 150px;
+						height: 150px;
+						margin-left:15px;
+						
+                     }
+     .block2
+                    {
+                         margin-top: 75px;
+                         margin-left: 75px;
+                     }
+
+    .topleft
+                    {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+     .topright
+                    {
+                        position: absolute;
+                        top: 10px;
+                        right: 90px;
+                    }
+
+
+   
+     .bottomleft
+                    {
+                        position: absolute;
+                        bottom: 100px;
+                        left: 10px;
+                     }
+
+    .bottomright    {
+                        position: absolute;
+                        bottom: 100px;
+                        right: 90px;
+                    }
+</style>
+<body>
+    <div class="header">
+        CSS POSITIONS
+    </div>
+    <div class="body">
+        <div class="topleft">
+            <div class="block1" style="background-color: royalblue;">
+                <div class="block2" style="background-color: saddlebrown;"></div>
+            </div>
+        </div>
+        <div class="topright">
+            <div class="block1" style="background-color: seagreen;">
+                <div class="block2" style="background-color: seashell;"></div>
+            </div>
+            </div>
+            <div class="center">
+                <div class="block1" style="position: absolute; top: 425px; left: 450px; background-color: tomato;"></div>
+                <div class="block1" style="position: absolute; top: 425px; left: 650px; background-color: violet;"></div>
+                <div class="block1" style="position: absolute; top: 525px; left: 550px; background-color: yellow; z-index: 22;"></div>
+                <div class="block1" style="position: absolute; top: 625px; left: 450px; background-color: deeppink;"></div>
+                <div class="block1" style="position: absolute; top: 625px; left: 650px; background-color: lightseagreen;"></div>
+                <div class="bottomleft">
+                    <div class="block1" style="background-color: slategray;">
+                        <div class="block2" style="background-color: springgreen;"></div>
+                    </div>
+                </div>
+                <div class="bottomright">
+                    <div class="block1" style="background-color: teal;">
+                        <div class="block2" style="background-color: tomato;"></div>
+                    </div>
+                </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

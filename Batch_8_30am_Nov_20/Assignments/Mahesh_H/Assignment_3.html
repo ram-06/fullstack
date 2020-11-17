@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Css Overflow property
+		</title>
+        <style type="text/css">
+        .blockT
+            {
+                width: 1200px;
+				height: 20px;
+				text-decoration: underline;
+				text-align: center;
+				border: 2px solid rgb(5, 5, 5);
+            }
+			.container {
+				border: 2px solid;
+				width: 1200px;
+				height: 1000px;
+				overflow: auto;
+			}
+            .blockL{
+                width: 410px;
+				height: 800px;
+				text-align: center;
+				border: 2px solid rgb(5, 5, 5);
+				overflow: scroll;
+				float:left;
+            }
+            
+			.blockName 
+			{	
+				width: 400px;
+				height: 50px;
+				text-align: left;
+				border: 2px solid rgb(5, 5, 5);
+				margin-left: 10px;
+				margin-top: 10px;
+				padding-left: 30px;
+				padding-top: 20px;
+			}
+            .blockR
+            {
+                width: 740px;
+				height: 1400px;
+				border: 2px solid rgb(5, 5, 5);
+				overflow:scroll;
+				float:right;
+            
+            }
+			.blockDetails
+			{
+				width: 665px;
+				height: 120px;
+                text-align: center;
+				border: 2px solid rgb(5, 5, 5);
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.blockB
+            {
+                width: 1200px;
+				height: 20px;	
+				text-align: center;
+				border: 2px solid rgb(5, 5, 5);
+            }
+			.fig
+			{
+				border: 2px solid;
+				width: 10px;
+				height: 10px;
+				margin-left: 7px;
+				margin-top: 7px;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+        <div class="blockT">Student Details</div>
+        <br>
+        <div class="container"><br>
+            
+         <div class="blockL"><br>
+            <div class="blockName">1.Mahesh</div><br>
+			<div class="blockName">2.Prasanna</div><br>
+			<div class="blockName">3.Bharath</div><br>
+			<div class="blockName">4.Ajay</div><br>
+			<div class="blockName">5.Yamini</div><br>
+            <div class="blockName">6.Sneha</div><br>
+            <div class="blockName">7.Shafali</div><br>
+            <div class="blockName">8.Sanjeev</div><br>
+            <div class="blockName">9.Subhajit</div><br>
+            <div class="blockName">10.Snehal</div><br>
+        </div>
+		<div class="blockR">
+			<div class="blockDetails">
+				<div class="fig">
+					<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100" height="100" alt="">
+						</div>
+				<div >
+					<p>Name:Mahesh<br>
+					Age:aa<br>
+				Gender:Male<br>
+			Location:AAAA</p>
+				</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://koreyhowellphotography.com/wp-content/uploads/2017/09/AdobeStock_122362963-1028x675.jpg"width="100" height="100" >
+				</div>
+				<div>Name:Prasanna</div>
+				<div >Age:aa</div>
+				<div>Gender:Female</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100" height="100" alt="">
+					</div>
+				<div>Name:Bharath</div>
+				<div >Age:aa</div>
+				<div>Gender:male</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100";height="100" float="left";></div>
+				<div>Name:Ajay</div>
+				<div >Age:aa</div>
+				<div>Gender:Male</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://koreyhowellphotography.com/wp-content/uploads/2017/09/AdobeStock_122362963-1028x675.jpg"width="100" height="100";>
+					</div>
+				<div>Name:Yamini</div>
+				<div >Age:aa</div>
+				<div>Gender:Female</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://koreyhowellphotography.com/wp-content/uploads/2017/09/AdobeStock_122362963-1028x675.jpg"width="100" height="100">
+			</div>
+				<div>Name:Sneha</div>
+				<div >Age:aa</div>
+				<div>Gender:Female</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://koreyhowellphotography.com/wp-content/uploads/2017/09/AdobeStock_122362963-1028x675.jpg"width="100" height="100">
+			</div>
+				<div>Name:Shefali</div>
+				<div >Age:aa</div>
+				<div>Gender:Female</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100";height="100" float="left";>
+			</div>
+				<div>Name:Sanjeev</div>
+				<div >Age:aa</div>
+				<div>Gender:Male</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100";height="100" float="left";>
+			</div>
+				<div>Name:Subhajit</div>
+				<div >Age:aa</div>
+				<div>Gender:Male</div>
+				<div>Location:aaaaa</div>
+			</div>
+			<br>
+			<div class="blockDetails">
+				<div class="fig">
+				<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chibi-boy-with-glasses-png-image_3782196.jpg" width="100";height="100" float="left";>
+			</div>
+				<div>Name:Snehal</div>
+				<div >Age:aa</div>
+				<div>Gender:Male</div>
+				<div>Location:aaaaa</div>
+			</div>
+        </div>
+		</div>
+		<br>
+		<div class="blockB">@ Copy right 2020 NIT</div>
+	</body>
+</html>
