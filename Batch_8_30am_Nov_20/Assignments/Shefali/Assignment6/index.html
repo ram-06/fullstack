@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style type="text/css">
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 20px;
+            color: whitesmoke;
+            position: sticky;
+            top: 0px;
+            background: rgba(143, 188, 171);
+            z-index: 2;
+            opacity: 0.8;
+            border: 1px solid black;
+        }
+
+        h1::first-letter {
+            color: red;
+            font-size: 50px;
+        }
+
+        .tableheader th,
+        .tableheader {
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>Student Progress Details</h1>
+    </div>
+    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+        <thead>
+            <tr class="tableheader">
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Class</th>
+                <th>Gender</th>
+                <th>Photo</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tableheader">1</td>
+                <td>Reena</td>
+                <td>20</td>
+                <td>Hyderabad</td>
+                <td>9</td>
+                <td>Female</td>
+                <td><img src="images/3.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">2</td>
+                <td>Raj</td>
+                <td>21</td>
+                <td>Mumbai</td>
+                <td>10th</td>
+                <td>Male</td>
+                <td><img src="images/2.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">3</td>
+                <td>Reema</td>
+                <td>21</td>
+                <td>Ludhiana</td>
+                <td>12</td>
+                <td>Female</td>
+                <td><img src="images/3.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">4</td>
+                <td>Rahul</td>
+                <td>20</td>
+                <td>Chattisgarh</td>
+                <td>10</td>
+                <td>Male</td>
+                <td><img src="images/2.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">5</td>
+                <td>Ram</td>
+                <td>20</td>
+                <td>Mathya Pradesh</td>
+                <td>11</td>
+                <td>Male</td>
+                <td><img src="images/2.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">6</td>
+                <td>Radha</td>
+                <td>20</td>
+                <td>Kolkata</td>
+                <td>9</td>
+                <td>Female</td>
+                <td><img src="images/3.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">7</td>
+                <td>Rajesh</td>
+                <td>19</td>
+                <td>Chennai</td>
+                <td>8</td>
+                <td>Male</td>
+                <td><img src="images/2.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">8</td>
+                <td>Sita</td>
+                <td>24</td>
+                <td>Warangle</td>
+                <td>12</td>
+                <td>Female</td>
+                <td><img src="images/3.png" alt=""></td>
+                <td>
+                    <table cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">9</td>
+                <td>Sheema</td>
+                <td>21</td>
+                <td>Darjeeling</td>
+                <td>11</td>
+                <td>Female</td>
+                <td><img src="images/3.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableheader">10</td>
+                <td>Krishna</td>
+                <td>18</td>
+                <td>Hyderabad</td>
+                <td>8</td>
+                <td>Male</td>
+                <td><img src="images/2.png" alt=""></td>
+                <td>
+                    <table border="1px solid;" cellspacing="10px" cellpadding="10px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Min Marks</th>
+                            <th>Marks Obtained</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>150</td>
+                                <td>75</td>
+                                <td>99</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Maths</td>
+                                <td>120</td>
+                                <td>50</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
