@@ -1,0 +1,70 @@
+    <html>
+        <head>
+            <title>
+                Demonstrating HTML5 Semantic tags
+            </title>
+            <style>
+                studentDetails {
+                    background-color: blue;
+                }
+                .toppart, .btmpart, .mblock {
+                    position: absolute;
+                    left: 10px;
+                    right: 10px;                    
+                    border: 1px solid grey;
+                    padding: 10px;
+                }
+                .mblock {
+                    top: 60px;
+                    bottom: 60px;
+                }
+                .btmpart {
+                    bottom: 10px;
+                    text-align: center;
+                    font-size: 11px;
+                }
+                .toppart {
+                    text-align: center;
+                    font-weight: bold;
+                }
+                .lblock, .rBlock {
+                    border: 1px solid;
+                    float: left;
+                    height: 480px;
+                }
+                .rBlock {
+                    float: left;
+                    width: 900px;
+                    overflow: auto;
+                }
+                .lblock {
+                    width: 300px;
+                    margin-right: 20px;
+                }
+                .block {
+                    border: 1px solid;
+                    margin: 10px;
+                    height: 200px;
+                    padding: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <header class="toppart">
+                Welcome to page.
+            </header>
+            <main class="mblock">
+                 <aside class="lblock">LEFT</aside>
+                 <aside class="rBlock"> 
+                     <section class="block">
+                         <studentDetails id="test" style="color:blue;">Name:raj</studentDetails>
+                     </section>
+                     <div class="block"></div>
+                     <div class="block"></div>
+                 </aside>
+            </main>
+            <footer class="btmpart">
+                @copy rights 2020
+            </footer>
+        </body>
+    </html>

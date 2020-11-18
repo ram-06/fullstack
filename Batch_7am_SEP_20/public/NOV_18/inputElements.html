@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            HTML5 input elements
+        </title>
+        <script src="../jquery.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>Enter user name: <input type="text"></li>
+            <li>DOB: <input type="datetime-local"></li>
+            <li>Give Fav color: <input type="color"></li>
+            <li>AGe: <input type="number" min="1" max="21" step="2"></li>
+            <li>
+                Select the price: 
+                <input id="pvalue" type="range" min="1000" max="10000" step="100" name="productPrice" onchange="updateValue()" >
+                <output for="productPrice" ></output>
+            </li>
+            <li>
+                user phone no. <input type="tel">
+            </li>
+            <li>
+                <input type="search">
+            </li>
+        </ul>
+        <script>
+            function updateValue() {
+                console.log("updated" + $("#pvalue").val());
+                $("output").html($("#pvalue").val())
+                
+            }
+        </script>
+    </body>
+
+</html>
