@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 4 by Binayak</title>
+
+    <style>
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            position: sticky;
+            border: 2px solid black;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 60px;
+            height: 600px;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            text-align: center;
+        }
+
+        .block1 {
+            background: yellowgreen;
+
+        }
+
+        .block2 {
+            background: red;
+        }
+
+        .block3 {
+            background:salmon;
+        }
+
+        .block4 {
+            background: violet;
+        }
+
+        .left {
+            float: left;
+            position: relative;
+        }
+
+        .block2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .right {
+            float: right;
+            position: relative;
+        }
+
+        .block4 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .containercenter {
+            clear: both;
+            padding-top: 120px;
+            margin: 0 45%;
+            position: relative;
+        }
+
+        .block5 {
+            width: 150px;
+            height: 150px;
+        }
+        .top-left {
+            position: absolute;
+            top: 25%;
+            left: -35%;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 25%;
+            right: -80%;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: -20%;
+            left: -35%;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: -20%;
+            right: -80%;
+        }
+
+        .containerbottom {
+            clear: both;
+            padding-top: 100px;
+        }
+
+        .containerbottom .block1 {
+            background: whitesmoke;
+        }
+
+        .containerbottom .block2 {
+            background:tomato;
+        }
+
+        .containerbottom .block3 {
+            background:turquoise;
+        }
+
+        .containerbottom .block4 {
+            background: sienna;
+        }
+    </style>
+
+    <title>Position</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Block Game</h1>
+    </div>
+    <div class="container">
+        <div class="containertop">
+            <div class="left">
+                <div class=" block block1">1</div>
+                <div class=" block block2">2</div>
+            </div>
+            <div class="right">
+                <div class="block block3">3</div>
+                <div class="block block4">4</div>
+            </div>
+        </div>
+
+        <div class="containercenter">
+            <div class="top-left">
+                <div class="block block6">6</div>
+            </div>
+            <div class="top-right">
+                <div class="block block7">7</div>
+            </div>
+            <div class="center">
+                <div class="block block5">5</div>
+            </div>
+            <div class="bottom-left">
+                <div class="block block8">8</div>
+            </div>
+            <div class="bottom-right">
+                <div class="block block9">9</div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="left">
+                <div class="block block1">10</div>
+                <div class="block block2">11</div>
+            </div>
+            <div class="right">
+                <div class="block block3">12</div>
+                <div class="block block4">13</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
