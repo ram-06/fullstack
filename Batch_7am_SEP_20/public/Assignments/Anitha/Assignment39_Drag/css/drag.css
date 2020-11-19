@@ -1,0 +1,27 @@
+    	header {
+    		font-weight: bold;
+    		font-size: 15px;
+    		margin:15px;
+    	}
+
+    	img {
+    		width:200px;
+    		height:200px;
+    		border:2px solid;
+    		clear:both;
+    		float:left;
+    	}
+
+    	.content2 {
+    		text-align: center;
+    	}
+
+    	.dropBlock {
+    		border:2px solid;
+    		width:500px;
+    		height:400px;
+    		margin:auto;
+    		position: absolute;
+    		left:460px;
+    		top:100px;
+    	}
