@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Webworkers
+        </title>
+        <style>
+            .dateContainer {
+                text-align: right;
+            }
+            #cDate {
+                font-weight: bolder;
+            }
+            .block {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dateContainer">
+            Date: <span id="cDate"></span>
+        </div>
+        <div id="mainContainer"></div>
+        <script>
+            var receivedMsgsCount = 0;
+
+            var myworker = new Worker("workers/dateWorker.js");
+            myworker.onmessage = function(event){
+                receivedMsgsCount++;
+                console.log(event.data);
+                addDate(event.data);
+                if (receivedMsgsCount == 5) {
+                    myworker.terminate();
+                }
+            };
+            var count = 0;
+            var addMsgBlocks = function() {
+                count++;
+                var div = document.createElement("div");
+                div.innerHTML = "Block element " + count;
+                div.setAttribute("class", "block");
+                document.querySelector("#mainContainer").append(div);
+            }
+            setInterval(function(){
+                addMsgBlocks();
+            }, 1000);
+
+            var showDate = function() {
+                var date = new Date();
+                addDate(date);
+            }
+
+            var addDate = function(date) {
+                document.querySelector("#cDate").innerHTML = date;
+            }
+
+            showDate();
+        </script>
+    </body>
+</html>
