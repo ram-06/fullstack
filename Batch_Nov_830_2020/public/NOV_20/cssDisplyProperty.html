@@ -2,36 +2,46 @@
 <html>
 	<head>
 		<title>
-			Demonstrating CSS display and visiblity properties
+			Demonstrating CSS Display Property
 		</title>
 		<style type="text/css">
-			.block  {
+			.block {
 				border: 1px solid;
-				width: 120px;
-				height: 120px;
+				width: 130px;
+				height: 130px;
 				text-align: center;
+				display: inline;
 			}
 			.block1 {
 				background: green;
 			}
 			.block2 {
 				background: blue;
-				display: none;
 			}
 			.block3 {
-				background: yellow;
+				background: pink;
+			}
+			span {
+				width: 120px;
+				height: 120px;
+				border: 2px solid;
+				display: inline-block;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="block block1">
-			BLOCK
+			BLOCK 1
 		</div>
 		<div class="block block2">
-			<span style="display:none;">BLOCK 2</span>
+			BLOCK 2
 		</div>
 		<div class="block block3">
 			BLOCK 3
 		</div>
+
+		<span>Item 1</span>
+		<span>Item 1</span>
+		<span>Item 1</span>
 	</body>
 </html>

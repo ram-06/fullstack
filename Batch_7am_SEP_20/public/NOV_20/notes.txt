@@ -1,0 +1,47 @@
+"audio" and "video"
+
+Syntax:
+
+	<audio width=".." height=".." controls autoplay>
+		<source src="<path of audio file>" type="audio/<type of file>">
+	</audio>
+
+
+	<video width=".." height="..." controls autoplay>
+		<source src="<path of video file>" type="video/<type of file>">
+	</video>
+
+Following are attributes can be added to both video and audio tags
+
+
+autoplay -> specifies the audio or video to be played on load of page
+
+autobuffer -> boolean value makes automatically buffering
+
+controls -> allows user to control the video/audio like play, pause etc.
+
+width & height -> To control the dimentions of player
+
+loop -> boolean value allows the video or audio files to be automatically seek back to start after reaching to end
+
+src - > path of audio / video file
+
+poster -> url path of image to be shown before user clicks play button
+
+etc.
+
+
+Following are the events can raise on players:
+
+	abort -> when playback is aborted
+
+	loadstart -> when video /audio file load is started
+
+	ended - > when video/audio ended
+
+	pause, play , progress etc.
+
+	
+
+
+

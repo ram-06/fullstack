@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Drag and Drop Assignment</title>
+    </head>
+    <Link type="text/css" rel="stylesheet" href="../css/drag.css">
+    <body>
+    	<header>
+    		Clothes List
+    	</header>
+    	<main>
+    		<div class="content1">
+    			<img src="https://cdn.shopify.com/s/files/1/0489/5129/6168/products/HTB1DdcZRXXXXXcCXXXXq6xXFXXXi_900x.jpg?v=1601026573" id="Kids" alt="kidsClothes" ondragstart="dragStarted(event)">
+    			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMObg0DXWbjyDFYMx7IKWxn2p0ecfIiVQeHg&usqp=CAU"
+    			id="Mens" alt="mensClothes" ondragstart="dragStarted(event)">
+    			<img src="https://ae01.alicdn.com/kf/HTB1QwnMuVGWBuNjy0Fbq6z4sXXau/Teen-Party-Dress-Girl-Dress-for-Kids-Flower-Print-Dress-Summer-Clothes-Teenagers-Prom-Gowns-Dresses.jpg_q50.jpg" id="Womens" alt="WomensClothes" ondragstart="dragStarted(event)">
+    			
+    		</div>
+    		<div class="content2">
+    			<b>Select Clothes Type</b>
+    			<select id="clothType" onChange="changeClothesType()">
+    				<option>Kids</option>
+    				<option>Womens</option>
+    				<option>Mens</option>
+    			</select>
+    			<div class="dropBlock" ondrop="allowDrop(event)" ondragover="elementDragIsDone(event)">
+
+    			</div>	
+    			
+    		</div>
+    	</main>	
+
+    </body> 
+     <script type="text/javascript" src="../js/jquery.js"></script>
+     <script type="text/javascript" src="../js/drag.js"></script>
+     </script>
+</html>
