@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating navigator obj
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log(navigator);
+			if (navigator.vendor == 'Google Inc.') {
+				alert("Thanks for using Chrome browser");
+			} else {
+				alert("Please make use of Chrome browser which is more faster")
+			}
+
+			navigator.geolocation.getCurrentPosition(function(point){
+				console.log(point);
+				console.log(point.coords);
+			})
+		</script>
+	</body>
+</html>
