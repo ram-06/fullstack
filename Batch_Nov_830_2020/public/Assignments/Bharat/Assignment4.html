@@ -1,0 +1,183 @@
+
+<!-- css Position with absolute property
+Movement relative to non static parent -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>css Position Demo </title>
+		<style type="text/css">
+			.parent1{
+				height: 1200px;
+				width: 100%;
+				border: 2px solid red;
+				background: lightgreen ;
+				color: yellow;
+				text-align: center;
+				
+				position: relative;
+			}
+			
+			.header{
+				height: 50px;
+				width: 98%;
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+				position: fixed;
+				border: 1px solid;
+				color: black;
+				margin-left: 5px;
+				margin-top: 5px;
+				padding-top: 10px;
+				background: yellow;
+				z-index: 1;
+
+			}
+			.child1{
+				width: 200px;
+				height: 200px;
+				background: red;
+				color: yellow;
+				font-size: 30px;
+				border: 2px solid yellow;
+				float: left;
+			}
+			.child1Position{
+			left: 10px;
+			top: 80px;
+			position: relative;	
+			}
+			.child2{
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				color: red;
+				font-size: 30px;
+				border: 2px solid red;
+			}
+			.child2Position{
+			left: 100px;
+			top: 100px;
+			position: relative;	
+			}
+			.child3Position{
+				right: 110px;
+				top: 80px;
+				position: relative;
+				float:right;
+			}
+			.child4Position{
+				left:100px;
+				top: 100px;
+				position: relative;
+				
+			}
+			.child5Position{
+				left:10px;
+				top: 680px;
+				position: relative;
+				clear: both;
+				float: left;
+				
+
+			}
+			.child6Position{
+				left:100px;
+				top: 100px;
+				float: left;
+				position: relative;
+				clear: both;
+			}
+			.child7Position{
+				clear: both;
+				right:110px;
+				top: 480px;
+				position: relative;
+				
+				float: right;
+				
+
+			}
+			.child8Position{
+				left:100px;
+				top: 100px;
+				position: relative;
+				clear: both;
+			}
+			.center1{
+				clear: both;
+				float: left;
+				position: absolute;
+				left: 400px;
+				top: 400px;
+			}
+			.center2{
+				clear: both;
+				float: left;
+				position: absolute;
+				left: 650px;
+				top: 400px;
+			}
+			.center3{
+				clear: both;
+				float: left;
+				position: absolute;
+				left: 400px;
+				top: 650px;
+			}
+			.center4{
+				clear: both;
+				float: left;
+				position: absolute;
+				left: 650px;
+				top: 650px;
+			}
+			.center{
+				clear: both;
+				float: left;
+				position: absolute;
+				left: 530px;
+				top: 530px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent1"> 
+			<div class = "header"> 
+				BLOCK GAME
+			</div>
+			<div class="child1 child1Position">
+				<div class="child2 child2Position">
+				</div>
+			</div>
+			<div class="child1 child3Position">
+				<div class="child2 child4Position">
+				</div>
+			</div>
+
+			<div class="child1 center1"> </div>
+			<div class="child1 center2"> </div>
+			<div class="child1 center3"> </div>
+			<div class="child1 center4"> </div>
+
+			<div class="child2 center"> </div>
+
+
+			<div class="child1 child5Position">
+				<div class="child2 child6Position">
+				</div>
+			</div>
+			<div class="child1 child7Position">
+				<div class="child2 child8Position">
+				</div>
+			</div>
+
+			
+
+		</div>
+		
+	</body>
+</html>
