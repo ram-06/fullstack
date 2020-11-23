@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Input elements
+		</title>
+		<style type="text/css">
+			.container{
+				border: 1px solid;
+				width:1180px;
+				height:1000px;
+				background:pink;
+			}
+			.block{
+				border: 1px solid;
+				width: 1100px;
+				height:200px;
+				margin-top:35px;
+				background:#B5BCF3;
+			}
+			.block1{
+				border: 1px solid;
+				width:250px;
+				height:30px;
+				position:relative;
+				left: 20px;
+				bottom:20px;
+				text-align:center;
+				background: white;
+				font-weight:bold;
+				padding-top: 10px;
+			}
+			li{
+				list-style: none;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+		<body>
+		<h3 style="border:1px solid;width:1180px;text-align:center;color:white;background:#069DD0;">Students Registration Form</h3>
+		<div class="container">
+		<ul>
+			<div class="block">
+				<div class="block1">Personal Details</div>
+				<li>
+					<label for="uname"style="font-weight:bold;">Name:</label>
+					<input type="text" name="uname">
+				</li>
+				<li style="position: relative;left:10px;">
+					<label for="uage" style="font-weight:bold;">Age:</label>
+					<input type="text" name="uage">
+				</li>
+				<li>
+					<label style="font-weight:bold;">Gender:</label>
+					<input type="radio" name="ugender">male
+					<input type="radio" name="ugender">female
+				</li>
+				<li style="position: relative;left:700px;bottom:100px">
+					<label for="umailid" style="font-weight:bold;">Mail Id:</label>
+					<input type="text" name="umailid">
+				</li>
+				<li style="position: relative;left:680px;bottom:100px">
+					<label for="uno" style="font-weight:bold;">Contac no:</label>
+					<input type="text" name="uno">
+				</li>
+			</div>
+			<div class="block">
+				<div class="block1">Address</div>
+				<li>
+					<label for="uhouse" style="font-weight:bold;">House no:</label>
+					<input type="text" name="uhouse">
+				</li>
+				<li>
+					<label for="ustate" style="font-weight: bold;">State:</label>
+					<select>
+						<option>Andhra Pradaesh</option>
+						<option>Arunachel Pradaesh</option>
+						<option>Assam</option>
+						<option>Telengana</option>
+						<option>Bihar</option>
+						<option>Manipur</option>
+						<option>Mizoram</option>
+					</select>
+				</li>
+				<li style="position:relative;left:700px;bottom:80px;">
+					<label for="ucountry" style="font-weight:bold;">Country:</label>
+					<select>
+						<option>Austria</option>
+						<option>Bangldesh</option>
+						<option>Canada</option>
+						<option>Denmark</option>
+						<option>Egypt</option>
+						<option>India</option>
+					</select>
+				</li>	
+			</div>
+			<div class="block">
+				<div class="block1">Education Details</div>
+				<li>
+					<label style="font-weight:bold;">Languages:</label>
+					<input type="checkbox" name="lng_Tel">Telugu
+					<input type="checkbox" name="lng_eng">English
+					<input type="checkbox" name="lng_hin">Hindi
+				</li>
+				<li>
+					<label style="font-weight:bold;">Qualification:</label>
+					<select>
+						<option>BE/B.Tech</option>
+						<option>B.Pharmacy</option>
+						<option>Degree</option>
+						<option>Agriculture</option>
+					</select>
+				</li>
+			</div>
+			<div class="block">
+				<div class="block1">About ur Self</div>
+				<li>
+					<label>Few Words About yourself:</label>
+					<textarea maxlength="4000"></textarea>
+				</li>
+			</div>
+			<li style="position: relative;left:950px;">
+				<label></label>
+				<input type="submit" value="Save details">
+				<input type="reset" name="clear">
+			</li>
+		</ul>
+		</div>
+
+		</body>
+</html>
