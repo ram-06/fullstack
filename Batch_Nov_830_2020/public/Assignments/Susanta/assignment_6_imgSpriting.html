@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student List</title>
+	<style type="text/css">
+		
+		#header{
+			border: 2px solid blue;
+			height: 50px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			margin-left: 44px;
+		}
+
+		.employeelist{
+			list-style: none;
+			margin: 3px;
+			border: 2px solid lightblue;
+			height: 200px;
+		}
+
+		.details{
+			
+			border:2px solid;
+			width: 250px;
+			height: 90px;	
+			margin:2px;	
+			}
+
+		img{
+			height: 190px;
+			width: 150px;
+		}
+
+		.image , .details {
+			float: left;
+		}
+
+		.image{
+			width: 200px;
+			height: 190px;
+			border: 2px solid green;
+			margin: 2px;
+			background-image: url("images/sprite_image.png");
+		}
+
+		.emp1{
+			background-position: -172px -2201px;
+		}
+
+		.emp2{
+			background-position: -1191px -2227px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header"> List of Working Employees</div>
+	<ul>
+		<li class="employeelist">
+			<div class="image emp1"></div>
+			<div class="details">
+				<ol>
+					<li>Name : Raj</li>
+					<li>Gender : Male</li>
+					<li>Designation : IT Manager</li>
+					<li>Location : Hyderabad</li>
+				</ol>
+			</div>
+		</li>
+		<li class="employeelist">
+			<div class="image emp2"></div>
+			<div class="details">
+				<ol>
+					<li>Name : Teena</li>
+					<li>Gender : Female</li>
+					<li>Designation : SSE</li>
+					<li>Location : Chennai</li>
+				</ol>
+			</div>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>
