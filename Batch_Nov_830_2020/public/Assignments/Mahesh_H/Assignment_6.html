@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_6</title>
+    <style type="text/css">
+        .Block
+        {
+            width: 1500px;
+            height: 40px;
+            text-align: center;color:blue;
+            background-color: block;
+            font: medium;
+            border:1px solid ;
+        }
+        .Container
+        {
+            border:1px solid;
+            width:1500px;
+            height: 1000px;
+            background-color: rgb(192, 183, 187);
+        }
+        .block1
+        {
+            width: 1450px;
+            height:200px;
+            border:1px solid;
+            margin-top: 30px;
+            
+        }
+        .block2
+        {
+            width:250px;
+            height: 30px;
+            border:1px solid;
+            position:relative;
+            left:20px;
+            bottom:10px;
+            text-align: center;
+            background: white;
+            padding: 2px;
+            font-weight: bold;
+            font-size: 25px;
+        
+        }
+        li
+        {
+            list-style: none;
+            margin-top: 10px;
+            margin-left:10px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2 class="Block">Student Registration form</h2>
+    <div class="Container">
+        <form method="POST" action="http://Mahesh.com">
+            <ul>
+            <div class="block1">
+                <div class="block2">Persnel Details</div>
+                <li>
+                    <label for="uname" style= font-weight:bold;>Name:</label>
+                    <input type="text" name="uname">
+                </li>
+                <li style="position: relative;left:10px;">
+                    <label for="uage" style="font-weight:bold;">Age:</label>
+					<input type="text" name="uage">
+                </li>
+                <li>
+					<label style="font-weight:bold;">Gender:</label>
+					<input type="radio" name="ugender">male
+					<input type="radio" name="ugender">female
+                </li>
+                <li style="position: relative;left:700px;bottom:100px">
+					<label for="umailid" style="font-weight:bold;">Mail Id:</label>
+					<input type="text" name="umailid">
+                </li>
+                <li style="position: relative;left:682px;bottom:100px">
+					<label for="uno" style="font-weight:bold;">Contact no:</label>
+					<input type="text" name="uno">
+				</li>
+            </div>
+            <div class="block1">
+				<div class="block2">Address</div>
+				<li>
+					<label for="uhouse" style="font-weight:bold;">House no:</label>
+					<input type="text" name="uhouse">
+				</li>
+				<li style="position:relative;left:28px;">
+					<label for="ustate" style="font-weight: bold;">State:</label>
+					<select>
+                        <option>Select</option>
+						<option>Andhra Pradaesh</option>
+						<option>Arunachel Pradaesh</option>
+						<option>Assam</option>
+						<option>Telengana</option>
+						<option>Bihar</option>
+						<option>Manipur</option>
+						<option>Mizoram</option>
+					</select>
+                </li>
+                <li style="position:relative;left:700px;bottom:80px;">
+					<label for="ucountry" style="font-weight:bold;">Country:</label>
+					<select>
+                        <option>Select</option>
+						<option>Austria</option>
+						<option>Bangldesh</option>
+						<option>Canada</option>
+						<option>Denmark</option>
+						<option>Egypt</option>
+						<option>India</option>
+					</select>
+				</li>	
+            </div>
+            <div class="block1">
+				<div class="block2">Education Details</div>
+				<li>
+					<label style="font-weight:bold;">Languages:</label>
+					<input type="checkbox" name="lng_Tel">Telugu
+					<input type="checkbox" name="lng_eng">English
+					<input type="checkbox" name="lng_hin">Hindi
+				</li>
+				<li>
+					<label style="font-weight:bold;">Qualification:</label>
+					<select>
+                        <option>Select</option>
+						<option>BE/B.Tech</option>
+						<option>B.Pharmacy</option>
+						<option>Degree</option>
+						<option>Agriculture</option>
+					</select>
+				</li>
+			</div>
+			<div class="block1">
+				<div class="block2">About Your Self</div>
+				<li>
+					<label style="font-weight:bold;"> Something About Yourself:</label>
+					<textarea maxlength="4000"></textarea>
+				</li>
+			</div>
+			<li style="position: relative;left:950px;">
+				<label></label>
+				<input type="submit" value="Save details">
+				<input type="reset" name="clear">
+			</li>
+        </ul>
+        </form>
+    </div>
+</body>
+</html>
