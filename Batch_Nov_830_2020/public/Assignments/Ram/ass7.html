@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Student Form </title>
+</head>
+<style>
+	.A{
+		border: 1px solid red;
+		width: 1260px;
+		height: 510px;
+		overflow-x: hidden;
+		
+	}
+	li{
+		list-style: none;
+		margin-left: 10px;
+		
+	}
+	.b1{
+		border: 1px solid red;
+		width: 250px;
+		height: 30px;
+		text-align: center;
+		font-weight: bold;
+		position: relative;
+		left: 20px;
+		bottom: 20px;
+		background-color: white;
+		padding-top: 10px;
+	}
+	.B{
+		border: 1px solid orange;
+		width: auto;
+		height: auto;
+		margin-top: 30px;
+		margin-right: 20px;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+	}
+	.save{
+		position: relative;
+		left: 900px;
+		bottom: -20px;
+		margin-left: 30px;
+		padding-left: 20px;
+	}
+</style>
+<body style="overflow: hidden;">
+	<h3 style="text-align: center; border: 1px solid blue; width: 1260px; height: 25px; "> Student Registration Form</h3>
+	<form action="" method="post">
+	<DIV class="A">
+		<ul>
+			<div class="B" >
+				<div class="b1">Personal Details</div>
+				<li>
+					<label for="name" style="font-weight: bold;">Name:</label>
+					<input type="text" name="name">
+				</li>
+				<li style="font-weight: bold; position: relative; left: 700px; bottom: 20px;">
+					<label for="mail" >Mail Id:</label>
+					<input type="text"name="mail">
+				</li>
+				<li>
+					<label for="age" style="font-weight: bold;">Age:</label>
+					<input type="text" age="age">
+				</li>
+				<li style="font-weight: bold; position: relative; left: 700px; bottom: 20px;">
+					<label for="contact" style="font-weight: bold;"> Contact:</label>
+					<input type="number" name="contact">
+				</li>
+				<li>
+					<label for="gender" style="font-weight: bold;"> Gender:</label>
+					<input type="radio" name="gender">Male
+					<input type="radio" name="gender">Female
+				</li>
+			</div>
+			<div class="B">
+				<div class="b1">Address</div>
+				<li>
+					<label for="Hno" style="font-weight: bold;"> House No:</label>
+					<input type="number" name="Hno">
+				</li>
+				<li style="position: relative; left: 700px; bottom: 20px;">
+					<label for="cntry" style="font-weight: bold;">Country:</label>
+					<input type="text" name="cntry">
+				</li>
+				<li style="font-weight: bold;">
+					<label for="sta">State:</label>
+					<input type="text" name="sta">
+				</li>
+			</div>
+			<div class="B">
+				<div class="b1">Education Details:</div>
+				<li>
+					<label for="lan"> Languages:</label>
+					<input type="checkbox">English
+					<input type="checkbox">Telugu
+					<input type="checkbox">Hindi
+					<input type="checkbox">Urdu
+				</li>
+				<li style="margin-top: 20px;">
+					<label for="qua">Qualification:</label>
+					<input type="text" name="qua">
+				</li>
+			</div>
+			<div class="B">
+				<div class="b1">About Yourself</div>
+				<li>
+					<label for="abt"> Tell me about urself:</label>
+					<textarea name="abt" id="" cols="139" rows="6"></textarea>
+				</li>
+			</div>
+		</ul>
+	</DIV>
+	<div class="save">
+		<input type="submit" value="Save details">
+		<input style="margin-left: 30px;" type="reset" name="clear">
+	</div>
+</form>
+</body>
+</html>
