@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style type="text/css">
+		body{
+			background-color:  #dfff80; 
+		}
+		.block{
+			border: 2px solid;
+			width: 100%;
+			padding: 10px;
+			margin-top:20px;
+			text-align: center;
+			background-color: yellow;
+		}
+		.block1{
+			border: 2px solid;
+			padding: 10px;
+			margin-top:20px;
+			height: 650px;
+			
+		}
+		.block2{
+			border: 2px solid;
+			padding: 15px;
+			margin-top:20px;
+			position: relative;
+			height: 100px;
+			background-color:  #ff80ff;
+		}
+		.block3{
+			border: 2px solid #ddccff;
+			width:250px;
+			height:20px;
+			position:absolute;
+			left: 30px;
+			top:-25px;
+			text-align:center;
+			background:  #aa00ff;
+			font-weight:bold;
+			color: white;
+			padding: 10px;
+			margin-top:10px;
+		}
+		li{
+			list-style-type: none;
+			padding: 5px;
+		}
+		.list1{
+			position: absolute;
+			 top: 35px; 
+			 left: 925px;
+		}
+		.list2{
+			position: absolute;
+			 top: 70px; 
+			 left: 900px;
+		}
+		.list3{
+			position: absolute;
+			top: 65px; 
+			left: 85px;
+		}
+		.list4{
+			position: absolute;
+			top: 65px; 
+			left: 40px;
+		}
+		.list5{
+			position: absolute;
+			left:1000px;
+			margin-bottom: 10px;
+		}
+		.list6{
+			position: absolute;
+			left:1100px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="block">Student Registration From</div>
+	
+	<div class="block1">
+		<form method="POST" action="https://srisana.com">
+			<div class="block2">
+				<div class="block3">Personal Details</div>
+				<ul>
+					<li>
+						<label for="username">&nbsp;Name:</label>
+						<input type="text" name="username">
+					</li>
+					<li>
+						<label for="Age">&nbsp; &nbsp; Age:</label>
+						<input type="text" name="Age">
+					</li>
+					<li>
+						<label for="Gender">Gender:</label>
+						<input type="radio" name="Gender" value="Male">Male
+						<input type="radio" name="Gender" value="Female">Female
+					</li>
+					<li class="list1">
+						<label for="Mail id"> Mail Id:</label>
+						<input type="text" name="Mail Id">
+					</li>
+					<li class="list2">
+						<label for="Contact No"> Contact No:</label>
+						<input type="text" name="Contact No">
+					</li>
+				</ul>
+			</div>
+			<div class="block2">
+				<div class="block3">Address</div>
+				<ul>
+					<li>
+						<label for="HouseNo">&nbsp;HouseNo:</label>
+						<input type="text" name="HouseNo">
+					</li>
+					<li class="list3">
+						<label >State:</label>
+						<select>
+						<option>Andhra Pradesh</option>
+						<option>Telangana</option>
+						<option>Maharastra/option>
+						<option>Gujarat</option>
+						<option>Banglore</option>
+						</select>
+					</li>
+					
+					<li class="list1">
+						<label >Country:</label>
+						<select>
+						<option>India</option>
+						<option>USA</option>
+						<option>Canada</option>
+						<option>Japan</option>
+						<option>Russia</option>
+						</select>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="block2">
+				<div class="block3">Education Details</div>
+				<ul>
+					<li>
+						<label for="Language">&nbsp;Languages:</label>
+						<input type="checkbox" name="Lng_Tel">Telugu
+						<input type="checkbox" name="Lng_Eng">English
+						<input type="checkbox" name="Lng_Hin">Hindi
+					</li>
+					<li class="list4">
+						<label >Qualification:</label>
+						<select>
+						<option>BTech</option>
+						<option>Degree</option>
+						<option>PG/option>
+						<option>PHD</option>
+						</select>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="block2">
+				<div class="block3">About</div>
+				<ul>
+					<li>
+						<label for="About">&nbsp;Few Words About Yourself:</label>
+						<input type="text" name="About">
+						
+					</li>
+					
+				</ul>
+			</div>
+			<ul>
+				<li class="list5">
+					<input type="submit" name="btn_submit" value="save Details">
+				</li>
+				<li class="list6">
+					<input type="reset" name="btn_reset" value="Clear">
+				</li>
+			</ul>
+		</form>
+		
+	</div>
+</body>
+</html>
