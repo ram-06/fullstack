@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Transform - with rotate
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				text-align: center;
+				padding: 30px;
+				width: 280px;
+				margin: 150px auto;
+				background: yellow;
+				/*transform: rotate(120deg);*/
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<div class="container">CONTENT</div>
+
+		<script type="text/javascript">
+			var degValue = 0;
+			setInterval(function(){
+				$(".container").css("transform", 'rotateY(' + degValue + 'deg)');
+				degValue++;
+				if (degValue == 360) {
+					degValue = 0;
+				}
+			}, 10);
+			
+		</script>
+	</body>
+</html>

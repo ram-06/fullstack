@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML Input elements
+		</title>
+		<style type="text/css">
+			.block {
+				border: 2px solid;
+				position: absolute;
+				padding: 10px;
+				width: 120px;
+				text-align: center;
+				height: 120px;
+				top: 46%;
+				left: 46%; 
+				display: none;
+			}
+			ul {
+				border: 2px solid;
+				width: 600px;
+				margin: 20px auto;
+				padding: 20px;
+				background: #ccc;
+			}
+			li {
+				list-style: none;
+				border: 1px solid grey;
+				margin: 5px;
+				padding: 5px;
+				background: #fff;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block">BLOCK</div>
+		<form method="POST" action="http://testabc.com/abc/xyz">
+			<ul>
+				<li>
+					<lable for="uname">Enter user name:</lable>
+					<input type="text" name="uname">
+				</li>
+				<li>
+					<label for="upwd">Enter user account password:</label>
+					<input type="password" name="upwd">
+				</li>
+				<li>
+					Country name:
+					<select name="ucountry">
+						<option>India</option>
+						<option>Japan</option>
+						<option selected>USA</option>
+					</select>
+				</li>
+				<li>
+					Gender: <input type="radio" name="usergender"> Male
+							<input type="radio" name="usergender"> Female
+				</li>
+				<li>
+					Known Language:
+					<input type="checkbox" name="lng_eng"> English
+					<input type="checkbox" name="lng_tel"> Telugu
+					<input type="checkbox" name="lng_urd"> Urdu
+					<input type="checkbox" name="lng_hin"> Hindi
+				</li>
+				<li>
+					About urself <textarea maxlength="4000" name="abturslf"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Save Details">
+					<input type="reset" value="Clear data">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
