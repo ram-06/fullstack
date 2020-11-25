@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			student details
+		</title>
+	</head>
+	<body>
+		<script type ="text/javascript">
+			var sName , sAge , sClass , sub1 , sub2 , sub3 , total , Avg ;
+
+			sName = prompt("enter student name");
+			sAge = prompt("enter student age"); 
+			sClass = prompt("enter student class");
+
+			sub1 = prompt("enter  subject1 marks");
+			sub1 = parseInt(sub1);
+
+            sub2 = prompt("enter  subject2 marks");
+			sub2 = parseInt(sub2);
+			
+            sub3 = prompt("enter  subject3 marks");
+			sub3 = parseInt(sub3);
+
+
+			total = sub1 + sub2 + sub3;
+			Avg = total/3;
+			console.log(" name " + sName);
+			console.log(" age " + sAge);
+			console.log(" class " + sClass);
+			console.log(" total " + total);
+			console.log(" avg " + Avg);
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+			employee details
+		</title>
+	</head>
+	<body>
+		<script type ="text/javascript">
+
+			var empName , empId, empAge , basicSalary , pf , hra , totalSalary ;
+			empName = prompt(" enter employee name ");
+			empId = prompt("enter employee id");
+			empId = parseInt(empId);
+			empAge = prompt("enter employee age");
+			empAge = parseInt(empAge);
+
+			basicSalary = prompt("enter employee salary");
+			basicSalary = parseInt(basicSalary);
+
+			hra = basicSalary*(12/100);
+			pf = basicSalary*(25/100);
+			totalSalary = basicSalary + hra + pf ;
+			
+			console.log(" employee name "+ empName);
+			console.log(" employee id " + empId);
+			console.log(" employee age " + empAge);
+			console.log(" employee basicsalary " + basicSalary);
+			console.log(" employee hra " + hra);
+			console.log(" employee pf "+ pf);
+			console.log(" employee totalSalary " + totalSalary);
+
+		</script>
+	</body>
+
+</html>
