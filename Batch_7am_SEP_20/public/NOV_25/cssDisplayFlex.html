@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Flexbox layout
+		</title>
+		<style type="text/css">
+			.item {
+				border: 1px solid red;
+				margin: 10px;
+				padding: 25px;
+				width: 100px;	
+				text-align: center;
+				
+			
+			}
+			.container {
+				display: flex;
+				height: 500px;
+				background: blue;
+				flex-wrap: wrap;
+				/*flex-direction: row-reverse; *//* row/ column/ row-reverse / column-reverse */
+				/*flex-wrap: wrap-reverse; /* nowrap, wrap, wrap-reverse
+
+				flex-flow: row  wrap; /* Combination of flex-directon and flex-wrap */
+				/*justify-content: space-between;   /*flex-start;
+
+				align-items: baseline; 	 */
+				align-content: center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+		</div>
+	</body>
+</html>
