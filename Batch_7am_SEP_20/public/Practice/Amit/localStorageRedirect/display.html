@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			index
+		</title>
+		<style type="text/css">
+			.container {
+			  margin: 50px auto;
+			  border: 1px solid green
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  <div id="showInfo"></div>
+		</div>
+		<script type="text/javascript">
+			var showInfo = function () {
+				var uname = localStorage.getItem('uname');
+			  	var age = localStorage.getItem('age');
+			  	document.querySelector('#showInfo').innerHTML = "<div>Uname:"+uname+"</div>"+"<div>Age:"+age+"</div>";
+			}
+			showInfo();
+		</script>
+	</body>
+</html>

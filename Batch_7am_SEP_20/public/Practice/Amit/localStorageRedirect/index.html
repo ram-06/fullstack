@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			index
+		</title>
+		<style type="text/css">
+			.container {
+			  margin: 50px auto;
+			  border: 1px solid green
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  <div id="showInfo"></div>
+		  <ul>
+		    <li>
+		      Enter User Name:
+		      <input type="text" name="uname" id="uname"/>
+		    </li>
+		    <li>
+		      Enter User Name:
+		      <input type="text" name="age" id="age"/>
+		    </li>
+		  </ul>
+		  <div>
+		  <button onclick="saveData()" >Save</button>
+		  </div>
+		</div>
+		<script type="text/javascript">
+			var saveData = function () {
+				localStorage.setItem('uname', document.querySelector('#uname').value);
+			  	localStorage.setItem('age', document.querySelector('#age').value);
+
+			  	window.location.href = 'display.html';
+			}
+		</script>
+	</body>
+</html>
