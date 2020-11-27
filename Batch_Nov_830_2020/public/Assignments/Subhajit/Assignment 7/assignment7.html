@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <h1>Student Details</h1>
+    </head>
+    <body>
+<script>
+    var sName, sGender,sAge, m1, m2, m3;
+    sName = prompt("enter name");
+    sGender = prompt("enter gender");
+    sAge =prompt("enter age");
+    m1 = prompt("enter mark1");
+    m2 = prompt("enter mark2");
+    m3 = prompt("enter mark3");
+    m1 = parseInt(m1);
+    m2 = parseInt(m2);
+    m3 = parseInt(m3);
+
+    var total = m1+ m2 + m3;
+    var avg = total / 3;
+
+    console.log("Student Details.....");
+    console.log("Name: " + sName);
+    console.log("Gender" + sGender);
+    console.log("Total marks" + total);
+    console.log("Average is " + avg);
+</script>
+</body>
+</html>
