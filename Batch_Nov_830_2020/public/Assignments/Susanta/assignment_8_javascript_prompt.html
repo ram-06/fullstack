@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstrating prompt method</title>
+		<style type="text/css">
+			h3{
+				color: blue;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+
+		var name, gender, age, salary;
+		name = prompt("Enter name");
+		age = parseInt(prompt("Enter age"));
+		gender = prompt("Enter gender");
+		salary = parseInt(prompt("Enter salary"));
+		var hra = salary * (25/100);
+		var pf  = salary * (12/100);
+		total_salary = salary + hra + pf;
+		// Employee Details		
+		console.log("Employee Details ::  " );
+		console.log("name :: " + name +" , age :: "+ age +" , gender :: " + gender);
+		// Salary details
+		console.log("Salary Details ::  " );
+		console.log("hra :: " + hra +" , pf :: "+ pf +" , total_salary :: " + total_salary);
+	</script>
+	<body>
+		<h3>See Console Log For Details</h3>
+	</body>
+</html>
