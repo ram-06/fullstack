@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>Assignmnet_7</title>
+
+
+<style type="text/css">
+	
+.check{
+
+	font-size: medium;
+    font-weight: bold;
+    position: relative;
+    top:-60px;
+    
+
+}
+.block {
+    border: solid 2px;
+    position: relative;
+    text-align: center;
+    padding: 5px 55px 5px 25px;
+    background-color:white;
+}
+
+
+.forselection{
+	 position: relative;
+	 padding: 4px 50px;
+}
+h1{
+	text-align: center;
+	border: 1px solid;
+	position:relative;
+	background-color: rgb(255, 200, 51);
+
+}
+.container{
+	border: 1.5px solid; 
+	bottom:10px;
+	height:1023px;
+	width:1880px;
+	background-color:rgb(128, 128, 128);
+}
+.checkin{
+	position: relative;
+    right:-1597px;
+    top:157px;
+}
+
+</style>
+</head>
+<body>
+	<form>
+	<h1 style=" left:0px;width:1880px;">Student Registration Form </h1>
+	<div class="container">
+		
+	
+
+<div style="border: solid 2px;width: 1790px;height:200px;position: relative;top: 20px;left:40px;background-color:white;"> 
+
+	<div>
+	<label class="block" style="top: -6px;left: 22px; background-color: rgb(51, 210, 255 );"> Personal Details </label>
+    </div>
+
+<div>	
+	<label name="Name" class="check" style="top:30px;left:30px;"> Name : </label>
+	<input type="text" name="Name" class="check" style="border: solid 1.5px;top:29px;left: 50px"> 
+</div>
+
+<div>
+	
+	<label name="Age" class="check" style="top:60px;left:30px;"> Age : </label>
+	<input type="number" name="Age" class="check" style="width:100px; border: solid 1.5px;top:55px;left: 65px"> 
+</div>
+
+<div>
+	
+	<label name="Mail Id" class="check" style="top:-28px;left:722px;"> Mail Id : </label>
+	<input type="text" name="Mail Id" class="check" style="border: solid 1.5px;top:-29px;left: 770px"> 
+</div>
+
+<div>
+	
+	<label name="Contact No" class="check" style="top:20px;left:719px;"> Contact No : </label>
+	<input type="text" name="Contact No" class="check" style="width:140px; border: solid 1.5px;top:22px;left: 743px"> 
+</div>
+
+<div>
+	
+	<label name="Gender" class="check" style="top:30px;left:30px;"> Gender : </label>
+	<input type="radio" id="Male" name="Gender" value="Male" class="check" style="top:30px;left:60px;"> 
+	<label for="Male"  class="check" style="top:30px;left:60px;"> M </label>
+	<input type="radio" id="Female" name="Gender" value="Female" class="check" style="top:30px;left:108px;"> 
+	<label for="Female"  class="check" style="top:30px;left:108px;"> F </label>
+</div>
+
+<div style="border: solid 2px;width: 1790px;height:200px;position: relative;top: 106px;left:-1px;background-color:white;"> 
+	<div>
+
+	<label class="block" style="top: -6px;left: 22px; background-color:rgb(255, 51, 51);"> Adress Details </label>
+
+</div>
+
+<div>
+
+	<label name="house_no" class="check" style="top:60px;left:30px;"> House no : </label>
+	<input type="text" name="house_no" class="check" style="border: solid 1.5px;top:55px;left: 40px">
+</div>
+<div>
+
+	<label name="countrySelection" class="check" style="top:40px;left:758px;"> Country : </label>
+	<select name="countrySelection" class="check" style="left: 783px;top: 38px;background-color: rgb(0, 128, 128);">
+		<option> India </option>
+		<option> Canada </option>
+		<option> USA </option>
+	</select>
+</div>
+<div>
+	<label name="stateSelection" class="check" style="top:60px;left:30px;"> State : </label>
+	<select name="stateSelection" class="check" style="top: 58px;left:75px;background-color: rgb(0, 128, 128);">
+		<option> Telangana </option>
+		<option> Andra Prasesh </option>
+		<option> Tamil Nadu </option>	
+	</select>
+</div>
+</div>
+
+
+</br>
+
+<div style="border: solid 2px;width: 1790px;height:200px;position: relative;top: 109px;left:-1px; background-color: white;">
+	<div>
+
+	<label class="block" style="top: -6px;left: 22px; background-color: rgb(51, 255, 73)"> Education Details </label>
+
+</div>
+<div>
+
+	<label name=yourself class="check" style="top:60px;left:30px;"> Languages </label>
+	<label>
+	<input type="checkbox" name="teluguSelection" class="check"  style="top:60px; left: 108px; width:13px;"></label>
+	<label for="teluguSelection" class="check"  style="top:60px;left: 115px">Telugu</label>
+	<label>
+	<input type="checkbox" name="hindiSelection" class="check"  style="top:60px; left: 145px; width:13px;"></label>
+	<label for="hindiSelection" class="check" style="top:60px;left: 155px" >Hindi</label>
+	<label>
+	<input type="checkbox" name="englishSelection" class="check"  style="top:60px;left: 185px; width:13px;"></label>
+	<label for="englishSelection" class="check" style="top:60px;left: 196px"  >English</label>
+	<label>
+	<input type="checkbox" name="urduSelction" class="check"  style="top:60px;left: 206px; width:13px;" ></label>
+	<label for="urduSelection" class="check" style="top:60px;left: 216px" >Urdu</label>
+	<label name=yourself class="check" style="top: 125px;right:341px;"> Qualification </label>
+	<select name=Qualification class ="forselection" style="top: 125px;left: -276px;background-color: rgb(0, 128, 128);">
+		<option> Btech</option>
+			<option> CA </option>
+				<option> Doctor </option>
+	</select>
+</div>
+</div>
+
+</br>
+
+<div style="border: solid 2px;width: 1790px;height:200px;position:relative;top: 127px;left:-1px; background-color: white;">
+	<div>
+	<label class="block" style=" top: -6px ;left: 22px; background-color: rgb(255, 249, 51);"> About Yourself </label>
+    </div>
+<div>
+
+	<label name=yourself class="check" style="left: 22px;"> Few Words about yourself:</label>
+	<textarea name=yourself maxlength="250" style="width: 350px;height: 150px; border: solid 1.5px; position: relative;top: 3px;left: 150px;"> </textarea>       
+
+</div>
+</div>
+	
+
+<div style="height:30px;right:30px;top:30px;">
+
+<button class="checkin" type="Save Details" value="Save Details">Save Details</button>
+</div>
+</form>
+
+</body>
+</html>
