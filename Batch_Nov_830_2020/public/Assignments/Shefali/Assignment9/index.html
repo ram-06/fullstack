@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Control Structure</title>
+</head>
+<body>
+    <h1>Conditional Control Structure</h1>
+
+    <script>
+        var eName, eGender, eDpt, eBasicsalary, iTax;
+        eName = prompt("Enter Name");
+        eGender = prompt("Enter Gender");
+        eGender = eGender.toLowerCase();
+        eDpt = prompt(" Enter the Department");
+        eBasicsalary = prompt("Enter employee Basic Salary");
+
+        eBasicsalary = parseInt(eBasicsalary);
+
+        var ePf = eBasicsalary * (12 / 100);
+        var eHra = eBasicsalary * (24 / 100);
+        var eTotalSalary = eBasicsalary + ePf + eHra;
+
+        
+        console.log("employee Details.....");
+        console.log("Name: " + eName);
+        console.log("Gender: " + eGender);
+        console.log("Basic Salary of employee: " + eBasicsalary);
+        console.log("PF of employee: " + ePf);
+        console.log("HRA of employee: " + eHra);
+        console.log("Total Salary of employee: " + eTotalSalary);
+
+        if(eGender == "male"){
+            if(eTotalSalary >= 100000){
+                console.log ("You have been charged 15% tax");
+                iTax = 15 * (eBasicsalary /100);
+                console.log("Tax is " + iTax);
+            }else if(eTotalSalary >= 50000){
+                console.log ("You have been charged 10% tax");
+                iTax = 10 * (eBasicsalary /100);
+                console.log("Tax is " + iTax);
+            }else{
+                console.log ("You have been charged 0% tax");
+            }
+        }
+        else if(eGender == "female"){
+            if(eTotalSalary >= 100000){
+                console.log ("You have been charged 10% tax");
+                iTax = 10 * (eBasicsalary /100);
+                console.log("Tax is " + iTax);
+            }else if(eTotalSalary >= 50000){
+                console.log ("You have been charged 5% tax");
+                iTax = 5 * (eBasicsalary /100);
+                console.log("Tax is " + iTax);
+            }else{
+                console.log ("You have been charged 0% tax");
+            }
+        }
+    </script>
+</body>
+</html>
