@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <script>
+        var Name, Gender, Dept, Basicsalary;
+        Name = prompt("Enter Name");
+        Gender = prompt("Enter Gender");
+        Dept = prompt(" Enter the Department");
+        Basicsalary = prompt("Enter employee Basic Salary");
+
+        Basicsalary = parseInt(Basicsalary);
+
+        var Pf = Basicsalary * (12 / 100);
+        var Hra = Basicsalary * (25 / 100);
+        var TotalSalary = Basicsalary + Pf + Hra;
+
+        console.log("employee Details.....");
+        console.log("Name: " + Name);
+        console.log("Gender: " + Gender);
+        console.log("Department: " + Dept);
+        console.log("Basic Salary of employee: " + Basicsalary);
+        console.log("PF of employee: " + Pf);
+        console.log("HRA of employee: " + Hra);
+        console.log("Total Salary of employee: " + TotalSalary);
+    </script>
+</body>
+</html>
