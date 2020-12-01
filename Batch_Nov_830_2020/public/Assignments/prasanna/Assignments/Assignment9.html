@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Employee details.
+		</title>
+	</head>
+	<body>	
+		<div>JAvascript coding</div>
+		<script type="text/javascript">
+			var Gender, EName, Age, basicSalary, department, totSalary,HRA, PF, tax;
+
+			EName =prompt("enter employee name:");
+			Gender = prompt("enter employee Gender");
+			Age = prompt("enter employee Age");
+			department = prompt("enter employee department");
+			basicSalary = prompt("enter employee basicSalary");
+			basicSalary = parseInt(basicSalary);
+			HRA = basicSalary*(24/100);
+			PF = basicSalary*(12/100);
+			totSalary = basicSalary + HRA + PF;
+			console.log("Employee Details....");
+			console.log("EName : " + EName);
+			console.log("Gender : "  + Gender);
+			console.log("Age : "  + Age);
+			console.log("department : "  + department);
+			console.log("basicSalary : " + basicSalary);
+			console.log("HRA : " + HRA);
+			console.log("PF : " + PF);
+			console.log("totSalary :" + totSalary);
+			if(Gender == "male")
+			{
+				if(totSalary > 100000)
+					{
+					tax= (15/100)* basicSalary;
+					console.log("sal is greater than 100000 then tax is:"+tax);
+					}
+				else if(totSalary > 50000)
+					{
+ 					tax= (10/100)* basicSalary;
+					console.log("sal is greater than 50000 then tax is:"+tax);
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+
+			}
+			else
+			{
+				if(totSalary > 100000)
+					{
+					tax= (10/100)* basicSalary;
+					console.log("sal is greater than 100000 then tax is:"+tax);
+					}
+				else if(totSalary > 50000)
+					{
+ 					tax= (5/100)* basicSalary;
+					console.log("sal is greater than 50000 then tax is:"+tax);
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+			}
+		</script>
+	</body>
+</html>
