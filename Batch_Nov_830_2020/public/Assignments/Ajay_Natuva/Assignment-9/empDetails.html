@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			demonstarting
+		</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+		var empName, empAge, empGender, empBasicSalary, pf, hra, total;
+		
+		empName = prompt("enter a name");
+		empAge = prompt("enter age");
+		empGender = prompt("enter gender");
+		empBasicSalary = prompt("enter a salary");
+		empdepartment = prompt("enter department name")
+		empBasicSalary = parseInt(empBasicSalary);
+		pf = prompt("enter pf value");
+		pf = parseInt(pf);
+		pf = empBasicSalary*(pf/100);
+		hra = prompt("enter hra value");
+		hra = parseInt(hra);
+		hra = empBasicSalary*(hra/100);
+		totalsalary = empBasicSalary + pf + hra;
+		console.log("name " + empName);
+		console.log("age " +empAge);
+		console.log("gender " +empGender);
+		console.log("department " +empdepartment);
+		console.log("empBasicSalary " +empBasicSalary);
+		console.log("total " + totalsalary);
+
+			if(Gender = "male")
+			{
+				if(totalsalary>= 100000)
+					{
+					console.log("tax is 15% of empBasicSalary");
+					}
+				else if(totalsalary> 50000)
+					{
+ 					
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+
+			}
+			else
+			{
+				if(Gender = "female" && totalsalary > 100000)
+					{
+				
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else if(totalsalary> 50000)
+					{
+ 				console.log("tax is 5% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+			}
+				
+		</script>
+		</body>
+	</html>
