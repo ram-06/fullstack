@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calculating tax for employee by using conditional control statements </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var eName = prompt("Enter emp name:");
+			var eAge = parseInt(prompt("Enter emp age:"));
+			var eGender = prompt("Enter emp gender:");
+			eGender = eGender.toLowerCase();
+			var eDep = prompt("Enter emp's department:");
+			var basicSalary = parseInt(prompt("Enter basic salary:"));
+			var totalSalary , hra , pf,tax ;
+			hra = (15/100) * basicSalary ;
+			pf = (24/100) * basicSalary ;
+			totalSalary = basicSalary + hra + pf ;
+
+			console.log("EMP Details....");
+			console.log("Name :" + eName);
+			console.log("Age :"  + eAge);
+			console.log("Gender :"  + eGender);
+			console.log("Department : " + eDep);
+			console.log("total salary : " + totalSalary );
+
+			if (eGender == "male") {
+				if (totalSalary > 100000) {
+					tax = (15/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else if (totalSalary > 50000){
+					tax = (10/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else{
+					tax = 0 ;
+					console.log(" tax :" + tax);
+				}
+			}
+
+			else{
+				if (totalSalary > 100000) {
+					tax = (10/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else if (totalSalary > 50000){
+					tax = (5/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else{
+					tax = 0 ;
+					console.log(" tax :" + tax);
+				}
+			}
+			
+		</script>
+
+	</body>
+</html>
