@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Prime No. Tesing Program </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var number , flag = true;
+			number = parseInt(prompt('Enter the Number')) ;
+			for(i = 2 ; i < number ; i++){
+				if(number%i == 0 ){
+					flag = false;
+					break;
+				}
+			}
+			if(flag&&number!=1)
+				console.log('Yes The number is a Prime No.');
+			else
+				console.log('NO , The number is NOT a Prime No.');
+
+		</script>
+	</body>
+</html>
