@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>prime numbers</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var count , i , j;
+			console.log("following are the prime numbers from 1 to 100 :")
+			for(i = 2; i <= 100; i++){
+				count = 0;
+				for(j = 1;j <= i; j++){
+					if(i % j == 0){
+						count = count + 1;
+
+					}
+				}
+				if(count == 2){
+					console.log(i);
+				}
+			}
+		</script>
+	</body>
+</html>
