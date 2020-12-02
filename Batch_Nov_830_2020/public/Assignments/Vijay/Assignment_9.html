@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>employee detalis</title>
+	</head>
+	<body>
+		<script>
+			var eName, eAge, eGender, eDept, basicSalary, totalSalary, hra, pf;
+               eName = prompt("Enter emp name");
+
+			   eAge = prompt("Enter emp age");
+			   eAge = parseInt(eAge);
+
+			   eGender = prompt("Enter emp gender");
+			   eGender.toLowerCase();
+			   
+			   eDep = prompt("Enter emp's department");
+
+			   basicSalary = prompt("Enter basic salary");
+			   basicSalary = parseInt(basicSalary);
+
+			   hra =  basicSalary * (15/100)  ;
+
+			   pf =  basicSalary * (24/100)  ;
+
+			   tax = (15/100) * totalSalary ;
+
+			   totalSalary = basicSalary + hra + pf ;
+
+			console.log("EMP Details....");
+			console.log("Name :" + eName);
+			console.log("Age :"  + eAge);
+			console.log("Gender :"  + eGender);
+			console.log("Department : " + eDep);
+			console.log("basicsalary :" + basicSalary);
+			console.log("total salary : " + totalSalary );
+
+			if (eGender == "male")
+			 {
+			    if (totalSalary > 100000)
+			     {
+					tax = (15/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else if (totalSalary > 50000)
+				{
+					tax = (10/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else{
+					tax = 0 ;
+					console.log(" tax :" + tax);
+				}
+			}
+
+			if (eGender == "female")
+			{
+				if (totalSalary > 100000) 
+				{
+					tax = (10/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else if (totalSalary > 50000)
+				{
+					tax = (5/100) * totalSalary ;
+					console.log(" tax :" + tax);
+				}
+				else{
+					tax = 0 ;
+					console.log(" tax :" + tax);
+				}
+			}
+
+               
+
+		</script>
+	</body>
+</html>
