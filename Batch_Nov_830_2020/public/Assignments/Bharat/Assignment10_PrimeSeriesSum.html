@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Prime No. Series Sum Program </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var number , sum  = 0  ,  flag ;
+			for(number = 1 ; number <= 100 ; number++){
+				flag = true;
+				for(var i = 2 ; i < number ; i++){
+					if(number%i == 0 ){
+						flag = false;
+						break;
+					}
+				}
+				if(flag&&number!=1)
+					sum += number;
+				flag = true;
+			}
+			console.log(' Sum of Prime No Series = ' + sum );
+		</script>
+	</body>
+</html>
