@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> checking armstrong </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = parseInt(prompt("enter a number :"));
+			var n , m = 0 , rem ;
+			n = num ;
+			while(num > 0){
+				rem = num % 10 ;
+				m = m + rem * rem * rem ;
+				num = parseInt(num / 10) ;
+			}
+			if(n == m){
+				console.log("given num is armstrong");
+			}
+			else {
+				console.log("given num is not armstrong");
+			}
+		</script>
+	</body>
+</html>

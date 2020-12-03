@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> finding lucky number </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = parseInt(prompt("enter a number :"));
+			var sum1 = 0 , sum2 = 0 , rem1 , rem2 , luckyNum ;
+			while(num > 0){
+				rem1 = num % 10;
+				sum1 = sum1 + rem1 ;
+				num = parseInt(num / 10);
+			}
+			console.log("digits sum of given num is " + sum1);
+
+			while(sum1 > 0){
+				rem2 = sum1 % 10;
+				sum2 = sum2 + rem2 ;
+				sum1 = parseInt(sum1 / 10);
+			}
+
+			console.log("lucky num of given num is " + sum2);
+
+
+		</script>
+	</body>
+</html>

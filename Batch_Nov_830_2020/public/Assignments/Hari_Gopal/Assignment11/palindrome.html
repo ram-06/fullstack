@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> checking palindrome </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = parseInt(prompt("enter a number:"));
+			var m , rem , rev = 0 ;
+			m = num ;
+			while (num > 0){
+				rem = num % 10;
+				rev = rev * 10 + rem ;
+				num = parseInt(num / 10) ;
+
+			}
+
+			if(m == rev){
+				console.log("given num is palindrome");
+
+			}
+			else {
+				console.log("given num is not palindrome");
+
+			}
+		</script>
+	</body>
+</html>
