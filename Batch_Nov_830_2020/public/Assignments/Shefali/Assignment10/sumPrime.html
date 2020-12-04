@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Control Structure</title>
+</head>
+
+<body>
+    <h1>Looping Control Structure</h1>
+    <h2>Prime number Between 1 to 100: </h2>
+
+    
+    <script>
+        var counter = 0, sum = 0;
+        console.log("Prime Numbers Between 1 to 100 are: ")
+        for (var number = 1; number < 101; number++) {
+            counter = 0;
+            for (var i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    counter++;
+                    break;
+                }
+            }
+            if (counter == 0) {
+                console.log(number);
+                sum += number;
+                console.log("Sum of prime number is: " + sum);
+            }
+        }
+    </script>
+</body>
+
+</html>

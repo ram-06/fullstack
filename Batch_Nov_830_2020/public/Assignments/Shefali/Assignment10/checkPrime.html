@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Control Structure</title>
+</head>
+<body>
+    <h1>Looping Control Structure</h1>
+    <h2>Check a Given Number for Prime</h2>
+
+    <script>
+        var numPrime = 49, counter = 0;
+        for( var i = 2; i < numPrime; i++ )
+        {
+            if(numPrime % i == 0){
+                counter++;
+                break;
+            }
+        }
+        if(counter == 0){
+            console.log(numPrime + " is a prime number");
+        }
+        else{
+            console.log(numPrime + " is not a prime number");
+        }
+    </script>
+</body>
+</html>
