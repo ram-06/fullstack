@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Switch case CS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var result;
+			var a1 = prompt("Enter a number");
+			a1 = parseInt(a1);
+
+			var a2 = prompt("Enter second number");
+			a2 = parseInt(a2);
+
+			var userOption = prompt("Select add/sub/div/mul");
+
+			switch(userOption) {
+				case 'add':
+					result = a1 + a2;
+					console.log("the sum is  " + result);
+					break;
+				case 'sub':
+					result = a1 - a2;
+					console.log("the sub is  " + result);
+					break;
+				case 'mul':
+					result = a1 * a2;
+					console.log("the mul is  " + result);
+					break;
+				case 'div':
+					result = a1 / a2;
+					console.log("the div is  " + result);
+					break;
+				default:
+					console.log("wron selection");
+
+			}
+
+			/*if (userOption == 'sum') {
+				result = a1 + a2;
+				console.log("the sum is  " + result);
+			} else if (userOption == 'sub') {
+				result = a1 - a2;
+				console.log("substraction is " + result);
+			} else if (userOption == 'mul') {
+				result = a1 * a2; 
+				console.log("Multiplication is " + result);
+			} else if (userOption == 'div') {
+				result = a1 / a2;
+				console.log("Division is " + result);
+			} else {
+				console.log("wrong selction");
+			} */
+		</script>
+	</body>
+</html>
