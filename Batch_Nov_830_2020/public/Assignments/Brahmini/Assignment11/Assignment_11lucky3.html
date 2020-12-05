@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating while loop Control Structures
+		</title>
+	</head>
+	<style type="text/css">
+		.h2{
+			text-align: center;
+			color: cyan;
+		}
+	</style>
+	<body>
+		<h2 class=h2> Displaying the lucky numberfor a given number</h2>
+		<script type="text/javascript">
+			var num, rem=0;
+			var sum=0;
+			num = prompt("Enter the number");
+			while(num>0)
+			{
+				rem = rem + (num%10);
+				rem = parseInt(rem);
+				num = num/10;
+				num = parseInt(num);
+				sum = sum + rem;
+				if(num == 0 && sum > 10)
+
+				{
+					num = sum;
+					sum=0;
+				}
+			}
+			
+			 
+			 console.log("Lucky number for the given number is:" +sum);
+
+		</script>
+
+	</body>
+</html>

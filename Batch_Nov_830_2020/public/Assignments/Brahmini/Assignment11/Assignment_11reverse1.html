@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			Demostrating logical programs using cs
+		</title>
+	</head>
+	<style type="text/css">
+		.h2{
+			text-align: center;
+			color: skyblue;
+		}
+	</style>
+	<body>
+		<h2 class=h2> Displaying the reverse of a given number</h2>
+		<script type="text/javascript">
+			var num = prompt("Enter the number");
+			var  r=0;
+			 while(num>0)
+			 {
+			 	r = r*10;
+			 	r = r + (num%10);
+			 	r = parseInt(r);
+			 	num = num/10;
+			 	num = parseInt(num);
+			 }
+			 console.log("The reverse of a given number is:" +r);
+
+		</script>
+	</body>
+</html>

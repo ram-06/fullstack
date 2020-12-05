@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating while loop Control Structures
+		</title>
+	</head>
+	<style type="text/css">
+		.h2{
+			text-align: center;
+			color: brown;
+		}
+	</style>
+	<body>
+		<h2 class=h2>Checking whether a given number is a Armstrong number or not</h2>
+		<script type="text/javascript">
+			var num, rem=0; 
+			var temp, sum = 0;
+			num = prompt("Enter the number");
+			temp = num;
+			while(num>0)
+			{
+				rem = num%10;
+				rem = parseInt(rem);
+				sum = sum + (rem * rem * rem);
+				sum = parseInt(sum);
+			}
+			if(temp == sum)
+			{
+			 console.log(sum);
+			 console.log(" The Given number is a Armstrong number");
+			}
+
+			else
+			{
+			 console.log(sum);
+			 console.log(" The Given number is not a Armstrong number");
+			}
+
+
+		</script>
+
+	</body>
+</html>

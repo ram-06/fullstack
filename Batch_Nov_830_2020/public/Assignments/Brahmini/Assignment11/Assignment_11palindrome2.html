@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating While loop Control Structures
+		</title>
+	</head>
+	<style type="text/css">
+		.h2{
+			text-align: center;
+			color: brown;
+		}
+	</style>
+	<body>
+		<h2 class=h2>Checking whether the given number is palindrome or not</h2>
+		<script type="text/javascript">
+			var num, rem=0, temp;
+			num = prompt("enter a number");
+			temp = num;
+			while(num>0)
+			{
+				rem = rem * 10;
+				rem = rem + (num%10);
+				rem = parseInt(rem);
+				num = num/10;
+				num = parseInt(num);
+			}
+			if(rem==temp)
+			{
+				console.log(rem);
+				console.log("Given number is a palindrome");
+			} 
+			else
+			{
+				console.log(rem);
+				console.log("Given number is not a palindrome");
+			}
+		</script>
+
+	</body>
+</html>
