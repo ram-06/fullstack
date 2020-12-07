@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Details using Function</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Students Details</h1>
+    <script>
+        function stuDetails(){
+        var sName, sGender, m1, m2, m3;
+        sName = prompt("Enter Name");
+        sGender = prompt("Enter Gender");
+        m1 = prompt("Enter Marks 1");
+        m2 = prompt("Enter Marks 2");
+        m3 = prompt("Enter Marks 3");
+        m4 = prompt("Enter Marks 4");
+        m5 = prompt("Enter Marks 5");
+
+        m1 = parseInt(m1);
+        m2 = parseInt(m2);
+        m3 = parseInt(m3);
+        m4 = parseInt(m4);
+        m5 = parseInt(m5);
+
+        var total = m1+ m2 + m3 + m4 + m5;
+        var avg = total / 5;
+
+        console.log("Student Details.....");
+        console.log("Name: " + sName);
+        console.log("Gender: " + sGender);
+        console.log("Total marks: " + total);
+        console.log("Average is: " + avg);
+    }
+    stuDetails();
+    </script>
+</body>
+</html>
