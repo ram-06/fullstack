@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title> emp details using functions </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var eName, eAge, eGender, eDep, basicSalary, totalSalary, hra, pf ;
+
+			function readingEmpDetails() {
+				eName = prompt("Enter emp name:");
+				eAge = prompt("Enter emp age:");
+				eAge = parseInt(eAge);
+				eGender = prompt("Enter emp gender:");
+				eDep = prompt("Enter emp's department:");
+				basicSalary = prompt("Enter basic salary:");
+				basicSalary = parseInt(basicSalary);
+				calculations();
+			}
+			
+			function calculations()	{
+				hra = (15/100) * basicSalary ;
+				pf = (25/100) * basicSalary ;
+				totalSalary = basicSalary + hra + pf ;
+			}
+
+			function displayEmpDetails() {
+				readingEmpDetails();
+				console.log("EMP Details....");
+				console.log("Name :" + eName);
+				console.log("Age :"  + eAge);
+				console.log("Department : " + eDep);
+				console.log("total salary : " + totalSalary );
+			}
+
+			displayEmpDetails();
+		</script>
+	</body>
+</html>
