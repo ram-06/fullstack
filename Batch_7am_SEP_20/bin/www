@@ -3,8 +3,9 @@
 /**
  * Module dependencies.
  */
-
+console.log("www code got exectued");
 var app = require('../app');
+console.log("remaing code of www is executing")
 var debug = require('debug')('batch-7am-sep-20:server');
 var http = require('http');
 

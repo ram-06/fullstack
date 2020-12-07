@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarating functions with params
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function readData() {
+				var a, b;
+				a = prompt("enter value for a");
+				b = prompt("Enter value for b");
+				a = parseInt(a);
+				b = parseInt(b);
+				doSum();
+
+			}
+
+			function doSum() {
+				var result = 0;
+				result = a + b;
+				console.log("The sum is " + result);
+			}
+
+			readData();
+		</script>
+	</body>
+</html>
