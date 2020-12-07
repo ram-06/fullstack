@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting function
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var EName, Age, Gend, Dept, BasicSal, Pf, Hra, TotSal,Tax, male, female
+			function empDetails(){
+				Ename = prompt("Enter the name of the employee");
+				Age   =  prompt("Enter the age");
+				Gend  = prompt("Enter Gender");
+				Dept  = prompt("Enter Department");
+				BasicSal=prompt("Enter the basic salary");
+				BasicSal=parseInt(BasicSal);
+				calTotSal();
+			}
+
+			function calTotSal(){
+				Hra  = BasicSal*(24/100);
+				Pf  = BasicSal*(12/100);
+				TotSal= Pf+Hra+BasicSal;
+				displayDetails();
+			}
+
+			function displayDetails(){
+					console.log("Name is:" +Ename);
+					console.log("Age is:" +Age);
+					console.log("Gender is:" +Gend);
+					console.log("Department is:" +Dept);
+					console.log("Basic Salary is:" +BasicSal);
+					console.log("Total Salray is:" +TotSal);
+					conditions();
+			}
+			
+			function conditions(){
+				if(Gend == "male"&& TotSal>100000){
+				if(TotSal>= 100000)
+					{
+					console.log("tax is 15% of empBasicSalary");
+					}
+				else if(TotSal> 50000)
+					{
+ 					
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+
+			}
+			else
+			{
+				if( Gend == "female" && TotSal> 100000)
+					{
+				
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else if(TotSal> 50000)
+					{
+ 				console.log("tax is 5% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				
+							}		
+						}
+					}
+				empDetails();	
+
+		</script>
+		</body>
+	</html>
