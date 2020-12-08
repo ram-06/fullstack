@@ -8,8 +8,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var stdDetailsRouter = require("./routes/studentDetails");
 var pdetailsRouter = require("./routes/productDetails");
 var pdataRouter = require("./routes/prodData");
+var validateDetails = require("./routes/validateDetails");
 
 var app = express();
 
@@ -35,6 +37,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/data/product/details", pdetailsRouter);
 app.use('/data/pdata', pdataRouter);
+app.use('/data/student/details', stdDetailsRouter);
+app.use('/data/validate', validateDetails);
 
 app.listen(8081, function(){
 	console.log("server is listing at 8081");

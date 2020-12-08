@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Online Shopping Application
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="lib/jquery.js"></script>
+        <script type="text/javascript" src="JS/login.js"></script>
+        <script type="text/javascript" src="JS/common.js"></script>
+    </head>
+    <body>
+        <header>
+        	Welcome to Indian Shopping app
+        </header>
+        <maincontainer>
+        	
+        </maincontainer>
+        <footer>
+        	@copy rights 2020
+        </footer>
+        <div id="loginTmplt" style="display: none;">
+        	<ul class="loginBlock">
+        		<li class="ltitle">
+        			Login Details
+        		</li>
+        		<li>
+        			Account Id:
+        			<input type="text" class="form-control" id="uid">
+        		</li>
+        		<li>
+        			Account Password:
+        			<input type="password" class="form-control" id="upwd">
+        		</li>
+        		<li>
+        			<input type="button" value="Login" class="btn btn-primary" onclick="validateUserDetails()">
+        			<input type="button" value="New Signup" class="btn btn-primary" onclick="signup()">
+        			<input type="button" value="Generate New Password" class="btn btn-primary" onclick="getPasswrd()">
+        		</li>
+        		<li class="errMsg">
+        			
+        		</li>
+        	</ul>
+        </div>
+        <div id="regTmplt" style="display: none;">
+        	<ul class="loginBlock">
+        		<li class="ltitle">
+        			User Registration Page
+        		</li>
+        		<li>
+        			Account Id:
+        			<input type="text" class="form-control" id="uid">
+        		</li>
+        		<li>
+        			Account Password:
+        			<input type="password" class="form-control" id="upwd">
+        		</li>
+        		<li>
+                    Reenter Password:     
+                    <input type="password" class="form-control" id="rpwd"> 
+                </li>
+                <li>
+                    Registered Mail Id:
+                    <input type="email" class="form-control" id="umailid">
+                </li>
+        		<li class="errMsg">
+        			
+        		</li>
+        	</ul>
+        </div>
+        <div id="fgPwdTmplt" style="display: none;">
+        	<ul class="loginBlock">
+        		<li class="ltitle">
+        			Generate New Password
+        		</li>
+        		<li>
+        			Enter mail id to receive Pwd:
+        			<input type="email" class="form-control">
+        		</li>
+        		<li>
+        			<input type="button" value="Generate New Password">
+        		</li>
+        	</ul>
+        </div>
+    </body>
+</html>

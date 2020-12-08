@@ -1,0 +1,44 @@
+header, footer, maincontainer {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	border: 1px solid;
+	padding: 10px;
+
+}
+maincontainer {
+	top: 55px;
+	bottom: 45px;
+}
+
+footer {
+	bottom: 10px;
+	text-align: center;
+}
+header {
+	text-align: center;
+}
+.loginBlock {
+	border: 1px solid;
+	width: 600px;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.errMsg {
+	color: red;
+	font-size: 13px;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	border: 1px solid;
+	padding: 5px;
+}
+
+.ltitle {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
