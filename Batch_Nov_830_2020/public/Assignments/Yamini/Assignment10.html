@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>
+		Prime Number
+	</title>
+</head>
+	<body>
+		<script type="text/javascript">
+			var num=prompt("enter any number");
+			var flag=false;
+			for(var i=2;i<num;i++){
+				if(num%i==0){
+					flag="false";
+					break;
+				}
+			}
+			if(flag=="false"){
+				console.log(+num+"is not Prime number");
+			}
+			else{
+				console.log(+num+"is Prime number");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+			Displaying Student Details
+		</title>
+	</head>
+	<body>
+		<div> Student Details </div>
+			<script type="text/javascript">
+			var sName , Gender, sAge, sClass, m1, m2, m3, m4, m5, totMarks, Avg;
+			sName   = prompt("Enter Student Name");
+			Gender  = prompt("Enter Gender");
+			sAge    = prompt("Enter Age");
+			sClass  = prompt("Enter class");
+			m1      = prompt("Enter m1 marks");
+			m1     = parseInt(m1);
+			m2      = prompt("Enter m2 marks");
+			m2     = parseInt(m2);
+			m3      = prompt("Enter m3 marks");
+			m3     =  parseInt(m3);
+			m4      = prompt("Enter m4 marks");
+			m4     = parseInt(m4);
+			m5      =prompt("Enter m5 marks");
+			m5     = parseInt(m5);  
+			totMarks = (m1 + m2 + m3 + m4 + m5);
+			Avg     = totMarks/5;
+			console.log(" student Name is:" +sName);
+			console.log("Gender is:" +Gender);
+			console.log("Age is:" + sAge);
+			console.log("Class is:" + sClass);
+			console.log("total Marks is:" +totMarks);
+			console.log("Average is:" +Avg);
+		 	</script>
+	</body>
+</html>

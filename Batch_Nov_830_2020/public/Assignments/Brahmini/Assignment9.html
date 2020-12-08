@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>
+		demonstrating employee details
+		</title>
+		<style type="text/css">
+				.h3{
+					text-align: center;
+					color: purple;
+		</style>
+	</head>
+	<body>
+		<h3 class=h3>Employee tax details using conditional control structures </h3>
+		<script type="text/javascript">
+			var EName, Age, Gend, Dept, BasicSal, Pf, Hra, TotSal,Tax, male, female
+			Ename = prompt("Enter the name of the employee");
+			Age   =  prompt("Enter the age");
+			Gend  = prompt("Enter Gender");
+			Dept  = prompt("Enter Department");
+			BasicSal=prompt("Enter the basic salary");
+			BasicSal=parseInt(BasicSal);
+			Hra  = BasicSal*(24/100);
+			Pf  = BasicSal*(12/100);
+			TotSal= Pf+Hra+BasicSal;
+				console.log("Name is:" +Ename);
+				console.log("Age is:" +Age);
+				console.log("Gender is:" +Gend);
+				console.log("Department is:" +Dept);
+				console.log("Basic Salary is:" +BasicSal);
+				console.log("Total Salray is:" +TotSal);
+				if(Gend=="male")
+				{
+					if(TotSal >= 100000)
+
+					{
+						Tax= TotSal*(15/100);
+						console.log("tax is:" +Tax);
+
+					}
+						else if(TotSal >= 50000)
+
+						{
+							Tax = (10/100)*TotSal;
+							console.log("tax is:" +Tax);
+
+						}
+							else
+
+							{
+								console.log("Tax is 0");
+
+							}
+				}
+				else if(Gend=="female")
+				{
+					if(TotSal >= 100000)
+
+					{
+
+						Tax= (10/100)*TotSal;
+						console.log("tax is:" +Tax);
+
+					}
+						else if(TotSal >= 50000)
+						{
+							Tax = (5/100)*TotSal;
+							console.log("tax is:" +Tax);
+					
+						}
+							else
+
+							{
+								console.log("tax is 0");
+
+							}
+					
+				}	
+
+		</script>
+	</body>
+</html>
+
+
+
+
