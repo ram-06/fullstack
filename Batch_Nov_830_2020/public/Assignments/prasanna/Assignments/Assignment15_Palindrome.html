@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			palindrome
+		</title>
+	</head>
+	<body>
+		<h3>palindrome or not</h3>
+			var r, sum =0, temp;
+			var n = prompt("enter a number");
+			temp = n;
+			while(n>0){
+				r = n % 10;
+				sum = (sum * 10) + r;
+				n = n / 10;
+				n = parseInt(n);
+			}
+			if(temp == sum){
+				console.log("given num is palindrome ");
+			}
+			else {
+				console.log("given num is not palindrome ");
+			}
+		</script>
+	</body>
+</html>
