@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Amstrong number
+		</title>
+	</head>
+	<body>
+		<h3>Amstrong number</h3>
+		<script type="text/javascript">
+			var a = 0, b, temp;
+			var n = prompt("enter a number");
+			temp = n;
+			while(n>0){
+				b = n%10;
+				n = n/10;
+				a = a+(b*b*b);
+				n = parseInt(n);
+			}
+			if(temp == a){
+				console.log("given number is Amstrong number");
+			}else{
+				console.log("given number is not Amstrong number");
+			}
+		</script>
+	</body>
+</html>
