@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of odd number</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var sum=0;
+    var n= prompt("Plaese enter number:");
+    for(i=0;i<=n;i++)
+    {
+        if (i%2 !=0)
+        {
+            sum = sum+i;
+            console.log(i);
+        }
+    }
+    console.log("Sum is :", sum);
+    if (sum%2==0)
+    {
+        console.log("sum is even number");
+    }
+     else{
+         console.log("sum is odd number");
+     }
+    </script>
+</body>
+</html>
