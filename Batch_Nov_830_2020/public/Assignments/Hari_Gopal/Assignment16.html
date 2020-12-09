@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>finding sum of the reverse numbers of the array elements</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [] , rem , rev, sum = 0 ;
+			for(var i = 0; i < 5; i++){
+				a[i] = parseInt(prompt("enter " + i + "th element:"));
+			}
+			console.log("array elements are:" + a);
+			console.log("reverse numbers of array elements are:")
+			for(var i = 0;i < 5; i++){
+				rev = 0;
+				while(a[i] > 0){
+					rem = a[i] % 10;
+					rev = (rev *10) + rem;
+					a[i] = parseInt(a[i] / 10);
+				}
+				console.log(rev);
+				sum = sum + rev;
+			}
+
+			console.log("sum is :" + sum);
+		</script>
+	</body>
+</html>
