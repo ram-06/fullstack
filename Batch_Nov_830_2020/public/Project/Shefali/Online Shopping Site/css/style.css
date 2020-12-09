@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Banners/pexels-freestocksorg-291762.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif !important;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 180px;
+    opacity: 0.9;
+}
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.loginPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.introduction {
+    margin-top: 5vh;
+}
+.introduction h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h4{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+.introduction p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.register input {
+    background: rgba(61,57,79,0.7) !important;
+}
+.title h1 {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: 300;
+}
+.title h1 span {
+    font-family: 'Satisfy', cursive;
+}
+.login {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.id, .password, .fPassword {
+    display: flex;
+    flex-direction: column;
+}
+.id label, .password label {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: 500;
+}
+.id input, .password input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+.id input:focus, .password input:focus {
+    outline: none;
+    color: #fff;
+    text-align: center;
+}
+.rememberMe{
+    text-align: center;
+}
+.rememberMe input{
+    border: none;
+}
+.rememberMe input:focus{
+    outline: none;
+    background-color: rgba(0,171,214,0.8);
+    color: rgba(0,171,214,0.8);
+}
+.rememberMe label{
+    color: #fff;
+    opacity: .7;
+    padding-left: 15px;
+}
+.submit {
+    margin-top: 5vh;
+    text-align: center;
+}
+.submit input {
+    padding: 8px 55px;
+    background: rgba(0,171,214,0.8);
+    border: none;
+    border-radius: 25px;
+    color: #000;
+}
+.submit input:focus {
+    outline: none;
+}
+.fPassword {
+    text-align: center;
+    margin-top: 5vh;
+}
+.fPassword a {
+    color: rgba(0,171,214,0.8);
+}
+footer {
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+    z-index: -1;
+    padding: 5vh;
+}
+footer h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
