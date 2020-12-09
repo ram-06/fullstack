@@ -1,0 +1,76 @@
+body{
+    
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kuwait_City.jpg/1200px-Kuwait_City.jpg");
+    background-repeat:repeat-x;
+    height: 100%;
+    width: 100%;
+}
+H1{
+    background-color: skyblue;
+    height: 40px;
+    border: 3PX solid red;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: royalblue;
+    text-transform: uppercase;
+    color:red;
+}
+.mid{
+    height: 300px;
+    width: 350px;
+    border: 2px solid gold;
+    background-image: url("https://bgr.com/wp-content/uploads/2020/04/iphone-12-everythingapplepro.jpg?quality=70&strip=all");
+    position: relative;
+    top: 20px;
+    left: 400px;
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: green;
+    text-transform: uppercase;
+    color: indigo;
+
+
+
+}
+.b1{
+    position: relative;
+    left: 150px;
+    color: indigo;
+    background: olivedrab;
+    font-style: italic;
+    text-align: center;
+    text-decoration: orangered;
+    text-transform: uppercase;
+}
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    background: cornflowerblue;
+    height: 20px;
+    padding: 5px;
+    border-radius: 30px;
+}
+.bot{
+    background: lime;
+    text-align: center;
+    text-decoration: mediumpurple;
+    color: midnightblue;
+    border: orangered 2px solid;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.left{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -500px;
+    left: 50px;
+}
+.right{
+    
+    position: relative;
+    top: -550px;
+    left: 1100px;
+}
