@@ -8,6 +8,8 @@
         <script type="text/javascript" src="lib/jquery.js"></script>
         <script type="text/javascript" src="JS/login.js"></script>
         <script type="text/javascript" src="JS/common.js"></script>
+        <script type="text/javascript" src="JS/productDetailsLoad.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     </head>
     <body>
         <header>
@@ -81,6 +83,25 @@
         			<input type="button" value="Generate New Password">
         		</li>
         	</ul>
+        </div>
+        <div style="display:none" id="prdTmplt">
+            <ul class="pdetails">
+                <li class="details">
+                    Product Name: {{name}} 
+                </li>
+                <li class="details">
+                    Price: {{price}}
+                </li>
+                <li class="details">
+                    Manufacturer: {{manu}}
+                </li>
+                <li class="details">
+                    Discount: <b>{{discount}}</b>
+                </li>
+                <li>
+                    <img src="{{image}}" />
+                </li>
+            </ul>
         </div>
     </body>
 </html>

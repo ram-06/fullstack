@@ -12,6 +12,7 @@ var stdDetailsRouter = require("./routes/studentDetails");
 var pdetailsRouter = require("./routes/productDetails");
 var pdataRouter = require("./routes/prodData");
 var validateDetails = require("./routes/validateDetails");
+var prodData = require("./routes/prodData");
 
 var app = express();
 
@@ -39,10 +40,11 @@ app.use("/data/product/details", pdetailsRouter);
 app.use('/data/pdata', pdataRouter);
 app.use('/data/student/details', stdDetailsRouter);
 app.use('/data/validate', validateDetails);
+app.use('/data/prodData', prodData);
 
 app.listen(8081, function(){
 	console.log("server is listing at 8081");
-})
+});
 
 
 

@@ -15,7 +15,7 @@ var validateUserDetails = function() {
 		console.log("succss");
 		console.log(res);
 		if (res.msg == 'VALID') {
-
+			getProductDetails();
 		} else { //invalid
 			$(".errMsg").html("Invalid user credentials...");
 		}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting Arrays
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var m1, m2, m3, m4, m5;
+			m1 = 90;
+			m2 = 99;
+			m3 = 87;
+			m4 = 24;
+			m5 = 81;
+
+			var total = 0;
+			total = m1 + m2 + m3 + m4 + m5;
+
+			console.log("The sum is " + total); */
+			 var marks = [90, 99, 87, 24, 81];
+			console.log(marks.length);
+			marks[1] = 77;
+			console.log(marks)
+			var total = 0;
+			//total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+			for (var i = 0 ; i < marks.length; i++) {
+				total += marks[i];
+			}
+			console.log("the sum is " + total) 
+
+			/*var data = [];
+			for (var i = 0; i < 5; i++) {
+				data[i] = prompt('enter value for ' + i + 'th position');
+				
+			}
+			console.log(data);  */
+
+		</script>
+	</body>
+</html>

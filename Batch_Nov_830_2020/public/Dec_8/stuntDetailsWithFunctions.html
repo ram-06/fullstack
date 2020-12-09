@@ -30,7 +30,7 @@
 			}
 
 			function calTotal(m1, m2, m3) {
-				total = m1 + m2 + m3;
+				var total = m1 + m2 + m3;
 				return total;	
 
 			}
@@ -41,6 +41,7 @@
 			
 
 			function getGrade(avg) {
+				var grade;
 				if (avg >= 40) {
 					grade = "Just Passed";
 					if (avg >= 60) {
