@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting lucky number
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [];
+			var n = prompt("enter a value");
+			n = parseInt(n);
+			var sum = 0;
+			var rem;
+			while (n > 0) {
+				rem = n % 10;
+				console.log(rem);
+				n = n / 10;
+				n = parseInt(n);
+				sum = sum + rem;
+				if (n == 0 && sum > 10){
+					n = sum;
+					sum = 0;
+				}
+			}
+			console.log("The sum is " + sum);
+
+
+		</script>
+
+	</body>
+</html>
