@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> sorting array elements in ascending order and descending order </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [], num;
+			for(var i = 0; i < 5 ; i++){
+				a[i] = parseInt(prompt("enter " + i + "th element:"));
+			}
+			console.log("array elements are:" + a);
+			for(var i = 0;i < 5; i++){
+				for(var j = 0;j < 5; j++){
+					if(a[i] < a[j]){
+						num = a[i];
+						a[i] = a[j];
+						a[j] = num;
+					}
+				}
+			}
+			console.log("ascending order is:" + a);
+			for(var i = 0;i < 5; i++){
+				for(var j = 0;j < 5; j++){
+					if(a[i] > a[j]){
+						num = a[i];
+						a[i] = a[j];
+						a[j] = num;
+					}
+				}
+			}
+			console.log("decending order is:" + a);
+			
+		</script>
+	</body>
+</html>
