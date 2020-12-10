@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>finding lucky numbers of array elements</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [] , rem , sum ;
+			for(var i = 0; i < 5; i++){
+				a[i] = parseInt(prompt("enter " + i + "th element:"));
+			}
+			console.log("array elements are:" + a);
+			console.log("lucky numbers of the array elements are:");
+			for(var i = 0; i < 5; i++){
+				sum = 0;
+				while(a[i] > 0){
+					rem = a[i] % 10;
+					sum = sum + rem;
+					a[i] = parseInt(a[i] / 10);
+					if(a[i] == 0 && sum >= 10){
+						a[i] = sum;
+						sum = 0;
+					}
+				}
+				console.log(sum);
+			}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> finding palindrome num in the array </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [] , rem , rev, num ;
+			for(var i = 0; i < 5; i++){
+				a[i] = parseInt(prompt("enter " + i + " th element:"));
+			}
+			console.log("array elements are:" + a);
+			console.log("palindrome num in the array are:");
+			for(var i = 0; i < 5; i++){
+				num = a[i];
+				rev = 0;
+				while(a[i] > 0){
+					rem = a[i] % 10;
+					rev = (rev * 10) + rem;
+					a[i] = parseInt(a[i] / 10);
+				}
+
+				if(rev == num){
+					console.log(rev);
+				}
+			}
+		</script>
+	</body>
+</html>

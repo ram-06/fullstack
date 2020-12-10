@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating function
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = []; var sum = 0;
+			for(var i =0;i<5;i++){
+				a[i] = prompt("enter a value for " +i);
+				a[i] = parseInt(a[i]);
+			}
+			for(var i=0;i<5;i++){
+				if(a[i] % 2 == 0 ){
+				console.log(a[i]);
+				sum = sum + a[i];
+			}
+		}
+					console.log("sum of even num is " +sum);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> finding sum of odd num in an array </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [] , sum = 0 ;
+			for(var i = 0; i < 10; i++){
+				a[i] = parseInt(prompt("enter " + i + "th element:"));
+			}
+
+			for(var i = 0; i < 10; i++){
+				console.log(a[i]);
+				if(a[i] % 2 != 0){
+					sum = sum + a[i];
+				}
+			}
+			console.log("sum of odd numbers in the given array is:" + sum);
+		</script>
+	</body>
+</html>
