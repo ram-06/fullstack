@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var Name, Age, Gender, Role, BasicSalary, Pf, Hra, TotalSalary;
+        function empDetails()
+        {
+            Name = prompt("Enter a Name:");
+            Age =prompt ("Enter a Age:");
+            Age = parseInt(Age);
+            Gender = prompt("Enter a gender:");
+            Role = prompt("Enter a Role:");
+            BasicSalary = prompt("Enter a BasicSalary");
+            BasicSalary = parseInt(BasicSalary);
+            calculateTotal();
+        }
+        function calculateTotal()
+        {
+            Pf = BasicSalary * (12/100);
+            Hra = BasicSalary * (24/100);
+            TotalSalary = BasicSalary + Pf + Hra;
+            showDetails();
+        }
+        function showDetails()
+        {
+            console.log("Employee Name:", Name);
+            console.log("Employee Age:", Age);
+            console.log("Employee Gender:", Gender);
+            console.log("Employee Role:", Role);
+            console.log("Employee BasicSalary:", BasicSalary);
+            console.log("Employee Pf:", Pf);
+            console.log("Employee Hra:", Hra);
+            console.log("Employee TotalSalary:", TotalSalary);
+            condition();
+        }
+        function condition()
+        {
+            if(TotalSalary>=100000)
+            {
+                Tax1 = BasicSalary * (15/100);
+                console.log("Including tax:", Tax1);
+            }
+            else if(TotalSalary>=50000)
+            {
+                Tax2 = BasicSalary * (5/100);
+                console.log("Inscluding tax:", Tax2);
+            }
+            else
+            {
+                console.log("No tax");
+            }
+        }
+        empDetails();
+
+    </script>
+</body>
+</html>
