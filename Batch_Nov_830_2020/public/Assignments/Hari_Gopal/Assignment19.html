@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>finding second largest element in array</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [], l, s;
+			for(var i = 0; i < 10 ; i++){
+				a[i] = parseInt(prompt("enter " + i + "th element:"));
+			}
+			console.log(a);
+			if(a[0] > a[1]){
+				l = a[0];
+				s = a[1];
+			}
+			else{
+				l = a[1];
+				s = a[0];
+			}
+			for(var i = 2; i < 10 ; i++){
+				if(l < a[i]){
+					s = l;
+					l = a[i];
+				}
+				else if(s < a[i]){
+					s = a[i];
+				}
+			}
+			console.log("second large element in array is:" + s);
+
+		</script>
+	</body>
+</html>
