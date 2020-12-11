@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting Orders
+		</title>
+	</head>
+	<body>
+		<h1 style="text-align:center;">Assending & Desending Orders</h1>
+		<script type="text/javascript">
+			var a = [9,2,7,6,4]; var n = [7,10,1,8,2];
+			for(var i=0;i<a.length;i++)
+			{
+				for(var j=i+1;j<a.length;j++){
+
+					if(a[i]>a[j])
+					{
+						temp = a[i];
+						a[i] = a[j];
+						a[j] = temp;
+					}
+				}
+			}
+			for(var i=0;i<n.length;i++)
+			{
+				for(var j=i+1;j<n.length;j++){
+					if(n[i]<n[j]){
+						temp = n[i];
+						n[i] = n[j];
+						n[j] = temp;
+						}
+					}
+				}	
+			console.log("Assending order is: " +a);
+			console.log("Desending order is: " +n);
+	    
+   
+		</script>
+
+	</body>
+</html>
