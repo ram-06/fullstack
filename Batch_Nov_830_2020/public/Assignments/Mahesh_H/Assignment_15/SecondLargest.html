@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second_Largest_Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var largest = 0;
+        var secondLargestNumber = 0;
+        var thirdLargestNumber = 0;
+        var fourthLargestNumber = 0;
+        var a = [45,25,48,36,98];
+       
+        for(var i = 0; i<=5;i++)
+        {
+            if (a[i] > largest)
+            {
+                fourthLargestNumber=thirdLargestNumber;
+                thirdLargestNumber = secondLargestNumber;
+                secondLargestNumber = largest;
+                largest = a[i];
+            }
+            else if(a[i]> secondLargestNumber)
+            {
+                
+                thirdLargestNumber = secondLargestNumber;
+                secondLargestNumber = a[i];
+            }
+            else if (a[i]>thirdLargestNumber)
+            {
+                fourthLargestNumber=thirdLargestNumber;
+                thirdLargestNumber = a[i];
+
+            }
+            else if (a[i] > fourthLargestNumber)
+            {
+                fourthLargestNumber = a [i];
+            }
+        }
+        console.log("largest number is :" +largest);
+        console.log("third largest number is :" +thirdLargestNumber);
+        console.log("second largest number is :" +secondLargestNumber);
+        console.log("fourth largest number is :" + fourthLargestNumber);
+    </script>
+</body>
+</html>

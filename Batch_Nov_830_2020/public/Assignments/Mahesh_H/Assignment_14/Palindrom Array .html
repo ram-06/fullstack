@@ -11,16 +11,19 @@
         var n = [];
         var n = prompt("enter a number");
         temp = n;
-        while(n>0){
+        while(n>0)
+        {
             r = n % 10;
             sum = (sum * 10) + r;
             n = n / 10;
             n = parseInt(n);
         }
-        if(temp == sum){
+        if(temp == sum)
+        {
             console.log(" palindrome is:" + n);
         }
-        else {
+        else 
+        {
             console.log(" number is not palindrome ");
         }
 
