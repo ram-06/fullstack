@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Timeout and Interval Methods
+		</title>
+	</head>
+	<body>
+		<div id="umsg">
+			This is page logo...
+		</div>
+		<script type="text/javascript">
+			//setTimeout()
+
+			//setInterval();
+			console.log("hello every one");
+
+			
+			function showThnkxMsg() {
+
+
+				console.log("Thanks for visiting our web pge");
+			}
+
+			// setTimeout(showThnkxMsg, 5000);
+			/*setTimeout(function(){
+				//console.log("Thanks for visiting our web pge");
+				var result = 90 + 89;
+			}, 5000);*/
+			var flag = 0;
+			var umsg = setInterval(function(){
+				flag++;
+				console.log("Thanks for visiting our web pge " + flag );
+				console.log("do keep visiting");
+				if (flag == 2) {
+					clearInterval(umsg);
+					console.log(umsg);
+				}
+			}, 5000);
+			console.log(umsg);
+
+			/*var umsg2 = setInterval(function(){
+				flag++;
+				console.log("Thanks for visiting our web pge " + flag );
+				console.log("do keep visiting");
+				if (flag == 2) {
+					clearInterval(umsg2);
+					console.log(umsg2);
+				}
+			}, 5000);
+			console.log(umsg2);
+			var umsg3 = setInterval(function(){
+				flag++;
+				console.log("Thanks for visiting our web pge " + flag );
+				console.log("do keep visiting");
+				if (flag == 2) {
+					clearInterval(umsg2);
+					console.log(umsg2);
+				}
+			}, 5000);
+			console.log(umsg3); */
+		</script> 
+	</body>
+</html>
