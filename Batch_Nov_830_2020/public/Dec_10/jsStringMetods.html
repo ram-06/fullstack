@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JS String methods
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var msg = "We lOve our cOuntry";
+			console.log(msg.length);
+			console.log(msg[5]);
+			console.log(msg.charAt(6));
+			console.log(msg.charCodeAt(6));
+			console.log(msg.substr(1, 6)); // startindex, total no of char to return
+			console.log(msg.slice(1, 6)); // startindex, end index
+			//msg = msg.replace(' ', "#");
+			// msg = msg.replace(/\s/g, '#');
+			//msg = msg.replace(/o/gi, '&');
+			console.log(msg.split(' '));
+			console.log(msg.includes('@gmail'));
+			console.log(msg.indexOf('our'));
+			//console.log(msg.toCharArray());
+			var m1 = "test";
+			var m2 = "sample";
+			var m3 = "hello ll";
+			console.log(m1.concat(m2, m3));
+		</script>
+	</body>
+</html>

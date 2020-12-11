@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Array methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = [34, 55, 67, 89, 9, 23, 12, 101, 201];
+
+			console.log(a);
+			/*console.log(a.length);
+			a.push(99);
+			console.log(a);
+			a.unshift(100);
+			console.log(a);
+			a.pop();
+			console.log(a);
+			a.pop();
+			console.log(a);
+			a.shift();
+			console.log(a);*/
+
+			a.splice(3, 0, 1000, 203);
+			console.log(a);
+			var data = a.join();
+			console.log(typeof(data));
+			console.log(a.join());
+		</script>
+	</body>
+</html>

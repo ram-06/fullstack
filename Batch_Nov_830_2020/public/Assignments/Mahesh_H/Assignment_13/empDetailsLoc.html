@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions Local
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        function empDetails()
+        {
+            var Name, Age, Gender, Role, BasicSalary, Pf, Hra, TotalSalary;
+            Name = prompt("Enter a Name:");
+            Age =prompt ("Enter a Age:");
+            Age = parseInt(Age);
+            Gender = prompt("Enter a gender:");
+            Role = prompt("Enter a Role:");
+            BasicSalary = prompt("Enter a BasicSalary");
+            BasicSalary = parseInt(BasicSalary);
+           showDetails(Name, Age, Gender, Role, BasicSalary, Pf, Hra, TotalSalary);
+        }
+        function calculateTotal()
+        {
+            Pf = BasicSalary * (12/100);
+            Hra = BasicSalary * (24/100);
+            TotalSalary = BasicSalary + Pf + Hra;
+           return TotalSalary;
+        }
+        function showDetails(Name, Age, Gender, Role, BasicSalary, Pf, Hra, TotalSalary)
+        {
+            console.log("Employee Name:", Name);
+            console.log("Employee Age:", Age);
+            console.log("Employee Gender:", Gender);
+            console.log("Employee Role:", Role);
+            console.log("Employee BasicSalary:", BasicSalary);
+            console.log("Employee Pf:", Pf);
+            console.log("Employee Hra:", Hra);
+            console.log("Employee TotalSalary:", TotalSalary);
+            var Tax =condition(TotalSalary);
+            // var Tax =condition(TotalSalary);
+        }
+        function condition(TotalSalary)
+        {
+            if(TotalSalary>=100000)
+            {
+                Tax1 = BasicSalary * (15/100);
+                console.log("Including tax:", Tax1);
+            }
+            else if(TotalSalary>=50000)
+            {
+                Tax2 = BasicSalary * (5/100);
+                console.log("Inscluding tax:", Tax2);
+            }
+            else
+            {
+                console.log("No tax");
+            }
+        }
+        return Tax;
+       
+
+    </script>
+</body>
+</html>

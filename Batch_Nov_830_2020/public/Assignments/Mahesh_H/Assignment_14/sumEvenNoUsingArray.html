@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum_of_Even_Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a = []; var sum=0;
+        for(var i=0; i<=5;i++)
+        {
+            a[i] = prompt("Enter Even Number:" +  i);
+            a[i] = parseInt(a[i]);
+        }
+        for(i=0; i<=5;i++)
+        {
+            if(a[i]%2 == 0)
+            {
+                console.log(a[i]);
+                sum = sum +a[i];
+            }
+        }
+        console.log("sum of even number is:" +sum);
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting Sign up form
+		</title>
+		<style type="text/css">
+			.block{
+				border:1px solid;
+				width: 600px;
+				height:300px;
+				position: relative;
+				left:340px;
+				top: 70px;
+				background:#EF3AA5;
+			}
+			h3{
+				border: 1px solid none;
+				width:720px;
+				height:50px;
+				text-align: center;
+				padding-top:17px;
+				position: relative;
+				left:275px;
+				top: 10px;
+				background:#E54606;
+				color: white;
+			}
+			li{
+				list-style: none;
+				margin-top:15px;
+			}
+			.two{
+				background-image: url(img/two.png);
+				height: 600px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="two">
+		<h3>New User To Sign In</h3>
+		<div class="block">
+			<form method="POST" action="login.html">
+			<ul>
+				<li style="font-weight: bold; position: relative;left:40px;top:20px;">
+					<label for="uname">Enter User Name:</label>
+					<input type="text" name="uname">
+				</li>
+				<li style="font-weight: bold;position: relative;left:53px;top:20px;">
+					<label for="upswd">Enter Password:</label>
+					<input type="Password" name="upswd">
+				</li>
+				<li style="font-weight: bold;position: relative;left:38px;top:20px;">
+					<label for="upswd">Confirm Password:</label>
+					<input type="Password" name="upswd">
+				</li>
+				<li style="font-weight: bold;position: relative;left:9px;top:20px;">
+					<label for="unum">Enter Mobile Number:</label>
+					<input type="text" name="unum">
+				</li>
+				<li style="font-weight: bold;position:relative;left:60px;top:20px;">
+					<label for="uid">Enter Email Id:</label>
+					<input type="text" name="uid">
+				</li>
+				<li style="position: relative;top:30px;left:200px;">
+					<label></label>
+					<input type="submit" value="Sign Up">
+				</li>
+			</ul>
+		</form>
+		</div>
+	</div>
+
+	</body>
+</html>
