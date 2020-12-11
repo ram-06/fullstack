@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date_Assignment </title>
+</head>
+<body>
+    <script type="text/javascript">
+    var cDate = new Date();
+    var months = ["JAN", "FEB", "MAR", "APR", "MAY", "Jun", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    var days = ["Sunday", 'Monday', 'Tuesday', "Wedday", "Thuday", "Friday", "Satdy"];
+    
+    var mydate1 = (cDate.getMonth() +1 ) + '/' + cDate.getDate()  + '/' + cDate.getFullYear().toString().substr(2, 2);
+     var mydate2 = cDate.getDate() + '/' + (cDate.getMonth() +1 )+ '/' + cDate.getFullYear().toString().substr(2,2);
+    var mydate3 = cDate.getDate() + '/' + (cDate.getMonth() +1 ) + '/' + cDate.getFullYear();
+     var mydate4 = (months[cDate.getMonth()] ) + '/' + cDate.getDate() + '/' + cDate.getFullYear();
+    var mydate5 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
+    var mydate6 = (months[cDate.getMonth()]) + '/' + cDate.getDate() +'/'+ cDate.getFullYear().toString().substr(2,2);
+    var mydate7 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
+    var mydate8 = (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
+    var mydate9 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate();
+    var mydate10 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate();
+
+    console.log(mydate1);
+    console.log(mydate2);
+    console.log(mydate3);
+    console.log(mydate4);
+    console.log(mydate5);
+    console.log(mydate6);
+    console.log(mydate7);
+    console.log(mydate8);
+    console.log(mydate9);
+    console.log(mydate10);
+    </script>
+</body>
+</html>
