@@ -10,6 +10,7 @@
         <script type="text/javascript" src="JS/common.js"></script>
         <script type="text/javascript" src="JS/productDetailsLoad.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script type="text/javascript" src="JS/registration.js"></script>
     </head>
     <body>
         <header>
@@ -65,9 +66,13 @@
                     Registered Mail Id:
                     <input type="email" class="form-control" id="umailid">
                 </li>
-        		<li class="errMsg">
-        			
-        		</li>
+        		<li>
+                    <input type="button" value="Register" class="btn btn-primary" onclick="registerUserDetails()">
+                    <input type="button" value="Back to Login" class="btn btn-secondry" onclick="showLoginPage()"> 
+                </li>
+                <li class="sucMsg">
+
+                </li>
         	</ul>
         </div>
         <div id="fgPwdTmplt" style="display: none;">
