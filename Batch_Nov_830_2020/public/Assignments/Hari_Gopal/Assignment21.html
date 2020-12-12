@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Different types of date formats</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var cDate = new Date();
+		/*	console.log(cDate);
+			console.log(cDate.getDate());
+			console.log(cDate.getDay());
+			console.log(cDate.getMonth());
+			console.log(cDate.getFullYear());
+			console.log(cDate.getYear());
+			console.log(cDate.getHours());
+			console.log(cDate.getMinutes());
+			console.log(cDate.getSeconds()); */
+
+			var months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sep', 'oct', 'nov', 'dec'];
+			var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+
+			var choice = parseInt(prompt("select  an option: \n 1.mm/dd/yy \n 2.dd/mm/yy \n 3.dd/mm/yyyy \n 4.dec, 11th 2020 \n 5.fri, dec 11th 2020 \n 6.dec, 11th 20 \n 7.fri, dec 11th 2020, 02:34min \n 8.dec 11th 2020, 3pm \n 9.fri, dec 11th 2hrs:30min:2sec \n 10.fri, dec 11th 2:30:2 \n enter ur choice: "));
+
+			switch(choice){
+				case 1:
+					console.log(cDate.getMonth() + "/" + cDate.getDay() + "/" + cDate.getYear());
+					break;
+				case 2:
+					console.log(cDate.getDay() + "/" + cDate.getMonth() + "/" + cDate.getYear());
+					break;
+				case 3:
+					console.log(cDate.getDay() + "/" + cDate.getMonth() + "/" + cDate.getFullYear());
+					break;
+				case 4:
+					console.log(months[cDate.getMonth()] + ", " + cDate.getDay() + "th " + cDate.getFullYear());
+					break;
+				case 5:
+					console.log(days[cDate.getDay()] + ", " + months[cDate.getMonth()] + " " + cDate.getDay() + "th " + cDate.getFullYear());
+					break;
+				case 6:
+					console.log(months[cDate.getMonth()] + ", " + cDate.getDay() + "th " + cDate.getYear());
+					break;
+				case 7:
+					console.log(days[cDate.getDay()] + ", " + months[cDate.getMonth()] + " " + cDate.getDay() + "th " + cDate.getFullYear() + ", " + cDate.getHours() + ":" + cDate.getMinutes() + "min");
+					break;
+				case 8:
+					console.log(months[cDate.getMonth()] + " " + cDate.getDay() + "th " + cDate.getFullYear() + ", " + cDate.getHours());
+					break;
+				case 9:
+					console.log(days[cDate.getDay()] + ", " + months[cDate.getMonth()] + " " + cDate.getDay() + "th " + cDate.getHours() + "hrs:" + cDate.getMinutes() + "min:" + cDate.getSeconds() + "sec");
+					break;
+				case 10:
+					console.log(days[cDate.getDay()] + ", " + months[cDate.getMonth()] + cDate.getDay() + "th" + cDate.getHours() + ":" + cDate.getMinutes() + ":" + cDate.getSeconds());
+					break;
+				default: console.log("invalid choice");
+			}
+			
+		</script>
+	</body>
+</html>
