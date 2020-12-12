@@ -12,16 +12,16 @@
     var days = ["Sunday", 'Monday', 'Tuesday', "Wedday", "Thuday", "Friday", "Satdy"];
     
     var mydate1 = (cDate.getMonth() +1 ) + '/' + cDate.getDate()  + '/' + cDate.getFullYear().toString().substr(2, 2);
-     var mydate2 = cDate.getDate() + '/' + (cDate.getMonth() +1 )+ '/' + cDate.getFullYear().toString().substr(2,2);
+    var mydate2 = cDate.getDate() + '/' + (cDate.getMonth() +1 )+ '/' + cDate.getFullYear().toString().substr(2,2);
     var mydate3 = cDate.getDate() + '/' + (cDate.getMonth() +1 ) + '/' + cDate.getFullYear();
-     var mydate4 = (months[cDate.getMonth()] ) + '/' + cDate.getDate() + '/' + cDate.getFullYear();
-    var mydate5 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
-    var mydate6 = (months[cDate.getMonth()]) + '/' + cDate.getDate() +'/'+ cDate.getFullYear().toString().substr(2,2);
-    var mydate7 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
-    var mydate8 = (months[cDate.getMonth()]) + cDate.getDate() + '/' + cDate.getFullYear();
-    var mydate9 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate();
-    var mydate10 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate();
-
+    var mydate4 = (months[cDate.getMonth()] ) + ',' + cDate.getDate() + 'th,' + cDate.getFullYear();
+    var mydate5 = days[cDate.getDay()] + ',' + (months[cDate.getMonth()]) + cDate.getDate() + 'th,' + cDate.getFullYear();
+    var mydate6 = (months[cDate.getMonth()]) + ',' + cDate.getDate()+'th,'+ cDate.getFullYear().toString().substr(2,2);
+    var mydate7 = days[cDate.getDay()] + ',' + (months[cDate.getMonth()]) + cDate.getDate() + 'th,' + cDate.getFullYear()+' '+ cDate.getHours() + ":" + cDate.getMinutes() + "min";
+    var mydate8 = (months[cDate.getMonth()]) + cDate.getDate() + 'th,' + cDate.getFullYear() + ' ' + cDate.getHours() +" PM";
+    var mydate9 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() +'th,'+ cDate.getHours() + "hr:" + cDate.getMinutes() + "min:" + cDate.getSeconds()+"sec";
+    var mydate10 = days[cDate.getDay()] + '/' + (months[cDate.getMonth()]) + cDate.getDate() + ' '+cDate.getHours() + ":" + cDate.getMinutes() + ":" + cDate.getSeconds();
+  
     console.log(mydate1);
     console.log(mydate2);
     console.log(mydate3);
