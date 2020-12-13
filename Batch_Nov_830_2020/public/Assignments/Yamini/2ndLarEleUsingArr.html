@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Lucky Number Using Array
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr=[],n,max1,max2;
+		n=prompt("enter range of array");
+		n=parseInt(n);
+		for(var x=0;x<n;x++){
+			arr[x]=prompt("enter value at" +x+ "position");
+			arr[x]=parseInt(arr[x]);
+		}
+		if(arr[0]>arr[1]){
+			max1=arr[0];
+			max2=arr[1];
+		}
+		else{
+			max1=arr[1];
+			max2=arr[0];
+		}
+	    for(var i=2;i<n;i++){
+	    	if(max1<arr[i]){
+	    		max2=max1;
+	    		max1=arr[i];
+	    	}
+	    	else if(max2<arr[i]){
+	    		max2=arr[i];
+	    	}
+	    }
+	    console.log("Largest is" +max1+ "Second Largest is" +max2);
+	</script>
+</body>
+</html>
