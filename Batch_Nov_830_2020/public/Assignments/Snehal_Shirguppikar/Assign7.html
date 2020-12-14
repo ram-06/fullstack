@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Student details
+	</title>
+	<style type="text/css">
+			.block{
+				border: 2px solid;
+				width: 600px;
+				margin: 20px auto;
+				padding: 20px;
+			}
+			.header{
+				border:1px solid;
+				margin:1px;
+				text-align: center;
+				padding: 1px;
+			}
+			.block1,
+			.block2,
+			.block3,
+			.block4 {
+				border: 2px solid;
+				width: 150px;
+				height: 50px;
+				text-align: center;
+				background: green;
+				position:absolute;
+				top: -10px;
+			}
+			.parent1,
+			.parent2,
+			.parent3,
+			.parent4 {
+				margin-top: 20px;
+				border: 2px solid;
+				padding: 20px;
+				height: 100px ;
+				width: 550px;
+				position: relative;
+				background: yellow;
+			}
+			.ulBlock1{
+				margin:2px;
+				padding: 2px;
+				float: left;
+			}
+			.ulBlock2{
+				margin:2px;
+				padding: 2px;
+				float: right;
+			}
+			ul {
+				margin-top: 20px ;
+				padding: 2px;
+			}
+			li {
+				list-style: none;
+				margin: 2px ;
+				padding: 2px;
+			}
+
+		</style>
+</head>
+<body>
+	<div class="block">
+		<div class="header">
+			<h3>Student Registration Form</h3>
+		</div>
+		<form method="POST" action="http://testabc.com/abc/xyz">
+			<div class="parent1">
+				<div class="block1">
+					<h3>Personal Details</h3>
+				</div>
+				<div class="ulBlock1">
+					<ul>
+						<li>
+							<lable for="uname">Name:</lable>
+							<input type="text" name="uname">
+						</li>
+						<li>
+							<lable for="uage">Age:</lable>
+							<input type="text" name="uAge">
+						</li>
+						<li>
+							Gender: <input type="radio" name="usergender"> Male
+									<input type="radio" name="usergender"> Female
+						</li>
+					</ul>
+				</div>
+				<div class="ulBlock2">
+					<ul>
+						<li>	
+							<lable for="uMId">Mail Id:</lable>
+							<input type="text" name="uMId">
+						</li>
+						<li>
+							<lable for="uContact">Contact No.:</lable>
+							<input type="text" name="uContact">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="parent2">
+				<div class="block2">
+					<h3>Address</h3>
+				</div>
+				<div class="ulBlock1">
+					<ul>
+						<li>
+							<lable for="uHouseNo">House No.:</lable>
+							<input type="text" name="uHouseNo">
+						</li>
+						<li>
+							State:
+							<select name="uState">
+								<option>Telangana</option>
+								<option>MP</option>
+								<option selected>Maharashtra</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="ulBlock2">
+					<ul>
+						<li>
+							Country:
+							<select name="uCountry">
+								<option>USA</option>
+								<option>UK</option>
+								<option selected>India</option>
+							</select>
+						</li>
+					</ul>	
+				</div>
+			</div>	
+			<div class="parent3">
+				<div class="block3">
+					<h3>Education Details</h3>
+				</div>
+				<ul>
+						<li>
+							Known Language:
+							<input type="checkbox" name="lng_eng"> English
+							<input type="checkbox" name="lng_tel"> Telugu
+							<input type="checkbox" name="lng_urd"> Urdu
+							<input type="checkbox" name="lng_hin"> Hindi
+						</li>
+						<li>
+							Qualifications:
+							<select name="uQual">
+								<option>B.Tech.</option>
+								<option>M.Tech</option>
+								<option selected>PhD</option>
+							</select>
+						</li>
+					</ul>
+			</div>	
+			<div class="parent4">
+				<div class="block4">
+					<h3>About Yourself</h3>
+				</div>
+				<ul>
+					<li>
+						About urself <textarea maxlength="4000" name="abturslf"></textarea>
+					</li>
+				</ul>
+			</div>	
+			<div class="ulBlock2">
+				<input type="submit" value="Save Details">
+			</div>			
+
+		</div>
+	</form>
+</div>				
+</body>
+</html>

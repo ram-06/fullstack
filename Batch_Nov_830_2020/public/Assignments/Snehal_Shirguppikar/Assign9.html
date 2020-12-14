@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculation of Tax</title>
+</head>
+<body>
+	<h3>Calculating tax for employee </h3>
+	<script type="text/javascript">
+		var eName = prompt("Enter Employee Name");
+		var eAge = parseInt(prompt("Enter Employee Age"));
+		var eGender = prompt("Enter Employee Gender");
+		var eDept = prompt("Enter Employee Department");
+		var bSalary = parseInt(prompt("Enter Employee  basic salary"));
+
+		var tSalary, hra, pf, tax;
+		hra = 0.15 * bSalary;
+		pf = 0.24 * bSalary;
+		tSalary = bSalary + hra + pf;
+
+		eGender = eGender.toLowerCase(); 
+		if (eGender == "male")
+		{
+			console.log("hello");
+			if (tSalary > 100000)
+				tax = 0.15 * bSalary;
+			else if (tSalary > 50000)
+				tax = 0.1 * bSalary;
+			else
+				tax = 0;
+		}
+		else if(eGender == "female")
+		{	
+			console.log("hello");	
+			if (tSalary > 100000)
+				tax = 0.10 * bSalary;
+			else if (tSalary > 50000)
+				tax = 0.05 * bSalary;
+			else
+				tax = 0;
+		}
+
+		console.log("EMP Details ->");
+		console.log("Name 	:" + eName);
+		console.log("Age 	:" + eAge);
+		console.log("Gender :" + eGender);
+		console.log("Department :" + eDept);
+		console.log("total salary:" + tSalary );
+		console.log("tax :" + tax);
+
+	</script>
+</body>
+</html>

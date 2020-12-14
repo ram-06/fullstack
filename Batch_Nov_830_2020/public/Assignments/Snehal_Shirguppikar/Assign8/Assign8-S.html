@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Calculation of  total and Avg 
+	</title>
+</head>
+<body>
+	<h3>Calculating total and Average by reading </br>student details by user</h3>
+	<script type="text/javascript">
+		var sName = prompt("Enter Student name");
+		var sAge = parseInt(prompt("Enter Student Age"));
+		var sGender = prompt("Enter student gender:");
+		var sClass = prompt("Enter student's class:");
+		var m1 = parseInt(prompt("Enter sub1 marks:"));
+		var m2 = parseInt(prompt("Enter sub2 marks:"));
+		var m3 = parseInt(prompt("Enter sub3 marks:"));
+		var m4 = parseInt(prompt("Enter sub4 marks:"));
+		var m5 = parseInt(prompt("Enter sub5 marks:"));
+		var total , avg ;
+		
+		total = m1 + m2 + m3 + m4 + m5 ;
+		avg = total / 5 ;
+
+		console.log("Student Details ->");
+		console.log("Student Name:" + sName);
+		console.log("Student Age:" + sAge);
+		console.log("Student Gender:" + sGender);
+		console.log("Student Class:" + sClass);
+		console.log("Marks Total:" + total);
+		console.log("Marks Average :" + avg);
+
+	</script>
+</body>
+</html>
