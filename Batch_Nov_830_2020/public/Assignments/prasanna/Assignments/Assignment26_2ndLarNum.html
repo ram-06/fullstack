@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+				 second larest number
+		</title>
+	</head>
+	<body>
+		<h1 style="text-align:center;">Sceond Largest Num</h1>
+		<script type="text/javascript">
+			var largest = 0;
+			var secondLargestNumber = 0;
+			var
+
+
+
+
+			a = [9,8,45,56,97];
+			for(var i=0;i<a.length;i++)
+			{
+				if(a[i]>largest)
+				{
+					secondLargestNumber = largest;
+					largest = a[i];
+				}
+				else if(a[i]>secondLargestNumber){
+					secondLargestNumber = a[i];
+				}
+			}
+			console.log("Array is: " +[a]);
+			console.log("secondLargestNumber is " +secondLargestNumber);
+		</script>
+
+	</body>
+</html>
