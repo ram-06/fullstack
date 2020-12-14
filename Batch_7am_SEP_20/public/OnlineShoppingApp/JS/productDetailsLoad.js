@@ -11,7 +11,7 @@ var getProductDetails = function() {
 	dataReq.done(function(res){
 		console.log("success");
 		console.log(res);
-		loadDetailsToPage(res.pdata);
+		loadDetailsToPage(res.pData);
 	});
 	dataReq.fail(function(err){
 		console.log("ERROR");

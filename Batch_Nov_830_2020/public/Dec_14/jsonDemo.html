@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JSON obj
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sDetails = {
+				age: 20,
+				'gender': 'Male',
+				location: 'Hyderabad',
+				"marks": [34, 56, 78, 90],
+				total: 0,
+				avg: 0
+			}
+			sDetails.name = prompt("enter studnet name");
+			function getTotalAndAvg() {
+				for (var i = 0; i < sDetails.marks.length; i++) {
+					sDetails.total = sDetails.total + sDetails.marks[i];
+				}
+				sDetails.avg = sDetails.total / sDetails.marks.length;
+			}
+
+			var getGrade = function() {
+				if (sDetails.avg >= 40) {
+					sDetails.grade = "Passed";
+				} else {
+					sDetails.grade = "Surprise";
+				}
+			}
+
+			var displayData = function() {
+				getTotalAndAvg();
+				getGrade();
+				console.log("STudent details");
+				console.log("Name " + sDetails.name);
+				console.log("Total " + sDetails.total);
+				console.log("AVerage " + sDetails.avg);
+				console.log("Grade is " + sDetails.grade);
+			}
+
+			displayData();
+
+		</script>
+	</body>
+</html>

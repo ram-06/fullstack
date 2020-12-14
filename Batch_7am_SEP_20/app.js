@@ -14,6 +14,7 @@ var pdataRouter = require("./routes/prodData");
 var validateDetails = require("./routes/validateDetails");
 var prodData = require("./routes/prodData");
 var regRouter = require("./routes/userRegistration");
+var employeeDetails = require('./routes/employeeDetails');
 
 var app = express();
 
@@ -43,7 +44,7 @@ app.use('/data/student/details', stdDetailsRouter);
 app.use('/data/validate', validateDetails);
 app.use('/data/prodData', prodData);
 app.use('/details/usergeistation', regRouter);
-
+app.use('/get/empdata', employeeDetails);
 app.listen(8081, function(){
 	console.log("server is listing at 8081");
 });

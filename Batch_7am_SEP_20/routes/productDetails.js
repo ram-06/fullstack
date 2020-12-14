@@ -1,45 +1,22 @@
 var express = require('express');
 var router = express.Router();
+var MongoClient = require("mongodb").MongoClient;
+var dbUrl = 'mongodb://localhost:27017';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log("frm webservice");
-  var data = {
-    "pData" :[
-        {
-            "name": "Laptop",
-            "price": "$ 3000",
-            "manu": "Samsung",
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqfzLmC4Rg0UE_nfCHAW3plVHctLmNjKLhtA&usqp=CAU"
-        },
-        {
-            "name": "Mobile",
-            "price": "$ 3000",
-            "manu": "Samsung",
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqfzLmC4Rg0UE_nfCHAW3plVHctLmNjKLhtA&usqp=CAU"
-        },
-        {
-            "name": "Book",
-            "price": "$ 3000",
-            "manu": "Samsung",
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqfzLmC4Rg0UE_nfCHAW3plVHctLmNjKLhtA&usqp=CAU"
-        },
-        {
-            "name": "Pendrive",
-            "price": "$ 3000",
-            "manu": "Samsung",
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqfzLmC4Rg0UE_nfCHAW3plVHctLmNjKLhtA&usqp=CAU"
-        }
-    ]
-};
+  MongoClient.connect(dbUrl, function(err, client){
+    db = client.db("onlineshoppingapp");
+    var collection = db.collection("productDetails");
+    collection.find({}).toArray(function(err, items){
+      console.log(items);
+      client.close();
+    });
+  });
+  
 
-  data = JSON.stringify(data);
 
-  //data = "parseProdData(" + data + ')';
 
-  setTimeout(function(){
-    res.send(data);
-  }, 5000)
   
 
 });
