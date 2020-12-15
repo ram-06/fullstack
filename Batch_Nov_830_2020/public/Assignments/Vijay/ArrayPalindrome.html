@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var n, i = 0;
+			var a = [];
+			a = prompt("enter a number");
+			a = parseInt(a);
+			
+
+			while(a>0)
+			{
+				n = a%10;
+				a = parseInt(a/10);
+				i = i*10+n;
+				
+			}
+			if(i==n)
+			{
+				console.log("palindrome");
+			}
+			else
+			{
+				console.log("Not a palindrome");
+			}
+		</script>
+	</body>
+</html>
