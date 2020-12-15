@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Employee Details Using JSon Object
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var empDetails = {
+                totSalary: 0,
+                tax:0,
+                HRA:0,
+                PF:0
+            };
+            empDetails.empName =prompt("enter employee name:");
+			empDetails.Gender = prompt("enter employee Gender");
+			empDetails.Age = prompt("enter employee Age");
+			empDetails.department = prompt("enter employee department");
+			empDetails.basicSalary = prompt("enter employee basicSalary");
+            empDetails.basicSalary = parseInt(empDetails.basicSalary);
+            
+            empDetails.HRA = empDetails.basicSalary*(24/100);
+			empDetails.PF = empDetails.basicSalary*(12/100);
+			empDetails.totSalary = empDetails.basicSalary + empDetails.HRA + empDetails.PF;
+			console.log("Employee Details....");
+			console.log("EName : " + empDetails.eName);
+			console.log("Gender : "  + empDetails.Gender);
+			console.log("Age : "  + empDetails.Age);
+			console.log("department : "  + empDetails.department);
+			console.log("basicSalary : " + empDetails.basicSalary);
+			console.log("HRA : " + empDetails.HRA);
+			console.log("PF : " + empDetails.PF);
+			console.log("totSalary :" + empDetails.totSalary);
+		
+		
+			if(empDetails.Gender == "male")
+			{
+				if(empDetails.totSalary > 100000)
+					{
+                        empDetails.tax= (15/100)* empDetails.empDetails.basicSalary;
+					console.log("sal is greater than 100000 then tax is:"+tax);
+					}
+				else if(empDetails.totSalary > 50000)
+					{
+                        empDetails.tax= (10/100)* empDetails.basicSalary;
+					console.log("sal is greater than 50000 then tax is:"+empDetails.tax);
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+
+			}
+			else
+			{
+				if(empDetails.totSalary > 100000)
+					{
+                        empDetails.tax= (10/100)* empDetails.basicSalary;
+					console.log("sal is greater than 100000 then tax is:"+empDetails.tax);
+					}
+				else if(empDetails.totSalary > 50000)
+					{
+                        empDetails.tax= (5/100)* empDetails.basicSalary;
+					console.log("sal is greater than 50000 then tax is:"+empDetails.tax);
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+			}
+        </script>
+    </body>
+</html>
