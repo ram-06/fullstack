@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var rev=0;
+			var num = [];
+			num = prompt("enter a number");
+			num = parseInt(num);
+			while( num>0)
+      {
+          rev = rev * 10;
+          rev = rev + num%10;
+          num = parseInt(num/10);
+           
+      }
+       console.log("rev is" + rev);
+    
+		</script>
+	</body>
+</html>
