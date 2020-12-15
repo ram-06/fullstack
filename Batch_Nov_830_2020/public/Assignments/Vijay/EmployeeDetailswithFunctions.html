@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>
+			Employee Details with functions
+		</title>
+	</head>
+	<body>
+		<script type = "text/javascript">
+			var eName, eAge, Gender, eDept, basicsal, hra, pf, Totalsal, Tax, male, female;
+
+			function empDetails()
+			{
+				eName = prompt("enter name");
+				eAge = prompt("enter age");
+				Gender = prompt("enter gender");
+				eDept = prompt("enter dept");
+				basicsal = prompt("enter basicsal");
+				basicsal = parseInt(basicsal);
+
+				calTotalSal();
+
+			}
+
+			function calTotalSal()
+			{
+				hra = basicsal * (24/100);
+				pf = basicsal * (12/100);
+				Totalsal = pf + hra + basicsal;
+
+				displayDetails();
+
+			}
+
+			function displayDetails()
+			{
+				console.log("name is " + eName);
+				console.log("age is " + eAge);
+				console.log("gender is " + Gender);
+				console.log("dept is " + eDept);
+				console.log("basicsal is " + basicsal);
+				console.log("totalsal is " + Totalsal);
+
+				conditions();
+			}
+			function conditions()
+			{
+				if(Gender=='male')
+				{
+					if(Totalsal>100000)
+					{
+						console.log("tax is 15% of basicsal");
+					}
+					else if(Totalsal>50000)
+					{
+						console.log("tax is 10% of basicsal");
+					}
+					else
+					{
+						console.log("tax is zero");
+					}
+				}
+				else 
+				{
+					if(Gender=='female')
+				    {
+					    if(Totalsal>100000)
+					    {
+						    console.log("tax is 10% of basicsal");
+					    }
+					    else if(Totalsal>50000)
+					    {
+						    console.log("tax is 5% of basicsal");
+					    }
+					    else
+					    {
+					    	console.log("tax is zero");
+					    }
+
+				    }
+						
+				}
+
+			}
+			empDetails();
+
+		</script>
+
+	</body>
+</html>
