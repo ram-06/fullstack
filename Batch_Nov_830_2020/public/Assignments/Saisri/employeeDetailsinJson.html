@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Employee Details.
+        </title>
+        <style>
+            div {
+                color: pink;
+                border: 2px solid gray;
+                background-color: greenyellow;
+                margin: 2px;
+                padding: 2px;
+                font-size: 75px;
+                font-style: italic;
+                text-align: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Employee Salary Details....
+        </div>
+        <script>
+            var empDetails = {
+                "ename" : prompt("enter emp name:"),
+                "eage" : prompt("enter emp age:"),
+                "egender" : prompt("enter emp gender:"),
+                "ebasicSalary" : prompt("enter emp basic salary:"),
+                "etotalaSalary" : 0,
+                "epf" : 0,
+                "ehra" : 0
+
+            };
+            console.log(empDetails);
+           var empData = function() {
+               empDetails.eage = parseInt(empDetails.eage);
+               empDetails.ebasicSalary = parseInt(empDetails.ebasicSalary);
+                empDetails.epf = empDetails.ebasicSalary * 0.12 ;
+                empDetails.ehra = empDetails.ebasicSalary * 0.24 ;
+                empDetails.etotalSalary =  empDetails.ebasicSalary + empDetails.epf + empDetails.ehra;
+                };
+               empData(); 
+            console.log("the total salary of employee is:" + empDetails.etotalSalary);
+        </script>
+    </body>
+</html>
