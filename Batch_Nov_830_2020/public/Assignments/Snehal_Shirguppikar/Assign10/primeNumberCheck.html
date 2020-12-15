@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Prime Number
+	</title>
+</head>
+<body>
+	<h3>
+		Give a number i vl tell u z it prime or not
+	</h3>
+	<script type="text/javascript">
+		var num = parseInt(prompt("Enter Number"));
+		var flag = 0;
+		for (var i = 2; i < num; i++) 
+		{
+			if(num % i == 0)
+				{
+					flag = 1;
+					break;
+				}
+		}
+		if (flag == 0) 
+			console.log("Yes, " + num + "  is  prime");
+		else
+			console.log("NO, " + num + "  is not prime");
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lucky Number</title>
+</head>
+<body>
+	<h3>
+		Calculating lucky number of given number 
+	</h3>
+	<script type="text/javascript">
+		var n = prompt("Enter a number");
+		n = parseInt(n);
+		var sum = 0, prev = n, digit = 0;
+		while(n)
+		{
+			digit = n % 10;
+			sum = sum + digit;
+			n = parseInt(n / 10);
+			if( sum >=10 && n==0)
+			{
+				n = sum;
+				sum = 0;
+			}		 
+		}
+		console.log("The lucky Number of " +  prev + " is " + sum)
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Palindrom Number </title>
+</head>
+<body>
+	<h3>
+		Checking given number z palindrom number or not
+	</h3>
+	<script type = "text/javascript">
+		var n = prompt("Enter number");
+		n = parseInt( n );
+		var newNumber = 0, position = 1, prevNumber = n ; 
+		while ( n ) {
+			var digit = n % 10;
+			newNumber = digit + newNumber * position;
+			n = parseInt(n / 10);
+			position =  10;
+		}
+		if ( prevNumber == newNumber)
+			console.log("Yes ." + prevNumber + " is Palindrome");
+		else
+			console.log("No ." + prevNumber + " is  not Palindrome");
+	</script>
+</body>
+</html>
