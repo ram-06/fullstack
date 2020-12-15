@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            JS Date Object with different forms
+        </title>
+    </head>
+    <body>
+        <div>
+             Date Object
+        </div>
+        <script>
+            var cDate = new Date();
+            console.log(cDate)
+            // var customDate = new Date("Dec 19 1920");
+            var months = ["JANUARY", "FEBUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+            var days = ["SUNDAY", 'MONDAY', 'TUESDAY', "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
+
+            console.log(cDate.getDate());
+            console.log(cDate.getFullYear());
+            console.log(months[cDate.getMonth()]);
+            console.log(days[cDate.getDay()]);
+
+            var mydate = months[cDate.getMonth()] + '/' + cDate.getDate()  + '/' + cDate.getFullYear();
+            console.log(mydate);
+            myDate = months[cDate.getMonth()] + '-' + days[cDate.getDay()] + '-' + cDate.getFullYear();
+            console.log(myDate);
+            
+        </script>
+    </body>
+    
+}
+</html>
