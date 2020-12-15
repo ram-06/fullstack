@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> lucky number </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var i=0;
+			var rem;
+			var  num = [];
+			 num = prompt("enter a number");
+			 num = parseInt(num);
+
+			
+			while(num > 0)
+			{
+			    rem = num % 10;
+				i = i + rem ;
+				num = parseInt(num / 10);
+			   
+			   if(num==0&&i>10)
+			   {
+			   	num=i;
+			   	i=0;
+			   }
+			}
+
+			console.log("lucky num of given num is " + i);
+
+
+		</script>
+	</body>
+</html>
