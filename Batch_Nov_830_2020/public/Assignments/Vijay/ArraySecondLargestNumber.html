@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var i;
+			
+			var seclarge = 0;
+			
+
+			var a = [68,74,65,89,94];
+			
+			
+			var large=a[0];
+			for(i=1;i<a.length;i++)
+			{
+				if(a[i]>large)
+				{
+					
+					large = a[i];
+					
+				}
+				else if(a[i]>seclarge)
+				{
+					seclarge = a[i];
+				}
+			}
+			if(seclarge>a[0])
+			{
+			
+			console.log("seclarge is" + seclarge);
+		}
+		else
+		{
+			console.log("seclarge is" + a[0]);
+		}
+		</script>
+	</body>
+</html>
