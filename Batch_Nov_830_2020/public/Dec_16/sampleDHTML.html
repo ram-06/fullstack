@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting DHTML
+		</title>
+	</head>
+	<body>
+		<input type="text" id="fval">
+		<input type="text" id="sval">
+		<input type="button" value="Do sum" onclick="doAddition()">
+		<div>
+			The sum of  two numbers is 
+			<b id="result">
+				
+			</b>
+		</div>
+		<script type="text/javascript">
+			var data = {};
+			console.log(typeof(data));
+			console.log(typeof(console));
+			function doAddition() {
+				var a = document.querySelector("#fval").value;
+				var b = document.querySelector("#sval").value;
+				a = parseInt(a);
+				b = parseInt(b);
+				
+				var c = a + b;
+				console.log("value of sum is " + c);
+				document.querySelector("#result").innerHTML = c;
+			}
+
+			
+		</script>
+	</body>
+</html>
