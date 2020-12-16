@@ -1,0 +1,36 @@
+contact DEtails
+	fname
+	lname
+	phone no
+		office no
+			single no.
+		persnl
+			multiple phone num
+	emial
+		office
+			mail id
+		persnl
+			multiple mail id
+	address
+		office
+			country nme
+			pin
+			location
+		prsnl
+			dno
+			country
+			pin
+	socialid
+		twtr id
+		linkd id
+		fb id
+	profile pic
+
+
+	contactDetails.address.office.location
+
+	contactDetails.fname
+	
+
+
+

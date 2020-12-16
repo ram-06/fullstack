@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			MAP Data structure
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var data = new Map();
+			data.set("name", "Raj");
+			data.set("age" , 30);
+			data.set("gender", 'male');
+
+			console.log(data.size);
+			console.log(data.entries());
+
+			for (let [key, value] of data.entries()) {
+				console.log(key + ' ' + value)
+			}
+		</script>
+	</body>
+</html>

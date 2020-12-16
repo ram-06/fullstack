@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Arrow Functions
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function displayData() {
+				console.log("Frm displayData");
+			}
+
+			function addValues(a, b) {
+				var result;
+				result = a + b;
+				console.log("The sum si " + result);
+			} */
+
+			var displayData = () => {
+				console.log("Frm displayData");
+			}
+
+			var addValues = (a, b) => {
+				var result;
+				result = a + b;
+				console.log("The sum si " + result);
+			}
+
+			//displayData();
+			//addValues(20, 30);
+
+			class MsgBlock {
+				constructor() {
+					this.a = 90;
+					this.b = 88;
+				}
+				showMsg() {
+					setTimeout(() => {
+						console.log(this.a);
+						console.log(this.b);
+					}, 3000);
+					console.log(this.a);
+					console.log(this.b);
+					
+				}
+			}
+			var s1 = new MsgBlock();
+			s1.showMsg();
+		</script>
+	</body>
+</html>
