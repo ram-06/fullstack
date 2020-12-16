@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empDetailsJs
+
+    </title>
+</head>
+<body>
+    <script type = "text/javascript">
+    var empDetails = 
+    {
+        BasicSalary:0,
+        Hra:0,
+        Pf:0,
+        TotalSalary:0
+
+    }
+    empDetails.Name = prompt("Enter Name:");
+    empDetails.Age = prompt("Enter age:");
+    empDetails.Gender = prompt("Enter gender:");
+    empDetails.Role = prompt("Enter role:");
+    empDetails.BasicSalary = prompt("Enter Basic Salary:");
+    
+    function calculate()
+    {
+        Hra = BasicSalary * (12/100);
+        Pf = BasicSalary * (24/100);
+        empDetails.TotalSalary = BasicSalary + Hra + Pf ;
+        return TotalSalary;
+    }
+
+    function calculate1()
+    {
+        if (TotalSalary>50000)
+        {
+            tax = TotalSalary * (5/100);
+            console.log("tax is:" + tax);
+        }
+        else if (TotalSalary>100000)
+        {
+            tax = TotalSalary * (10/100);
+            console.log("tax is:" + tax);
+        }
+        else
+        {
+            console.log("No tax");
+        }
+    }
+    var displayData = function()
+    {
+    calculate();
+    calculate1();
+
+    getGrade();
+    console.log("Name is:" + empDetails.Name);
+    console.log("Age is:" + empDetails.Age);
+    console.log("Gender is:" + empDetails.gender);
+    console.log("Role is :" + empDetails.Role);
+    console.log("Basic Salary is:" + empDetails.BasicSalary);
+    console.log("Total Salary is:" + empDetails.TotalSalary);
+   
+    }
+    displayData();
+
+    </script>
+    
+</body>
+</html>
