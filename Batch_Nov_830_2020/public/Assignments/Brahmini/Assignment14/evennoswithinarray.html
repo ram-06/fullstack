@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating the use of arrays
+		</title>
+	</head>
+		<style type="text/css">
+			.h2{
+				color: blueviolet;
+				text-align: center;
+			}
+		</style>
+	<body>
+		<div class=h2> Displaying the even numbers within an array</div>
+		<script type="text/javascript">
+			var a = [];
+			for(i=0; i<5; i++){
+				a[i] = prompt("Enter the values of " +i);
+				a[i] = parseInt(a[i]);
+				console.log("Array values are:" +a[i]);
+			}
+			for(i=0; i<a.length; i++){
+				if(a[i]%2 == 0){
+					console.log("The even numbers within a given array are: " +sa[i]);
+				}
+			}
+		</script>
+	</body>
+</html>

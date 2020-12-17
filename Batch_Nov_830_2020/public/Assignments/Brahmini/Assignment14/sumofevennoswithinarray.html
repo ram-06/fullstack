@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating the use of arrays
+		</title>
+	</head>
+		<style type="text/css">
+			.h2{
+				color: pink;
+				text-align: center;
+			}
+		</style>
+	<body>
+		<div class=h2> Displaying the sum of even numbers within an array</div>
+		<script type="text/javascript">
+			var a = [];
+			var sum=0;
+			for(i=0; i<5; i++){
+				a[i] = prompt("Enter the value of " +i);
+				a[i] = parseInt(a[i]);
+				console.log("Array values are:" +a[i]);
+			}
+			for(i=0; i<5; i++)
+			{
+				if(a[i]%2 == 0)
+				{
+					sum += a[i];
+				}
+			}
+			console.log("The sum of even numbers within a given array is:" +sum);
+		</script>
+
+	</body>
+</html>
