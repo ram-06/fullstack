@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            JSON Object using Student Details.
+        </title>
+        <link rel="stylesheet" href="">
+        <script>
+            var studentDetails = {
+                name : prompt("enter sName"),
+                age : prompt("enter sAge"),
+                clas : prompt("enter sClass"),
+                marks : [
+                       prompt("enter 1st subject marks"),
+                       prompt("enter 2nd subject marks"),
+                       prompt("enter 3rd subject marks"),
+                       prompt("enter 4th subject marks:"),
+                       prompt("enter 5th subject marks:"),
+                       prompt("enter 6th subject marks:")
+                ],
+                location: prompt("enter student location"),
+                total : 0,
+                avg : 0,
+                grade : ""
+            };
+            var getTotalAndAvg=function() {
+
+                for(var j=0;j<studentDetails.marks.length;j++){
+				studentDetails.marks[j] =  parseInt(studentDetails.marks[j]);
+				}
+                for(var i=0;i<studentDetails.marks.length;i++) {
+                    studentDetails.total = studentDetails.total + studentDetails.marks[i];
+                }
+                studentDetails.avg = studentDetails.total/studentDetails.marks.length;
+               
+            };
+            
+            
+            
+
+            var getGrade = function() {
+
+                getTotalAndAvg();
+                console.log(studentDetails.total);
+                console.log(studentDetails.avg);
+
+                if(studentDetails.avg > 75) {
+                    studentDetails.grade = "A+";
+                } else if(studentDetails.avg > 60) {
+                    studentDetails.grade = "A";
+                } else if(studentDetails.avg > 55) {
+                    studentDetails.grade = "B+";
+                } else if(studentDetails.avg > 50) {
+                    studentDetails.grade = "B";
+                } else if(studentDetails.avg > 45) {
+                    studentDetails.grade = "c";
+                }else if(studentDetails.avg > 40) {
+                    studentDetails.grade = "D";
+                } else {
+                    studentDetails.grade = "Failed";
+                }
+                
+            }
+            getGrade();
+            console.log(studentDetails.grade);
+        </script>
+    </head>
+    <body>
+        <div id="i1"></div>
+        <div id="i2"></div>
+        <div id="i3"></div>
+        <div id="i4"></div>
+        <div id="i5"></div>
+        <div id="i6"></div>
+        <div id="i7"></div>
+        <div id="result"></div>
+        <script>
+            document.querySelector("#i1").innerHTML = "SName" + ":" + studentDetails.name;
+            document.querySelector("#i2").innerHTML = "SAge" + ":" + studentDetails.age;
+            document.querySelector("#i3").innerHTML = "SClass" + ":" + studentDetails.clas;
+            document.querySelector("#i4").innerHTML = "SMarks" + ":" + studentDetails.marks;
+            document.querySelector("#i5").innerHTML = "SLocation" + ":" + studentDetails.location;
+            document.querySelector("#i6").innerHTML = "STotal" + ":" + studentDetails.total;
+            document.querySelector("#i7").innerHTML = "SAvg" + ":" + studentDetails.avg;
+            document.querySelector("#result").innerHTML = "SGrade" + ":" + studentDetails.grade;
+            
+        </script>
+    </body>
+</html>
