@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Reading and operating Array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading Array dynamically </br>and find the sum of odd numbers within it</br>1.Give Array limit</br>2.Enter elements of an array 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter array limit"));
+		for ( var i = 0; i < limit ; i++ ) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element" ));
+		}
+		console.log("Array is: " + a);
+		//finding sum of odd numbers
+		var sum =0;
+		for ( var i = 0; i < limit ; i++ ) 
+		{
+			if( a[i] % 2 == 1 )
+				sum = sum + a[i];
+		}
+		console.log("sum of odd numbers from array = " + sum);
+	</script>
+</body>
+</html>
