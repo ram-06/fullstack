@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Emp Details using DHTML
+		</title>
+    </head>
+    <style>
+        .main{
+            margin:10px;
+        }
+    </style>
+	<body>
+		<form action="">
+        <div class="main">
+            EmpName:
+            <input type="text" id="ename"></input>
+        </div>
+        <div  class="main">
+            Gender:
+            <input type="text" id="egen"></input>
+        </div>
+        <div class="main">
+            Age:
+            <input type="text" id="eage"></input>
+        </div>
+        <div  class="main">
+            Department:
+            <input type="text" id="edept"></input>
+        </div>
+        <div  class="main">
+            Basic Salary:
+            <input type="text" id="ebs"></input>
+        </div>
+        <div>
+            Click here on button to find tax
+            <input type="button" value="Find Tax" onclick="Calculate()"><br>
+            
+            <h4>Tax is :</h4>
+            <h4 id="result">
+                
+            </h4>
+        </div>
+        
+        </form>
+        
+        <script type="text/javascript">
+            function Calculate(){
+
+                var gen,tax=0, totsal, hra=0, pf=0, bs;
+                gen = document.querySelector("#egen").value;
+                bs = document.querySelector("#ebs").value;
+                bs = parseInt(bs);
+                hra = bs*(24/100);
+                pf = bs*(12/100);
+                totsal = bs + hra + pf;
+
+                if(gen == "male")
+			{
+				if(totsal > 100000)
+					{
+                    tax= (15/100)*bs;
+                    console.log("sal is greater than 100000 then tax is:" +tax);
+                    document.querySelector("#result").innerHTML = tax;
+					}
+				else if(totsal > 50000)
+					{
+                    tax= (10/100)*bs;
+                    console.log("sal is greater than 50000 then tax is:" +tax);
+                    document.querySelector("#result").innerHTML = tax;
+					}
+				else
+				{
+                    tax=0;
+                    console.log("tax is Zero"+tax);
+                    document.querySelector("#result").innerHTML = tax;
+				}
+
+			}
+            
+            else if(gen == "female")
+			{
+				if(totsal > 100000)
+					{
+                    tax= (10/100)*bs;
+                    console.log("sal is greater than 100000 then tax is:"+tax);
+                    document.querySelector("#result").innerHTML = tax;
+					}
+				else if(totsal > 50000)
+					{
+                    tax= (5/100)*bs;
+                    console.log("sal is greater than 50000 then tax is:"+tax);
+                    document.querySelector("#result").innerHTML = tax;
+					}
+				else
+				{
+                    tax=0;
+                    console.log("tax is Zero"+ tax);
+                    document.querySelector("#result").innerHTML = tax;
+				}
+			}
+        }
+		</script>
+	</body>
+</html>

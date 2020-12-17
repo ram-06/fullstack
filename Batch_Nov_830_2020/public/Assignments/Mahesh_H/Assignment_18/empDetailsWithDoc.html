@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empDetailsWithDoc</title>
+</head>
+<body>
+    
+    
+    <div>Employee Name: <span id = "uname" t></span>
+    </div>
+    <div>Age:<span id = "uage"></span></div>
+    <div>Gender:<span id = "uGender"></span></div>
+    <div>BasicSalary:<span id = "uBasicSalary"></span></div>
+    <div>TotalSalary:<span id = "uTotalSalary"></span></div>
+    <input type="button" value="Do" onclick="calculate()">
+
+
+
+    <script type = "text/javascript">
+        console.log(document);
+       
+        var Name = prompt("Enter Name:");
+        var Age = prompt("Enter Age:");
+        var Gender = prompt("Enter Gender:");
+        var BasicSalary = prompt("Enter BasicSalary:");
+        
+        function calculate()
+        {
+            var Hra = BasicSalary * (12/100);
+            var Pf = BasicSalary * (24/100);
+            var TotalSalary = BasicSalary + Hra + Pf ;
+            return TotalSalary;
+            document.querySelector('#uTotalSalary').innerText = TotalSalary;
+        }
+
+
+
+        document.querySelector('#uname').innerText = Name;
+        document.querySelector('#uage').innerText = Age;
+        document.querySelector('#uGender').innerText = Gender;
+        document.querySelector('#uBasicSalary').innerText = BasicSalary;
+       
+
+     
+
+
+        
+    </script>
+</body>
+</html>

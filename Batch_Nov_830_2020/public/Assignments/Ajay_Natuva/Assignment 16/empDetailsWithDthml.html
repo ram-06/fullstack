@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstarting DTHML
+		</title>
+	</head>
+	<body>
+
+    <div>Employee Name: <span id = "uname"></span>
+    </div>
+    <div>Age:<span id = "uage"></span></div>
+    <div>Gender:<span id = "uGender"></span></div>
+    <div>BasicSalary:<span id = "uBasicSalary"></span></div>
+    <div>TotalSalary:<span id = "uTotalSalary"></span></div>
+    <input type="button" value="Do Action" onclick="calculate()">
+
+    <script type = "text/javascript">
+        console.log(document);
+      
+        var Name = prompt("Enter Name:");
+        var Age = prompt("Enter Age:");
+        var Gender = prompt("Enter Gender:");
+        var BasicSalary = prompt("Enter BasicSalary:");
+        
+        function calculate()
+        	{
+
+            var Hra = BasicSalary * (12/100);
+            var Pf = BasicSalary * (24/100);
+            var TotalSalary = BasicSalary + Hra + Pf ;
+            document.querySelector('#uTotalSalary').innerText = TotalSalary;
+             return TotalSalary;
+            } 
+            function grade()
+            	{
+            			if(empGender == "male")
+			{
+				if(Totalsalary>= 100000)
+					{
+					console.log("tax is 15% of empBasicSalary");
+					}
+				else if(totalsalary> 50000)
+					{
+ 					
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+
+			}
+			else
+			{
+				if( empGender == "female" && Totalsalary > 100000)
+					{
+				
+					console.log("tax is 10% of empBasicSalary");
+					}
+				else if(totalsalary> 50000)
+					{
+ 				console.log("tax is 5% of empBasicSalary");
+					}
+				else
+				{
+					console.log("tax is Zero");
+				}
+			}
+		}
+        document.querySelector('#uname').innerText = Name;
+        document.querySelector('#uage').innerText = Age;
+        document.querySelector('#uGender').innerText = Gender;
+        document.querySelector('#uBasicSalary').innerText = BasicSalary;
+        document.querySelector('#uTotalsalary').innerText = Totalsalary;
+
+    </script>
+	</body>
+</html>
