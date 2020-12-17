@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating the use of arrays
+		</title>
+	</head>
+		<style type="text/css">
+			.h2{
+				color: fuchsia;
+				text-align: center;
+			}
+		</style>
+	<body>
+		<div class=h2> Displaying the list of palindrome numbers within an array</div>
+		<script type="text/javascript">
+			var a = [];
+			
+			var i,j,r = 0,temp = 0;
+
+			for(i=0; i<3; i++) 
+			{
+				a[i] = prompt("Enter the value of " +i);
+				a[i] = parseInt(a[i]);
+				console.log("Array values are:" +a[i]);
+			}
+
+			for(i=0; i<3; i++)
+			{
+				temp = a[i];
+				var sum = 0;
+				while(a[i]>0)
+				{
+				
+				  r = a[i]%10; 
+				  r = parseInt(r);a[i] = a[i]/10;
+				  a[i] = parseInt(a[i]);
+				  sum  = r + (sum*10);
+				  
+				}
+				if(temp == sum)
+				{
+					console.log("The palindrome numbers in a given array are:" +sum);
+				}
+				else{
+					console.log("There are no palindrome no.s in the given array");
+				}
+			}
+		</script>
