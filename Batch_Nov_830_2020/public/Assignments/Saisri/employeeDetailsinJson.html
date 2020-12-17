@@ -100,22 +100,23 @@
          <div id="output"></div>
 
          <script>
-             
-             document.getElementById("res").innerHTML=v.res;
-             document.getElementById("result").innerHTML=v.result;
+
+            // document.getElementById("res").innerHTML=v.res;
+            // document.getElementById("result").innerHTML=v.result;
 
              
-             document.getElementById("i1").innerHTML=empDetails.ename;
-             document.getElementById("i2").innerHTML=empDetails.eid;
-             document.getElementById("i3").innerHTML=empDetails.edepartment;
-             document.getElementById("i4").innerHTML=empDetails.eage;
-             document.getElementById("i5").innerHTML=empDetails.egender;
-             document.getElementById("i6").innerHTML=empDetails.epf;
-             document.getElementById("i7").innerHTML=empDetails.ehra;
-             document.getElementById("i8").innerHTML=empDetails.tax;
-             document.getElementById("i9").innerHTML=empDetails.ebasicSalary;
+             document.getElementById("i1").innerText= "Name" + ":" + empDetails.ename;
+             document.getElementById("i2").innerText="Emp id" + ":" + empDetails.eid;
+             document.getElementById("i3").innerText="Department" + ":" + empDetails.edepartment;
+             document.getElementById("i4").innerText="Age" + ":" + empDetails.eage;
+             document.getElementById("i5").innerText="Gender" + ":" + empDetails.egender;
+             document.getElementById("i6").innerText="BasicSalary" + ":" + empDetails.ebasicSalary;
+             document.getElementById("i7").innerText="Pf" + ":" + empDetails.epf;
+             document.getElementById("i8").innerText="Hra" + ":" + empDetails.ehra;
+             document.getElementById("i9").innerText="Tax" + ":" + empDetails.tax;
              
-             document.getElementById("output").innerHTML=empDetails.etotalSalary;
+             
+             document.getElementById("output").innerText="TotalSalary" + ":" + empDetails.etotalSalary;
          </script>
     </body>
 </html>
