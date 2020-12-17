@@ -4,7 +4,7 @@
             Employee Details.
         </title>
         <style>
-            div {
+            .title {
                 color: pink;
                 border: 2px solid gray;
                 background-color: greenyellow;
@@ -18,18 +18,21 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="title">
             Employee Salary Details....
         </div>
         <script>
             var empDetails = {
                 "ename" : prompt("enter emp name:"),
+                "eid" : prompt("enter your emp id:"),
+                "edepartment" : prompt("enter your department:"),
                 "eage" : prompt("enter emp age:"),
                 "egender" : prompt("enter emp gender:"),
                 "ebasicSalary" : prompt("enter emp basic salary:"),
                 "etotalaSalary" : 0,
                 "epf" : 0,
-                "ehra" : 0
+                "ehra" : 0,
+                "tax" : 0
 
             };
             console.log(empDetails);
@@ -39,9 +42,80 @@
                 empDetails.epf = empDetails.ebasicSalary * 0.12 ;
                 empDetails.ehra = empDetails.ebasicSalary * 0.24 ;
                 empDetails.etotalSalary =  empDetails.ebasicSalary + empDetails.epf + empDetails.ehra;
+
+                
+                if(empDetails.egender == "male"){
+                    if(empDetails.etotalSalary > 100000){
+                        empDetails.tax = empDetails.ebasicSalary * 0.15;
+                        console.log("emp salary is above 100000 the tax deduction is:" +empDetails.tax);
+                    }else if(empDetails.etotalSalary > 50000){
+                        empDetails.tax = empDetails.ebasicSalary * 0.10;
+                        console.log("emp salary is above 50000 the tax deduction is:" +empDetails.tax);
+                    }else {
+                        console.log("tax is zero...");
+                    }
+                }
+                else if(empDetails.egender == "female") {
+                    if(empDetails.etotalSalary > 100000){
+                        empDetails.tax = empDetails.ebasicSalary * 0.10;
+                        console.log("emp salary is above 100000 the tax deduction is:" +empDetails.tax);
+                    }else if(empDetails.etotalSalary > 50000){
+                        empDetails.tax = empDetails.ebasicSalary * 0.05;
+                        console.log("emp salary is above 50000 the tax deduction is:" +empDetails.tax);
+                    }else {
+                        console.log("tax is zero...");
+                    }
+                }
+                var keys = '';
+                var value = '';
+                for(key in empDetails) {
+                    keys = keys + key;
+                    value = value + empDetails[key];
+                    console.log(key);
+                    console.log(empDetails[key]);
+                }
+                return {
+                    res:keys,
+				    result:value
+
+                }
                 };
-               empData(); 
+               var v = empData(); 
             console.log("the total salary of employee is:" + empDetails.etotalSalary);
         </script>
+
+        <div id="res"></div>
+        <div id="result"></div>
+        
+         
+         <div id="i1"></div>
+         <div id="i2"></div>
+         <div id="i3"></div>
+         <div id="i4"></div>
+         <div id="i5"></div>
+         <div id="i6"></div>
+         <div id="i7"></div>
+         <div id="i8"></div>
+         <div id="i9"></div>
+         <div id="output"></div>
+
+         <script>
+             
+             document.getElementById("res").innerHTML=v.res;
+             document.getElementById("result").innerHTML=v.result;
+
+             
+             document.getElementById("i1").innerHTML=empDetails.ename;
+             document.getElementById("i2").innerHTML=empDetails.eid;
+             document.getElementById("i3").innerHTML=empDetails.edepartment;
+             document.getElementById("i4").innerHTML=empDetails.eage;
+             document.getElementById("i5").innerHTML=empDetails.egender;
+             document.getElementById("i6").innerHTML=empDetails.epf;
+             document.getElementById("i7").innerHTML=empDetails.ehra;
+             document.getElementById("i8").innerHTML=empDetails.tax;
+             document.getElementById("i9").innerHTML=empDetails.ebasicSalary;
+             
+             document.getElementById("output").innerHTML=empDetails.etotalSalary;
+         </script>
     </body>
 </html>
