@@ -1,14 +1,14 @@
 <!DOCTYPE html>
     <head>
-        <title>date object by binayak</title>
+        <title>date object USING Time and interval</title>
     </head>
     <body>
-        <div>this is a program to read custom date format from the user and return the date accordingly.</div>
+        
         <script type="text/javascript">
             var sDate = new Date();
             var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
             var days = ["SUNDAY", 'MONDAY', 'TUESDAY', "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
-            var useroption = prompt("select 1/2/3/4/5/6/7");
+            var useroption = prompt("select 1,2,3,4,5,6,7");
             switch (useroption){
                 case '1':
                     var option1 = sDate.getMonth() + 1 + '/' + sDate.getDate() + '/' + sDate.getFullYear() % 100;
