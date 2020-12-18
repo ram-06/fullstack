@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			Demonstarting Progress Details
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="student.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			<h3>Student Progress Details</h3>
+		</div>
+		<ul class="container">
+			<li>
+				<label>Enter Name :</label>
+				<input type="text" id ="sname" onkeypress=" return validaeData(event)">
+			</li>
+			<li>
+				<label for="gender">Gender :</label>
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+			</li>
+			<li>
+				<label>Select Class :</label>
+				<select id="sClass">
+					<option>1st class</option>
+					<option>2nd class</option>
+					<option>3rd class</option>
+					<option>4th class</option>
+					<option>5th class</option>
+				</select>
+			</li>
+			<li>
+				<label for="m1">Marks :</label>
+				<input type="text" placeholder="Maths" id="m1" onkeypress=" return validaeData1(event)" >
+				<input type="text" placeholder="English" id="m2"onkeypress=" return validaeData1(event)">
+				<input type="text" placeholder="Hindi" id="m3"onkeypress=" return validaeData1(event)">
+				<input type="text" placeholder="Science" id="m4"onkeypress=" return validaeData1(event)">
+				<input type="text" placeholder="Physics" id="m5"onkeypress=" return validaeData1(event)">
+			</li>
+			<li>
+				<input type="button" value="Generate Progress Details" onclick="generateProgress()">
+			</li>
+		</ul>
+		<div id="progressBlock"style="display: none;" >
+			<ul>
+				<li>
+					Student name is : <span id="studentName"></span>
+				</li>
+				<li>
+					Student Gender is : <span id="studentGender"></span>
+				</li>
+				<li>
+					Student Class is: <span id="studentClass"></span>
+				</li>
+				<li>
+					Total Marks: <span id="studentTotalMarks"></span>
+				</li>
+				<li>
+					Average: <span id="studentAvg"></span>
+				</li>
+				<li>
+					Grade: <span id="studentGrade"></span>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+</html>
