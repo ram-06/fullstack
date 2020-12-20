@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Progress card 
+		</title>
+		<link rel="stylesheet" type="text/css" href="StudentPro.css">
+		<script type="text/javascript" src="StudentPro.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			Student Progess card 
+		<ul class="container">
+			<li>
+				Enter Student Name:  <input type="text" id="sname" onkeypress = "return validation(event)">
+			</li>
+			<li>
+				Gender: 
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+			</li>
+			<li>
+				Select Class:
+				<select id="sClass">
+					<option value=" 1st class ">1st class</option>
+					<option value=" 2nd class ">2nd class</option>
+					<option value=" 3rd class ">3rd Class</option>
+				</select>
+			</li>
+			<li>
+				Marks:
+				<input type="text" placeholder="Maths" id="m1" onkeypress = "return validation1(event)">
+				<input type="text" placeholder="Social" id="m2" onkeypress = "return validation1(event)">
+				<input type="text" placeholder="Science" id="m3" onkeypress = "return validation1(event)">
+				<input type="text" placeholder="Physics" id="m4" onkeypress = "return validation1(event)">
+				<input type="text" placeholder="Computers" id="m5" onkeypress = "return validation1(event)">
+			</li>
+			<li>
+				<input type="button" value="Generate Progress Card" onclick="generateProgressCard()">
+			</li>
+		</ul>
+
+		<div id="progressBlock" style="display: none;">
+			<ul>
+				<li>
+					Student name is : <span id="studentName"></span>
+				</li>
+				<li>
+					Student Class is: <span id="studentClass"></span>
+				</li>
+				<li>
+					Total Marks: <span id="studentTotalMarks"></span>
+				</li>
+				<li>
+					Average: <span id="studentAvg"></span>
+				</li>
+				<li>
+					Grade: <span id="studentGrade"></span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
