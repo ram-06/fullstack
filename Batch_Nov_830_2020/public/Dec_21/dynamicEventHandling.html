@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Dynamic Event Handling
+		</title>
+	</head>
+	<body>
+		<div id="container" >Hello every one</div>
+		<script type="text/javascript">
+			/*if (..) {
+				var eventType = 'click';
+			} else {
+				eventType = 'mouseover';
+			} */
+			var eventType = 'click';
+
+			var displaydata = function() {
+					console.log("hello");
+			}
+			
+			document.querySelector("#container").addEventListener(eventType, displaydata);
+
+			
+		</script>
+	</body>
+</html>
