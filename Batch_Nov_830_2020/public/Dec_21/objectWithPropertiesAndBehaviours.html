@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Objects with Props and Behaviours
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var sDetails = {
+				name: 'Raj',
+				age: 20,
+				gender: 'Male',
+				"marks": [45, 68, 88],
+				total: 0,
+				'avg': 0,
+				"grade": '',
+				getTotalAndAvg: function(){
+					for (var i = 0; i < sDetails.marks.length; i++) {
+						this.total += this.marks[i];
+					}
+					sDetails.avg = this.total / sDetails.marks.length;
+				},
+				"getGrade": function() {
+					if (this.avg >= 40) {
+						sDetails.grade = "U Passed";
+					} else {
+						this.grade = "U have a surprise";
+					}
+				},
+				displayData: function() {
+					sDetails.getTotalAndAvg();
+					this.getGrade();
+					console.log("STudnet name is " + sDetails.name)
+					console.log("STudent age is " + sDetails.age);
+					console.log("Total " + sDetails.total);
+					console.log("Avg " + sDetails.avg);
+					console.log("Grade " + sDetails.grade);
+				}
+			};
+
+			sDetails.displayData();
+		
+
+		</script>	
+	</body>
+</html>
