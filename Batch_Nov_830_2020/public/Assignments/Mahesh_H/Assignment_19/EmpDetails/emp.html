@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee_Payslip</title>
+    <link rel="stylesheet" type="text/css" href="emp.css">
+    <script type="text/javascript" src="emp.js"></script>
+</head>
+<body>
+    <div class = "heading">Employee_Payslip</div>
+    <div class = "container">
+        <ul>
+            <li>
+                Employee Name:<input type = "text"  id = "same">
+            </li>   
+            <li>
+                Gender: 
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+            </li>
+            <li>
+                Age:<input type = "text"  id = "same">
+            </li>
+            <li>
+                Depertment:<input type = "text"  id = "same">
+            </li>
+            <li>
+                Basic Salary:<input type="text" placeholder="Enter your Basic Salary" id="m1">
+            </li>
+            <li>
+                <input type="button" value= "Salary Details" onclick="EmployeePaySlip()">
+            </li>
+        </ul>
+    </div>
+    <div id = "EmployeePayslip" style="display: none;" >
+    <ul>
+        <li>
+            Employee Name:<span id="EmployeeName"></span>
+        </li>
+        <li>
+            Employee Age:<span id="EmployeeAge"></span>
+        </li> <li>
+            Employee Department:<span id="EmployeeDepartment"></span>
+        </li> <li>
+            Employee Gender:<span id="EmployeeGender"></span>
+        </li> 
+        <li>
+            Employee Basic Salary:<span id="EmployeeBasic Salary"></span>
+        </li>
+        <li>
+            Employee Total Salary:<span id="EmployeeTotal Salary"></span>
+        </li>
+        <li>
+            Employee Hra:<span id="EmployeeHra"></span>
+        </li>
+        <li>
+            Employee Pf:<span id="EmployeePf"></span>
+        </li>
+    </ul>
+    
+    </div>
+    
+</body>
+</html>
