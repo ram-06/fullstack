@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Data validation
+        </title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value: <input type="text" id="fvalue" onkeypress="return validaeData(event)">
+            </li>
+            <li>
+                Enter second value: <input type="text" id="svalue"onkeypress="return validaeData(event)">
+            </li>
+            <li>
+                <input type="button" value="Do Addition" onclick="doAddition(event)">
+            </li>
+            <li id="rBlock">
+
+            </li>
+
+        </ul>
+        <script>
+            function doAddition(event) {
+                var m1 = document.querySelector("#fvalue").value;
+                var m2 = document.querySelector("#svalue").value;
+
+                m1 = parseInt(m1);
+                m2 = parseInt(m2);
+
+                var total = m1 + m2;
+                document.querySelector("#rBlock").innerHTML = "The sum is " + total;
+            }
+
+            var isDotEntered = false;
+            function validaeData(event) {
+                console.log(event);
+                if (event.keyCode == 46 && isDotEntered == false) {
+                    isDotEntered = true;
+                    return true;
+                }
+                if (event.keyCode >=48 && event.keyCode <= 57) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

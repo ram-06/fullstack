@@ -1,0 +1,22 @@
+.title {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    margin:5px;
+    background: #CFEE50;
+}
+
+.container {
+    border: 1px solid;
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+    background-color:#5FEBF2;
+}
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background: #C8A5F0;
+}
