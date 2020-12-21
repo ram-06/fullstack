@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Reading and operating Array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading Array dynamically </br>and list out prime numbers within it</br>1.Give Array limit</br>2.Enter elements of an array 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter array limit"));
+		for ( var i = 0; i < limit ; i++ ) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element" ));
+		}
+		console.log("Array is: " + a);
+		//finding prime numbers
+		var cntr = 0;
+		console.log("prime numbers are: ");
+		for( var num; cntr < limit; cntr++)
+		 {
+		 	num = a[cntr]
+
+			var flag = 0;
+			if( num == 1)
+		 	{
+		 		flag = 1;
+		 		continue;
+		 	}
+		 	if( num == 2)
+		 	{
+		 		console.log(num);
+		 		continue;
+		 	}
+			for (var i = 2; i < num; i++) {
+				if(num % i == 0)
+				{
+					flag = 1;
+					break;
+				}
+			}
+			if (flag == 0) 
+			{
+				console.log(num);
+			}
+		}
+	</script>
+</body>
+</html>

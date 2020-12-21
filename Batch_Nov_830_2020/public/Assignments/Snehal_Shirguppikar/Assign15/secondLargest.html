@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sorting an array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading an array </br> finding second largest number from an array</br>1.Enter limit of an array</br> 2.Enter elements 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter limit of an array"));
+		for (var i = 0; i < limit; i++) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element"));
+		}
+		//Bubble sort
+		console.log(a);
+		var large = 0, secLarge = 0;
+		if(a[0] >= a[1])
+		{
+		
+			large = a[0];
+			secLarge = a[1];
+		}
+		else
+		{
+			large = a[1];
+			secLarge = a[0];
+		}
+		for (var i = 2; i < limit; i++) 
+		{
+			if(a[i] >= large)
+			{
+				secLarge = large;
+				large = a[i];
+			}		
+			else if (a[i] >= secLarge  )
+			{
+				secLarge = a[i];
+			}
+		}
+		console.log("second Largest number = " + secLarge);
+	</script>
+</body>

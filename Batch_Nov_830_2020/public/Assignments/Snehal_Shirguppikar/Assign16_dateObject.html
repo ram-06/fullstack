@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Different types of date formats</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var cDate = new Date();
+		
+			var months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sep', 'oct', 'nov', 'dec'];
+			var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+
+			var choice = parseInt(prompt("select  an option: \n 1.mm/dd/yy \n 2.dd/mm/yy \n 3.dd/mm/yyyy \n 4.dec, 11th 2020 \n 5.fri, dec 11th 2020 \n 6.dec, 11th 20 \n 7.fri, dec 11th 2020, 02:34min \n 8.dec 11th 2020, 3pm \n 9.fri, dec 11th 2hrs:30min:2sec \n 10.fri, dec 11th 2:30:2 \n enter ur choice: "));
+
+			/*console.log(cDate.getDate());
+            console.log(cDate.getFullYear());
+            console.log(months[cDate.getMonth()]);
+            console.log(days[cDate.getDay()]);
+
+            var mydate = months[cDate.getMonth()] + '/' + cDate.getDate()  + '/' + cDate.getFullYear();
+            console.log(mydate);*/
+
+            var mydate;
+			switch(choice)
+			{
+				case 1:
+					mydate = (cDate.getMonth()+1) + '/' + cDate.getDate()  + '/' + cDate.getYear();
+					break;
+				case 2:
+					mydate =  cDate.getDate()  + '/' + (cDate.getMonth()+1) + '/' + cDate.getYear(); 
+					break;
+				case 3:
+					mydate = cDate.getDate()  + '/' + (cDate.getMonth()+1) + '/' + cDate.getFullYear();
+					break;
+				case 4:
+					mydate = months[cDate.getMonth()] + ', ' + cDate.getDate() + "th " + cDate.getFullYear();
+					break;
+				case 5:
+					mydate = days[cDate.getDay()] + ', ' + months[cDate.getMonth()] + " " +cDate.getDate() + 'th ' + cDate.getFullYear();
+					break;
+				case 6:
+					mydate = months[cDate.getMonth()] + ', ' + cDate.getDate() + "th " + cDate.getFullYear();
+					break;
+				case 7:
+					mydate = days[cDate.getDay()] + ', ' + months[cDate.getMonth()] + " " + cDate.getDate() + 'th ' + cDate.getFullYear() + ', ' + cDate.getHours() + ':' + cDate.getMinutes() + "min" 
+					break;
+				case 8:
+					//dec 11th 2020, 3pm 
+					mydate = months[cDate.getMonth()] + " " + cDate.getDate() + "th " + cDate.getFullYear() + ', ' + cDate.getHours();
+					break;
+				case 9:
+					//fri, dec 11th 2hrs:30min:2sec
+					mydate = days[cDate.getDay()] + ', ' + months[cDate.getMonth()] + " " + cDate.getDate() + 'th ' + cDate.getHours() + "hrs " + ':' + cDate.getMinutes() + "min "  + ':' + cDate.getSeconds() + "sec ";
+					break;
+				case 10:
+					//fri, dec 11th 2:30:2
+					mydate = days[cDate.getDay()] + ', ' + months[cDate.getMonth()] + " " + cDate.getDate() + 'th ' + cDate.getHours() + ':' + 
+					cDate.getMinutes() +  ':' + cDate.getSeconds() ;
+					break;
+				default:
+					console.log("Invalid option");
+				
+			}
+			console.log(mydate);
+		</script>
+	</body>
+</html>
