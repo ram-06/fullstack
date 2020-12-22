@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			demonstarting
+		</title>
+		<link rel="stylesheet" type="text/css" href="emp.css">
+		<script type="text/javascript" src="emp.js"></script>
+	</head>
+	<body>
+		<div class="tittle">Employee Validation</div>
+		<ul class="container">
+		<li>
+				<label>Enter Emp Name :</label>
+				<input type="text" id ="empname">
+			</li>
+			<li>
+			<label>Enter Emp Age :</label>
+			<input type="text" id="empage">
+			</li>
+			<li>
+				<label for="gender">Emp Gender :</label>
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+			</li>
+			<li>
+				<label>Emp Dept :</label>
+				<input type="text" id="empdept">
+			</li>
+			<li>
+				<label>Emp Basic Salary :</label>
+				<input type="text" id="empsalary">
+			</li>
+			<li>
+				<input type="button" value="click me" onclick="generateDetails()">
+			</li>
+		</ul>
+		<div id="progressBlock">
+			<ul>
+				<li>
+					Emp Name is : <span id="EmpName"></span>
+				</li>
+				<li>
+					Emp Gender is : <span id="EmpGender"></span>
+				</li>
+				<li>
+					Emp Dept is : <span id="EmpDept"></span>
+				</li>
+				<li>
+					Emp Basic Salary : <span id="EmpBasicSalary"></span>
+				</li>
+				<li>
+					Emp Total Salary : <span id="EmpTotalSalary"></span>
+				</li>
+				<li>
+					Emp Tax : <span id="EmpTax"></span>
+				</li>
+			</ul>
+		</div>
+		</body>
+	</html>
