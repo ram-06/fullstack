@@ -1,11 +1,11 @@
 var eDetails = {};
 function EmployeePaySlip()
 {
-    eDetails.Name = document.querySelector("#eName").Value;
-    eDetails.Gender = document.querySelector("input[name:gender]:checked");
-    eDetails.Age = document.querySelector("#sAge").value;
+    eDetails.Name = document.querySelector("#ename").value;
+    eDetails.gender = document.querySelector("input[name=gender]:checked").value;
+    eDetails.Age = document.querySelector("#eage").value;
     eDetails.Department = document.querySelector("#eDepartment").Value;
-    eDetails.Basic_Salary = document.querySelector("#eBasic_Salary").Value;
+    // eDetails.Basic_Salary = document.querySelector("#eBasic_Salary").Value;
     eDetails.Basic_Salary=[];
     displayData();
     getCalculation();
@@ -25,21 +25,21 @@ function getGrade()
     eDetails.grade='';
     if(Total_Salary>100000)
     {
-        sDetails.grade = "tax is 10%";
+        eDetails.grade = "tax is 10%";
     } 
     else 
     {
-        sDetails.grade = "tax is Zero";
+        eDetails.grade = "tax is Zero";
     }
 
 }
 var displayData = function()
 {
-    document.querySelector("#Employee_Payslip").style.display = 'block';
+    document.querySelector("#EmployeePaySlip").style.display = 'block';
     document.querySelector("#eName").innerHTML =  eDetails.Name ;
-    document.querySelector("#eAge").innerHTML =  sDetails.Age ;
-    document.querySelector("#eTotal_Salary").innerHTML = sDetails.Total_Salary;
-    document.querySelector("#eHra").innerHTML = sDetails.Hra;
-    document.querySelector("#eDepatment").innerHTML = sDetails.Department;
+    document.querySelector("#eAge").innerHTML =  eDetails.Age ;
+    document.querySelector("#eTotal_Salary").innerHTML = eDetails.Total_Salary;
+    document.querySelector("#eHra").innerHTML = eDetails.Hra;
+    document.querySelector("#eDepatment").innerHTML = eDetails.Department;
     
 }
