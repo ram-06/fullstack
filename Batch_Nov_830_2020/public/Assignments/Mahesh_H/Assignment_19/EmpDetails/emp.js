@@ -5,8 +5,9 @@ function EmployeePaySlip()
     eDetails.gender = document.querySelector("input[name=gender]:checked").value;
     eDetails.Age = document.querySelector("#eage").value;
     eDetails.Department = document.querySelector("#eDepartment").Value;
-    // eDetails.Basic_Salary = document.querySelector("#eBasic_Salary").Value;
+    eDetails.Basic_Salary = 0;
     eDetails.Basic_Salary=[];
+    eDetails.Total_Salary = 0;
     displayData();
     getCalculation();
 }
@@ -35,9 +36,9 @@ function getGrade()
 }
 var displayData = function()
 {
-    document.querySelector("#EmployeePaySlip").style.display = 'block';
-    document.querySelector("#eName").innerHTML =  eDetails.Name ;
-    document.querySelector("#eAge").innerHTML =  eDetails.Age ;
+    document.querySelector("#EmployeePayslip").style.display = 'block';
+    document.querySelector("#ename").innerHTML =  eDetails.Name ;
+    document.querySelector("#eage").innerHTML =  eDetails.Age ;
     document.querySelector("#eTotal_Salary").innerHTML = eDetails.Total_Salary;
     document.querySelector("#eHra").innerHTML = eDetails.Hra;
     document.querySelector("#eDepatment").innerHTML = eDetails.Department;
