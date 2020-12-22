@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Java script classes
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			class studentdetails {
+				constructor(name,age,location) {
+					this.name = prompt("enter a name");
+					this.age = prompt("enter a age");
+					this.gender = prompt("enter a gender")
+					this.location = prompt(" enter a location");
+				}
+				displaydata = function() {
+					console.log("Student name " + this.name);
+					console.log("Student Age " + this.age);
+					console.log("student gender " +this.gender);
+					console.log("STudent location " + this.location);
+				}
+			}
+
+			var s1 = new studentdetails();
+			s1.displaydata();
+			
+			var s2 = new studentdetails();
+			s2.displaydata();
+
+		</script>
+
+	</body>
+</html>
