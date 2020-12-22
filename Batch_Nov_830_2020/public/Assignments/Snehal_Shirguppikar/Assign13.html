@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Calculation of  Total Sal. 
+	</title>
+</head>
+<body>
+	<h3>Calculating total and Average by reading </br>Employee details by user</br> using Functions and local variables</h3>
+	<script type="text/javascript">
+
+		function readingData()
+		{
+			var eName, eAge, eDept, eGender, basicSalary, totalSalary;
+			eName = prompt("Enter Employee name");
+			eAge = parseInt(prompt("Enter Employee Age"));
+			eDept = prompt("Enter Employee Dept.:");
+			eGender = prompt("Enter emp gender:");
+			basicSalary = parseInt(prompt("Enter basic salary:"));
+			totalSalary = calcTotalSalary(basicSalary);
+			displayData(eName, eAge, eDept, eGender, basicSalary, totalSalary)
+		}
+
+		function calcTotalSalary(basicSalary)
+		{
+			var hra = (15/100) * basicSalary ;
+			var pf = (25/100) * basicSalary ;
+			var totalSalary = basicSalary + hra + pf ;
+			return totalSalary;
+		}
+		
+		function displayData(eName, eAge, eDept, eGender, basicSalary, totalSalary)
+		{
+			console.log("EMP Details....");
+			console.log("Name :" + eName);
+			console.log("Age :"  + eAge);
+			console.log("Department : " + eDept);
+			console.log("Gender : " + eGender);
+			console.log("basic salary : " + basicSalary );
+			console.log("total salary : " + totalSalary );
+		}
+		
+		readingData();
+	</script>
+</body>
+</html>

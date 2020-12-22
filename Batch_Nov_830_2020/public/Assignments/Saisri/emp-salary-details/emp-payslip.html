@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="emp-payslip.css">
+        <script src="emp-payslip.js"></script>
+    </head>
+    <body>
+        <div id="title">
+            Employee Salary Basic Information.
+        </div>
+        <ul class="data">
+            <li>
+                FirstName : <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" onkeypress="fun(event)">
+            </li>
+            <li>
+                MiddleName : <input type="text" name="mname" id="mname" placeholder="Enter Your Middle Name" onkeypress="fun(event)">
+            </li>
+            <li>
+                LastName : <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" onkeypress="fun(event)">
+            </li>
+            <li>
+                EmpId : <input type="text" name="empid" id="empid" placeholder="Enter Your EmpId">
+            </li>
+            <li>
+                Gender : 
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+            </li>
+            <li>
+                EmailId : <input type="email" name="eid" id="eid" placeholder="Enter Your EmailId">
+            </li>
+            <li>
+                PhoneNo : <input type="number" name="pno" id="pno" placeholder="Enter Your PhoneNo">
+            </li>
+            <li>
+                BasicSalary : <input type="number" name="bsalary" id="bsalary" placeholder="Enter Your BasicSalary">
+            </li>
+            <li>
+                Address : <textarea name="addr" name="address" id="add" cols="30" rows="5"></textarea>
+            </li>
+            <li>
+                Country : 
+                <select id="spage" name="country">
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Rushia">Rushia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Indoneshia">Indoneshia</option>
+                </select>
+                State : 
+                <select id="spage1" name="state">
+                    <option value="A.P">A.P</option>
+                    <option value="T.S">T.S</option>
+                    <option value="U.K">U.K</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="kerala">kerala</option>                        
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Submit" id="submit" onclick="empData()">
+            </li>
+        </ul>
+        <div id="user" style="display: none;">
+            <ul class="data">
+                <li>
+                    Emp Name : <span id="ename"></span>
+				</li>
+				<li>
+					Emp Id is: <span id="eid"></span>
+				</li>
+				<li>
+					Tax : <span id="emptax"></span>
+				</li>
+				<li>
+					PF : <span id="emppf"></span>
+				</li>
+				<li>
+					HRA: <span id="emphra"></span>
+				</li>
+                <li>
+					Total Salary: <span id="etotalsal"></span>
+				</li>
+            </ul>
+
+        </div>
+    </body>
+</html>

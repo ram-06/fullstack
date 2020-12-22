@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>
+			Employee Details using DHTML
+		</title>
+	</head>
+	<body>
+		<div>Employee: <span id = "uname"></span></div>
+		<div>Age: <span id = "uage"></span></div>
+		<div>Gender: <span id = "ugender"></span></div>
+		<div>BasicSal: <span id = "ubasicsal"></span></div>
+		<div>TotSal: <span id = "utotsal"></span></div>
+		<input type = "button" value = "Do action" onclick = "calculate()">
+		
+		<script type = "text/javascript">
+			console.log(document);
+			var Name = prompt("enter Name");
+			var Age = prompt("enter Age");
+			var Gender = prompt("enter Gender");
+			var BasicSal = prompt("enter BasicSal");
+
+			function calculate()
+			{
+			  var Hra = BasicSal * (12/100);
+			  var Pf = BasicSal * (24/100);
+			  var TotSal = BasicSal + Hra + Pf;
+			  document.querySelector('#uTotSal').innerText = TotSal;
+			  return TotSal;
+		    }
+
+		    function grade()
+		    {
+		    	if(empGender=="male")
+		    	{
+		    		if(TotSal>100000)
+		    		{
+		    			console.log("tax is 15% of empBasicSal");
+		    		}
+		    		else if (TotSal>50000)
+		    		{
+		    			console.log("tax is 10% of empBasicSal");
+		    		}
+		    		else 
+		    		{
+		    			console.log("tax is zero");
+		    		}
+		    	}
+		    	else
+		        {
+		    		if(empGender=="female")
+		    	    {
+		    		    if(TotSal>100000)
+		    		    {
+		    			    console.log("tax is 10% of empBasicSal");
+		    		    }
+		    		    else if (TotSal>50000)
+		    		    {
+		    			    console.log("tax is 5% of empBasicSal");
+		    		    }
+		    		    else 
+		    		    {
+		    			    console.log("tax is zero");
+		    		    }
+		    	    }
+		        }
+		    }
+		        document.querySelector('#uname').innerText = Name;
+		        document.querySelector('#uAge').innerText = Age;
+		        document.querySelector('#uGender').innerText = Gender;
+		        document.querySelector('#uBasicSal').innerText = BasicSal;
+		       
+		    </script>
+		</body>
+		</html>

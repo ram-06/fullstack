@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Reading and operating Array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading Array dynamically </br>and list out lucky numbers </br>1.Give Array limit</br>2.Enter elements of an array 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter array limit"));
+		for ( var i = 0; i < limit ; i++ ) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element" ));
+		}
+		console.log("Array is: " + a);
+		//finding prime numbers
+		var cntr = 0;
+		console.log("Lucky number Array is: ");
+		var a2 = [];
+        for( n = a[cntr]; cntr < limit; cntr++)
+        {
+        	n = a[cntr];
+			var sum = 0, prev = n, digit = 0;
+			while(n)
+			{
+				digit = n % 10;
+				sum = sum + digit;
+				n = parseInt(n / 10);
+				if( sum >=10 && n==0)
+				{
+					n = sum;
+					sum = 0;
+				}		 
+			}
+			
+			a2[cntr] = sum;
+		}
+		console.log(a2);
+		
+	</script>
+</body>
+</html>

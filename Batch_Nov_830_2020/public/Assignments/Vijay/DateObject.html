@@ -1,0 +1,45 @@
+<head>
+        <title>date object USING Time and interval</title>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            var sDate = new Date();
+            var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+            var days = ["SUNDAY", 'MONDAY', 'TUESDAY', "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
+            var useroption = prompt("select 1,2,3,4,5,6,7");
+            switch (useroption){
+                case '1':
+                    var option1 = sDate.getMonth() + 1 + '/' + sDate.getDate() + '/' + sDate.getFullYear() % 100;
+                    console.log(option1);
+                    break;
+                case '2':
+                    var option2 = months[sDate.getMonth()] + ',' + sDate.getDate() + ' ' + sDate.getFullYear() % 100;
+                    console.log(option2);
+                    break;
+                case '3' :
+                    var option3 = months[sDate.getMonth()] + ',' + sDate.getDate() + ' ' + sDate.getFullYear();
+                    console.log(option3);
+                    break;
+                case '4' :
+                    var option4 = days[sDate.getDay()] + ',' + (sDate.getMonth() + 1) + ' ' + sDate.getDate() + ' ' + sDate.getFullYear();
+                    console.log(option4);
+                    break;
+                case '5' :
+                    var option5 = sDate.getMonth()+ 1 + '-' + sDate.getDate() + '-' + sDate.getFullYear() % 100;
+                    console.log(option5);
+                    break;
+                case '6' :
+                    var option6 = sDate.getMonth()+ 1 + '/' + sDate.getDate() + '/' + sDate.getFullYear() % 100 + ' ' + sDate.getHours() + ':' + sDate.getMinutes();
+                    console.log(option6);
+                    break;
+                case '7' :
+                    var option7 = months[sDate.getMonth()] + ',' + sDate.getDate() + ' ' + sDate.getFullYear() % 100 + ' ' + sDate.getHours() + ':' + sDate.getMinutes() + ':' + sDate.getSeconds();
+                    console.log(option7);
+                    break;
+                default:
+                    console.log("wrong selection");            
+            }
+        </script>
+    </body>
+</html>

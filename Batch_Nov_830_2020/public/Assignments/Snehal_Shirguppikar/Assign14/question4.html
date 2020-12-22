@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Reading and operating Array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading Array dynamically </br>and find sum of reverse numbers</br>1.Give Array limit</br>2.Enter elements of an array 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter array limit"));
+		for ( var i = 0; i < limit ; i++ ) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element" ));
+		}
+		console.log("Array is: " + a);
+		//finding prime numbers
+		var cntr = 0, sum = 0;
+		console.log("Reverse Array is: ");
+		var a2 = [];
+        for( n = a[cntr]; cntr < limit; cntr++)
+        {
+        	n = a[cntr];
+			var newNumber = 0, position = 1; 
+			while ( n ) 
+			{
+				var digit = n % 10;
+				newNumber = digit + newNumber * position;
+				n = parseInt(n / 10);
+				position = 10;
+			}
+			a2[cntr] = newNumber;
+			sum = sum + a2[cntr];
+		}
+		console.log(a2);
+		console.log("Sum of Reverse Array is: " + sum);
+		
+	</script>
+</body>
+</html>

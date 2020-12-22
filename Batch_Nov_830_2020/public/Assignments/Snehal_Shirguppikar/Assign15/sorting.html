@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sorting an array
+	</title>
+</head>
+<body>
+	<h3>
+		Reading an array </br> sort in ascending and descending order</br>1.Enter limit of an array</br> 2.Enter elements 
+	</h3>
+	<script type="text/javascript">
+		var a = [];
+		var limit = parseInt(prompt("Enter limit of an array"));
+		for (var i = 0; i < limit; i++) 
+		{
+			a[i] = parseInt(prompt("Enter " + (i+1) + "th element"));
+		}
+		//Bubble sort
+		console.log(a);
+
+		for (var i = 0; i < limit; i++) 
+		{
+			for( var j = (i+1); j < limit; j++)
+			{
+				var tmp;
+				if(a[i] > a[j])
+				{
+					tmp = a[i];
+					a[i] = a[j];
+					a[j] = tmp;
+				}
+			}
+		}
+		console.log("Ascending order:");
+		console.log(a);
+		var a2 = [];
+		var i, j = limit;
+		for (i = 0; i < limit; i++)
+		{
+			a2[j-1] = a[i];
+			j--;
+		}
+		console.log("Descending order:");
+		console.log(a2);
+	</script>
+</body>

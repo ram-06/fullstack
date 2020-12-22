@@ -1,0 +1,25 @@
+#title {
+    border: 2px solid gray;
+    color: hotpink;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.data {
+    
+    border: 2px solid gray;
+    text-align: center;
+    padding: 4px;
+    margin: 4px;
+}
+li {
+    text-align: center;
+    margin: 6px;
+    padding: 6px;
+    color: rgba(233, 10, 140, 0.877);
+    list-style: none;
+    width: 350px;
+}

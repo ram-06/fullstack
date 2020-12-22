@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Implementing Inheritance
+		</title>
+	</head>
+	<body>	
+		<script type="text/javascript">
+
+			class SellerDetails {
+				constructor() {
+					this.sellerName = "Indian Electronics";
+					this.sellerLoc = "New Delhi";
+				}
+				displaySellerInfo = function() {
+					console.log("seller name " + this.sellerName);
+					console.log('Seller Loc ' + this.sellerLoc);
+				}
+			}
+
+			class productDetails {
+				constructor(data) {
+					this.pname = data.name;
+					this.price = data.price;
+					this.manu = data.manu;
+					this.sellerName = data.sellername;
+					this.sellerLoc = data.loc;
+				}
+				displayData  = function() {
+					console.log("product details");
+					console.log("Name is " + this.pname);
+					console.log("PRice is " + this.price);
+					console.log("Manufacturer " + this.manu);
+				}
+				displaySellerInfo = function() {
+					console.log("seller name " + this.sellerName);
+					console.log('Seller Loc ' + this.sellerLoc);
+				}
+			}
+
+			var p1 = new productDetails({name: 'Laptop', price: '20000', manu: 'Samsun', sellername: 'Indian Electronics', loc: 'New Delhi'});
+			p1.displayData();
+			p1.displaySellerInfo();
+		</script>
+	</body>
+</html>
