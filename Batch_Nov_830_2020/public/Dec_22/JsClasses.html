@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating JS Classes
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			class StudentDetails {
+				constructor(data) {
+					this.name = data.name;
+					this.age = data.age;
+					this.gender = data.gender;
+					this.qualification = data.qulf;
+					this.location = data.loc;
+					this.marks = data.marks
+				}
+				getTotalAndAvg =  function() {
+					this.total = 0;
+					for (var i = 0 ; i < this.marks.length; i++) {
+						this.total += this.marks[i];
+					}
+					this.avg = this.total / this.marks.length;
+				} 
+				displayData = function() {
+					this.getTotalAndAvg();
+					console.log("STudent details");
+					console.log("Name is " + this.name);
+					console.log("AGe is " + this.age);
+					console.log("Gender is " + this.gender);
+					console.log("Total is "  + this.total);
+					console.log("Avg is " + this.avg);
+				}
+			}
+			var data = {name: 'Raj', 'age': 20, gender: 'Male',qulf: 'MCA', loc: 'Hyd', marks: [34, 56, 67]}
+			var s1 = new StudentDetails();
+			s1.displayData();
+
+
+			var s2 = new StudentDetails({name: 'Teena', 'age': 10, gender: 'Female',qulf: 'MCA', loc: 'Hyd', marks: [34, 89, 10]});
+			s2.displayData();
+
+			/*var sdetails1 = {
+				name: 'RAj',
+				age: 20,
+				gender: 'Male',
+				qualification: 'MA',
+				location: 'Hyderabad',
+				marks: [23, 45, 67],
+				getTotalAndAvg: function() {
+					this.total = 0;
+					for (var i = 0 ; i < this.marks.length; i++) {
+						this.total += this.marks[i];
+					}
+					this.avg = this.total / this.marks.length;
+				},
+				displayData: function() {
+					this.getTotalAndAvg();
+					console.log("STudent details");
+					console.log("Name is " + this.name);
+					console.log("AGe is " + this.age);
+					console.log("Gender is " + this.gender);
+					console.log("Total is "  + this.total);
+					console.log("Avg is " + this.avg);
+				}
+			}
+			sdetails1.displayData();
+
+			var sdetails2 = {
+				name: 'Teena',
+				age: 20,
+				gender: 'Female',
+				qualification: 'MBA',
+				location: 'Delhi',
+				marks: [99, 45, 10],
+				getTotalAndAvg: function() {
+					this.total = 0;
+					for (var i = 0 ; i < this.marks.length; i++) {
+						this.total += this.marks[i];
+					}
+					this.avg = this.total / this.marks.length;
+				},
+				displayData: function() {
+					this.getTotalAndAvg();
+					console.log("STudent details");
+					console.log("Name is " + this.name);
+					console.log("AGe is " + this.age);
+					console.log("Gender is " + this.gender);
+					console.log("Total is "  + this.total);
+					console.log("Avg is " + this.avg);
+				}
+			}
+			sdetails2.displayData(); */
+			
+		</script>
+	</body>
+</html>

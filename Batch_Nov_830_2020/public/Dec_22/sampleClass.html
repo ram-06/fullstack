@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			class employeeDetails {
+				constructor() {
+					this.empname = '';
+				}
+				displayEmpInfo() {
+					console.log("frm emp info")
+				}
+			}
+
+			class studentdetails {
+				constructor(name, age, loc) {
+					this.count = 9;
+					this.name = name;
+					this.age = age;
+					this.location = loc;
+				}
+				displaydata = function() {
+					console.log("Student name " + this.name);
+					console.log("STudent location " + this.location);
+					console.log("Student Age " + this.age);
+				}
+			}
+
+			var s1 = new studentdetails("Teena", 20, "hyd");
+			s1.displaydata();
+
+
+			var s2 = new studentdetails("Raj", 10, "Delhi");
+			s2.displaydata();
+			console.log(s1)
+
+			var e1 = new employeeDetails();
+			e1.displayEmpInfo();
+		</script>
+	</body>
+</html>
