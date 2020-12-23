@@ -9,7 +9,7 @@
     <script type="text/javascript" >
     class empdetails 
 			{
-				constructor(name,age,gender,Bsalary) 
+				constructor(name,age,gender,Bsalary,totalSalary) 
 				{
 					this.name = prompt("enter a name");
 					this.age = prompt("enter a age");
@@ -18,28 +18,28 @@
                 }
                 getcal = function()
                 {
-                    this.Bsalary = 0;
-                    this.Hra = Bsalary*(12/100);
-                    this.Pf = Bsalary*(25/100);
-                    this.totalSalary = Bsalary+Hra+Pf;
+                    
+                    this.Hra = this.Bsalary*(12/100);
+                    this.Pf = this.Bsalary*(25/100);
+                    this.totalSalary = this.Bsalary + this.Hra + this.Pf;
+                    return totalSalary;
 
                 }
 				displaydata = function() 
 				{
                     this.getcal();
-					console.log("Emp name " + this.name);
-					console.log("Emp Age " + this.age);
-					console.log("Emp gender " +this.gender);
-                    console.log("Emp Bsalary " + this.Bsalary);
-                    console.log("Total salary" + this.totalSalary);
+					console.log("Emp name:  " + this.name);
+					console.log("Emp Age:  " + this.age);
+					console.log("Emp gender:  " +this.gender);
+                    console.log("Emp Bsalary:  " + this.Bsalary);
+                    console.log("Total salary: " + this.totalSalary);
 				}
 			}
 
 			var s1 = new empdetails();
 			s1.displaydata();
 			
-			var s2 = new empdetails();
-            s2.displaydata();
+			
         </script>
 </body>
 </html>
