@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <style>
+            #welcomeBlock {
+                border: 1px solid green;
+                text-align: center;
+                width: 500px;
+                padding: 40px;
+                margin: 20px;
+                position: absolute;
+                top: 40%;
+                font-size: 20px;
+                display: none;;
+                left: 30%;
+            }
+            .block {
+                border: 1px solid;
+                background: #ccc;
+                width: 600px;
+                margin: 30px auto;
+                padding: 20px;
+                text-align: center;
+                color: blue;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            Enter user name:
+            <input type="text" id="uname">
+            <input type="button" value="Save" onclick="saveUserName()">
+            <input type="button" value="Create Task Block" onclick="createTaskBlock()">
+            <input type="button" value="Get My next task" onclick="getMyNextTask()">
+        </div>
+        <div id="welcomeBlock"></div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <div id="thnxBlock">
+
+        </div>
+        <script>
+            var a = 90;
+            var b = 99;
+            var result = a + b;
+            try {
+                document.querySelector("#container12").innerHTML = "The sum is " + result;
+            } catch (err) {
+                console.log("wrng id refered")
+            } finally {
+                document.querySelector("#thnxBlock").innerHTML = "Thanks for visiting our page";
+            }            
+        </script>
+    </body>
+</html>
