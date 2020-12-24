@@ -6,8 +6,6 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 5px solid #00ff00;}
 
-input[type=text],<br>
-input[type=password] 
 {
   width: 100px;
   padding: 12px 5px;
@@ -50,12 +48,13 @@ img.online {
 }
 
 .container {
+	text-align: center;
   padding: 16px;
 }
 
 span.psw {
   float: right;
-  padding-top: 16px;
+  padding-top: 25px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -81,7 +80,7 @@ span.psw {
   
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
