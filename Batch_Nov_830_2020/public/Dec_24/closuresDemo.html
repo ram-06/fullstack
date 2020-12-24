@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="lib/mathUtils.js"></script>
+        <script src="app.js"></script>
+
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            ul {
+                width: 500px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value:
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter second value:
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Add" onclick="doJob('add')">
+                <input type="button" value="Multiplication" onclick="doJob('mul')">
+                <input type="button" value="Division" onclick="doJob('div')">
+                <input type="button" value="Substraction" onclick="doJob('sub')">
+            </li>
+            <li id="rBlock">
+
+            </li>
+        </ul>
+    </body>
+</html>

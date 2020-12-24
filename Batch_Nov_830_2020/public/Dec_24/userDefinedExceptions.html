@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="details.js"></script>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                background: #ccc;
+                margin: 10px;
+                padding: 10px;
+            }
+            ul {
+                border: 2px solid;
+                margin: 30px auto;
+                padding: 20px;
+                width: 500px;
+            }
+
+            .errBlck {
+                color: red;
+                text-align: center;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter user name : <input type="text" id="uname">
+            </li>
+            <li>
+                User age: <input type="text" id="uage">
+            </li>
+            <li>
+                GEnder: 
+                <input type="radio" name="gender" checked value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerDetails()">
+            </li>
+            <li class="errBlck">
+
+            </li>
+
+        </ul>
+    </body>
+</html>

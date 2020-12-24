@@ -28,9 +28,7 @@ function getMyNextTask() {
         setTimeout(function(){
             showThanksMsg();
         }, 3000);
-    }
-
-   
+    }   
 }
 
 function showThanksMsg() {
