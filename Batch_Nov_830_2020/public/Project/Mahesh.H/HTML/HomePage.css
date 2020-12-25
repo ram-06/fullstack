@@ -1,0 +1,28 @@
+.block
+{
+    text-align:center;
+    border:1px solid;
+    width:400px;
+    height:200px;
+    position:relative;
+    left:200px;
+}
+.header
+{
+    border:1px solid;
+    width:auto;
+    height:25px;
+    text-align:center;
+    position:relative;
+	padding-top:10px;
+    background:rgb(43, 104, 161);
+}
+.footer
+{
+    border:1px solid;
+    width:auto;
+    height:20px;
+    text-align:center;
+    padding:10px;
+    background:rgb(41, 89, 143);
+}
