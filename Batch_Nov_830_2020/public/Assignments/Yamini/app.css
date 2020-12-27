@@ -1,0 +1,22 @@
+.title {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color:magenta;
+}
+
+.container {
+    border: 1px solid;
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+    background-color:pink;
+}
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background: green;
+}

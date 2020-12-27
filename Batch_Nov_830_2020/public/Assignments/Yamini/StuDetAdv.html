@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Progress card generator
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="studentDetails.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			Student Progess card Generator
+		</div>
+		<ul class="container">
+			<li>
+				Enter Student Name:  <input type="text" id="sname">
+			</li>
+			<li>
+				Gender: 
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+			</li>
+			<li>
+				Select Class:
+				<select id="sClass">
+					<option value="class 1">1st</option>
+					<option value="class 2">2nd class</option>
+					<option value="class 3">3rd Class</option>
+				</select>
+			</li>
+			<li>
+				Marks:
+				<input type="text" placeholder="Maths" id="m1">
+				<input type="text" placeholder="Social" id="m2">
+				<input type="text" placeholder="Science" id="m3">
+				<input type="text" placeholder="Physics" id="m4">
+				<input type="text" placeholder="Computers" id="m5">
+			</li>
+			<li>
+				<input type="button" value="Generate Progress Card" onclick="generateProgressCard()">
+			</li>
+		</ul>
+
+		<div class="container" id="progressBlock" style="display: none;">
+			<ul>
+				<li>
+					Student name is : <span id="studentName"></span>
+				</li>
+				<li>
+					Student Class is: <span id="studentClass"></span>
+				</li>
+				<li>
+					Total Marks: <span id="studentTotalMarks"></span>
+				</li>
+				<li>
+					Average: <span id="studentAvg"></span>
+				</li>
+				<li>
+					Grade: <span id="studentGrade"></span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
