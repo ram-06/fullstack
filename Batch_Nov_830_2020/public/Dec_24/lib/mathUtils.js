@@ -1,29 +1,35 @@
-var count = 10;
-
-function doAddition(a, b) {
-    count = count + 2;
+/**
+ * MEthod to add two numbers
+ **/
+function doAddition(firstVal, secondVal) {
     var result = 0;
-    result = a + b;
+    result = firstVal + secondVal;
     return result;
 }
 
-function doDivision(a, b) {
-    count = count + 2;
+/**
+ * MEthod to divide two numbers
+ **/
+function doDivision(firstVal, secondVal) {
     var result = 0;
-    result = a / b;
+    result = firstVal / secondVal;
     return result;
 }
 
-function doSubstraction(a, b) {
-    count = count + 2;
+/**
+ * MEthod to substract two numbers
+ **/
+function doSubstraction(firstVal, secondVal) {    
     var result = 0;
-    result = a - b;
+    result = firstVal - secondVal;
     return result;
 }
 
-function doMultiplication(a, b) {
-    count = count + 2;
+/**
+ * MEthod to Multiply two numbers
+ **/
+function doMultiplication(firstVal, secondVal) {    
     var result = 0;
-    result = a * b;
+    result = firstVal * secondVal;
     return result;
 }
