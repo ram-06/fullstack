@@ -39,7 +39,7 @@ var pDetails = [
 function addProductDetailsToPage(pData) {
 	// var ulTag = document.createElement("ul");
 	var ulTag = $("<ul></ul>");
-	var li1 = $("<li></li>").text("Product Name : " + pData.name);
+	var li1 = $("<li></li>").text("Product Name : " + pData.name).addClass("test");
 	ulTag.append(li1);
 
 	var li2 = $("<li></li>").text("Price: " + pData.price);
