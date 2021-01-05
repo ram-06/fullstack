@@ -11,6 +11,8 @@ body {
 img {
     max-width: 100%;
 }
+
+/*  ---------- Login Page  ---------- */
 .login-page {
     width: 100%;
     min-height: 100vh;
@@ -177,4 +179,110 @@ img {
 .register .signin-btn:hover {
     color: rgb(0,171,214);
     background: #fff;
+}
+
+/*  ---------- Signin Page  ---------- */
+.signin-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin-info {
+    width: 80%;
+    height: 500px;
+    padding: 0px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signin-credential {
+    background: #fff;
+    width: 100%;
+    height: 500px;
+}
+.welcomenote {
+    background-image: url("../images/Banners/pexels-pixabay-247115.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px;
+}
+.welcomenote h1, .welcomenote a, .welcome-image {
+
+}
+.welcomenote h1 {
+    color: #fff;
+    font-weight: 300;
+}
+.welcomenote img {
+    width: 30%;
+}
+.welcomenote h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+.welcomenote p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.welcomenote a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.welcomenote a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
+}
+.welcomenote a:hover {
+    border: 1px solid rgb(0,171,214);
+}
+.welcomenote a:hover i {
+    color: rgb(0,171,214);
+}
+.signinform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+.signin-credential {
+    padding: 30px 40px;
+}
+.credential-info h4 {
+    color: rgb(0,171,214);
+}
+.credentialsocialicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credentialsocialicon a {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.603);
+}
+.credentialsocialicon a i {
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
 }
