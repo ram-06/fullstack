@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Adding product details dynamically to page.
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="../../jquery.js"></script>
+		<script type="text/javascript" src="../lib/jquery.loadTemplate-1.4.4.min.js"></script>
+ 	</head>
+	<body>
+		
+		<div class="container" id="block">
+			<div class="loadingBlock">
+				<img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif">
+			</div>
+			<div class="title">Product Details page</div>
+
+			<input type="button" value="Load Product Details" onclick="loadProductDetails()">
+			<div class="errBlock">
+				Error while communicating with Server
+			</div>
+			<div id="productDetailsBlock"></div>			
+		</div>
+		<script type="text/javascript" src='prodApp.js'></script>
+		<script id="prodTmplt">
+			<ul>
+				<li class="test">Product Name : <span data-content="name"></span></li>
+				<li>Price: <span data-content="price"></span></li>
+				<li>Manufacturer: <span data-content="manu"></span></li>
+				<li>Discount: <span data-content="discount"></span></li>
+				<li>
+					<img data-src="image" />
+				</li>
+			</ul>
+		</script>
+	</body>
+</html>

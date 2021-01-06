@@ -38,8 +38,10 @@ router.get('/', function(req, res, next) {
 	};
 
 	data = JSON.stringify(data);
-	data = "parseProdData(" + data + ')';
-	res.send(data);
+	//data = "parseProdData(" + data + ')';
+	setTimeout(function(){
+		res.send(data);
+	}, 8000);
 });
 
 module.exports = router;
