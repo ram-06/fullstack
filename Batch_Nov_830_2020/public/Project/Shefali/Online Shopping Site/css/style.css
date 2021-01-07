@@ -191,6 +191,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .signin-info {
     width: 80%;
@@ -212,10 +213,25 @@ img {
     flex-direction: column;
     justify-content: center;
     padding: 30px 40px;
+    position: relative;
+}
+.welcomenote-overlay {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
 }
 .welcomenote h1 {
     color: #fff;
     font-weight: 300;
+    z-index: 2;
+}
+.welcome-image {
+    z-index: 2;
 }
 .welcomenote img {
     width: 30%;
@@ -225,6 +241,7 @@ img {
     font-weight: 300;
     margin-top: 2px;
     margin-left: 8px;
+    z-index: 2;
 }
 .welcomenote p {
     color: rgba(255, 255, 255, 0.6);
@@ -239,6 +256,7 @@ img {
     color: #fff;
     background: none;
     outline: none;
+    z-index: 2;
 }
 .welcomenote button i {
     position: absolute;
@@ -335,4 +353,106 @@ img {
 }
 .login-btn.rlogin {
     width: 85%;
+}
+
+
+
+
+.videopopup-overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    background-image: -webkit-gradient(linear,left top, right top,from(#025984),color-stop(#003456),to(#013155));
+    background-image: -o-linear-gradient(left,#025984,#003456,#013155);
+    background-image: linear-gradient(to right,#025984,#003456,#013155);
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+.welcomevideo-content {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -55%) scale(0);
+        -ms-transform: translate(-50%, -55%) scale(0);
+            transform: translate(-50%, -55%) scale(0);
+    width: 80%;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+            box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+.signin-page .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:5%;
+    top:3%;
+    width:50px;
+    height:50px;
+    line-height: 1.1;
+    background:transparent;
+    color: #ff4500;
+    font-size:30px;
+    font-weight:600;
+    text-align:center;
+    z-index: 2;
+    opacity: 0.5;
+    -webkit-transform: translate(-5%, -3%);
+        -ms-transform: translate(-5%, -3%);
+            transform: translate(-5%, -3%);
+}
+.videopopup.active .videopopup-overlay {
+    display:block;
+}
+.videopopup.active .welcomevideo-content {
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -webkit-transform:translate(-50%,-50%) scale(1);
+        -ms-transform:translate(-50%,-50%) scale(1);
+            transform:translate(-50%,-50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+} 
+.welcomevideoblock {
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+.welcomevideoblock video {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 85vh;
+    border-radius: 3px;
+}
+.welcomevideologo {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 30px;
+}
+.welcomevideologo img {
+    width: 40%;
+}
+.welcomevideo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }

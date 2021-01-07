@@ -16,8 +16,7 @@ function signInForm() {
     window.location.assign("signIn.html");
 }
 
-
-//Video
+//Video Popup
 function fVideo() {
-    $("#fashionvideo").dialog();
+    $("#popup").toggleClass("active");
 }
