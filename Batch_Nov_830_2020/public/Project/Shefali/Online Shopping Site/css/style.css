@@ -182,6 +182,9 @@ img {
 }
 
 /*  ---------- Signin Page  ---------- */
+.signin-page .overlay {
+    z-index: -2;
+}
 .signin-page {
     width: 100%;
     min-height: 100vh;
@@ -210,9 +213,6 @@ img {
     justify-content: center;
     padding: 30px 40px;
 }
-.welcomenote h1, .welcomenote a, .welcome-image {
-
-}
 .welcomenote h1 {
     color: #fff;
     font-weight: 300;
@@ -230,25 +230,27 @@ img {
     color: rgba(255, 255, 255, 0.6);
     margin-top: 4vh;
 }
-.welcomenote a {
+.welcomenote button {
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid #fff;
     color: #fff;
+    background: none;
+    outline: none;
 }
-.welcomenote a i {
+.welcomenote button i {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 16px;
     transform: translate(-50%,-50%);
 }
-.welcomenote a:hover {
+.welcomenote button:hover {
     border: 1px solid rgb(0,171,214);
 }
-.welcomenote a:hover i {
+.welcomenote button:hover i {
     color: rgb(0,171,214);
 }
 .signinform {
@@ -258,31 +260,79 @@ img {
 }
 .top-text {
     margin-top: 20px;
-    font-size: 14px;
-    color: #ccc;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.503);
+    text-align: center;
 }
 .signin-credential {
     padding: 30px 40px;
 }
 .credential-info h4 {
     color: rgb(0,171,214);
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 .credentialsocialicon {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
+.sicon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.19) !important;
+    border-radius: 50%;
+    margin: 0 5px;
 }
 .credentialsocialicon a {
-    position: relative;
-    width: 200px;
-    height: 200px;
+    position: absolute;
     border-radius: 50%;
-    border: 1px solid #ccc;
-    color: rgba(0, 0, 0, 0.603);
-}
-.credentialsocialicon a i {
     top: 50%;
     left: 50%;
-    font-size: 16px;
+    padding: 10px;
     transform: translate(-50%,-50%);
+}
+.sicon a:hover i {
+    transform: scale(1.2);
+}
+.sicon.facebook a:hover i {
+    color: #4267B2;
+}
+.sicon.gmail a:hover i {
+    color: #db4a39;
+}
+.sicon.linkedin a:hover i {
+    color: #0e76a8;
+}
+.credentialsocialicon a i {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.503);
+}
+.signinmain {
+    margin-top: 10px;
+}
+.signinform .textbox {
+    margin: 20px 0;
+}
+.signinform .textbox input {
+    height: 32px;
+}
+.signinform .textbox span::before {
+    color: #ccc;
+    z-index: 1;
+}
+.signinform .rgender {
+    color: rgba(0, 0, 0, 0.63);
+    margin-top: 25px;
+}
+.signinform .rgender input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.login-btn.rlogin {
+    width: 85%;
 }

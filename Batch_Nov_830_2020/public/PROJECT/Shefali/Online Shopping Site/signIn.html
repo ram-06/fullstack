@@ -38,16 +38,17 @@
                         <h4>Style Fashion Era</h4>
                         <p>“You can always find something you want.”</p>
                     </div>
-                    <a href=""><i class="fa fa-play"></i></a>
+                    <!-- <a href=""><i class="fa fa-play"></i></a> -->
+                    <button class="vbtn" onclick="fVideo();"><i class="fa fa-play"></i></button>
                 </div>
                 <div class="col-md-4 signin-credential">
                     <div class="credential-info">
                         <h4>Create Your Account</h4>
                     </div>
                     <div class="credentialsocialicon">
-                        <div class="facebook"><a href=""><i class="fa fa-facebook"></i></a></div>
-                        <div class="gmail"><a href=""><i class="fa fa-google-plus"></i></a></div>
-                        <div class="linkedin"><a href=""><i class="fa fa-linkedin"></i></a></div>
+                        <div class="sicon facebook" title="Facebook"><a href=""><i class="fa fa-facebook"></i></a></div>
+                        <div class="sicon gmail" title="Gmail"><a href=""><i class="fa fa-google-plus"></i></a></div>
+                        <div class="sicon linkedin" title="LinkedIn"><a href=""><i class="fa fa-linkedin"></i></a></div>
                     </div>
                     <form action="" class="signinform">
 
@@ -55,28 +56,30 @@
                             or use your email for registration
                         </div>
 
-                        <div class="textbox">
-                            <input type="text" name="uname" id="uname" class="uname">
-                            <span data-placeholder="Name"></span>
-                        </div>
+                        <div class="signinmain">
+                            <div class="textbox">
+                                <input type="text" name="rname" id="rname" class="rname">
+                                <span data-placeholder="Name"></span>
+                            </div>
 
-                        <div class="textbox">
-                            <input type="email" name="upassword" id="upassword" class="upassword">
-                            <span data-placeholder="Email"></span>
-                        </div>
+                            <div class="textbox">
+                                <input type="email" name="remail" id="remail" class="remail">
+                                <span data-placeholder="Email"></span>
+                            </div>
 
-                        <div class="rememberMe">
-                            <input type="radio" name="uRememberMe"><label for="ugender">Male</label>
-                            <input type="radio" name="uRememberMe"><label for="ugender">Female</label>
-                        </div>
+                            <div class="textbox">
+                                <input type="password" name="rpassword" id="rpassword" class="rpassword">
+                                <span data-placeholder="Password"></span>
+                            </div>
 
-                        <div class="textbox">
-                            <input type="password" name="upassword" id="upassword" class="upassword">
-                            <span data-placeholder="Password"></span>
-                        </div>
+                            <div class="rgender">
+                                <input type="radio" name="rgender"><label for="rgender">Male</label>
+                                <input type="radio" name="rgender"><label for="rgender">Female</label>
+                            </div>
 
-                        <div class="login-btns">
-                            <input type="submit" class="login-btn" value="Login">
+                            <div class="login-btns">
+                                <input type="submit" class="login-btn rlogin" value="Login">
+                            </div>
                         </div>
 
                     </form>
