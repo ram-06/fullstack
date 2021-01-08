@@ -10,7 +10,7 @@ $("li:first") -> Returns the reference of li tag which is in first child positio
 
 $("input[type=text]") -> Returns reference of all input elements having type as text
 
-$("a[target="!_blank"]") -> Returns reference of all "a" tags which are not having target as "_blank"
+$("a[target!="_blank"]") -> Returns reference of all "a" tags which are not having target as "_blank"
 
 $("tr:even") -> Returns reference of all "tr" tags which are in even position
 

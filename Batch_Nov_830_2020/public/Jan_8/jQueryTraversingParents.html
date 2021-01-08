@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Traversing Parent elements
+		</title>
+		<style type="text/css">
+			.highlight {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<div>
+			<div id="subParent">
+				<div>
+					<span>
+						Hello Every one..
+					</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function applyChanges() {
+				$("span").parentsUntil("#subParent").addClass("highlight")
+			}
+		</script>
+	</body>
+</html>

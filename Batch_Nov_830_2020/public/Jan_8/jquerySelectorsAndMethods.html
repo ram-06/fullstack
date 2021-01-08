@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<style type="text/css">
+			.highlight {
+				background: green;
+				font-size: 20px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Apply" >
+		<ul class="highlight">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>
+				Item 7
+				<p>
+					Hello frm here
+				</p>
+			</li>
+		</ul>
+		
+		<div style="margin:20px">DIV content</div>
+		<span>Span Content</span>
+		<a href="http://abc.com">TEST</a>
+		<a href="http://sample.com" target="_blank">Hello</a>
+		<a href="http://test.om">ABC</a>
+		<script type="text/javascript">
+			function applyChanges() {
+				// $("li:first-of-type").addClass("highlight")
+				//$("li, span, div").addClass("highlight");
+				// $("span").addClass("highlight");
+				// $("div").addClass("highlight");
+
+				// $("li:gt(2)").addClass("highlight");
+				// $("li:has(p)").addClass("highlight");
+				// $("a[target!=_blank]").addClass("highlight")
+				$("ul").toggleClass("highlight")
+			}
+
+			/*document.querySelector("input").addEventListener("click", function(){
+
+			})*/
+			/*$("input").click(function(){
+
+			})
+
+			$("input").on("click", function() {
+				applyChanges();
+			}) */
+
+			$("input").on({
+				click: function() {
+					
+				},
+				mouseover: function() {
+					// body...
+				}
+			})
+		</script>
+	</body>
+</html>

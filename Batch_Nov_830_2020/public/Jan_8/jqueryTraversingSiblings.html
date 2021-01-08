@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Traversing siblings elements
+		</title>
+		<style type="text/css">
+			.highlight {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyChanges()">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li class="content">Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+		<script type="text/javascript">
+			function applyChanges() {
+				$(".content").nextAll().addClass("highlight")
+			}
+		</script>
+	</body>
+</html>
