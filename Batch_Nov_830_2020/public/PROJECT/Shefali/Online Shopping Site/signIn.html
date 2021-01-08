@@ -26,8 +26,6 @@
 </head>
 
 <body>
-
-
     <div class="signin-page">
         <div class="signin-info">
             <div class="row">
@@ -40,6 +38,28 @@
                     </div>
                     <!-- <a href=""><i class="fa fa-play"></i></a> -->
                     <button class="vbtn" onclick="fVideo();"><i class="fa fa-play"></i></button>
+
+                    <div class="videopopup" id="popup">
+                        <div class="videopopup-overlay"></div>
+                        <div class="welcomevideo-content">
+                            <div class="close-btn" onclick="fVideo()">&times;</div>
+                            <div class="welcomevideoblock">
+
+                                <div class="welcomevideologo">
+                                    <img src="images/Logo/logo.png" alt="">
+                                </div>
+
+                                <div class="welcomevideo">
+                                    <video controls="controls" autoplay="" loop="" muted="" playsinline="">
+                                        <source type="video/mp4"
+                                            src="video/M&S Women's Fashion_ The New Autumn Season A_W16 TV Ad.mp4">
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcomenote-overlay"></div>
                 </div>
                 <div class="col-md-4 signin-credential">
                     <div class="credential-info">
