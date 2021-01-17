@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>emp details with document</title>
+		<style type="text/css">
+			.header{
+				text-align: center;
+				border: 3px solid;
+			}
+			.body{
+				margin: 2px;
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">Employee Details</div>
+		<div class="body"> 
+			<div>Name :<span id="name"></span></div>
+			<div>Age :<span id="age"></span></div>
+			<div>Dept :<span id="dept"></span></div>
+			<div>Basic Salary :<span id="bSalary"></span></div>
+			<div>Total Salary :<span id="tSalary"></span></div>
+		</div>
+		<script type="text/javascript">
+			var name = prompt("enter Employee name:");
+			var age = parseInt(prompt("enter Employee age:"));
+			var dept = prompt("enter Employee dept");
+			var basicSalary = parseInt(prompt("enter Employee basic salary:"));
+			var pf, hra, totalSalary;
+			function calculations() {
+				pf = basicSalary * (15/100);
+				hra = basicSalary * (25/100);
+				totalSalary = basicSalary + pf + hra ;
+
+			}
+
+			function displayData() {
+				calculations();
+				document.querySelector("#name").innerText = name;
+				document.querySelector('#age').innerText = age;
+				document.querySelector('#dept').innerText = dept;
+				document.querySelector('#bSalary').innerText = basicSalary;
+				document.querySelector('#tSalary').innerText = totalSalary;
+
+			}
+			displayData();
+
+
+		</script>
+	</body>
+</html>
