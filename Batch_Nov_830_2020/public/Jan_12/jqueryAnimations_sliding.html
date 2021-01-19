@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Jquery Animations show / hide / toggle
+		</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				background: green;
+				font-size: 20px;
+				text-align: center;
+				width: 200px;
+				height: 220px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Slide up" onclick="dojob('up')">
+		<input type="button" value="Slide Dwn" onclick="dojob('dwn')">
+		<input type="button" value="Toggle" onclick="dojob('tog')">
+		<div class="container">
+			Content...
+		</div>
+		<script type="text/javascript">
+			function dojob(type) {
+				switch(type) {
+					case 'up':
+						$(".container").slideUp(3000, function() {
+							console.log("done with animation")
+						});
+						break;
+					case 'dwn':
+						$(".container").slideDown(1000);
+						break;
+					case 'tog':
+						$(".container").slideToggle(2000);
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

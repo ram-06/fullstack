@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML5 input elements
+		</title>
+		<style type="text/css">
+			li {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+			#rblock {
+				padding-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Enter user name: <input type="text">
+			</li>
+			<li>
+				Enter user age: <input type="number">
+			</li>
+			<li>
+				Enter price range: <input type="range" min="10" max="100" id="priceRange" onchange="showPrice()">
+				<span id="rblock"></span>
+			</li>
+			<li>
+				Fav color: <input type="color" >
+			</li>
+			<li>
+				file choose: <input type="file">
+			</li>
+			<li>
+				DOB: <input type="date">
+			</li>
+			<li>
+				DAte time: <input type="datetime-local">
+			</li>
+			<li>
+				<input type="search" name="">
+			</li>
+		</ul>
+		<script type="text/javascript">
+			function showPrice() {
+				var value = document.querySelector("#priceRange").value;
+				console.log(value);
+				document.querySelector("#rblock").innerHTML = value;
+			}
+		</script>
+	</body>
+</html>

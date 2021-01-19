@@ -1,0 +1,53 @@
+.tblock {
+	border: 1px solid;
+
+}
+
+.tblock, .bblock, .cont {
+	border: 1px solid;
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	background: grey;
+	padding: 10px;
+}
+
+.cont {
+	top: 50px;
+	bottom: 65px;
+}
+
+.bblock {
+	bottom: 10px;
+}
+
+.lblock,
+.rblock {
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+	height: 490px;
+	background: #fff;
+}
+
+.lblock {
+	width: 20%;
+}
+
+.rblock {
+	width: 70%;
+}
+
+.lblock li {
+	border: 1px solid;
+	margin: 5px;
+	padding: 10px;
+}
+
+.rblock li {
+	list-style: none;
+	border: 1px solid;
+	margin: 5px;
+	height: 100px;
+}
