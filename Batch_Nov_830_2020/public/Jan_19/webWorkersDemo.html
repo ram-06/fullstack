@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating WebWorkers
+		</title>
+		<style type="text/css">
+			.dateBlock {
+				text-align: right;
+				margin: 10px;
+				padding: 10px;
+			}
+			.block {
+				margin: 5px;
+				text-align: center;
+				padding: 5px;
+				border: 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dateBlock">
+			Date: <span id="dateVal"></span>
+		</div>
+		<div id="msgBlock">
+			
+		</div>
+		<script type="text/javascript">
+
+			var myworker = new Worker("dateWorker.js")
+
+			var count = 1;
+			function showMsg() {
+				var divTag = document.createElement("div");
+				divTag.setAttribute("class", "block");
+				divTag.innerHTML = "Container created " + count;
+				document.querySelector("#msgBlock").append(divTag);
+				count++;
+			}
+
+			setInterval(function(){
+				showMsg();
+			}, 1000);
+
+			function showDate() {
+				var date = new Date();
+				document.querySelector("#dateVal").innerHTML = date;
+			}
+			showDate();
+		</script>
+	</body>
+</html>

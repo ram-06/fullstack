@@ -1,0 +1,14 @@
+CACHE MANAGEMENT:
+	book.png
+	data/abc/*.*
+	images/books/*.jpg
+	bookinfo.js
+	book.html
+
+NETWORK:
+	login.js
+	payment.js
+	logo/payment.jpg
+
+FALLBACK:
+	nopage.html
