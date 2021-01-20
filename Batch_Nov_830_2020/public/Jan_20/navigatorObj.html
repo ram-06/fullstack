@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			navigator Obj
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if (navigator.vendor == 'Google Inc.') {
+				// alert("am from chrome");
+			} else {
+
+				//alert("am from other than chome..")
+			}
+			console.log(navigator);
+
+			navigator.geolocation.getCurrentPosition(function(point){
+				console.log(point)
+			})
+		</script>
+	</body>
+</html>
