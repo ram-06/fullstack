@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Html 5 ddrag drop feature
+		</title>
+		<style type="text/css">
+			#container {
+				border: 2px solid;
+				width: 400px;
+				height: 500px;
+				margin: 10px auto;
+			}
+			img {
+				width: 120px;
+				height: 120px;
+			} 
+			h4 {
+				text-align: center;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>drag drop product to container</h4>
+		<div id='container' ondrop="elementDrop(event)" ondragover="elementDragOver(event)"></div>
+		<img id='prodImg' src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" drabble='true' ondragstart="elementDragStarted(event)" />
+		<img id='prodImg2' src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" drabble='true' ondragstart="elementDragStarted(event)" />
+
+
+		<script type="text/javascript">
+			var imgId = '';
+			function elementDragStarted(event) {
+				console.log("drag started");
+				imgId = event.target.getAttribute("id");
+				console.log(imgId)
+
+			}
+
+			function elementDrop(event) {
+				event.preventDefault();
+				console.log("dropped");
+				imgId = '#'  + imgId;
+				event.target.append(document.querySelector(imgId));
+			}
+
+			function elementDragOver(event) {
+				console.log("drag over")
+				event.preventDefault();
+			} 
+
+			localStorage.setItem("uname", "India")
+		</script>
+	</body>
+</html>
