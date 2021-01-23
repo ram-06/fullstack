@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			CANVAS TAG
+		</title>
+		<style type="text/css">
+			#canvasCntnr {
+				border: 1px solid;
+				width: 600px;
+				height: 600px;
+				margin: 10px auto;
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		
+		<canvas id="canvasCntnr">
+		</canvas>
+		<div style="display:none;">
+  <img id="source"
+       src="https://mdn.mozillademos.org/files/5397/rhino.jpg"
+       width="300" height="227">
+</div>
+		<script type="text/javascript">
+			var ctx = document.querySelector("#canvasCntnr").getContext("2d");
+			/*ctx.moveTo(0, 0);
+			ctx.lineTo(200, 100);
+			ctx.stroke();*/
+
+			// ctx.fillRect(25, 25, 100,100);
+          	// ctx.clearRect(45,45,60,60);
+        //ctx.strokeRect(50,50,50,50); 
+
+        /*ctx.beginPath();
+		ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+		ctx.stroke(); */
+
+		/*ctx.font = "30px Arial";
+ctx.fillText("Hello World", 50, 50);
+ctx.strokeText("Hello World", 10, 50); */
+
+var img = document.getElementById("source");
+ ctx.drawImage(img, 33, 71, 104, 124, 21, 20, 87, 104);
+		</script>
+	</body>
+</html>
