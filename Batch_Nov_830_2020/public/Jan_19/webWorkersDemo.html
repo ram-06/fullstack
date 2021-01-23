@@ -27,7 +27,14 @@
 		</div>
 		<script type="text/javascript">
 
-			var myworker = new Worker("dateWorker.js")
+			var myworker = new Worker("dateWorker.js");
+
+			//var myworker2 = new Worker("...");
+
+			myworker.onmessage = function(event){
+				console.log(event.data);
+				showDate(event.data);
+			};
 
 			var count = 1;
 			function showMsg() {
@@ -42,11 +49,19 @@
 				showMsg();
 			}, 1000);
 
-			function showDate() {
-				var date = new Date();
+			function showDate(date) {
+				
 				document.querySelector("#dateVal").innerHTML = date;
 			}
-			showDate();
+			
+			function sample() {
+				var atag = document.createElement('a');
+				atag.setAttribute("name", "sample");
+				atag.innerHTML = "Hello Every one";
+				atag.setAttribute('href', "http:www.abc.com");
+				document.querySelector('body').append(atag);
+			}
+			sample();
 		</script>
 	</body>
 </html>
