@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo Classes
+		</title>
+		<style type="text/css">
+			p:hover {
+				background-color: #7FFFD4;
+				font-weight: bold;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+				color: #D2691E;
+			}
+			a:active {
+				background-color: red;
+			}
+
+			h2:first-child {
+				color: green;
+			}
+			h2:last-child {
+
+			}
+			h3:empty {
+				border: 2px solid;
+				height: 120px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://google.com">Click Here  to visit google page</a>
+		<p>Item 1</p>
+		<p>Item 2</p>
+		<p>Item 3</p>
+		<p>Item 4</p>
+		<h2>Heading</h2>
+		<div>
+			<h2>heading 1</h2>
+			<h2>heading 2</h2>
+		</div>
+		<h3>test1</h3>
+		<h3></h3>
+		<h3>test3</h3>
+	</body>
+</html>
