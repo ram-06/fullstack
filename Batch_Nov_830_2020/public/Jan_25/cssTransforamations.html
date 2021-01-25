@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating css3 transformations
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				text-align: center;
+				width: 250px;
+				padding: 20px;
+				margin: 200px auto;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			Hello every one
+		</div>
+		<script type="text/javascript">
+			var degvalue = 0;
+			setInterval(function() {
+				document.querySelector('.container').style.transform = 'rotate(' + degvalue + 'deg)';
+				degvalue += 5;
+				if (degvalue == 360) {
+					degvalue = 0;
+				}
+			}, 100);
+		</script>
+	</body>
+</html>
