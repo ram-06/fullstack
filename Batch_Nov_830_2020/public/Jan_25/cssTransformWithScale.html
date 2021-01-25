@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating scaling
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				text-align: center;
+				text-decoration: underline;
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 30%;
+				top: 20%;
+				border-radius: 50% 50%;
+
+			}
+			.line {
+				margin-top: 100px;
+				border-top: 1px solid;
+			}
+			.container:hover {
+				/* transform: scale(2, 2); */
+				transform: translate(50px, 100px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			Hello
+			<div class='line'></div>
+		</div>
+	</body>
+</html>
