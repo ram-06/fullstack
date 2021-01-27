@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo elements
+		</title>
+		<style type="text/css">
+			.container {
+
+			}
+
+			p::first-line {
+				font-size: 25px;
+				color: violet;
+				font-weight: bold;
+			}
+			p::after {
+				content: "see more";
+				cursor: pointer;
+				text-decoration: underline;
+				color: blue;
+			}
+			p::selection {
+				background-color: green;
+				color: red;
+			}
+			a:focus {
+				background-color: coral;
+			}
+		</style>
+	</head>
+	<body>
+		<b><h3>Indian culture</h3></b>
+		<p>
+             Throughout the history of India, Indian culture has been heavily influenced by Dharmic religions. ... India is the birthplace of Hinduism, Buddhism, Jainism, Sikhism, and other religions. They are collectively known as Indian religions. Indian religions are a major form of world religions along with Abrahamic ones.
+		</p>
+		<h3>Tradition</h3>
+		<p>
+			A tradition is a belief or behavior (folk custom) passed down within a group or society with symbolic meaning or special significance with origins in the past. ... Traditions are a subject of study in several academic fields, especially in social sciences such as folklore studies, anthropology, archaeology, and biology.
+		</p>
+		<h3>Custom</h3>
+		<p>
+			A custom (also called a tradition) is a common way of doing things. It is something that many people do, and have done for a long time. Usually, the people come from the same country, culture, or religion. Usually, they do not know when the custom started.
+		</p>
+		<a href="http://abc.com"> ABC page </a>
+		<a href="http://abc.com"> PQR page </a>
+		<a href="http://abc.com"> TEST page </a>
+		<a href="http://abc.com">  SAMPLE page </a>
+	</body>
+</html>
