@@ -1,0 +1,23 @@
+DIFFERENCE BETWEEN BLOCK LEVEL AND INLINE ELEMENTS
+---------------------------------------------------
+BLOCK LEVEL ELEMENT
+-------------------
+All the html predefined elements are been categoriesed into block level type or inline type.
+Any html element comes under block level category holds following properties
+1. By default it occupies 100% width of the container
+2.while rendering in the page it automatically comes to the new line,the next
+ element following the next level elemental.so automatically comes to new line
+3.Even though it occupies 100% width of the container by defult ,
+we can always control the width and height of block level element using css height and width properties
+4. block level element are mainly used to group relative set of elemts as a indivisual box.
+5.<div> is the best eg. of block level lement.
+
+INLINE ELEMENT
+---------------
+Any html element comes under inline categories holds following properties
+1.while rendering in the page it always tries to rander within the same line does not
+come to next line.
+2.By defaulu it occupies the width based on the total content it is holding.
+3. We can not control the dimensions of inline element,even though we provide the width and height properties
+it simply skips them.
+4.inline elements are mainly used to add css to a perticular content to group of content
