@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			
+		</title>
+		<style type="text/css">
+			.block1 {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				background-color: green;
+				position: absolute;
+				animation: test 5s;
+
+				left: 90%;
+			}
+			.block2 {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				background-color: blue;
+				position: absolute;
+				display: none;
+				top: 130px;
+				
+			}
+			@keyframes test {
+				1% {
+					left: 10%;
+				}
+				5% {
+					left: 20% 
+				}
+				10% {
+
+					left: 25%;
+				}
+				30% {
+					left: 50%;
+				}
+				40% {
+					left: 50%;
+				}
+				50% {
+					left: 50%;
+				}
+				60% {
+					left: 50%;
+				}
+				70% {
+					left: 50%;
+				}
+				99% {
+					left: 90%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block1">
+			hello
+		</div>
+		<div class="block2">
+			Bye
+		</div>
+		<script type="text/javascript">
+			setTimeout(function (){
+				document.querySelector(".block2").style.left =  "90%";
+				document.querySelector(".block2").style.display =  "block";
+				document.querySelector(".block2").style.animation =  "test 5s";
+			}, 5000);
+		</script>
+	</body>
+</html>
