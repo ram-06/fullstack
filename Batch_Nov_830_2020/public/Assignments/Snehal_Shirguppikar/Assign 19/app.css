@@ -1,0 +1,28 @@
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+
+.title {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.container {
+    border: 1px solid;
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
+    background-color: #ccc;
+    overflow: auto;
+}
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+}
