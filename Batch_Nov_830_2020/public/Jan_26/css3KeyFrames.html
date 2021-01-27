@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Key Frames
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				margin: 10px;
+				padding: 10px;
+				background-color: green;
+				position: absolute;
+				right: 10px;
+				animation: mystyles 10s infinite;
+				
+			}
+			@keyframes mystyles {
+				3% {
+					background-color: blue;
+					left: 10%;
+					bottom: 10%;
+					width: 200px;
+				}
+
+				14% {
+					background-color: yellow;
+					right: 10%;
+					top: 30px;
+					opacity: 0.3;
+					width: 300px;
+				}
+				22% {
+					background-color: red;
+					border: none;
+					text-decoration: underline;
+				}
+				46% {
+					background-color: blue;
+					border: 3px solid red;
+					left: 30px;
+					bottom: 10px;
+					width: 120px;
+					background-image: url("https://ychef.files.bbci.co.uk/624x351/p02knl9s.jpg");
+				}
+
+				59% {
+					background-color: yellow;
+					top: 10px;
+					right: 20px;
+					height: 300px;
+					background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-6Qpf0SOA53_xaHijMXAJ5pK7lwaOmbbzQ&usqp=CAU");
+				}
+				88% {
+					background-color: pink;
+					left: 40px;
+					top: 100px;
+					width: 200px;
+					background-image: url("https://www.edgeofexistence.org/wp-content/uploads/2017/02/Philippine-Eagle-_ALAIN-PASCUA.jpg");
+				}
+				99% {
+					background-color: yellow;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			Hello
+		</div>
+		<script type="text/javascript">
+			setInterval(function(){
+				document.querySelector(".container").innerText = new Date().getTime();
+			}, 1000);
+			//document.querySelector(".container").innerText = "4:34:5 se"
+		</script>
+	</body>
+</html>
