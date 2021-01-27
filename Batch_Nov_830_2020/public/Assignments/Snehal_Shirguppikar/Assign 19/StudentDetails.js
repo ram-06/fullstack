@@ -1,5 +1,4 @@
 var sDetails = {};
-var sArray = [];
 var cntr = 0;
 function generateProgressCard() {
 
@@ -44,26 +43,17 @@ function getGrade() {
 
 var displayData = function() {
 
-    for ( var i = 0; i < sArray.length; i++)
-    {
-        sDetails = sArray[i];
-       // document.querySelector("#progressBlock").style.display = 'block';
         document.querySelector("#studentID").innerHTML =   sDetails.sno ;
         document.querySelector("#studentName").innerHTML =  sDetails.name ;
         document.querySelector("#studentAge").innerHTML =  sDetails.age ;
         document.querySelector("#studentAddress").innerHTML =  sDetails.address ;
         document.querySelector("#studentClass").innerHTML =  sDetails.class ;
         document.querySelector("#studentGender").innerHTML =  sDetails.gender ;
-        //document.querySelector("#m1").innerHTML =  sDetails.marks[0] ;
-        for (var i = 0 ; i < sDetails.marks.length; i++) {
-            document.querySelector("#mrk"+ (i+1)).innerHTML =  sDetails.marks[i] ;
+        for (var j = 0 ; j < sDetails.marks.length; j++) {
+            document.querySelector("#mrk"+ (j+1)).innerHTML =  sDetails.marks[j] ;
         }
-      //  document.querySelector("#studentMarks").innerHTML = "<b>" + sDetails.name + "</b>";
         document.querySelector("#studentTotalMarks").innerHTML = sDetails.total;
         document.querySelector("#studentAvg").innerHTML = sDetails.avg;
         document.querySelector("#studentGrade").innerHTML = sDetails.grade;
-    }
-    //console.log(sDetails);
-    sArray[cntr++] = sDetails;
-    console.log(sArray);
+    
 }
