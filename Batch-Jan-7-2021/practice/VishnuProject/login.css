@@ -1,0 +1,116 @@
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				font-family: sans-serif;
+				background-color: rgba(20,20,40,0.2);
+			}
+			.content{
+				border:2px solid rgba(1,1,1,.4);
+				padding: 100px;
+				margin: 7%;
+				background-color: rgba(245, 246, 247,.7);
+				float: right;
+			}
+			input[type=text]{
+				outline: none;
+				border-radius: 6px;
+				padding: 10px;
+				width: 65%;
+				border-style: hidden;
+				margin: 10px;
+			}
+			input[type=text]:hover{
+				border:1px solid #1877f2;
+				transition: 1s;
+			}
+			input[type=password]{
+				outline: none;
+				border-radius: 6px;
+				padding: 10px;
+				width: 65%;
+				border-style: hidden;
+				margin-left: 10px;
+			}
+			input[type=password]:hover{
+				border: 1px solid #1877f2; 
+				transition: 1s;
+			}
+			.Submit{
+				width: 60%;
+				padding: 5px;
+				margin-top: 10px;
+				margin-left: 40px;
+				border-radius: 6px;
+				background-color: #1877f2;
+				outline: none;
+				color: #fff;
+			}
+			.Submit>a{
+				text-decoration: none;
+				color: #fff;
+			}
+			.Submit:hover{
+				background-color: rgba(32, 124, 245,.8);
+				color: #fff;
+				cursor: pointer;
+				border-color: #fff;
+			}
+			#forgot_password{
+				text-decoration: none;
+				color: blue;
+				margin-top: 10px;
+				margin-left: 35px;
+				padding: 10px;
+				display: flex;
+			}
+			#forgot_password:hover{
+				text-decoration: underline;
+			}
+			hr{
+				margin-top: -10px;
+				margin-bottom: 10px;
+				width: 120%;
+			}
+			#new_account{
+				background-color: #52c74a;
+				padding: 5px;
+				margin-top: 30px;
+				margin-left: 35px;
+				border-radius: 6px;
+				outline: none;
+			}
+			#new_account>a{
+				text-decoration: none;
+				color: #fff;
+			}
+			#new_account:hover{
+				background-color: rgba(58, 214, 94,.7);
+				cursor: pointer;
+				border-color: #fff;
+			}
+			h2{
+				text-align: center;
+			    padding-top:-20px;
+			    
+			}
+			h2:hover{
+				color: #2dc2b5;
+			}
+			.left{
+				float: left;
+				text-align: left;
+				padding-top: 130px;
+				padding-left: 100px;
+			}
+			.left>p{
+				padding-top: 40px;
+				font-size: 150%;
+			}
+			.left>h1{
+				color:blue;
+			}
+			.left>img{
+				margin-bottom: 40px;
+			}
