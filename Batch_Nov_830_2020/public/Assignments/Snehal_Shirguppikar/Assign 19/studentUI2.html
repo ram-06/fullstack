@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Progress card generator
+		</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<script type="text/javascript" src="studentDetails.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			Student Progess card Generator
+		</div>
+		<ul class="container">
+			<li>
+				Enter Student ID:  <input type="text" id="sID">
+			</li>
+			<li>
+				Enter Student name:  <input type="text" id="sName">
+			</li>
+			<li>
+				Enter Student age:  <input type="text" id="sAge">
+			</li>
+			<li>
+				Enter Student address:  <input type="text" id="sAddress">
+			</li>
+			
+			<li>
+				Select Class:
+				<select id="sClass">
+					<option value="1st year">1st</option>
+					<option value="2nd year">2nd class</option>
+					<option value="3rd year">3rd Class</option>
+					<option value="3rd year">4rd Class</option>
+				</select>
+			</li>
+			<li>
+				Gender: 
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+			</li>
+			
+			<li>
+				Unit Test1 Marks:
+				<input type="text" placeholder="Maths1" id="m1">
+				<input type="text" placeholder="Maths2" id="m2">
+				<input type="text" placeholder="Maths3" id="m3">
+			</li>
+			<li>
+				Unit Test2 Marks:
+				<input type="text" placeholder="Maths1" id="m4">
+				<input type="text" placeholder="Maths2" id="m5">
+				<input type="text" placeholder="Maths3" id="m6">
+			</li>
+			<li>
+				Unit Test3 Marks:
+				<input type="text" placeholder="Maths1" id="m7">
+				<input type="text" placeholder="Maths2" id="m8">
+				<input type="text" placeholder="Maths3" id="m9">
+			</li>
+			
+			<li>
+				<input type="button" value="Insert Row" onclick="generateProgressCard()">
+			</li>
+		</ul>
+		
+			
+		
+			<table  border="1px solid;" cellspacing="10px" cellpadding="10px">
+				<thead>
+					<tr>
+						<th> S.No.</th>
+						<th width="50px"> Name </th>
+						<th>Age</th>
+						<th width="100px">Address</th>
+						<th>Class</th>
+						<th>Gender</th>
+						<th>Photo</th>
+						<th>Marks</th>
+						<th>Total</th>
+						<th>Average</th>
+						<th>Result</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td > <span id = studentID > </span> </td>
+						<td> <span id = studentName > </span> </td>
+						<td>  <span id = studentAge > </span> </td>
+						<td>  <span id = studentAddress > </span> </td>
+						<td>  <span id = studentClass > </span> </td>
+						<td>  <span id = studentGender > </span> </td>
+						<td cellspacing="10px" cellpadding="10px">
+							<div class="imageBlock">
+								<img src="images/emp1.jpg">
+							</div>
+						</td>
+						<td>
+							<table border="1px solid;" cellspacing="5px" cellpadding="10px" >
+								<thead>	
+									<tr>
+										<th> Subject</th>
+										<th> Maths1</th>
+										<th> Maths2</th>
+										<th> Maths3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>UnitTest1</td>
+										<td><span id = mrk1 > </span></td>
+										<td><span id = mrk2> </span></td>
+										<td><span id = mrk3> </span></td>
+										
+									</tr>
+									<tr>
+										<td>UnitTest2</td>
+										<td><span id = mrk4> </span></td>
+										<td><span id = mrk5> </span></td>
+										<td><span id = mrk6> </span></td>
+									</tr>
+									<tr>
+										<td>UnitTest3</td>
+										<td><span id = mrk7> </span></td>
+										<td><span id = mrk8> </span></td>
+										<td><span id = mrk9> </span></td>
+									</tr>
+
+								</tbody>
+							</table>
+							<td > <span id = studentTotalMarks > </span> </td>
+							<td > <span id = studentAvg > </span> </td>
+							<td > <span id = studentGrade > </span> </td>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		
+	</body>
+</html>

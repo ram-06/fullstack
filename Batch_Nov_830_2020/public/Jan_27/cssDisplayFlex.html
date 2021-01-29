@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Display Flex
+		</title>
+		<style type="text/css">
+			.container {
+				background: green;
+				display: flex;
+				/*flex-direction: row;
+				flex-wrap: wrap-reverse; */
+				justify-content: center; 
+				align-items: center;
+				height: 400px;
+			}
+			.item {
+				margin: 10px;
+				padding: 10px;
+				background: red;
+				align-self: flex-end;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item" style="order:3; flex-grow: 1;">Item 1</div>
+			<div class="item" style="order:1;  flex-shrink: 2;">ITem 2</div>
+			<div class="item" style="order:2;flex-grow: 3;">Item 3</div>
+		</div>
+	</body>
+</html>
