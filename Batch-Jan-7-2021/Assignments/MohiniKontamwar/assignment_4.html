@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demonstrating student details with css overflow
+        </title>
+        <style type="text/css">
+        .headblock{
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+            height: 10px;
+            width: 1000px;
+            background: green;
+            text-align: center;
+        }
+        .container {
+               border: 1px solid;
+               margin: 20px;
+               padding: 10px;
+               height: 700px;
+               width: 1000px;
+               overflow: auto;
+               
+        }
+        .block {
+            border: 1px solid;
+            margin: 10px;
+            padding :10px;
+            width: 280px;
+            height: 600px;
+            float: left;
+            overflow: auto;
+        }
+        .block1 {
+            border: 1px solid;
+            margin: 10px;
+            padding :10px;
+            width: 600px;
+            height: 600px;
+            float: left;
+            overflow: auto;
+        }
+        .block2 {
+            border: 1px solid;
+            margin: 20px;
+            padding :10px;
+            width: 150px;
+            height: 15px;
+            text-align: center;
+            background: red;
+        }
+        .block3 {
+            border: 1px solid;
+            margin: 10px;
+            padding :10px;
+            width: 400px;
+            height: 120px;
+            text-align: center;
+        }
+        img {
+				width: 120px;
+				height: 120px;
+				border: 2px solid;
+                float: left;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="headblock">
+            STUDENT DETAILS
+        </div>
+        <div class='container'>
+            <div class="block">
+                <div class='block2'>
+                    <b>1.Raj</b>
+                </div>
+                <div class="block2">
+                    <b>2. Tina</b>
+                </div>
+                <div class="block2">
+                    <b>3. Meena</b>
+                </div>
+                <div class="block2">
+                    <b>4. Krish</b>
+                </div>
+                <div class="block2">
+                    <b>5. Test</b>
+                </div>
+               
+            </div>
+         <div class='block1'>
+             <div class="block3">   
+               <img src ="1.2_Spotlight_2x_b14c630d-76b6-4217-aed1-8f29e848ff34_900x.webp">           
+               Student id: std_001<br>
+               Name : Raj<br>
+               Age : 20 <br>
+               Gender : Male<br>
+               Location: Hyderabad<br>
+             </div>
+             <div class="block3">
+                 <img src ="GettyImages-children-school_759.jpg">
+                Student id: std_002<br>
+                Name : Tina<br>
+                Age : 25 <br>
+                Gender : Female<br>
+                Location: Hyderabad<br>
+             </div>
+             <div class="block3">
+                 <img src="images.jpeg">
+                Student id: std_003<br>
+                Name : Meena<br>
+                Age : 20 <br>
+                Gender : Female<br>
+                Location: Banglore<br>
+             </div>
+             <div class="block3">
+                 <img src="image1.webp">
+                Student id: std_004<br>
+                Name : Krish<br>
+                Age : 25 <br>
+                Gender : Male<br>
+                Location: Banglore<br>
+             </div>
+         </div> 
+    
+        </div>
+        <div class="headblock"></div>
+    </body>
+</html>
