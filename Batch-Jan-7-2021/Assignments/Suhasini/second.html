@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border:5px solid;
+  height:1200px;
+  overflow:auto;
+}
+header {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.block{
+width:500px;
+height:150px;
+margin:5px 5px 10px 5px;
+padding:auto;
+border:3px solid;
+border-radius:3px;
+float:left;
+}
+.list1{
+text-align:center;
+list-style:none;
+margin:20px;
+padding:30px;
+}
+
+.block1{
+background-color:lightcoral;
+}
+.block2{
+background-color:palegreen;
+}
+.block3{
+background-color:plum;
+}
+.block4{
+background-color:beige;
+}
+.block5{
+background-color:olivedrab;
+}
+img{
+float:right;
+width:150px;
+height:130px;
+margin:10px;
+padding:15px;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 900px;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding:0px;
+ 
+  }
+  .list{
+  background-color: lightblue;
+  width: 150px;
+  border: 3px solid green;
+  padding: 10px;
+  margin: 3px  3px 100px 6px;
+  border-radius:2px;
+  text-align:center;
+  }
+
+article {
+  float: left;
+  padding:20px;
+  width: 40%;
+  background-color: white;
+  height: 900px; 
+  list-style-type:none;
+  text-align:center;
+}
+section::after {
+  content:'';
+  display:table;
+  clear: both;
+  list-style:none;
+}
+.foot {
+  background-color: blue;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  
+}
+</style>
+</head>
+<body class="body">
+
+<header>
+  <h2>Student Details</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li class="list">Raj</li>
+      <li class="list">Meena</li>
+      <li class="list">Ravi</li>
+      <li class="list">Raj</li>
+      <li class="list">Meena</li>
+      <li class="list">Ravi</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <div class="block block1">
+      <img src="https://picsum.photos/id/1018/367/267" width="80px" height="50px">
+          <ul class="list1">
+            <li>StudentName: Raj</li>
+            <li>Age: 26</li>
+            <li>Location:Hyd</li>
+          </ul>
+   </div>
+     <br/>
+    <div class="block block2">
+      <img src="https://picsum.photos/id/1019/367/267" width="80px" height="50px">
+              <ul class="list1">
+                <li>StudentName: Raj</li>
+                <li>Age: 26</li>
+                <li>Location:Hyd</li>
+              </ul>
+   </div>
+   <br/>
+     <div class="block block3">
+       <img src="https://picsum.photos/id/102/367/267" width="80px" height="50px">
+              <ul class="list1">
+                <li>StudentName: Raj</li>
+                <li>Age: 26</li>
+                <li>Location:Hyd</li>
+                </ul>
+   </div>
+   <br/>
+     <div class="block block4">
+      <img src="https://picsum.photos/id/1016/367/267" width="80px" height="50px">
+                <ul class="list1">
+                 <li>StudentName: Raj</li>
+                 <li>Age: 26</li>
+                 <li>Location:Hyd</li>
+                 </ul>
+   </div>
+   <br/>
+    <div class="block block5">
+     <img src="https://picsum.photos/id/1016/367/267" width="80px" height="50px">
+                   <ul class="list1">
+                    <li>StudentName: Raj</li>
+                    <li>Age: 26</li>
+                    <li>Location:Hyd</li>
+                    </ul>
+   </div>
+   </article>
+</section>
+
+<footer class="foot">
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
