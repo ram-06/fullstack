@@ -1,0 +1,87 @@
+body{
+    background-color: greenyellow;
+}
+h1{
+    background-color: gold;
+    text-align: center;
+    text-decoration: mediumblue;
+    text-transform: uppercase;
+    text-overflow: clip;
+    text-shadow: orange;
+    text-indent: 0ch;
+    text-rendering: auto;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    color: blue;
+    border: 3px solid red;
+    
+    
+}
+   .bgimage{
+    height: 550px;
+    width: 1350px;
+    border: 2px solid blue;
+
+
+  
+}
+.new{
+    height: 550px;
+    width: 1350px ;
+}
+.b1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    position: relative;
+    top: -545px;
+    left: 20px;
+    background-image: url(D:\PROJECT\IND-KUW MOBILES\images);
+}
+.b2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    position: relative;
+    top: -650px;
+    left: 130px;
+}
+.home{
+    height: 500px;
+    width: 500px;
+    border: 3px double goldenrod;
+    position: relative;
+    left: 500px;
+    top: -725px;
+}
+h2{
+    color: darkslateblue;
+    background-color: floralwhite;
+    border: 2px dotted yellow;
+}
+    .lpage{
+        text-align: center;
+        text-decoration: solid;
+        text-transform: uppercase;
+        border-radius: 2px;
+        border-color: hotpink;
+        position: relative;
+        left: 100px;
+        top: -900px;
+
+    }
+    .button1{
+        color: blue;
+        background-color: khaki;
+        border: 2px grey solid;
+        border-style: ridge;
+        height: 40px;
+        width: 150px;
+        
+    }
+    .lan{
+        position: relative;
+        top: -300px;
+        left: 450px;
+    }
+
