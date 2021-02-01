@@ -1,0 +1,64 @@
+body{
+    background-attachment: fixed;
+    background-image:
+  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('http://www.irhal.com/image/gallery/originals/middle-east_296/kuwait_329/411.jpg');
+}
+h1{
+    color: blue;
+    border: 2px solid gold;
+    text-align: center;
+    background: chartreuse;
+    text-transform: uppercase;
+    text-overflow: clip;
+    text-shadow: crimson;
+}
+.l1{
+    text-align: center;
+    border: 2px solid gold;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 400px;
+    background: yellowgreen;
+    
+}
+.b1{
+    color: royalblue;
+    text-align: center;
+    text-decoration: silver;
+    background: burlywood;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.a1{
+    color: darkblue;
+    background: darkgray;
+}
+h3{
+    color: darkred;
+    background-color:bisque;
+}
+.m1{
+    background: greenyellow;
+    color: indigo;
+
+}
+.left{
+    position: relative;
+    top: -300px;
+    left: 50px;
+}
+.right{
+    position: relative;
+    top: -500px;
+    left: 1100px;
+    
+}
+.lflag{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 10px;
+    top: 2400px;
+}
