@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>
+			Its first web page
+		</title>
+	</head>
+	<body>
+		HEy...Welcome all for UI Fullstack course training program..
+	</body>
+</html>
