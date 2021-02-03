@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+/*  ---------- Login Page  ---------- */
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/Banners/pexels-freestocksorg-291762.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+}
+.login-form {
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+    padding: 40px 40px;
+    border: 1px solid rgba(61,57,79,0.1);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.login-form h1 {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.textbox {
+    position: relative;
+    margin: 20px 0;
+}
+.textbox input {
+    border-bottom: 2px solid #fff;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    outline: none;
+}
+.textbox span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+.textbox span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0,171,214,0.8) 0%, rgba(58,57,81,0.5) 60%, rgba(61,57,79,0.5) 100%);
+    transition: 0.5s;
+}
+.focus + span::before {
+    top: -5px;
+}
+.focus + span::after {
+    width: 100%;
+}
+.rememberMe input{
+    border: 1px solid #fff;
+}
+.rememberMe label{
+    color: #fff;
+    padding-left: 15px;
+}
+.login-btns {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.login-btn, .signin-btn {
+    width: 80%;
+    margin: 0 2px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: rgb(0,171,214);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 1px solid rgba(58,57,81,0.6);
+}
+.login-btn:hover, .signin-btn:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    border: 1px solid #fff;
+}
+.bottom-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+.bottom-text a {
+    color: #ff4500;
+}
+.bottom-text a:hover {
+    text-decoration: none;
+    color: rgb(14, 132, 211);
+}
+.left {
+    text-align: right;
+    line-height: 30px;
+}
+.login-icon {
+    margin: 60px 0 10px 0px;
+    text-align: right;
+}
+.login-icon img {
+    width: 25%;
+}
+.introduction h1 {
+    color: #fff;
+    font-weight: 300;
+}
+.introduction h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+.introduction p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.register{
+    justify-content: flex-end;
+}
+.register .signin-btn {
+    width: 50%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    transition: 0.5s;
+}
+.register .signin-btn:hover {
+    color: rgb(0,171,214);
+    background: #fff;
+}
+
+/*  ---------- Signin Page  ---------- */
+.signin-page .overlay {
+    z-index: -2;
+}
+.signin-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.signin-info {
+    width: 80%;
+    height: 500px;
+    padding: 0px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signin-credential {
+    background: #fff;
+    width: 100%;
+    height: 500px;
+}
+.welcomenote {
+    background-image: url("../images/Banners/pexels-pixabay-247115.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px;
+    position: relative;
+}
+.welcomenote-overlay {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(61,57,79,0.5) 0%, rgba(0,171,214,0.8) 100%, rgba(58,57,81,0.5) 60%);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+.welcomenote h1 {
+    color: #fff;
+    font-weight: 300;
+    z-index: 2;
+}
+.welcome-image {
+    z-index: 2;
+}
+.welcomenote img {
+    width: 30%;
+}
+.welcomenote h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    margin-top: 2px;
+    margin-left: 8px;
+    z-index: 2;
+}
+.welcomenote p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4vh;
+}
+.welcomenote button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    outline: none;
+    z-index: 2;
+}
+.welcomenote button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
+}
+.welcomenote button:hover {
+    border: 1px solid rgb(0,171,214);
+}
+.welcomenote button:hover i {
+    color: rgb(0,171,214);
+}
+.signinform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-text {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.503);
+    text-align: center;
+}
+.signin-credential {
+    padding: 30px 40px;
+}
+.credential-info h4 {
+    color: rgb(0,171,214);
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.credentialsocialicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sicon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.19) !important;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.credentialsocialicon a {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+}
+.sicon a:hover i {
+    transform: scale(1.2);
+}
+.sicon.facebook a:hover i {
+    color: #4267B2;
+}
+.sicon.gmail a:hover i {
+    color: #db4a39;
+}
+.sicon.linkedin a:hover i {
+    color: #0e76a8;
+}
+.credentialsocialicon a i {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.503);
+}
+.signinmain {
+    margin-top: 10px;
+}
+.signinform .textbox {
+    margin: 20px 0;
+}
+.signinform .textbox input {
+    height: 32px;
+}
+.signinform .textbox span::before {
+    color: #ccc;
+    z-index: 1;
+}
+.signinform .rgender {
+    color: rgba(0, 0, 0, 0.63);
+    margin-top: 25px;
+}
+.signinform .rgender input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.login-btn.rlogin {
+    width: 85%;
+}
+
+
+
+
+.videopopup-overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    background-image: -webkit-gradient(linear,left top, right top,from(#025984),color-stop(#003456),to(#013155));
+    background-image: -o-linear-gradient(left,#025984,#003456,#013155);
+    background-image: linear-gradient(to right,#025984,#003456,#013155);
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+.welcomevideo-content {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -55%) scale(0);
+        -ms-transform: translate(-50%, -55%) scale(0);
+            transform: translate(-50%, -55%) scale(0);
+    width: 80%;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+            box-shadow: 0 5px 30px rgb(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
+    overflow-y: hidden;
+    border-radius: 3px;
+}
+.signin-page .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:5%;
+    top:3%;
+    width:50px;
+    height:50px;
+    line-height: 1.1;
+    background:transparent;
+    color: #ff4500;
+    font-size:30px;
+    font-weight:600;
+    text-align:center;
+    z-index: 2;
+    opacity: 0.5;
+    -webkit-transform: translate(-5%, -3%);
+        -ms-transform: translate(-5%, -3%);
+            transform: translate(-5%, -3%);
+}
+.videopopup.active .videopopup-overlay {
+    display:block;
+}
+.videopopup.active .welcomevideo-content {
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -webkit-transform:translate(-50%,-50%) scale(1);
+        -ms-transform:translate(-50%,-50%) scale(1);
+            transform:translate(-50%,-50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+} 
+.welcomevideoblock {
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+.welcomevideoblock video {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 85vh;
+    border-radius: 3px;
+}
+.welcomevideologo {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 30px;
+}
+.welcomevideologo img {
+    width: 40%;
+}
+.welcomevideo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}

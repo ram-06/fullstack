@@ -1,0 +1,28 @@
+.block
+{
+    border:1px solid;
+    width:400px;
+    height: 250px;
+    margin:auto;
+}
+.block1
+{
+    padding:10px;
+    float:left;
+
+}
+.block2
+{
+    border: 1px solid;
+    width: 350px;
+    height: 150px;
+    padding: 5px;
+    float:left;
+    top:10px;
+    left:20px;
+    position: relative;
+}
+ th, td {
+    border: 1px solid black;
+
+  }

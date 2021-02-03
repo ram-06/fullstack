@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Position absolute
+		</title>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+			}
+			.block1 {
+				background: green;
+			}
+			.block2 {
+				background: yellow;
+				position: fixed;
+				left: 30px;
+				top: 20px;
+			}
+			.block3 {
+				background: pink;
+			}
+			.parent {
+				border: 2px solid;
+				margin: 20px;
+				padding: 20px;
+				background: red;
+				position: relative;
+			}
+			.grandParent {
+				border: 2px solid;
+				margin: 10px;
+				padding: 10px;
+				background: grey;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grandParent">
+			<div class="parent">
+				<div class="block block1">
+					BLOCK 1
+				</div>
+				<div class="block block2">
+					BLOCK 2
+				</div>
+				<div class="block block3">
+					BLOCK 3
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

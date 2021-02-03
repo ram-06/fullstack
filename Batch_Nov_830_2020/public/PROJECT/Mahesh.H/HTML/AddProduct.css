@@ -1,0 +1,33 @@
+.block
+{
+    border:1px solid;
+    width:500px;
+    height:450px;
+    margin:auto;
+}
+.block1
+{
+    padding:10px;
+    float:left;
+
+}
+.block2
+{
+    border: 1px solid;
+    width: 400px;
+    height: 350px;
+    padding: 5px;
+    float:left;
+    top:10px;
+    left:20px;
+    position: relative;
+}
+.block3
+{
+    
+    top:10px;
+    left:10px;
+    float:center;
+  
+
+}
